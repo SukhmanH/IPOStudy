@@ -1,0 +1,1106 @@
+ipo_date,ticker,company,offer_price,class,rule_hit,fetch_status,first_cached_date
+2026-07-10,SAMO,Samos Energy Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-07-10,SKHY,SK hynix Inc.,149.0,operating,offer!=10+name_clean,ok,2026-07-10
+2026-07-09,CCCT,Columbus Circle Capital Corp III,10.0,spac,name_regex+offer10,,
+2026-07-09,MRCO,Mercator Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-07-08,FDMM,Freedom Metals Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-07-07,BCCQ,Bleichroeder Acquisition Corp. III,10.0,spac,name_regex+offer10,,
+2026-07-02,MIAC,Meridian3 Industrials Acquisition Corp,10.0,spac,name_regex+offer10,,
+2026-07-02,VII,Viking Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2026-07-01,BSP,Bending Spoons S.p.A.,29.0,operating,offer!=10+name_clean,ok,2026-07-01
+2026-07-01,ITG,"ITG, Inc.",16.0,operating,offer!=10+name_clean,recycled_mismatch,2012-06-18
+2026-07-01,LIME,"Neutron Holdings, Inc.",25.0,operating,offer!=10+name_clean,recycled_mismatch,1998-08-14
+2026-07-01,OSPR,Osprey Acquisition Corp. III,10.0,spac,name_regex+offer10,,
+2026-06-30,AAC,Ares Acquisition Corporation III,10.0,spac,name_regex+offer10,,
+2026-06-26,SIND,Sinda Ltd.,12.0,operating,offer!=10+name_clean,ok,2026-06-26
+2026-06-25,ALPX,Alpex Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-06-25,CGCF,Cartesian Growth Corporation IV,10.0,uncertain,offer10_clean_name,no_data,
+2026-06-25,DPC,DPC Holdings PLC,33.0,operating,offer!=10+name_clean,ok,2026-06-25
+2026-06-25,DSC,DSC Holdings Ltd.,17.0,operating,offer!=10+name_clean,ok,2026-06-25
+2026-06-25,FWAC,Futurewave Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-06-23,GHXI,"Gores Holdings XI, Inc.",10.0,spac,name_regex+offer10,,
+2026-06-18,FCBM,"First Carolina Financial Services, Inc.",12.5,operating,offer!=10+name_clean,ok,2026-06-18
+2026-06-18,FISN,"Deep Fission, Inc.",16.0,operating,offer!=10+name_clean,ok,2026-06-18
+2026-06-18,KARD,"Kardigan, Inc.",16.0,operating,offer!=10+name_clean,ok,2026-06-18
+2026-06-18,TVIV,Texas Ventures Acquisition IV Corp.,10.0,spac,name_regex+offer10,,
+2026-06-18,WLCO,Wilco 63 Corporation,10.0,uncertain,offer10_clean_name,no_data,
+2026-06-17,CAES,"Cantor Equity Partners VII, Inc.",10.0,uncertain,offer10_clean_name,ok,2026-06-17
+2026-06-16,YICC,Yorkville International Capital Corp.,10.0,spac,name_regex+offer10,,
+2026-06-12,SPCX,Space Exploration Technologies Corp.,135.0,operating,offer!=10+name_clean,ok,2026-06-12
+2026-06-11,FRBT,"Forbright, Inc.",18.0,operating,offer!=10+name_clean,ok,2026-06-11
+2026-06-10,EROC,"ERock, Inc.",21.5,operating,offer!=10+name_clean,ok,2026-06-10
+2026-06-10,JAB,JAB Acquisition Corp I,10.0,spac,name_regex+offer10,,
+2026-06-10,PBLS,"Parabilis Medicines, Inc.",20.0,operating,offer!=10+name_clean,ok,2026-06-10
+2026-06-10,SHOT,RMG ML Sports Holdings,10.0,uncertain,offer10_clean_name,no_data,
+2026-06-09,ISNR,Snow Rothschild Acquisition Corp,10.0,spac,name_regex+offer10,,
+2026-06-09,OCAC,Ocean Capital Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-06-09,WHK,WhiteHawk Minerals Corp.,26.0,operating,offer!=10+name_clean,ok,2026-06-09
+2026-06-05,FTRA,FutureCorp Space Acquisition 1,10.0,spac,name_regex+offer10,,
+2026-06-04,INIO,Innio N.V.,27.0,operating,offer!=10+name_clean,ok,2026-06-08
+2026-06-04,IPVV,"InterPrivate Investment Partners V, Inc.",10.0,uncertain,offer10_clean_name,no_data,
+2026-06-04,LFTO,"Liftoff Mobile, Inc.",23.0,operating,offer!=10+name_clean,ok,2026-06-04
+2026-06-04,LTGR,Long Table Growth Corp.,10.0,uncertain,offer10_clean_name,no_data,
+2026-06-04,QNT,Quantinuum Inc.,60.0,operating,offer!=10+name_clean,ok,2026-06-04
+2026-06-04,SSMR,Sunshine Silver Mining & Refining Company,13.5,operating,offer!=10+name_clean,ok,2026-06-04
+2026-06-03,AADX,"Applied Aerospace & Defense, Inc.",20.0,operating,offer!=10+name_clean,ok,2026-06-03
+2026-06-03,AESP,Aeon Acquisition I Corp.,10.0,spac,name_regex+offer10,,
+2026-06-03,APMC,AmperCap Acquisition Company,10.0,spac,name_regex+offer10,,
+2026-06-03,KEYY,Keystone Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-05-29,BID,Tribeca Strategic Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-05-27,DGAC,Disciplined Growth Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-05-22,BRKH,Burtech Acquisition Corp II,10.0,spac,name_regex+offer10,,
+2026-05-22,FXAC,FortuneX Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-05-22,PECE,Peace Acquisition Corp,10.0,spac,name_regex+offer10,,
+2026-05-21,APUR,Aperture AC,10.0,uncertain,offer10_clean_name,ok,2026-05-21
+2026-05-21,OHAC,Oceanhawk Acquisition Corp,10.0,spac,name_regex+offer10,,
+2026-05-20,LCLN,"Lincoln International, Inc.",20.0,operating,offer!=10+name_clean,ok,2026-05-20
+2026-05-20,RACC,Research Alliance Corporation III,10.0,uncertain,offer10_clean_name,ok,2026-05-20
+2026-05-19,AMAN,Amanat Acquisition Corp,10.0,spac,name_regex+offer10,,
+2026-05-15,EXYN,"Exyn Technologies, Inc.",7.75,operating,offer!=10+name_clean,ok,2026-05-15
+2026-05-15,GUAC,Berto Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2026-05-15,IDAC,Iron Dome Acquisition I Corp.,10.0,spac,name_regex+offer10,,
+2026-05-15,PTAC,Patriot Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-05-15,VIDA,VIDA Global Inc.,4.0,operating,offer!=10+name_clean,ok,2026-05-15
+2026-05-14,BXDC,Blackstone Digital Infrastructure Trust Inc.,20.0,operating,offer!=10+name_clean,ok,2026-05-14
+2026-05-14,CBRS,Cerebras Systems Inc.,185.0,operating,offer!=10+name_clean,ok,2026-05-14
+2026-05-14,EROK,"EagleRock Land, LLC",18.5,operating,offer!=10+name_clean,ok,2026-05-14
+2026-05-14,GSRV,GSR V Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-05-14,MWC,"Micware Co., Ltd.",8.0,operating,offer!=10+name_clean,ok,2026-05-14
+2026-05-13,BREZ,Breeze Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2026-05-13,FRVO,Fervo Energy Company,27.0,operating,offer!=10+name_clean,ok,2026-05-13
+2026-05-13,GMRS,GMR Solutions Inc.,15.0,operating,offer!=10+name_clean,ok,2026-05-13
+2026-05-08,MOBI,"Mobia Medical, Inc.",15.0,operating,offer!=10+name_clean,ok,2026-05-08
+2026-05-08,ODTX,"Odyssey Therapeutics, Inc.",18.0,operating,offer!=10+name_clean,ok,2026-05-08
+2026-05-08,OTAI,Starlink AI Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-05-07,HAWK,"HawkEye 360, Inc.",26.0,operating,offer!=10+name_clean,ok,2026-05-07
+2026-05-07,SAGU,Shreya Acquisition Group,10.0,spac,name_regex+offer10,,
+2026-05-07,SUJA,"Suja Life, Inc.",21.0,operating,offer!=10+name_clean,ok,2026-05-07
+2026-05-06,REA,"Rare Earths Americas, Inc.",19.0,operating,offer!=10+name_clean,ok,2026-05-05
+2026-05-06,VECA,Vernal Capital Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-05-01,COAG,"Hemab Therapeutics Holdings, Inc.",18.0,operating,offer!=10+name_clean,ok,2026-05-01
+2026-05-01,MTNE,CH4 Natural Solutions Corporation,10.0,uncertain,offer10_clean_name,ok,2026-06-22
+2026-05-01,QLEP,Quantum Leap Acquisition Corp,10.0,spac,name_regex+offer10,,
+2026-05-01,SPTX,"Seaport Therapeutics, Inc.",18.0,operating,offer!=10+name_clean,ok,2026-05-01
+2026-04-30,ARCL,ARC Group Acquisition I Corp,10.0,spac,name_regex+offer10,,
+2026-04-30,AVLN,Avalyn Pharma Inc.,18.0,operating,offer!=10+name_clean,ok,2026-04-30
+2026-04-30,FTHA,Forefront Tech Holdings Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-04-30,GCGR,General Catalyst Global Resilience Merger Corp.,10.0,spac,name_regex+offer10,,
+2026-04-30,MCAH,Mountain Crest Acquisition 6 Corp.,10.0,spac,name_regex+offer10,,
+2026-04-30,RREV,RRE Ventures Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-04-30,SBMT,Silver Bow Mining Corp.,11.5,operating,offer!=10+name_clean,ok,2026-04-30
+2026-04-29,CAII,Collective Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2026-04-29,PS,Pershing Square Inc.,50.0,operating,offer!=10+name_clean,ok,2026-04-29
+2026-04-28,CXII,Churchill Capital Corp XII,10.0,spac,name_regex+offer10,,
+2026-04-28,IACQ,Irenic Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-04-28,PLUN,Plutonian Acquisition Corp II,10.0,spac,name_regex+offer10,,
+2026-04-24,XE,"X-Energy, Inc.",23.0,operating,offer!=10+name_clean,ok,2026-04-24
+2026-04-23,ELMT,The Elmet Group Co.,14.0,operating,offer!=10+name_clean,ok,2026-04-23
+2026-04-22,NHP,"National Healthcare Properties, Inc.",12.0,operating,offer!=10+name_clean,ok,2026-04-22
+2026-04-22,YSWY,"Yesway, Inc.",20.0,operating,offer!=10+name_clean,ok,2026-04-22
+2026-04-17,ALMR,"Alamar Biosciences, Inc.",17.0,operating,offer!=10+name_clean,ok,2026-04-17
+2026-04-17,AVEX,AEVEX Corp.,20.0,operating,offer!=10+name_clean,ok,2026-04-17
+2026-04-17,JATT,JATT II Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-04-17,KLRA,"Kailera Therapeutics, Inc.",16.0,operating,offer!=10+name_clean,ok,2026-04-17
+2026-04-16,ARXS,"Arxis, Inc.",28.0,operating,offer!=10+name_clean,ok,2026-04-16
+2026-04-16,MAIR,Madison Air Solutions Corporation,27.0,operating,offer!=10+name_clean,ok,2026-04-16
+2026-04-15,NHIV,NewHold Investment Corp IV,10.0,spac,name_regex+offer10,,
+2026-04-15,QRED,Quasaredge Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-04-14,MYX,Maywood Acquisition Corp. 2,10.0,spac,name_regex+offer10,,
+2026-04-07,AACP,Apogee Acquisition Corp,10.0,spac,name_regex+offer10,,
+2026-04-07,ACGC,ACP Holdings Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-04-01,HMH,HMH Holding Inc.,20.0,operating,offer!=10+name_clean,ok,2026-04-01
+2026-03-31,KPET,KPET Ultra Paceline Corporation,10.0,uncertain,offer10_clean_name,ok,2026-05-26
+2026-03-27,FMAC,Future Money Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-03-27,IPFX,Inflection Point Acquisition Corp. VI,10.0,spac,name_regex+offer10,,
+2026-03-27,QADR,QDRO Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-03-20,BWIV,Blue Water Acquisition Corp. IV,10.0,spac,name_regex+offer10,,
+2026-03-20,GMTL,Guardian Metal Resources PLC,16.35,operating,offer!=10+name_clean,ok,2026-03-20
+2026-03-20,JAN,"Janus Living, Inc.",20.0,operating,offer!=10+name_clean,ok,2026-03-20
+2026-03-19,BHAV,BHAV Acquisition Corp,10.0,spac,name_regex+offer10,,
+2026-03-17,SWMR,"Swarmer, Inc",5.0,operating,offer!=10+name_clean,ok,2026-03-17
+2026-03-13,PONO,"Pono Capital Four, Inc.",10.0,uncertain,offer10_clean_name,ok,2026-05-05
+2026-03-12,MTAL,Metals Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2026-03-12,PAYP,PayPay Corporation,16.0,operating,offer!=10+name_clean,ok,2026-03-12
+2026-03-11,SUMA,SUMA Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-03-06,MMED,"MiniMed Group, Inc.",20.0,operating,offer!=10+name_clean,ok,2026-03-06
+2026-03-04,GLED,GalaxyEdge Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-03-04,KCAC,Kensington Capital Acquisition Corp. VI,10.0,spac,name_regex+offer10,,
+2026-02-27,GENB,"Generate Biomedicines, Inc.",16.0,operating,offer!=10+name_clean,ok,2026-02-27
+2026-02-27,ILLU,Illumination Acquisition Corp I,10.0,spac,name_regex+offer10,,
+2026-02-26,FVAV,Fortress Value Acquisition Corp. V,10.0,spac,name_regex+offer10,,
+2026-02-26,TRAD,Apex Tech Acquisition Inc.,10.0,spac,name_regex+offer10,,
+2026-02-26,TRGS,TRG Latin America Acquisitions Corp.,10.0,spac,name_regex+offer10,,
+2026-02-25,MZYX,MOZAYYX Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-02-24,CTAA,ClearThink 1 Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-02-20,ROC,Rank One Computing Corporation,6.0,operating,offer!=10+name_clean,ok,2026-02-23
+2026-02-19,AACO,Abony Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2026-02-19,ACAA,Averin Capital Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-02-19,PALO,Paloma Acquisition Corp I,10.0,spac,name_regex+offer10,,
+2026-02-18,AACI,Armada Acquisition Corp. III,10.0,spac,name_regex+offer10,,
+2026-02-13,RFAM,RF Acquisition Corp III,10.0,spac,name_regex+offer10,,
+2026-02-13,WLII,Willow Lane Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2026-02-12,APC,ARKO Petroleum Corp.,18.0,operating,offer!=10+name_clean,ok,2026-02-12
+2026-02-12,HACQ,HCM IV Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-02-12,PAAC,Proem Acquisition Corp I,10.0,spac,name_regex+offer10,,
+2026-02-12,XFLH,XFLH Capital Corporation,10.0,spac,name_regex+offer10,,
+2026-02-11,AGBK,AGI Inc,12.0,operating,offer!=10+name_clean,ok,2026-02-11
+2026-02-11,CMII,Columbus Circle Capital Corp II,10.0,spac,name_regex+offer10,,
+2026-02-11,DBCA,D. Boral Acquisition I Corp.,10.0,spac,name_regex+offer10,,
+2026-02-11,IACO,Idea Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-02-11,MWH,"SOLV Energy, Inc.",25.0,operating,offer!=10+name_clean,ok,2026-02-12
+2026-02-11,TMTS,Spartacus Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2026-02-10,JAGU,Jaguar Uranium Corp.,4.0,operating,offer!=10+name_clean,ok,2026-02-09
+2026-02-10,SVIV,Spring Valley Acquisition Corp. IV,10.0,spac,name_regex+offer10,,
+2026-02-06,AGMB,AgomAb Therapeutics NV,16.0,operating,offer!=10+name_clean,ok,2026-02-06
+2026-02-06,CAQ,Cambridge Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-02-06,OFRM,"Once Upon A Farm, PBC",18.0,operating,offer!=10+name_clean,ok,2026-02-06
+2026-02-06,SGP,"SpyGlass Pharma, Inc.",16.0,operating,offer!=10+name_clean,ok,2026-02-06
+2026-02-06,SSAC,SPACSphere Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-02-05,BOBS,"Bob's Discount Furniture, Inc.",17.0,operating,offer!=10+name_clean,ok,2026-02-05
+2026-02-05,CEPS,"Cantor Equity Partners VI, Inc.",10.0,uncertain,offer10_clean_name,ok,2026-02-05
+2026-02-05,EIKN,"Eikon Therapeutics, Inc.",18.0,operating,offer!=10+name_clean,ok,2026-02-05
+2026-02-05,FPS,"Forgent Power Solutions, Inc.",27.0,operating,offer!=10+name_clean,ok,2026-02-05
+2026-02-05,HCIC,Hennessy Capital Investment Corp. VIII,10.0,spac,name_regex+offer10,,
+2026-02-04,CLBR,Colombier Acquisition Corp. III,10.0,spac,name_regex+offer10,,
+2026-02-04,MANE,"Veradermics, Incorporated",17.0,operating,offer!=10+name_clean,ok,2026-02-04
+2026-02-03,IRAB,Iris Acquisition Corp II,10.0,spac,name_regex+offer10,,
+2026-02-02,WPAC,White Pearl Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-01-30,MEVO,M Evo Global Acquisition Corp II,10.0,spac,name_regex+offer10,,
+2026-01-30,MUZE,Muzero Acquisition Corp,10.0,spac,name_regex+offer10,,
+2026-01-30,NBRG,Newbridge Acquisition Limited,10.0,spac,name_regex+offer10,,
+2026-01-29,KTWO,K2 Capital Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2026-01-29,LIFE,Ethos Technologies Inc.,19.0,operating,offer!=10+name_clean,ok,2026-01-29
+2026-01-29,PICS,PicS N.V.,19.0,operating,offer!=10+name_clean,ok,2026-01-29
+2026-01-29,UAC,United Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2026-01-29,XSLL,Xsolla SPAC 1,10.0,uncertain,offer10_clean_name,ok,2026-03-18
+2026-01-29,YSS,"York Space Systems, Inc.",34.0,operating,offer!=10+name_clean,ok,2026-01-29
+2026-01-28,KRAQ,KRAKacquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-01-28,SAAQ,Space Asset Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-01-27,GIX,GigCapital9 Corp.,10.0,uncertain,offer10_clean_name,ok,2026-03-19
+2026-01-27,MLAA,Mountain Lake Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2026-01-23,ARCI,Archimedes Tech SPAC Partners III Co.,10.0,uncertain,offer10_clean_name,ok,2026-03-16
+2026-01-23,EQPT,EquipmentShare.com Inc.,24.5,operating,offer!=10+name_clean,ok,2026-01-23
+2026-01-23,HLXC,Helix Acquisition Corp. III,10.0,spac,name_regex+offer10,,
+2026-01-23,LEGO,Legato Merger Corp. IV,10.0,spac,name_regex+offer10,,
+2026-01-23,PTOR,Praetorian Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-01-22,ALOV,"Aldabra 4 Liquidity Opportunity Vehicle, Inc.",10.0,uncertain,offer10_clean_name,ok,2026-03-16
+2026-01-22,BTGO,"Bitgo Holdings, Inc.",18.0,operating,offer!=10+name_clean,ok,2026-01-21
+2026-01-21,XCBE,X3 Acquisition Corp. Ltd.,10.0,spac,name_regex+offer10,,
+2026-01-16,FGII,FG Imperii Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-01-16,IEAG,Infinite Eagle Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-01-14,OIM,OneIM Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-01-13,GCDT,Green Circle Decarbonize Technology Limited,4.0,operating,offer!=10+name_clean,ok,2026-01-13
+2026-01-09,AKTS,"Aktis Oncology, Inc.",18.0,operating,offer!=10+name_clean,ok,2026-01-09
+2026-01-09,ZKP,Lafayette Digital Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2026-01-08,BBCQ,Bleichroeder Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2026-01-08,BUDA,"Buda Juice, Inc.",7.5,operating,offer!=10+name_clean,ok,2026-01-08
+2026-01-07,SORN,Soren Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-01-06,ARTC,Art Technology Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2026-01-06,BIII,Black Spade Acquisition III Co,10.0,spac,name_regex+offer10,,
+2025-12-23,SCPQ,Social Commerce Partners Corporation,10.0,uncertain,offer10_clean_name,ok,2026-02-12
+2025-12-23,SVAQ,Silicon Valley Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-12-19,BEBE,TGE Value Creative Solutions Corp,10.0,uncertain,offer10_clean_name,ok,2026-02-06
+2025-12-18,ADAC,American Drive Acquisition Company,10.0,spac,name_regex+offer10,,
+2025-12-18,LPCV,Launchpad Cadenza Acquisition Corp I,10.0,spac,name_regex+offer10,,
+2025-12-18,VHCP,Vine Hill Capital Investment Corp. II,10.0,spac,name_regex+offer10,,
+2025-12-17,ANDG,Andersen Group Inc.,16.0,operating,offer!=10+name_clean,ok,2025-12-17
+2025-12-17,CCXI,Churchill Capital Corp XI,10.0,spac,name_regex+offer10,,
+2025-12-17,IRHO,Iron Horse Acquisitions Corp. II,10.0,spac,name_regex+offer10,,
+2025-12-17,MDLN,Medline Inc.,29.0,operating,offer!=10+name_clean,ok,2025-12-17
+2025-12-16,CRAN,Crane Harbor Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2025-12-12,ITHA,ITHAX Acquisition Corp III,10.0,spac,name_regex+offer10,,
+2025-12-12,TWLV,Twelve Seas Investment Company III,10.0,uncertain,offer10_clean_name,ok,2026-01-09
+2025-12-12,WLTH,Wealthfront Corporation,14.0,operating,offer!=10+name_clean,ok,2025-12-15
+2025-12-11,BLRK,Bluerock Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-12-11,KBON,Karbon Capital Partners Corp.,10.0,uncertain,offer10_clean_name,ok,2026-01-27
+2025-12-11,LMRI,"Lumexa Imaging Holdings, Inc.",18.5,operating,offer!=10+name_clean,ok,2025-12-11
+2025-12-10,CDNL,Cardinal Infrastructure Group Inc.,21.0,operating,offer!=10+name_clean,ok,2025-12-10
+2025-12-10,JMG,JM Group Limited,4.0,operating,offer!=10+name_clean,no_data,
+2025-12-10,MESH,Meshflow Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-12-09,DSAC,Daedalus Special Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-12-05,LFAC,Leapfrog Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2025-12-04,AEAQ,Activate Energy Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-12-04,NWAX,New America Acquisition I Corp.,10.0,spac,name_regex+offer10,,
+2025-12-04,RGNT,Regentis Biomaterials Ltd.,8.0,operating,offer!=10+name_clean,ok,2025-12-04
+2025-12-04,SAC,Safeguard Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-12-04,SMJF,SMJ International Holdings Inc.,4.0,operating,offer!=10+name_clean,ok,2025-12-04
+2025-12-03,GPAC,General Purpose Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-12-03,PARK,"Park Dental Partners, Inc.",13.0,operating,offer!=10+name_clean,ok,2025-12-03
+2025-12-03,SBXE,SilverBox Corp V,10.0,spac,name_regex+offer10,,
+2025-12-02,BIXI,Bitcoin Infrastructure Acquisition Corp Ltd.,10.0,spac,name_regex+offer10,,
+2025-11-26,SCII,SC II Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-11-25,IGAC,Invest Green Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2025-11-21,HCAC,Hall Chadwick Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-11-19,GLOO,"Gloo Holdings, Inc.",8.0,operating,offer!=10+name_clean,ok,2025-11-18
+2025-11-13,NXB,NextBoat Inc.,,uncertain,missing_offer_price,ok,2025-11-13
+2025-11-13,POAS,Phaos Technology Holdings (Cayman) Limited,4.0,operating,offer!=10+name_clean,ok,2025-11-13
+2025-11-12,BPAC,Blueport Acquisition Ltd,10.0,spac,name_regex+offer10,,
+2025-11-11,EVOX,Evolution Global Acquisition Corp,10.0,spac,name_regex+offer10,,
+2025-11-07,CRAC,Crown Reserve Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2025-11-07,TDWD,Tailwind 2.0 Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-11-06,AERO,"Grupo Aeroméxico, S.A.B. de C.V.",19.0,operating,offer!=10+name_clean,ok,2025-11-06
+2025-11-06,BLLN,"BillionToOne, Inc.",60.0,operating,offer!=10+name_clean,ok,2025-11-06
+2025-11-06,EVMN,"Evommune, Inc.",16.0,operating,offer!=10+name_clean,ok,2025-11-06
+2025-11-05,ELWT,"Elauwit Connection, Inc.",9.0,operating,offer!=10+name_clean,ok,2025-11-05
+2025-11-05,XZO,"Exzeo Group, Inc.",21.0,operating,offer!=10+name_clean,ok,2025-11-05
+2025-11-04,BETA,"BETA Technologies, Inc.",34.0,operating,offer!=10+name_clean,ok,2025-11-04
+2025-11-04,CEPV,"Cantor Equity Partners V, Inc.",10.0,uncertain,offer10_clean_name,ok,2025-11-04
+2025-11-04,WSTN,Westin Acquisition Corp,10.0,spac,name_regex+offer10,,
+2025-10-31,VACI,Viking Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2025-10-30,DNMX,Dynamix Corporation III,10.0,uncertain,offer10_clean_name,ok,2025-11-19
+2025-10-30,NAVN,"Navan, Inc.",25.0,operating,offer!=10+name_clean,ok,2025-10-30
+2025-10-29,DYOR,Insight Digital Partners II,10.0,uncertain,offer10_clean_name,ok,2025-11-18
+2025-10-28,APXT,Apex Treasury Corporation,10.0,uncertain,offer10_clean_name,ok,2025-11-17
+2025-10-27,MPLT,"MapLight Therapeutics, Inc.",17.0,operating,offer!=10+name_clean,ok,2025-10-27
+2025-10-24,LAFA,LaFayette Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-10-23,HAVA,Harvard Ave Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2025-10-23,MMTX,Miluna Acquisition Corp,10.0,spac,name_regex+offer10,,
+2025-10-22,AGCC,Agencia Comercial Spirits Ltd,4.0,operating,offer!=10+name_clean,ok,2025-10-22
+2025-10-22,ALIS,Calisa Acquisition Corp,10.0,spac,name_regex+offer10,,
+2025-10-22,NPT,Texxon Holding Limited,5.0,operating,offer!=10+name_clean,ok,2025-10-22
+2025-10-21,AHMA,Ambitions Enterprise Management Co. L.L.C,4.0,operating,offer!=10+name_clean,ok,2025-10-21
+2025-10-21,BGIN,Bgin Blockchain Limited,6.0,operating,offer!=10+name_clean,ok,2025-10-21
+2025-10-21,MCTA,Charming Medical Limited,4.0,operating,offer!=10+name_clean,ok,2025-10-21
+2025-10-17,ACCL,Acco Group Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-10-17
+2025-10-15,SLGB,Smart Logistics Global Limited,5.0,operating,offer!=10+name_clean,ok,2025-10-15
+2025-10-15,TCGL,TechCreate Group Ltd.,4.0,operating,offer!=10+name_clean,no_data,
+2025-10-14,RPGL,Republic Power Group Limited,4.0,operating,offer!=10+name_clean,ok,2025-10-14
+2025-10-09,ALH,Alliance Laundry Holdings Inc.,22.0,operating,offer!=10+name_clean,ok,2025-10-09
+2025-10-09,LFS,"Leifras Co., Ltd.",4.0,operating,offer!=10+name_clean,ok,2025-10-09
+2025-10-09,PXED,"Phoenix Education Partners, Inc.",32.0,operating,offer!=10+name_clean,ok,2025-10-09
+2025-10-09,YDDL,One and one Green Technologies. Inc,5.0,operating,offer!=10+name_clean,ok,2025-10-09
+2025-10-08,POM,Pomdoctor Limited,4.0,operating,offer!=10+name_clean,ok,2025-10-08
+2025-10-07,LKSP,Lake Superior Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-10-06,GIW,GigCapital8 Corp.,10.0,uncertain,offer10_clean_name,ok,2025-10-27
+2025-10-03,AIIA,AI Infrastructure Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-10-03,CCHH,CCH Holdings Ltd,4.0,operating,offer!=10+name_clean,ok,2025-10-03
+2025-10-03,RNGT,Range Capital Acquisition Corp II,10.0,spac,name_regex+offer10,,
+2025-10-02,CBK,"Commercial Bancgroup, Inc.",24.0,operating,offer!=10+name_clean,ok,2025-10-02
+2025-10-01,AGRZ,Agroz Inc.,4.0,operating,offer!=10+name_clean,ok,2025-10-01
+2025-10-01,FRMI,Fermi Inc.,21.0,operating,offer!=10+name_clean,ok,2025-10-01
+2025-10-01,KRSP,Rice Acquisition Corporation 3,10.0,spac,name_regex+offer10,,
+2025-10-01,NP,Neptune Insurance Holdings Inc.,20.0,operating,offer!=10+name_clean,ok,2025-10-01
+2025-10-01,YCY,AA Mission Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2025-09-30,APAC,StoneBridge Acquisition II Corporation,10.0,spac,name_regex+offer10,,
+2025-09-30,BCSS,Bain Capital GSS Investment Corp.,10.0,uncertain,offer10_clean_name,ok,2025-11-20
+2025-09-30,BDCI,BTC Development Corp.,10.0,uncertain,offer10_clean_name,ok,2025-10-16
+2025-09-29,KNRX,Knorex Ltd.,4.0,operating,offer!=10+name_clean,ok,2025-09-29
+2025-09-26,AEXA,American Exceptionalism Acquisition Corp. A,10.0,spac,name_regex+offer10,,
+2025-09-26,FCRS,FutureCrest Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-09-26,MGN,Megan Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-09-26
+2025-09-25,DMII,Drugs Made In America Acquisition II Corp.,10.0,spac,name_regex+offer10,,
+2025-09-25,EMIS,Emmis Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-09-19,LATA,Galata Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2025-09-19,PLTS,Platinum Analytics Cayman Limited,4.0,operating,offer!=10+name_clean,ok,2025-09-19
+2025-09-19,PTRN,Pattern Group Inc.,14.0,operating,offer!=10+name_clean,ok,2025-09-19
+2025-09-18,NTSK,"Netskope, Inc.",19.0,operating,offer!=10+name_clean,ok,2025-09-18
+2025-09-17,STUB,"StubHub Holdings, Inc.",23.5,operating,offer!=10+name_clean,ok,2025-09-17
+2025-09-17,WBI,WaterBridge Infrastructure LLC,20.0,operating,offer!=10+name_clean,ok,2025-09-17
+2025-09-16,CHEC,Chenghe Acquisition III Co.,10.0,spac,name_regex+offer10,,
+2025-09-16,CHOW,ChowChow Cloud International Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-09-16
+2025-09-12,BRCB,"Black Rock Coffee Bar, Inc.",20.0,operating,offer!=10+name_clean,ok,2025-09-12
+2025-09-12,FOFO,"Hang Feng Technology Innovation Co., Ltd.",4.0,operating,offer!=10+name_clean,ok,2025-09-12
+2025-09-12,GEMI,"Gemini Space Station, Inc.",28.0,operating,offer!=10+name_clean,ok,2025-09-12
+2025-09-12,LGN,Legence Corp.,28.0,operating,offer!=10+name_clean,ok,2025-09-12
+2025-09-12,OTGA,OTG Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2025-09-12,VIA,"Via Transportation, Inc.",46.0,operating,offer!=10+name_clean,ok,2025-09-12
+2025-09-11,FIGR,"Figure Technology Solutions, Inc.",25.0,operating,offer!=10+name_clean,ok,2025-09-11
+2025-09-11,LBRX,LB Pharmaceuticals Inc,15.0,operating,offer!=10+name_clean,ok,2025-09-11
+2025-09-10,BLZR,Trailblazer Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-09-10,KLAR,Klarna Group plc,40.0,operating,offer!=10+name_clean,ok,2025-09-11
+2025-09-09,TLNC,Talon Capital Corp.,10.0,spac,name_regex+offer10,,
+2025-09-09,ZTG,Zenta Group Company Limited,,uncertain,missing_offer_price,ok,2025-09-09
+2025-09-04,FCHL,Fitness Champs Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-09-04
+2025-09-04,GSRF,GSR IV Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-09-04,SVAC,Spring Valley Acquisition Corp. III,10.0,spac,name_regex+offer10,,
+2025-08-29,PMI,"Picard Medical, Inc.",4.0,operating,offer!=10+name_clean,ok,2025-08-29
+2025-08-28,ELOG,Eastern International Ltd.,4.0,operating,offer!=10+name_clean,ok,2025-08-28
+2025-08-28,TGHL,The Growhub Limited,4.0,operating,offer!=10+name_clean,ok,2025-08-28
+2025-08-28,THH,TryHard Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-08-27
+2025-08-27,KOYN,"CSLM Digital Asset Acquisition Corp III, Ltd",10.0,spac,name_regex+offer10,,
+2025-08-27,MBVI,M3-Brigade Acquisition Vi Corp.,10.0,spac,name_regex+offer10,,
+2025-08-26,CURX,Curanex Pharmaceuticals Inc,4.0,operating,offer!=10+name_clean,ok,2025-08-26
+2025-08-21,CEPF,"Cantor Equity Partners IV, Inc.",10.0,uncertain,offer10_clean_name,ok,2025-08-21
+2025-08-21,ETS,Elite Express Holding Inc.,4.0,operating,offer!=10+name_clean,ok,2025-08-21
+2025-08-19,YMT,Yimutian Inc.,4.1,operating,offer!=10+name_clean,ok,2025-08-19
+2025-08-15,NUTR,NusaTrip Incorporated,4.0,operating,offer!=10+name_clean,ok,2025-08-15
+2025-08-14,BUUU,BUUU Group Limited,4.0,operating,offer!=10+name_clean,ok,2025-08-14
+2025-08-14,MIAX,"Miami International Holdings, Inc.",23.0,operating,offer!=10+name_clean,ok,2025-08-14
+2025-08-14,NSRX,Nasus Pharma Ltd.,8.0,operating,offer!=10+name_clean,ok,2025-08-13
+2025-08-14,RYOJ,"rYojbaba Co., Ltd.",4.0,operating,offer!=10+name_clean,ok,2025-08-14
+2025-08-13,BLSH,Bullish,37.0,operating,offer!=10+name_clean,ok,2025-08-13
+2025-08-12,HVMC,Highview Merger Corp.,10.0,spac,name_regex+offer10,,
+2025-08-12,MAGH,Magnitude International Ltd,4.0,operating,offer!=10+name_clean,ok,2025-08-12
+2025-08-12,MKLY,McKinley Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2025-08-08,DKI,Darkiris Inc.,4.0,operating,offer!=10+name_clean,ok,2025-08-08
+2025-08-08,EFTY,"Etoiles Capital Group Co., Ltd",4.0,operating,offer!=10+name_clean,ok,2025-08-08
+2025-08-08,HTFL,"HeartFlow, Inc.",19.0,operating,offer!=10+name_clean,ok,2025-08-11
+2025-08-08,SSEA,Starry Sea Acquisition Corp,10.0,spac,name_regex+offer10,,
+2025-08-07,FLY,Firefly Aerospace Inc.,45.0,operating,offer!=10+name_clean,ok,2025-08-07
+2025-08-07,WYFI,"WhiteFiber, Inc.",17.0,operating,offer!=10+name_clean,ok,2025-08-07
+2025-08-06,CTW,CTW,5.0,operating,offer!=10+name_clean,ok,2025-08-06
+2025-08-06,QUMS,Quantumsphere Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2025-08-01,HCMA,HCM III Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-07-31,BCAR,D. Boral ARC Acquisition I Corp.,10.0,spac,name_regex+offer10,,
+2025-07-31,FIG,"Figma, Inc.",33.0,operating,offer!=10+name_clean,ok,2025-07-31
+2025-07-31,SI,"Shoulder Innovations, Inc.",15.0,operating,offer!=10+name_clean,ok,2025-07-31
+2025-07-30,AMBQ,"Ambiq Micro, Inc.",24.0,operating,offer!=10+name_clean,ok,2025-07-30
+2025-07-30,APAD,A Paradise Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-07-30,YMAT,"J-Star Holding Co., Ltd.",4.0,operating,offer!=10+name_clean,ok,2025-07-30
+2025-07-24,ARX,Accelerant Holdings,21.0,operating,offer!=10+name_clean,ok,2025-07-24
+2025-07-24,LHAI,Linkhome Holdings Inc.,4.0,operating,offer!=10+name_clean,ok,2025-07-24
+2025-07-24,MH,"McGraw Hill, Inc.",17.0,operating,offer!=10+name_clean,ok,2025-07-24
+2025-07-23,CARL,"Carlsmed, Inc.",15.0,operating,offer!=10+name_clean,ok,2025-07-23
+2025-07-23,CRE,Cre8 Enterprise Limited,4.0,operating,offer!=10+name_clean,ok,2025-07-23
+2025-07-23,NIQ,NIQ Global Intelligence plc,21.0,operating,offer!=10+name_clean,ok,2025-07-23
+2025-07-23,TDIC,Dreamland Limited,4.0,operating,offer!=10+name_clean,ok,2025-07-23
+2025-07-18,MJID,Majestic Ideal Holdings Ltd,6.0,operating,offer!=10+name_clean,no_data,
+2025-07-17,LAWR,"Robot Consulting Co., Ltd.",4.0,operating,offer!=10+name_clean,ok,2025-07-17
+2025-07-17,PAII,Pyrophyte Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2025-07-16,KMRK,K-TECH Solutions Company Limited,4.0,operating,offer!=10+name_clean,ok,2025-07-16
+2025-07-16,MGRT,Mega Fortune Company Limited,4.0,operating,offer!=10+name_clean,ok,2025-07-16
+2025-07-16,SOCA,Solarius Capital Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-07-15,SPEG,Silver Pegasus Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-07-11,BMHL,Bluemount Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-07-11
+2025-07-09,DLXY,Delixy Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-07-09
+2025-07-09,GTER,Globa Terra Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2025-07-08,ANPA,Rich Sparkle Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-07-08
+2025-07-08,MSGY,Masonglory Limited,4.0,operating,offer!=10+name_clean,ok,2025-07-08
+2025-07-08,TLIH,Ten-League International Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-07-08
+2025-07-07,MAMK,MaxsMaking Inc.,4.0,operating,offer!=10+name_clean,ok,2025-07-07
+2025-07-02,CV,"CapsoVision, Inc.",5.0,operating,offer!=10+name_clean,ok,2025-07-02
+2025-07-02,EMPG,Empro Group Inc.,4.0,operating,offer!=10+name_clean,ok,2025-07-02
+2025-07-02,EVAC,EQV Ventures Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2025-07-02,ONCH,1RT Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-07-02,ORIQ,Origin Investment Corp I,10.0,spac,name_regex+offer10,,
+2025-07-02,VNME,Vendome Acquisition Corporation I,10.0,spac,name_regex+offer10,,
+2025-07-01,CCII,Cohen Circle Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2025-07-01,GRAN,Grande Group Limited,5.0,operating,offer!=10+name_clean,ok,2025-07-01
+2025-07-01,INAC,Indigo Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-07-01,NMP,NMP Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-06-27,FIGX,FIGX Capital Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-06-27,YORK,Yorkville Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-06-26,CAEP,"Cantor Equity Partners III, Inc.",10.0,uncertain,offer10_clean_name,no_data,
+2025-06-26,JCAP,"Jefferson Capital, Inc.",15.0,operating,offer!=10+name_clean,ok,2025-06-26
+2025-06-26,JLHL,Julong Holding Limited,4.0,operating,offer!=10+name_clean,ok,2025-06-26
+2025-06-25,FMFC,Kandal M Venture Limited,4.0,operating,offer!=10+name_clean,ok,2025-06-25
+2025-06-25,LWAC,LightWave Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-06-25,OBA,Oxley Bridge Acquisition Limited,10.0,spac,name_regex+offer10,,
+2025-06-24,HCHL,Happy City Holdings Limited,5.0,operating,offer!=10+name_clean,ok,2025-06-24
+2025-06-18,AXIN,Axiom Intelligence Acquisition Corp 1,10.0,spac,name_regex+offer10,,
+2025-06-18,CAI,"Caris Life Sciences, Inc.",21.0,operating,offer!=10+name_clean,ok,2025-06-18
+2025-06-18,EGG,Enigmatig Limited,5.0,operating,offer!=10+name_clean,ok,2025-06-18
+2025-06-18,PACH,Pioneer Acquisition I Corp,10.0,spac,name_regex+offer10,,
+2025-06-18,SLDE,"Slide Insurance Holdings, Inc.",17.0,operating,offer!=10+name_clean,ok,2025-06-18
+2025-06-17,MENS,Jyong Biotech Ltd.,,uncertain,missing_offer_price,ok,2025-06-17
+2025-06-13,AIRO,"AIRO Group Holdings, Inc.",10.0,uncertain,offer10_clean_name,ok,2025-06-13
+2025-06-13,BACC,Blue Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-06-13,BSAA,BEST SPAC I Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-06-12,CHYM,"Chime Financial, Inc.",27.0,operating,offer!=10+name_clean,ok,2025-06-12
+2025-06-12,VNTG,Vantage Corp,4.0,operating,offer!=10+name_clean,ok,2025-06-11
+2025-06-11,ASIC,Ategrity Specialty Insurance Company Holdings,17.0,operating,offer!=10+name_clean,ok,2025-06-11
+2025-06-11,VOYG,"Voyager Technologies, Inc.",31.0,operating,offer!=10+name_clean,ok,2025-06-11
+2025-06-10,BLUW,Blue Water Acquisition Corp. III,10.0,spac,name_regex+offer10,,
+2025-06-09,JEM,707 Cayman Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-06-09
+2025-06-06,OMDA,"Omada Health, Inc.",19.0,operating,offer!=10+name_clean,ok,2025-06-06
+2025-06-05,CRCL,"Circle Internet Group, Inc.",31.0,operating,offer!=10+name_clean,ok,2025-06-05
+2025-05-30,PTNM,Pitanium Limited,4.0,operating,offer!=10+name_clean,ok,2025-05-30
+2025-05-29,JENA,Jena Acquisition Corporation II,10.0,spac,name_regex+offer10,,
+2025-05-29,WTG,Wintergreen Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-05-28,KCHV,Kochav Defense Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-05-23,CRA,Cal Redwood Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-05-23,FTRK,Fast Track Group,4.0,operating,offer!=10+name_clean,ok,2025-05-23
+2025-05-23,PELI,Pelican Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2025-05-22,HNGE,"Hinge Health, Inc.",32.0,operating,offer!=10+name_clean,ok,2025-05-22
+2025-05-22,MNTN,"MNTN, Inc.",16.0,operating,offer!=10+name_clean,ok,2025-05-22
+2025-05-22,OYSE,Oyster Enterprises II Acquisition Corp,10.0,spac,name_regex+offer10,,
+2025-05-21,AACI,Armada Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2025-05-21,OFAL,OFA Group,4.5,operating,offer!=10+name_clean,ok,2025-05-21
+2025-05-21,PCAP,ProCap Acquisition Corp,10.0,spac,name_regex+offer10,,
+2025-05-16,CCCM,Columbus Circle Capital Corp I,10.0,spac,name_regex+offer10,,
+2025-05-16,WENN,Wen Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-05-15,RTAC,Renatus Tactical Acquisition Corp I,10.0,spac,name_regex+offer10,,
+2025-05-15,TVAI,Thayer Ventures Acquisition Corporation II,10.0,spac,name_regex+offer10,,
+2025-05-14,ANTA,Antalpha Platform Holding Company,12.8,operating,offer!=10+name_clean,ok,2025-05-13
+2025-05-14,CCCX,Churchill Capital Corp X,10.0,spac,name_regex+offer10,,
+2025-05-14,ETOR,eToro Group Ltd.,52.0,operating,offer!=10+name_clean,ok,2025-05-13
+2025-05-13,OMSE,OMS Energy Technologies Inc.,9.0,operating,offer!=10+name_clean,ok,2025-05-13
+2025-05-13,PMTR,Perimeter Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2025-05-09,APUS,"Apimeds Pharmaceuticals US, Inc.",4.0,operating,offer!=10+name_clean,ok,2025-05-09
+2025-05-09,EGHA,EGH Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-05-08,AHL,Aspen Insurance Holdings Limited,30.0,operating,offer!=10+name_clean,no_data,
+2025-05-08,AII,"American Integrity Insurance Group, Inc.",16.0,operating,offer!=10+name_clean,ok,2025-05-08
+2025-05-07,CCAQ,Collective Acquisition Corp.,,uncertain,missing_offer_price,ok,2025-06-12
+2025-05-02,CEPT,"Cantor Equity Partners II, Inc.",10.0,uncertain,offer10_clean_name,recycled_mismatch,2026-07-01
+2025-05-02,CGCT,Cartesian Growth Corporation III,10.0,uncertain,offer10_clean_name,no_data,
+2025-05-02,GTEN,"Gores Holdings X, Inc.",10.0,spac,name_regex+offer10,,
+2025-05-02,SDM,Smart Digital Group Limited,4.0,operating,offer!=10+name_clean,ok,2025-05-02
+2025-05-01,COPL,Copley Acquisition Corp,10.0,spac,name_regex+offer10,,
+2025-05-01,RDAG,Republic Digital Acquisition Company,10.0,spac,name_regex+offer10,,
+2025-04-30,LCCC,Lakeshore Acquisition III Corp.,10.0,spac,name_regex+offer10,,
+2025-04-30,TACO,Berto Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-04-30,YB,Yuanbao Inc.,15.0,operating,offer!=10+name_clean,ok,2025-04-30
+2025-04-29,DAAQ,Digital Asset Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-04-29,RAAQ,Real Asset Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-04-25,CHAC,Crane Harbor Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-04-25,IPCX,Inflection Point Acquisition Corp. III,10.0,spac,name_regex+offer10,,
+2025-04-25,PHOE,Phoenix Asia Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-04-25
+2025-04-24,NPAC,New Providence Acquisition Corp. III,10.0,spac,name_regex+offer10,,
+2025-04-23,TVA,Texas Ventures Acquisition III Corp,10.0,spac,name_regex+offer10,,
+2025-04-22,PFAI,Pinnacle Food Group Limited,4.0,operating,offer!=10+name_clean,ok,2025-04-21
+2025-04-22,YOOV,Concorde International Group Ltd.,,uncertain,missing_offer_price,ok,2025-04-21
+2025-04-21,TMDE,TMD Energy Limited,3.25,operating,offer!=10+name_clean,ok,2025-04-21
+2025-04-17,CHA,Chagee Holdings Limited,28.0,operating,offer!=10+name_clean,ok,2025-04-17
+2025-04-17,EDHL,Everbright Digital Holding Limited,4.0,operating,offer!=10+name_clean,ok,2025-04-17
+2025-04-15,HXHX,Haoxin Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-04-15
+2025-04-10,ATHR,"Aether Holdings, Inc.",4.3,operating,offer!=10+name_clean,ok,2025-04-10
+2025-04-10,CUPR,Cuprina Holdings (Cayman) Limited,4.0,operating,offer!=10+name_clean,ok,2025-04-10
+2025-04-10,IOTR,iOThree Limited,4.0,operating,offer!=10+name_clean,ok,2025-04-10
+2025-04-10,MB,MasterBeef Group,4.0,operating,offer!=10+name_clean,ok,2025-04-10
+2025-04-09,TACH,Titan Acquisition Corp,10.0,spac,name_regex+offer10,,
+2025-04-08,FATN,"FatPipe, Inc.",5.75,operating,offer!=10+name_clean,ok,2025-04-08
+2025-04-08,RYET,Ruanyun Edai Technology Inc.,4.0,operating,offer!=10+name_clean,ok,2025-04-08
+2025-04-04,BLIV,BeLive Holdings,4.0,operating,offer!=10+name_clean,ok,2025-04-04
+2025-04-03,LHSW,Lianhe Sowell International Group Ltd,4.0,operating,offer!=10+name_clean,ok,2025-04-03
+2025-04-02,SMA,"SmartStop Self Storage REIT, Inc.",30.0,operating,offer!=10+name_clean,ok,2025-04-02
+2025-04-02,SORA,AsiaStrategy,,uncertain,missing_offer_price,ok,2025-04-02
+2025-04-02,SZZL,Sizzle Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2025-04-01,ENGS,Energys Group Limited,4.5,operating,offer!=10+name_clean,ok,2025-04-01
+2025-04-01,SDHI,Siddhi Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-04-01,WTF,Waton Financial Limited,4.0,operating,offer!=10+name_clean,ok,2025-04-01
+2025-04-01,WXM,WF International Limited,4.0,operating,offer!=10+name_clean,ok,2025-04-01
+2025-03-31,NMAX,Newsmax Inc.,10.0,uncertain,offer10_clean_name,ok,2025-03-31
+2025-03-31,UYSC,UY Scuti Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-03-28,CRWV,"CoreWeave, Inc.",40.0,operating,offer!=10+name_clean,ok,2025-03-28
+2025-03-28,NCT,Intercont (Cayman) Limited,7.0,operating,offer!=10+name_clean,ok,2025-03-28
+2025-03-27,WFF,WF Holding Limited,4.0,operating,offer!=10+name_clean,ok,2025-03-27
+2025-03-26,EPSM,Epsium Enterprise Limited,4.0,operating,offer!=10+name_clean,ok,2025-03-26
+2025-03-25,LGPS,LogProstyle Inc.,5.0,operating,offer!=10+name_clean,ok,2025-03-25
+2025-03-21,BIYA,Baiya International Group Inc.,4.0,operating,offer!=10+name_clean,ok,2025-03-21
+2025-03-21,GSHR,Gesher Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2025-03-21,RCT,RedCloud Holdings plc,4.5,operating,offer!=10+name_clean,ok,2025-03-21
+2025-03-18,QSEA,Quartzsea Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2025-03-13,MWYN,"Marwynn Holdings, Inc.",4.0,operating,offer!=10+name_clean,ok,2025-03-13
+2025-03-07,MCRP,Micropolis AI Robotics,4.0,operating,offer!=10+name_clean,ok,2025-03-07
+2025-03-07,SAGT,Sagtec Global Limited,4.0,operating,offer!=10+name_clean,ok,2025-03-07
+2025-03-06,ADVB,Advanced Biomed Inc.,4.0,operating,offer!=10+name_clean,ok,2025-03-06
+2025-03-06,JFB,JFB Construction Holdings,4.13,operating,offer!=10+name_clean,ok,2025-03-06
+2025-03-06,KMTS,"Kestra Medical Technologies, Ltd.",17.0,operating,offer!=10+name_clean,ok,2025-03-06
+2025-03-06,TBH,"Brag House Holdings, Inc.",4.0,operating,offer!=10+name_clean,ok,2025-03-06
+2025-03-04,PN,PN Smart Energy Limited,4.0,operating,offer!=10+name_clean,ok,2025-03-04
+2025-02-28,FERA,Fifth Era Acquisition Corp I,10.0,spac,name_regex+offer10,,
+2025-02-28,LOKV,Live Oak Acquisition Corp. V,10.0,spac,name_regex+offer10,,
+2025-02-28,NHIC,NewHold Investment Corp III,10.0,spac,name_regex+offer10,,
+2025-02-27,LUD,Luda Technology Group Limited,4.0,operating,offer!=10+name_clean,ok,2025-02-27
+2025-02-27,LZMH,LZ Technology Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-02-27
+2025-02-27,RAC,Rithm Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-02-27,WETO,Wetour Robotics Limited,4.0,operating,offer!=10+name_clean,ok,2025-02-27
+2025-02-26,STAK,STAK Inc.,4.0,operating,offer!=10+name_clean,ok,2025-02-26
+2025-02-25,BMGL,Basel Medical Group Ltd,4.0,operating,offer!=10+name_clean,ok,2025-02-25
+2025-02-21,WGRX,"Wellgistics Health, Inc.",4.5,operating,offer!=10+name_clean,ok,2025-02-21
+2025-02-19,NNNN,Anbio Biotechnology,5.0,operating,offer!=10+name_clean,ok,2025-02-19
+2025-02-14,NPB,"Northpointe Bancshares, Inc.",14.5,operating,offer!=10+name_clean,ok,2025-02-18
+2025-02-13,AACB,Artius II Acquisition Inc.,10.0,spac,name_regex+offer10,,
+2025-02-13,AARD,"Aardvark Therapeutics, Inc.",16.0,operating,offer!=10+name_clean,ok,2025-02-13
+2025-02-13,IPEX,Inflection Point Acquisition Corp. V,,uncertain,missing_offer_price,ok,2025-03-07
+2025-02-13,KRMN,Karman Holdings Inc.,22.0,operating,offer!=10+name_clean,ok,2025-02-13
+2025-02-13,SAIL,"SailPoint, Inc.",23.0,operating,offer!=10+name_clean,ok,2025-02-13
+2025-02-13,XHLD,"TEN Holdings, Inc.",6.0,operating,offer!=10+name_clean,ok,2025-02-13
+2025-02-12,PUSA,Aureus Greenway Holdings Inc.,,uncertain,missing_offer_price,ok,2025-02-12
+2025-02-11,ATII,Archimedes Tech SPAC Partners II Co.,10.0,uncertain,offer10_clean_name,ok,2025-04-03
+2025-02-07,SION,"Sionna Therapeutics, Inc.",18.0,operating,offer!=10+name_clean,ok,2025-02-07
+2025-02-07,TTAM,Titan America SA,16.0,operating,offer!=10+name_clean,ok,2025-02-07
+2025-02-06,EPWK,EPWK Holdings Ltd.,4.1,operating,offer!=10+name_clean,no_data,
+2025-02-06,FBGL,FBS Global Limited,4.5,operating,offer!=10+name_clean,ok,2025-02-06
+2025-02-05,CJMB,Callan JMB Inc.,4.0,operating,offer!=10+name_clean,ok,2025-02-05
+2025-02-05,HCAI,"Huachen AI Parking Management Technology Holding Co., Ltd",4.0,operating,offer!=10+name_clean,ok,2025-02-05
+2025-02-05,KFII,K&F Growth Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2025-02-05,PLUT,Plutus Financial Group Limited,4.0,operating,offer!=10+name_clean,ok,2025-02-05
+2025-01-31,INR,"Infinity Natural Resources, Inc.",20.0,operating,offer!=10+name_clean,ok,2025-01-31
+2025-01-31,MAZE,"Maze Therapeutics, Inc.",16.0,operating,offer!=10+name_clean,ok,2025-01-31
+2025-01-31,MTSR,"Metsera, Inc.",18.0,operating,offer!=10+name_clean,no_data,
+2025-01-30,BBNX,"Beta Bionics, Inc.",17.0,operating,offer!=10+name_clean,ok,2025-01-30
+2025-01-30,SVCC,Stellar V Capital Corp.,10.0,spac,name_regex+offer10,,
+2025-01-29,FGMC,FG Merger II Corp.,10.0,uncertain,offer10_clean_name,ok,2025-02-11
+2025-01-28,DMAA,Drugs Made In America Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-01-28,SFD,"Smithfield Foods, Inc.",20.0,operating,offer!=10+name_clean,ok,2025-01-28
+2025-01-24,AAPG,Ascentage Pharma Group International,17.25,operating,offer!=10+name_clean,ok,2025-01-24
+2025-01-24,VG,"Venture Global, Inc.",25.0,operating,offer!=10+name_clean,ok,2025-01-24
+2025-01-23,COLA,Columbus Acquisition Corp,10.0,spac,name_regex+offer10,,
+2025-01-23,KAZR,Skyline Builders Group Holding Limited,,uncertain,missing_offer_price,ok,2025-02-20
+2025-01-22,DGNX,Diginex Limited,4.1,operating,offer!=10+name_clean,ok,2025-01-22
+2025-01-22,DXST,Decent Holding Inc.,4.0,operating,offer!=10+name_clean,ok,2025-01-22
+2025-01-22,TJGC,TJGC Group Limited,4.0,operating,offer!=10+name_clean,ok,2025-01-22
+2025-01-22,TOPP,Toppoint Holdings Inc.,4.0,operating,offer!=10+name_clean,ok,2025-01-22
+2025-01-17,HVII,Hennessy Capital Investment Corp. VII,10.0,spac,name_regex+offer10,,
+2025-01-16,FLOC,Flowco Holdings Inc.,24.0,operating,offer!=10+name_clean,ok,2025-01-16
+2025-01-16,PCLA,PicoCELA Inc.,4.0,operating,offer!=10+name_clean,ok,2025-01-16
+2025-01-15,HKPD,"Cellyan Biotechnology Co., Ltd",4.0,operating,offer!=10+name_clean,ok,2025-01-15
+2025-01-15,PLMK,Plum Acquisition Corp. IV,10.0,spac,name_regex+offer10,,
+2025-01-15,RIBB,Ribbon Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2025-01-14,UFG,Uni-Fuels Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2025-01-14
+2025-01-10,MIMI,Mint Incorporation Limited,4.0,operating,offer!=10+name_clean,ok,2025-01-10
+2025-01-08,MASK,3 E Network Technology Group Limited,4.0,operating,offer!=10+name_clean,ok,2025-01-08
+2025-01-07,CEPO,"Cantor Equity Partners I, Inc.",10.0,uncertain,offer10_clean_name,ok,2025-01-07
+2025-01-07,ZYBT,Zhengye Biotechnology Holding Limited,4.0,operating,offer!=10+name_clean,ok,2025-01-07
+2025-01-02,INLF,INLIF Limited,4.0,operating,offer!=10+name_clean,ok,2025-01-02
+2024-12-31,ONEG,OneConstruction Group Limited,4.0,operating,offer!=10+name_clean,ok,2024-12-31
+2024-12-27,BYAH,"Park Ha Biological Technology Co., Ltd.",,uncertain,missing_offer_price,ok,2024-12-27
+2024-12-23,HIT,"Health In Tech, Inc.",4.0,operating,offer!=10+name_clean,ok,2024-12-23
+2024-12-23,TDAC,Translational Development Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-12-20,RANG,Range Capital Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-12-20,YAAS,Youxin Technology Ltd,4.5,operating,offer!=10+name_clean,ok,2024-12-20
+2024-12-19,LSE,"Leishen Energy Holding Co., Ltd.",4.0,operating,offer!=10+name_clean,ok,2024-12-19
+2024-12-18,NCEW,New Century Logistics (BVI) Limited,4.0,operating,offer!=10+name_clean,ok,2024-12-18
+2024-12-18,YSXT,"YSX Tech. Co., Ltd",4.0,operating,offer!=10+name_clean,ok,2024-12-18
+2024-12-13,AVR,Anteris Technologies Global Corp.,6.0,operating,offer!=10+name_clean,ok,2024-12-13
+2024-12-13,DRDB,Roman DBDR Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2024-12-13,MLAC,Mountain Lake Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-12-13,NTCL,NetClass Technology Inc,5.0,operating,offer!=10+name_clean,ok,2024-12-13
+2024-12-12,TTAN,"ServiceTitan, Inc.",71.0,operating,offer!=10+name_clean,ok,2024-12-12
+2024-12-10,JACS,Jackson Acquisition Company II,10.0,spac,name_regex+offer10,,
+2024-12-06,NAMI,Jinxin Technology Holding Company,4.0,operating,offer!=10+name_clean,ok,2024-12-06
+2024-12-05,LNKS,Linkers Industries Limited,4.0,operating,offer!=10+name_clean,ok,2024-12-05
+2024-12-05,SPHA,Shepherd Ave Capital Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2024-12-05,ZSPC,"zSpace, Inc.",5.0,operating,offer!=10+name_clean,ok,2024-12-05
+2024-12-04,TAVI,Tavia Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-12-03,JUNS,"Jupiter Neurosciences, Inc.",4.0,operating,offer!=10+name_clean,ok,2024-12-03
+2024-11-27,BRIA,BrilliA Inc,4.0,operating,offer!=10+name_clean,ok,2024-11-27
+2024-11-27,GRO,Brazil Potash Corp.,15.0,operating,offer!=10+name_clean,ok,2024-11-27
+2024-11-27,PONY,Pony AI Inc.,13.0,operating,offer!=10+name_clean,ok,2024-11-27
+2024-11-27,VENU,Venu Holding Corporation,10.0,spac,ticker_U+offer10,,
+2024-11-26,CGTL,Creative Global Technology Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2024-11-26
+2024-11-26,FACT,FACT II Acquisition Corp,10.0,spac,name_regex+offer10,,
+2024-11-26,WYHG,Wing Yip Food Holdings Group Limited,4.0,operating,offer!=10+name_clean,ok,2024-11-26
+2024-11-22,IPST,"IP Strategy Holdings, Inc.",4.0,operating,offer!=10+name_clean,ok,2024-11-22
+2024-11-22,PMA,Ming Shing Group Holdings Limited,,uncertain,missing_offer_price,ok,2024-11-22
+2024-11-21,DYNC,Dynamix Corporation,,uncertain,missing_offer_price,ok,2024-12-09
+2024-11-21,NOEM,CO2 Energy Transition Corp.,10.0,uncertain,offer10_clean_name,ok,2025-01-16
+2024-11-15,HSPT,Horizon Space Acquisition II Corp.,10.0,spac,name_regex+offer10,,
+2024-11-08,ASPC,A SPAC III Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-11-08,WLAC,Willow Lane Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-11-07,GSRT,GSR III Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-11-01,BACQ,Bleichroeder Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2024-11-01,NTWO,Newbury Street II Acquisition Corp,10.0,spac,name_regex+offer10,,
+2024-10-29,GELS,Gelteq Limited,4.0,operating,offer!=10+name_clean,ok,2024-10-29
+2024-10-29,PLRZ,Polyrizon Ltd.,4.38,operating,offer!=10+name_clean,ok,2024-10-29
+2024-10-25,SEPN,"Septerna, Inc.",18.0,operating,offer!=10+name_clean,ok,2024-10-25
+2024-10-25,WRD,WeRide Inc.,15.5,operating,offer!=10+name_clean,ok,2024-10-25
+2024-10-24,BEAG,Bold Eagle Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-10-24,CHAR,Charlton Aria Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2024-10-24,INGM,Ingram Micro Holding Corporation,22.0,operating,offer!=10+name_clean,ok,2024-10-24
+2024-10-24,OACC,Oaktree Acquisition Corp. III Life Sciences,10.0,spac,name_regex+offer10,,
+2024-10-23,FGL,Founder Group Limited,4.0,operating,offer!=10+name_clean,ok,2024-10-23
+2024-10-23,LBGJ,Li Bang International Corporation Inc.,4.0,operating,offer!=10+name_clean,ok,2024-10-23
+2024-10-23,ROLR,"High Roller Technologies, Inc.",8.0,operating,offer!=10+name_clean,ok,2024-10-23
+2024-10-23,SAG,SAG Holdings Limited,8.0,operating,offer!=10+name_clean,no_data,
+2024-10-22,ALDF,Aldel Financial II Inc.,10.0,uncertain,offer10_clean_name,ok,2024-12-13
+2024-10-22,HUHU,HUHUTECH International Group Inc.,4.0,operating,offer!=10+name_clean,ok,2024-10-22
+2024-10-17,ORIS,Oriental Rise Holdings Limited,4.0,operating,offer!=10+name_clean,recycled_mismatch,2026-06-23
+2024-10-17,SPHL,Springview Holdings Ltd,4.0,operating,offer!=10+name_clean,ok,2024-10-18
+2024-10-16,PTLE,PTL Limited,4.0,operating,offer!=10+name_clean,ok,2024-10-16
+2024-10-15,SFHG,Samfine Creation Holdings Group Limited,4.0,operating,offer!=10+name_clean,ok,2024-10-15
+2024-10-11,CAMP,Camp4 Therapeutics Corporation,11.0,operating,offer!=10+name_clean,ok,2024-10-11
+2024-10-11,CBLL,"CeriBell, Inc.",17.0,operating,offer!=10+name_clean,ok,2024-10-11
+2024-10-11,CCIR,Cohen Circle Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2024-10-11,RDAC,Rising Dragon Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-10-11,STFS,Star Fashion Culture Holdings Limited,,uncertain,missing_offer_price,ok,2024-10-11
+2024-10-11,UPB,"Upstream Bio, Inc.",17.0,operating,offer!=10+name_clean,ok,2024-10-11
+2024-10-09,CLIK,Click Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2024-10-09
+2024-10-09,KLC,"KinderCare Learning Companies, Inc.",24.0,operating,offer!=10+name_clean,ok,2024-10-09
+2024-10-08,LPBB,Launch Two Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-10-08,SKK,SKK Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2024-10-08
+2024-10-04,CBNA,"Chain Bridge Bancorp, Inc.",22.0,operating,offer!=10+name_clean,ok,2024-10-04
+2024-10-04,FLX,BingEx Limited,16.5,operating,offer!=10+name_clean,ok,2024-10-04
+2024-10-02,FVR,"FrontView REIT, Inc.",19.0,operating,offer!=10+name_clean,ok,2024-10-02
+2024-10-02,SARO,"StandardAero, Inc.",24.0,operating,offer!=10+name_clean,ok,2024-10-02
+2024-10-02,WCT,Wellchange Holdings Company Limited,4.0,operating,offer!=10+name_clean,ok,2024-10-02
+2024-10-01,HTLM,HomesToLife Ltd.,4.0,operating,offer!=10+name_clean,ok,2024-10-01
+2024-09-30,ZJK,"ZJK Industrial Co., Ltd.",5.0,operating,offer!=10+name_clean,ok,2024-09-30
+2024-09-26,BIOA,"BioAge Labs, Inc.",18.0,operating,offer!=10+name_clean,ok,2024-09-26
+2024-09-26,BKV,BKV Corporation,18.0,operating,offer!=10+name_clean,ok,2024-09-26
+2024-09-26,GRDN,"Guardian Pharmacy Services, Inc.",14.0,operating,offer!=10+name_clean,ok,2024-09-26
+2024-09-26,IBG,Innovation Beverage Group Limited,4.0,operating,offer!=10+name_clean,ok,2024-09-26
+2024-09-26,LGCY,Legacy Education Inc.,4.0,operating,offer!=10+name_clean,ok,2024-09-26
+2024-09-25,PC,Premium Catering (Holdings) Limited,4.75,operating,offer!=10+name_clean,ok,2024-09-25
+2024-09-20,CAPN,Cayson Acquisition Corp,10.0,spac,name_regex+offer10,,
+2024-09-20,GLE,Global Engine Group Holding Limited,4.0,operating,offer!=10+name_clean,ok,2024-09-20
+2024-09-18,YHNA,YHN Acquisition I Limited,10.0,spac,name_regex+offer10,,
+2024-09-16,IBO,Impact BioMedical Inc.,3.0,operating,offer!=10+name_clean,ok,2024-09-16
+2024-09-16,KAPA,"Kairos Pharma, Ltd.",4.0,operating,offer!=10+name_clean,ok,2024-09-16
+2024-09-13,BCAX,Bicara Therapeutics Inc.,18.0,operating,offer!=10+name_clean,ok,2024-09-13
+2024-09-13,MBX,"MBX Biosciences, Inc.",16.0,operating,offer!=10+name_clean,ok,2024-09-13
+2024-09-13,ZBIO,"Zenas BioPharma, Inc.",17.0,operating,offer!=10+name_clean,ok,2024-09-13
+2024-09-12,FVN,Future Vision II Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-09-12,GLXG,Galaxy Payroll Group Limited,4.0,operating,offer!=10+name_clean,ok,2024-09-12
+2024-09-10,TDTH,Trident Digital Tech Holdings Ltd,5.0,operating,offer!=10+name_clean,ok,2024-09-10
+2024-09-10,XCH,XCHG Limited,6.2,operating,offer!=10+name_clean,ok,2024-09-10
+2024-09-06,POLE,Andretti Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2024-09-06,VCIC,Vine Hill Capital Investment Corp.,10.0,uncertain,offer10_clean_name,no_data,
+2024-09-05,ITOC,iTonic Holdings Ltd.,,uncertain,missing_offer_price,ok,2024-09-05
+2024-09-05,PMAX,Powell Max Limited,4.0,operating,offer!=10+name_clean,ok,2024-09-05
+2024-08-29,GIG,GigCapital7 Corp.,10.0,uncertain,offer10_clean_name,recycled_mismatch,2026-07-10
+2024-08-28,AZI,Autozi Internet Technology (Global) Ltd.,4.0,operating,offer!=10+name_clean,ok,2024-08-28
+2024-08-28,BSII,Black Spade Acquisition II Co,10.0,spac,name_regex+offer10,,
+2024-08-28,SPAI,Safe Pro Group Inc.,5.0,operating,offer!=10+name_clean,ok,2024-08-28
+2024-08-27,JBDI,JBDI Holdings Limited,5.0,operating,offer!=10+name_clean,ok,2024-08-27
+2024-08-23,RITR,Reitar Logtech Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2024-08-23
+2024-08-23,WOK,WORK Medical Technology Group LTD,4.0,operating,offer!=10+name_clean,ok,2024-08-23
+2024-08-16,HOND,HCM II Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-08-16,SBXD,SilverBox Corp IV,10.0,spac,name_regex+offer10,,
+2024-08-16,YXT,YXT.COM Group Holding Limited,11.0,operating,offer!=10+name_clean,ok,2024-08-16
+2024-08-13,ACTU,"Actuate Therapeutics, Inc.",8.0,operating,offer!=10+name_clean,ok,2024-08-13
+2024-08-13,CEP,"Cantor Equity Partners, Inc.",10.0,uncertain,offer10_clean_name,no_data,
+2024-08-09,VACH,Voyager Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-08-07,EQV,EQV Ventures Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-08-01,AAM,AA Mission Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-08-01,MBAV,M3-Brigade Acquisition V Corp.,10.0,spac,name_regex+offer10,,
+2024-08-01,OSTX,OS Therapies Incorporated,4.0,operating,offer!=10+name_clean,ok,2024-08-01
+2024-07-26,NIPG,NIP Group Inc.,9.0,operating,offer!=10+name_clean,ok,2024-07-26
+2024-07-25,CON,"Concentra Group Holdings Parent, Inc.",23.5,operating,offer!=10+name_clean,ok,2024-07-25
+2024-07-25,DTSQ,DT Cloud Star Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2024-07-25,LINE,"Lineage, Inc.",78.0,operating,offer!=10+name_clean,ok,2024-07-25
+2024-07-25,ORKT,Orangekloud Technology Inc.,4.75,operating,offer!=10+name_clean,ok,2024-07-25
+2024-07-24,BLMZ,BloomZ Inc.,4.3,operating,offer!=10+name_clean,no_data,
+2024-07-24,OS,"OneStream, Inc.",20.0,operating,offer!=10+name_clean,no_data,
+2024-07-23,ZDAI,"DirectBooking Technology Co., Ltd.",,uncertain,missing_offer_price,ok,2024-07-23
+2024-07-19,ARTV,"Artiva Biotherapeutics, Inc.",12.0,operating,offer!=10+name_clean,ok,2024-07-19
+2024-07-19,QMMM,QMMM Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2024-07-19
+2024-07-18,ARDT,"Ardent Health, Inc.",16.0,operating,offer!=10+name_clean,ok,2024-07-18
+2024-07-18,TWFG,"TWFG, Inc.",17.0,operating,offer!=10+name_clean,ok,2024-07-18
+2024-07-12,ICON,Icon Energy Corp.,4.0,operating,offer!=10+name_clean,ok,2024-07-12
+2024-07-12,LPAA,Launch One Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-07-10,SIMA,SIM Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2024-07-02,EHGO,Eshallgo Inc.,4.0,operating,offer!=10+name_clean,ok,2024-07-02
+2024-07-02,EURK,Eureka Acquisition Corp,10.0,spac,name_regex+offer10,,
+2024-06-28,ALMS,Alumis Inc.,16.0,operating,offer!=10+name_clean,ok,2024-06-28
+2024-06-28,LB,LandBridge Company LLC,17.0,operating,offer!=10+name_clean,ok,2024-06-28
+2024-06-28,LSH,Lakeside Holding Limited,4.5,operating,offer!=10+name_clean,ok,2024-06-28
+2024-06-27,TBN,Tamboran Resources Corporation,24.0,operating,offer!=10+name_clean,ok,2024-06-27
+2024-06-27,WBTN,WEBTOON Entertainment Inc.,21.0,operating,offer!=10+name_clean,ok,2024-06-27
+2024-06-26,GRAF,Graf Global Corp.,10.0,uncertain,offer10_clean_name,ok,2024-08-16
+2024-06-21,RECT,Rectitude Holdings Ltd,4.0,operating,offer!=10+name_clean,ok,2024-06-21
+2024-06-18,CUB,Lionheart Holdings,10.0,uncertain,offer10_clean_name,ok,2024-08-12
+2024-06-18,FSHP,Flag Ship Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2024-06-18,MACI,Melar Acquisition Corp. I,10.0,spac,name_regex+offer10,,
+2024-06-14,TEM,"Tempus AI, Inc.",37.0,operating,offer!=10+name_clean,ok,2024-06-14
+2024-06-12,PCSC,Perceptive Capital Solutions Corp,10.0,uncertain,offer10_clean_name,ok,2024-06-12
+2024-06-11,ALF,Centurion Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-06-07,CHEB,Chenghe Acquisition II Co.,10.0,spac,name_regex+offer10,,
+2024-06-07,RAPP,"Rapport Therapeutics, Inc.",17.0,operating,offer!=10+name_clean,ok,2024-06-07
+2024-06-07,WAY,Waystar Holding Corp.,21.5,operating,offer!=10+name_clean,ok,2024-06-07
+2024-06-06,FLYE,"Fly-E Group, Inc.",4.0,operating,offer!=10+name_clean,ok,2024-06-06
+2024-06-06,GAUZ,Gauzy Ltd.,17.0,operating,offer!=10+name_clean,ok,2024-06-06
+2024-05-31,NAKA,Nakamoto Inc.,,uncertain,missing_offer_price,ok,2024-05-31
+2024-05-23,BOW,Bowhead Specialty Holdings Inc.,17.0,operating,offer!=10+name_clean,ok,2024-05-23
+2024-05-17,HDL,Super Hi International Holding Ltd.,19.56,operating,offer!=10+name_clean,ok,2024-05-17
+2024-05-17,RFAI,RF Acquisition Corp II,10.0,spac,name_regex+offer10,,
+2024-05-15,JDZG,JIADE Limited,4.0,operating,offer!=10+name_clean,ok,2024-05-15
+2024-05-15,RAY,Raytech Holding Limited,4.0,operating,offer!=10+name_clean,ok,2024-05-15
+2024-05-14,BTOC,Armlogi Holding Corp.,5.0,operating,offer!=10+name_clean,ok,2024-05-14
+2024-05-10,ZK,ZEEKR Intelligent Technology Holding Limited,21.0,operating,offer!=10+name_clean,no_data,
+2024-05-09,GPAT,GP-Act III Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-05-09,PAL,"Proficient Auto Logistics, Inc.",15.0,operating,offer!=10+name_clean,ok,2024-05-09
+2024-05-09,SVCO,"Silvaco Group, Inc.",19.0,operating,offer!=10+name_clean,ok,2024-05-09
+2024-05-08,NNE,NANO Nuclear Energy Inc.,4.0,operating,offer!=10+name_clean,ok,2024-05-08
+2024-05-02,CCIX,Churchill Capital Corp IX,10.0,spac,name_regex+offer10,,
+2024-05-01,VIK,Viking Holdings Ltd,24.0,operating,offer!=10+name_clean,ok,2024-05-01
+2024-04-26,ZONE,"CleanCore Solutions, Inc.",4.0,operating,offer!=10+name_clean,ok,2024-04-26
+2024-04-25,LOAR,Loar Holdings Inc.,28.0,operating,offer!=10+name_clean,ok,2024-04-25
+2024-04-25,MRX,Marex Group Limited,19.0,operating,offer!=10+name_clean,ok,2024-04-25
+2024-04-25,RBRK,"Rubrik, Inc.",32.0,operating,offer!=10+name_clean,ok,2024-04-25
+2024-04-23,NCI,Neo-Concept International Group Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2024-04-23
+2024-04-22,MFI,mF International Limited,5.0,operating,offer!=10+name_clean,ok,2024-04-22
+2024-04-22,YYGH,YY Group Holding Limited,4.0,operating,offer!=10+name_clean,ok,2024-04-22
+2024-04-19,TRSG,Tungray Technologies Inc.,4.0,operating,offer!=10+name_clean,ok,2024-04-19
+2024-04-18,CDTG,CDT Environmental Technology Investment Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2024-04-19
+2024-04-18,CTRI,"Centuri Holdings, Inc.",21.0,operating,offer!=10+name_clean,ok,2024-04-19
+2024-04-18,IBTA,"Ibotta, Inc.",88.0,operating,offer!=10+name_clean,ok,2024-04-19
+2024-04-18,MTEN,Mingteng International Corporation Inc.,4.0,operating,offer!=10+name_clean,ok,2024-04-19
+2024-04-17,JUNE,Junee Limited,4.0,operating,offer!=10+name_clean,no_data,
+2024-04-17,SUPX,SuperX AI Technology Limited,,uncertain,missing_offer_price,ok,2024-04-17
+2024-04-16,TWG,Top Wealth Group Holding Limited,4.0,operating,offer!=10+name_clean,ok,2024-04-17
+2024-04-12,ULS,UL Solutions Inc.,28.0,operating,offer!=10+name_clean,ok,2024-04-12
+2024-04-11,PACS,"PACS Group, Inc.",21.0,operating,offer!=10+name_clean,ok,2024-04-11
+2024-04-10,MNDR,Mobile-health Network Solutions,4.0,operating,offer!=10+name_clean,ok,2024-04-10
+2024-04-05,CTNM,"Contineum Therapeutics, Inc.",16.0,operating,offer!=10+name_clean,ok,2024-04-05
+2024-04-02,MAMO,Massimo Group,4.5,operating,offer!=10+name_clean,ok,2024-04-02
+2024-04-02,ZBAO,Zhibao Technology Inc.,4.0,operating,offer!=10+name_clean,ok,2024-04-02
+2024-03-28,BOLD,"Boundless Bio, Inc.",16.0,operating,offer!=10+name_clean,ok,2024-03-28
+2024-03-28,MMA,Mixed Martial Arts Group Limited,5.0,operating,offer!=10+name_clean,ok,2024-03-28
+2024-03-28,UBXG,U-BX Technology Ltd.,5.0,operating,offer!=10+name_clean,ok,2024-03-28
+2024-03-26,IBAC,IB Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-03-22,AUNA,Auna S.A.,12.0,operating,offer!=10+name_clean,ok,2024-03-22
+2024-03-21,BKHA,Black Hawk Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2024-03-21,LOBO,Lobo Technologies Ltd.,4.0,operating,offer!=10+name_clean,ok,2024-03-21
+2024-03-21,RDDT,"Reddit, Inc.",34.0,operating,offer!=10+name_clean,ok,2024-03-21
+2024-03-20,ALAB,"Astera Labs, Inc.",36.0,operating,offer!=10+name_clean,ok,2024-03-20
+2024-03-20,INTJ,Intelligent Group Limited,4.0,operating,offer!=10+name_clean,ok,2024-03-20
+2024-03-06,RYDE,Ryde Group Ltd,4.0,operating,offer!=10+name_clean,ok,2024-03-06
+2024-03-05,LGCL,Lucas GC Limited,4.0,operating,offer!=10+name_clean,ok,2024-03-05
+2024-02-27,SMXT,"SolarMax Technology, Inc.",4.0,operating,offer!=10+name_clean,ok,2024-02-27
+2024-02-22,VHAI,Vocodia Holdings Corp,4.25,operating,offer!=10+name_clean,ok,2024-09-11
+2024-02-21,DYCQ,DT Cloud Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2024-02-16,CHRO,Chromocell Therapeutics Corp,6.0,operating,offer!=10+name_clean,no_data,
+2024-02-14,UMAC,"Unusual Machines, Inc.",4.0,operating,offer!=10+name_clean,ok,2024-02-14
+2024-02-09,HLXB,Helix Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2024-02-09,MGX,"Metagenomi Therapeutics, Inc.",15.0,operating,offer!=10+name_clean,ok,2024-02-09
+2024-02-09,TBBB,BBB Foods Inc.,17.5,operating,offer!=10+name_clean,ok,2024-02-09
+2024-02-09,TELO,"Telomir Pharmaceuticals, Inc.",7.0,operating,offer!=10+name_clean,ok,2024-02-09
+2024-02-08,KYTX,"Kyverna Therapeutics, Inc.",22.0,operating,offer!=10+name_clean,ok,2024-02-09
+2024-02-08,PMNT,Perfect Moment Ltd.,6.0,operating,offer!=10+name_clean,ok,2024-02-08
+2024-02-07,AHR,"American Healthcare REIT, Inc.",12.0,operating,offer!=10+name_clean,ok,2024-02-07
+2024-02-06,LEGT,Legato Merger Corp. III,10.0,spac,name_regex+offer10,,
+2024-02-02,ANRO,"Alto Neuroscience, Inc.",16.0,operating,offer!=10+name_clean,ok,2024-02-02
+2024-02-02,GUTS,"Fractyl Health, Inc.",15.0,operating,offer!=10+name_clean,ok,2024-02-02
+2024-02-01,AS,"Amer Sports, Inc.",13.0,operating,offer!=10+name_clean,ok,2024-02-01
+2024-01-31,FBLG,"FibroBiologics, Inc.",30.0,operating,offer!=10+name_clean,ok,2024-01-31
+2024-01-26,AVBP,"ArriVent BioPharma, Inc.",18.0,operating,offer!=10+name_clean,ok,2024-01-26
+2024-01-26,BTSG,"BrightSpring Health Services, Inc.",13.0,operating,offer!=10+name_clean,ok,2024-01-26
+2024-01-26,HAO,Haoxi Health Technology Limited,4.0,operating,offer!=10+name_clean,ok,2024-01-26
+2024-01-25,CGON,"CG Oncology, Inc.",19.0,operating,offer!=10+name_clean,ok,2024-01-25
+2024-01-25,YIBO,Planet Image International Limited,4.0,operating,offer!=10+name_clean,ok,2024-01-25
+2024-01-24,JL,J-Long Group Limited,5.0,operating,offer!=10+name_clean,ok,2024-01-24
+2024-01-24,SUGP,SU Group Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2024-01-24
+2024-01-19,JVSA,JVSPAC Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2024-01-19,KSPI,Joint Stock Company Kaspi.kz,92.0,operating,offer!=10+name_clean,ok,2024-01-19
+2024-01-18,CCTG,CCSC Technology International Holdings Limited,6.0,operating,offer!=10+name_clean,ok,2024-01-18
+2024-01-18,PSBD,Palmer Square Capital BDC Inc.,16.45,operating,offer!=10+name_clean,ok,2024-01-18
+2024-01-12,SYNX,Silynxcom Ltd.,4.0,operating,offer!=10+name_clean,ok,2024-01-12
+2024-01-11,SDHC,Smith Douglas Homes Corp.,21.0,operating,offer!=10+name_clean,ok,2024-01-11
+2024-01-09,ROMA,Roma Green Finance Limited,4.0,operating,offer!=10+name_clean,ok,2024-01-09
+2023-12-27,IROH,Iron Horse Acquisitions Corp.,10.0,spac,name_regex+offer10,,
+2023-12-19,UZX,Linkage Global Inc,,uncertain,missing_offer_price,ok,2023-12-19
+2023-12-15,BAYA,Bayview Acquisition Corp,10.0,spac,name_regex+offer10,,
+2023-12-15,ZKH,ZKH Group Limited,15.5,operating,offer!=10+name_clean,ok,2023-12-15
+2023-12-14,INHD,Inno Holdings Inc.,4.0,operating,offer!=10+name_clean,ok,2023-12-14
+2023-12-04,AFJK,"Aimei Health Technology Co., Ltd",10.0,uncertain,offer10_clean_name,ok,2024-01-22
+2023-12-01,GSIW,Garden Stage Limited,4.0,operating,offer!=10+name_clean,ok,2023-12-01
+2023-11-30,FEBO,Fenbo Holdings Limited,5.0,operating,offer!=10+name_clean,ok,2023-11-30
+2023-11-21,CLBR,Colombier Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2023-11-21,ELAB,PMGC Holdings Inc.,4.0,operating,offer!=10+name_clean,ok,2023-11-21
+2023-11-17,DDC,DDC Enterprise Limited,8.5,operating,offer!=10+name_clean,ok,2023-11-17
+2023-11-17,RR,Richtech Robotics Inc.,5.0,operating,offer!=10+name_clean,ok,2023-11-17
+2023-11-14,GLAC,Global Lights Acquisition Corp,10.0,spac,name_regex+offer10,,
+2023-11-14,SGN,"Signing Day Sports, Inc.",5.0,operating,offer!=10+name_clean,no_data,
+2023-11-14,SHIM,Shimmick Corporation,7.0,operating,offer!=10+name_clean,ok,2023-11-14
+2023-11-10,CRGX,"CARGO Therapeutics, Inc.",15.0,operating,offer!=10+name_clean,no_data,
+2023-11-10,HG,"Hamilton Insurance Group, Ltd.",15.0,operating,offer!=10+name_clean,ok,2023-11-10
+2023-11-09,AITR,AI Transportation Acquisition Corp,10.0,spac,name_regex+offer10,,
+2023-11-09,ANSC,Agriculture & Natural Solutions Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2023-11-08,GVH,Globavend Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2023-11-08
+2023-11-03,LXEO,"Lexeo Therapeutics, Inc.",11.0,operating,offer!=10+name_clean,ok,2023-11-03
+2023-11-01,PAPL,Pineapple Financial Inc.,4.0,operating,offer!=10+name_clean,ok,2023-11-01
+2023-10-31,ATGL,Alpha Technology Group Limited,4.0,operating,offer!=10+name_clean,ok,2023-10-31
+2023-10-25,MNR,Mach Natural Resources LP,19.0,operating,offer!=10+name_clean,ok,2023-10-25
+2023-10-19,NCL,Northann Corp.,5.0,operating,offer!=10+name_clean,ok,2023-10-19
+2023-10-19,WBUY,Webuy Global Ltd,4.0,operating,offer!=10+name_clean,ok,2023-10-19
+2023-10-11,BIRK,Birkenstock Holding plc,46.0,operating,offer!=10+name_clean,ok,2023-10-11
+2023-10-10,GMM,Global Mofy AI Limited,5.0,operating,offer!=10+name_clean,ok,2023-10-09
+2023-10-10,LRHC,La Rosa Holdings Corp.,5.0,operating,offer!=10+name_clean,ok,2023-10-09
+2023-10-10,PMEC,Primech Holdings Ltd.,4.0,operating,offer!=10+name_clean,ok,2023-10-09
+2023-10-09,GPAK,Gamer Pakistan Inc.,4.0,operating,offer!=10+name_clean,ok,2023-10-09
+2023-10-06,QETA,Quetta Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2023-10-06,SPKL,Spark I Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2023-10-05,MSS,Maison Solutions Inc.,4.0,operating,offer!=10+name_clean,ok,2023-10-05
+2023-09-29,ANL,Adlai Nortye Ltd.,23.0,operating,offer!=10+name_clean,ok,2023-09-29
+2023-09-29,SYRA,Syra Health Corp.,4.13,operating,offer!=10+name_clean,ok,2023-09-29
+2023-09-28,VSME,VS MEDIA Holdings Limited,5.0,operating,offer!=10+name_clean,ok,2023-09-27
+2023-09-27,LRE,"Lead Real Estate Co., Ltd",7.0,operating,offer!=10+name_clean,ok,2023-09-27
+2023-09-22,TURB,"Turbo Energy, S.A.",5.0,operating,offer!=10+name_clean,ok,2023-09-22
+2023-09-21,MDBH,"MDB Capital Holdings, LLC",12.0,operating,offer!=10+name_clean,ok,2023-09-21
+2023-09-20,KVYO,"Klaviyo, Inc.",30.0,operating,offer!=10+name_clean,ok,2023-09-20
+2023-09-19,CART,Maplebear Inc.,30.0,operating,offer!=10+name_clean,ok,2023-09-19
+2023-09-19,DTCK,Davis Commodities Limited,4.0,operating,offer!=10+name_clean,no_data,
+2023-09-15,NMRA,"Neumora Therapeutics, Inc.",17.0,operating,offer!=10+name_clean,ok,2023-09-14
+2023-09-15,RYZB,"RayzeBio, Inc.",18.0,operating,offer!=10+name_clean,no_data,
+2023-09-14,ARM,Arm Holdings plc,51.0,operating,offer!=10+name_clean,ok,2023-09-14
+2023-09-13,SPPL,Simpple Ltd.,5.25,operating,offer!=10+name_clean,ok,2023-09-13
+2023-09-12,NWGL,CL Workshop Group Limited,9.0,operating,offer!=10+name_clean,ok,2023-09-12
+2023-09-07,AXG,Solowin Holdings,,uncertain,missing_offer_price,ok,2023-09-07
+2023-08-30,IVP,"Inspire Veterinary Partners, Inc.",4.0,operating,offer!=10+name_clean,no_data,
+2023-08-18,NNAG,99 Acquisition Group Inc.,10.0,spac,name_regex+offer10,,
+2023-08-15,SPGC,"Sacks Parente Golf, Inc.",4.0,operating,offer!=10+name_clean,no_data,
+2023-08-15,SRM,SRM Contractors Limited,5.0,operating,offer!=10+name_clean,no_data,
+2023-08-10,LQR,LQR House Inc.,5.0,operating,offer!=10+name_clean,no_data,
+2023-08-09,NRXS,"NeurAxis, Inc.",6.0,operating,offer!=10+name_clean,ok,2023-08-09
+2023-08-08,GMEX,GMEX Robotics Corporation,,uncertain,missing_offer_price,ok,2023-08-08
+2023-08-03,MIRA,"MIRA Pharmaceuticals, Inc.",7.0,operating,offer!=10+name_clean,ok,2023-08-03
+2023-08-01,CTNT,Cheetah Net Supply Chain Service Inc.,4.0,operating,offer!=10+name_clean,ok,2023-08-01
+2023-08-01,HRYU,"Hanryu Holdings, Inc.",10.0,spac,ticker_U+offer10,,
+2023-08-01,PXDT,"Pixie Dust Technologies, Inc.",9.0,operating,offer!=10+name_clean,no_data,
+2023-07-27,PRZO,ParaZero Technologies Ltd.,4.0,operating,offer!=10+name_clean,ok,2023-07-27
+2023-07-27,SRFM,Surf Air Mobility Inc.,20.0,operating,offer!=10+name_clean,ok,2023-07-27
+2023-07-26,HYAC,Haymaker Acquisition Corp. 4,10.0,spac,name_regex+offer10,,
+2023-07-25,ELWS,"Earlyworks Co., Ltd.",5.0,operating,offer!=10+name_clean,no_data,
+2023-07-25,JNVR,Janover Inc.,4.0,operating,offer!=10+name_clean,no_data,
+2023-07-25,KVAC,Keen Vision Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2023-07-25,WRNT,Warrantee Inc.,4.0,operating,offer!=10+name_clean,no_data,
+2023-07-21,TSBX,Turnstone Biologics Corp.,12.0,operating,offer!=10+name_clean,no_data,
+2023-07-19,ODD,Oddity Tech Ltd.,35.0,operating,offer!=10+name_clean,ok,2023-07-19
+2023-07-14,APGE,"Apogee Therapeutics, Inc.",17.0,operating,offer!=10+name_clean,ok,2023-07-14
+2023-07-14,NETD,Nabors Energy Transition Corp. II,10.0,spac,name_regex+offer10,,
+2023-07-14,SGMT,Sagimet Biosciences Inc.,16.0,operating,offer!=10+name_clean,ok,2023-07-14
+2023-07-12,BOWN,Bowen Acquisition Corp,10.0,spac,name_regex+offer10,,
+2023-07-12,SXTP,"60 Degrees Pharmaceuticals, Inc.",5.3,operating,offer!=10+name_clean,ok,2023-07-12
+2023-07-06,PWM,Power Metals Corp.,5.0,operating,offer!=10+name_clean,no_data,
+2023-06-30,INTS,"Intensity Therapeutics, Inc.",5.0,operating,offer!=10+name_clean,ok,2023-06-30
+2023-06-30,VTMX,"Corporación Inmobiliaria Vesta, S.A.B. de C.V.",31.0,operating,offer!=10+name_clean,ok,2023-06-30
+2023-06-29,KGS,"Kodiak Gas Services, Inc.",16.0,operating,offer!=10+name_clean,ok,2023-06-29
+2023-06-29,PLGO,Pelagos Insurance Capital Limited,,uncertain,missing_offer_price,ok,2023-06-29
+2023-06-29,SVV,"Savers Value Village, Inc.",18.0,operating,offer!=10+name_clean,ok,2023-06-29
+2023-06-28,BUJA,Bukit Jalil Global Acquisition 1 Ltd.,10.0,spac,name_regex+offer10,,
+2023-06-28,GENK,"GEN Restaurant Group, Inc.",12.0,operating,offer!=10+name_clean,ok,2023-06-28
+2023-06-16,AZTR,"Azitra, Inc.",5.0,operating,offer!=10+name_clean,ok,2023-06-16
+2023-06-16,BOF,BranchOut Food Inc.,6.0,operating,offer!=10+name_clean,ok,2023-06-16
+2023-06-15,CAVA,"CAVA Group, Inc.",22.0,operating,offer!=10+name_clean,ok,2023-06-15
+2023-06-14,ESHA,ESH Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2023-05-26,ATMU,Atmus Filtration Technologies Inc.,19.5,operating,offer!=10+name_clean,ok,2023-05-26
+2023-05-25,ATS,ATS Corporation,41.0,operating,offer!=10+name_clean,recycled_mismatch,2009-12-29
+2023-05-25,IPXX,Inflection Point Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2023-05-17,CWD,CaliberCos Inc.,4.0,operating,offer!=10+name_clean,ok,2023-05-18
+2023-05-16,SGE,"Strong Global Entertainment, Inc.",4.0,operating,offer!=10+name_clean,no_data,
+2023-05-05,ALCY,Alchemy Investments Acquisition Corp 1,10.0,spac,name_regex+offer10,,
+2023-05-05,SLRN,Solar 18 Corporation,18.0,operating,offer!=10+name_clean,no_data,
+2023-05-04,KVUE,Kenvue Inc.,22.0,operating,offer!=10+name_clean,ok,2023-05-04
+2023-05-02,GODN,Golden Star Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2023-04-28,TRNR,Interactive Strength Inc.,8.0,operating,offer!=10+name_clean,ok,2023-04-28
+2023-04-21,AACT,Ares Acquisition Corporation II,10.0,spac,name_regex+offer10,,
+2023-04-21,JYD,Jayud Global Logistics Limited,4.0,operating,offer!=10+name_clean,ok,2023-04-21
+2023-04-20,UCAR,U Power Limited,6.0,operating,offer!=10+name_clean,ok,2023-04-20
+2023-04-20,USGO,U.S. GoldMining Inc.,10.0,uncertain,offer10_clean_name,ok,2023-04-20
+2023-04-20,WLGS,"Wang & Lee Group, Inc.",5.0,operating,offer!=10+name_clean,no_data,
+2023-04-18,TPET,Trio Petroleum Corp.,3.0,operating,offer!=10+name_clean,ok,2023-04-18
+2023-04-18,WAI,Top KingWin Ltd,4.0,operating,offer!=10+name_clean,ok,2023-04-18
+2023-04-14,GDTC,CytoMed Therapeutics Limited,4.0,operating,offer!=10+name_clean,ok,2023-04-14
+2023-04-13,VCIG,VCI Global Limited,4.0,operating,offer!=10+name_clean,ok,2023-04-13
+2023-04-12,GDHG,Golden Heaven Group Holdings Ltd.,4.0,operating,offer!=10+name_clean,ok,2023-04-12
+2023-04-05,ARBB,ARB IOT Group Limited,4.0,operating,offer!=10+name_clean,ok,2023-04-05
+2023-04-04,ISPR,Ispire Technology Inc.,7.0,operating,offer!=10+name_clean,ok,2023-04-04
+2023-04-04,MGIH,Millennium Group International Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2023-04-04
+2023-04-03,MWG,Multi Ways Holdings Limited,2.5,operating,offer!=10+name_clean,ok,2023-04-03
+2023-03-31,HKIT,Hitek Global Inc.,5.0,operating,offer!=10+name_clean,ok,2023-03-31
+2023-03-31,HSHP,Himalaya Shipping Ltd.,5.8,operating,offer!=10+name_clean,ok,2023-03-31
+2023-03-31,SFWL,Shengfeng Development Limited,4.0,operating,offer!=10+name_clean,ok,2023-03-31
+2023-03-31,SYT,Softing AG,8.0,operating,offer!=10+name_clean,no_data,
+2023-03-30,CHSN,Chanson International Holding,4.0,operating,offer!=10+name_clean,ok,2023-03-30
+2023-03-29,HLP,Hongli Group Inc.,4.0,operating,offer!=10+name_clean,ok,2023-03-29
+2023-03-29,TBMC,Trailblazer Merger Corporation I,10.0,spac,name_regex+offer10,,
+2023-03-28,TMTC,TMT Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2023-03-28,YGFGF,"YanGuFang International Group Co., Ltd.",4.0,operating,offer!=10+name_clean,ok,2023-03-28
+2023-03-28,ZJYL,Jin Medical International Ltd.,8.0,operating,offer!=10+name_clean,ok,2023-03-28
+2023-03-24,OAKU,Oak Woods Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2023-03-23,BANL,CBL International Limited,4.0,operating,offer!=10+name_clean,ok,2023-03-23
+2023-03-21,MGRX,"Mangoceuticals, Inc.",4.0,operating,offer!=10+name_clean,ok,2023-03-21
+2023-03-21,OMH,Ohmyhome Limited,4.0,operating,offer!=10+name_clean,ok,2023-03-22
+2023-03-17,FORL,Four Leaf Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2023-03-16,ICG,Intchains Group Limited,8.0,operating,offer!=10+name_clean,ok,2023-03-16
+2023-03-15,IZM,ICZOOM Group Inc.,4.0,operating,offer!=10+name_clean,ok,2023-03-15
+2023-03-09,AESI,Atlas Energy Solutions Inc.,18.0,operating,offer!=10+name_clean,ok,2023-03-09
+2023-03-09,AIXI,Xiao-I Corporation,6.8,operating,offer!=10+name_clean,ok,2023-03-09
+2023-02-28,BMR,Beamr Imaging Ltd.,4.0,operating,offer!=10+name_clean,ok,2023-02-28
+2023-02-28,SBXC,SilverBox Corp III,10.0,spac,name_regex+offer10,,
+2023-02-15,DIST,DistIT AB (publ),10.0,uncertain,offer10_clean_name,no_data,
+2023-02-15,GXAI,Gaxos.ai Inc.,4.15,operating,offer!=10+name_clean,ok,2023-02-15
+2023-02-14,BFRG,"Bullfrog AI Holdings, Inc.",6.5,operating,offer!=10+name_clean,ok,2023-02-13
+2023-02-14,MARX,Mars Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2023-02-10,BLAC,Bellevue Life Sciences Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2023-02-10,ENLT,Enlight Renewable Energy Ltd,18.0,operating,offer!=10+name_clean,ok,2023-01-03
+2023-02-10,MLYS,"Mineralys Therapeutics, Inc.",16.0,operating,offer!=10+name_clean,ok,2023-02-10
+2023-02-10,PTHR,"Pono Capital Three, Inc.",10.0,uncertain,offer10_clean_name,no_data,
+2023-02-09,HSAI,Hesai Group,19.0,operating,offer!=10+name_clean,ok,2023-02-09
+2023-02-09,LSDIF,Lucy Scientific Discovery Inc.,4.0,operating,offer!=10+name_clean,ok,2023-02-09
+2023-02-09,NXT,Nextpower Inc.,24.0,operating,offer!=10+name_clean,ok,2023-02-09
+2023-02-06,LICN,Lichen International Limited,4.0,operating,offer!=10+name_clean,ok,2023-02-06
+2023-02-03,ASST,"Strive, Inc.",5.0,operating,offer!=10+name_clean,ok,2023-02-03
+2023-02-03,GPCR,Structure Therapeutics Inc.,15.0,operating,offer!=10+name_clean,ok,2023-02-03
+2023-02-01,CETU,Cetus Capital Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2023-01-27,BREA,Brera Holdings PLC,5.0,operating,offer!=10+name_clean,no_data,
+2023-01-27,TXO,"TXO Partners, L.P.",20.0,operating,offer!=10+name_clean,ok,2023-01-27
+2023-01-26,GNLX,Genelux Corporation,6.0,operating,offer!=10+name_clean,ok,2023-01-26
+2023-01-25,HERE,Here Group Limited,,uncertain,missing_offer_price,ok,2023-01-25
+2023-01-20,CVKD,"Cadrenal Therapeutics, Inc.",5.0,operating,offer!=10+name_clean,ok,2023-01-20
+2023-01-13,ISRL,Israel Acquisitions Corp,10.0,spac,name_regex+offer10,,
+2023-01-13,MGOL,MGO Global Inc.,5.0,operating,offer!=10+name_clean,no_data,
+2023-01-13,SKWD,"Skyward Specialty Insurance Group, Inc.",15.0,operating,offer!=10+name_clean,ok,2023-01-13
+2022-12-30,ATMC,AlphaTime Acquisition Corp,10.0,spac,name_regex+offer10,,
+2022-12-29,COYA,"Coya Therapeutics, Inc.",5.0,operating,offer!=10+name_clean,ok,2022-12-29
+2022-12-22,HSPO,Horizon Space Acquisition I Corp.,10.0,spac,name_regex+offer10,,
+2022-12-20,ATMV,AlphaVest Acquisition Corp,10.0,spac,name_regex+offer10,,
+2022-12-20,LIPO,Lipella Pharmaceuticals Inc.,5.75,operating,offer!=10+name_clean,ok,2022-12-19
+2022-12-14,RAYA,Erayak Power Solution Group Inc.,4.0,operating,offer!=10+name_clean,ok,2022-12-14
+2022-12-09,JEWL,Adamas One Corp.,4.5,operating,offer!=10+name_clean,ok,2022-12-09
+2022-11-15,ACRV,"Acrivon Therapeutics, Inc.",12.5,operating,offer!=10+name_clean,ok,2022-11-15
+2022-11-11,ATAT,Atour Lifestyle Holdings Limited,11.0,operating,offer!=10+name_clean,ok,2022-11-11
+2022-11-10,ASPI,ASP Isotopes Inc.,4.0,operating,offer!=10+name_clean,ok,2022-11-10
+2022-11-10,PLTN,Plutonian Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-11-10,SNAL,"Snail, Inc.",5.0,operating,offer!=10+name_clean,ok,2022-11-10
+2022-10-26,MBLY,Mobileye Global Inc.,21.0,operating,offer!=10+name_clean,ok,2022-10-26
+2022-10-20,PRME,"Prime Medicine, Inc.",17.0,operating,offer!=10+name_clean,ok,2022-10-20
+2022-10-14,HUDA,Hudson Acquisition I Corp.,10.0,spac,name_regex+offer10,,
+2022-10-14,TENK,TenX Keane Acquisition,10.0,spac,name_regex+offer10,,
+2022-10-13,SVII,Spring Valley Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2022-10-04,AQU,Aquaron Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-09-30,DMYY,"dMY Squared Technology Group, Inc.",10.0,uncertain,offer10_clean_name,no_data,
+2022-09-30,LASE,Laser Photonics Corporation,5.0,operating,offer!=10+name_clean,ok,2022-09-30
+2022-09-30,QOMO,Qomolangma Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-09-27,NXU,"Nxu, Inc.",27.5,operating,offer!=10+name_clean,no_data,
+2022-09-20,GLST,"Global Star Acquisition, Inc.",10.0,spac,name_regex+offer10,,
+2022-09-16,NXL,"Nexalin Technology, Inc.",4.15,operating,offer!=10+name_clean,ok,2022-09-16
+2022-09-15,CRBG,"Corebridge Financial, Inc.",21.0,operating,offer!=10+name_clean,ok,2022-09-16
+2022-09-15,THRD,"Third Harmonic Bio, Inc.",17.0,operating,offer!=10+name_clean,no_data,
+2022-09-13,WLDS,Wearable Devices Ltd.,4.25,operating,offer!=10+name_clean,ok,2022-09-13
+2022-09-09,EFHT,EF Hutton Acquisition Corporation I,10.0,spac,name_regex+offer10,,
+2022-09-09,VSTD,Vestand Inc.,,uncertain,missing_offer_price,ok,2022-09-09
+2022-09-01,BIAF,"bioAffinity Technologies, Inc.",6.13,operating,offer!=10+name_clean,ok,2022-09-01
+2022-08-31,SHPH,"Shuttle Pharmaceuticals Holdings, Inc.",8.13,operating,offer!=10+name_clean,ok,2022-08-31
+2022-08-30,HPCO,"Hempacco Co., Inc.",6.0,operating,offer!=10+name_clean,ok,2022-08-30
+2022-08-26,JZ,Jianzhi Education Technology Group Company Limited,5.0,operating,offer!=10+name_clean,ok,2022-08-26
+2022-08-26,NEXR,Nexera Technologies Ltd,,uncertain,missing_offer_price,ok,2022-08-26
+2022-08-26,ONFO,"Onfolio Holdings, Inc.",5.0,operating,offer!=10+name_clean,ok,2022-08-26
+2022-08-26,PXMD,"PaxMedica, Inc.",5.25,operating,offer!=10+name_clean,ok,2022-08-26
+2022-08-25,MOB,Mobilicom Limited,4.13,operating,offer!=10+name_clean,ok,2022-08-25
+2022-08-23,STBX,Starbox Group Holdings Ltd.,4.0,operating,offer!=10+name_clean,no_data,
+2022-08-18,GCT,GigaCloud Technology Inc.,12.25,operating,offer!=10+name_clean,ok,2022-08-18
+2022-08-15,LUCY,"Lucyd, Inc",7.5,operating,offer!=10+name_clean,ok,2022-08-15
+2022-08-12,CHG,CorpHousing Group Inc.,4.0,operating,offer!=10+name_clean,no_data,
+2022-08-12,FRZA,"Forza X1, Inc.",5.0,operating,offer!=10+name_clean,no_data,
+2022-08-12,REBN,"Reborn Coffee, Inc.",5.0,operating,offer!=10+name_clean,ok,2022-08-12
+2022-08-11,HMAC,Hainan Manaslu Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-08-11,TGL,Treasure Global Inc.,4.0,operating,offer!=10+name_clean,ok,2022-08-11
+2022-08-10,EMCG,Embrace Change Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-08-05,MEGL,Magic Empire Global Limited,4.0,operating,offer!=10+name_clean,ok,2022-08-05
+2022-08-05,PTWO,"Pono Capital Two, Inc.",10.0,uncertain,offer10_clean_name,no_data,
+2022-08-04,MOBV,Mobiv Acquisition Corp,10.0,spac,name_regex+offer10,,
+2022-08-03,BRSH,Bruush Oral Care Inc.,4.16,operating,offer!=10+name_clean,no_data,
+2022-07-29,MGAM,Mobile Global Esports Inc.,4.0,operating,offer!=10+name_clean,ok,2022-07-29
+2022-07-28,MAIA,"MAIA Biotechnology, Inc.",5.0,operating,offer!=10+name_clean,ok,2022-07-28
+2022-07-21,VRAX,Virax Biolabs Group Limited,5.0,operating,offer!=10+name_clean,ok,2022-07-21
+2022-07-15,HKD,AMTD Digital Inc.,7.8,operating,offer!=10+name_clean,ok,2022-07-15
+2022-07-13,ILAG,Intelligent Living Application Group Inc.,4.0,operating,offer!=10+name_clean,ok,2022-07-13
+2022-07-12,NA,Nano Labs Ltd,11.5,operating,offer!=10+name_clean,ok,2022-07-12
+2022-06-28,IE,Ivanhoe Electric Inc.,11.75,operating,offer!=10+name_clean,ok,2022-06-28
+2022-06-24,SKGR,SK Growth Opportunities Corporation,10.0,uncertain,offer10_clean_name,no_data,
+2022-06-22,GSUN,Golden Sun Technology Group Limited,4.0,operating,offer!=10+name_clean,ok,2022-06-22
+2022-06-16,FLFV,Feutune Light Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-06-15,HSCS,HeartSciences Inc.,4.25,operating,offer!=10+name_clean,ok,2022-06-16
+2022-06-15,LYT,Lytus Technologies Holdings PTV. LTD.,4.75,operating,offer!=10+name_clean,no_data,
+2022-06-10,ACAC,Acri Capital Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-06-08,PEV,Phoenix Motor Inc.,7.5,operating,offer!=10+name_clean,no_data,
+2022-06-03,SVRE,SaverOne 2014 Ltd.,5.8,operating,offer!=10+name_clean,ok,2022-06-03
+2022-06-01,TOP,TOP Financial Group Limited,5.0,operating,offer!=10+name_clean,ok,2022-06-01
+2022-05-24,BNRG,Brenmiller Energy Ltd,5.18,operating,offer!=10+name_clean,ok,2022-05-25
+2022-05-17,BGXX,Bright Green Corporation,8.0,operating,offer!=10+name_clean,no_data,
+2022-05-17,GV,Visionary Holdings Inc.,4.0,operating,offer!=10+name_clean,ok,2022-05-17
+2022-05-17,OKYO,OKYO Pharma Limited,4.0,operating,offer!=10+name_clean,ok,2022-05-17
+2022-05-13,ACDC,ProFrac Holding Corp.,18.0,operating,offer!=10+name_clean,ok,2022-05-13
+2022-05-13,ASNS,"Actelis Networks, Inc.",4.0,operating,offer!=10+name_clean,ok,2022-05-13
+2022-05-13,PFHC,ProFrac Holding Corp.,18.0,operating,offer!=10+name_clean,no_data,
+2022-05-13,PNAC,Prime Number Acquisition I Corp.,10.0,spac,name_regex+offer10,,
+2022-05-11,HNVR,"Hanover Bancorp, Inc.",21.0,operating,offer!=10+name_clean,ok,2022-05-11
+2022-05-11,MCAC,Monterey Capital Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-05-10,GBBK,Global Blockchain Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-05-10,IVCA,Investcorp Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-05-06,BLCO,Bausch + Lomb Corporation,18.0,operating,offer!=10+name_clean,ok,2022-05-06
+2022-05-06,PEPG,PepGen Inc.,12.0,operating,offer!=10+name_clean,ok,2022-05-06
+2022-05-06,RENE,Cartesian Growth Corporation II,10.0,uncertain,offer10_clean_name,no_data,
+2022-05-05,EDBL,Edible Garden AG Incorporated,5.0,operating,offer!=10+name_clean,ok,2022-05-05
+2022-05-04,AUST,Austin Gold Corp.,4.0,operating,offer!=10+name_clean,ok,2022-05-04
+2022-05-03,ASCB,A SPAC II Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-04-29,BLTE,"Belite Bio, Inc",6.0,operating,offer!=10+name_clean,ok,2022-04-29
+2022-04-29,HLVX,"HilleVax, Inc.",17.0,operating,offer!=10+name_clean,no_data,
+2022-04-28,CHEA,Chenghe Acquisition Co.,10.0,spac,name_regex+offer10,,
+2022-04-28,CLRC,ClimateRock,10.0,uncertain,offer10_clean_name,no_data,
+2022-04-27,OST,"Ostin Technology Group Co., Ltd.",4.0,operating,offer!=10+name_clean,ok,2022-04-27
+2022-04-27,TNON,"Tenon Medical, Inc.",5.0,operating,offer!=10+name_clean,ok,2022-04-27
+2022-04-26,AIMAU,Aimfinity Investment Corp. I,10.0,spac,name_regex+offer10,,
+2022-04-22,ACON,"Aclarion, Inc.",4.35,operating,offer!=10+name_clean,ok,2022-04-22
+2022-04-22,JCSE,JE Cleantech Holdings Limited,4.0,operating,offer!=10+name_clean,ok,2022-04-22
+2022-04-20,YOTA,Yotta Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-04-14,STSS,"Sharps Technology, Inc.",4.25,operating,offer!=10+name_clean,no_data,
+2022-04-13,AFAR,Aura FAT Projects Acquisition Corp,10.0,spac,name_regex+offer10,,
+2022-04-13,EE,"Excelerate Energy, Inc.",24.0,operating,offer!=10+name_clean,ok,2022-04-13
+2022-04-12,GNS,Genius Group Limited,6.0,operating,offer!=10+name_clean,ok,2022-04-12
+2022-04-07,DECA,Denali Capital Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-04-01,MSSA,Metal Sky Star Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-04-01,XPON,Expion360 Inc.,7.0,operating,offer!=10+name_clean,ok,2022-04-01
+2022-03-31,RVSN,Rail Vision Ltd.,4.13,operating,offer!=10+name_clean,ok,2022-03-31
+2022-03-31,RWOD,Redwoods Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-03-25,ANTX,"AN2 Therapeutics, Inc.",15.0,operating,offer!=10+name_clean,ok,2022-03-25
+2022-03-25,LCFY,Locafy Limited,4.13,operating,offer!=10+name_clean,ok,2022-03-25
+2022-03-24,RFAC,RF Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-03-17,GDST,Goldenstone Acquisition Limited,10.0,spac,name_regex+offer10,,
+2022-03-15,AKAN,Akanda Corp.,4.0,operating,offer!=10+name_clean,ok,2022-03-15
+2022-03-11,NUBI,Nubia Brand International Corp.,10.0,uncertain,offer10_clean_name,no_data,
+2022-03-10,PLAO,Patria Latin American Opportunity Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-03-09,LBBB,Lakeshore Acquisition II Corp.,10.0,spac,name_regex+offer10,,
+2022-03-02,KCAC3,Kensington Capital Acquisition Corp. IV,10.0,spac,name_regex+offer10,,
+2022-03-02,SHUA,SHUAA Partners Acquisition Corp I,10.0,spac,name_regex+offer10,,
+2022-03-02,SPCM,"Sound Point Acquisition Corp I, Ltd",10.0,spac,name_regex+offer10,,
+2022-03-01,VMCA,Valuence Merger Corp. I,10.0,spac,name_regex+offer10,,
+2022-02-25,FGMC,FG Merger Corp.,10.0,spac,name_regex+offer10,,
+2022-02-25,GSRM,GSR II Meteora Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-02-24,CLIN,Clean Earth Acquisitions Corp.,10.0,spac,name_regex+offer10,,
+2022-02-18,ONCO,"Onconetix, Inc.",9.0,operating,offer!=10+name_clean,ok,2022-02-18
+2022-02-18,PWUP,PowerUp Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-02-16,AXAC,AXIOS Sustainable Growth Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-02-16,FTII,FutureTech II Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-02-16,MHUA,"Meihua International Medical Technologies Co., Ltd.",10.0,uncertain,offer10_clean_name,no_data,
+2022-02-16,SMFL,"Smart for Life, Inc.",10.0,uncertain,offer10_clean_name,ok,2022-02-16
+2022-02-15,ASCA,A SPAC I Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-02-15,GENQ,Genesis Unicorn Capital Corp.,10.0,spac,name_regex+offer10,,
+2022-02-11,DRCT,"Direct Digital Holdings, Inc.",5.5,operating,offer!=10+name_clean,ok,2022-02-11
+2022-02-11,HNRA,HNR Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-02-11,JGGC,Jaguar Global Growth Corporation I,10.0,uncertain,offer10_clean_name,no_data,
+2022-02-11,MDV,"Modiv Industrial, Inc.",25.0,operating,offer!=10+name_clean,ok,2022-02-11
+2022-02-11,RACY,Relativity Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-02-11,SGHL,Signal Hill Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-02-11,TCBP,TC BioPharm (Holdings) plc,4.25,operating,offer!=10+name_clean,no_data,
+2022-02-10,HTCR,"HeartCore Enterprises, Inc.",5.0,operating,offer!=10+name_clean,ok,2022-02-10
+2022-02-10,SKYX,SKYX Platforms Corp.,14.0,operating,offer!=10+name_clean,ok,2022-02-10
+2022-02-09,BYNO,byNordic Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-02-09,CPAQ,Counter Press Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-02-09,EVGR,Evergreen Corporation,10.0,uncertain,offer10_clean_name,no_data,
+2022-02-08,LIVB,LIV Capital Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2022-02-07,ATAK,Aurora Technology Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-02-04,ACLX,"Arcellx, Inc.",15.0,operating,offer!=10+name_clean,recycled_mismatch,2026-04-28
+2022-02-04,LIEN,"Chicago Atlantic BDC, Inc.",,uncertain,missing_offer_price,ok,2022-02-04
+2022-02-04,NVCT,"Nuvectis Pharma, Inc.",5.0,operating,offer!=10+name_clean,ok,2022-02-04
+2022-02-04,TGR,Kimbell Tiger Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-02-03,MURF,Murphy Canyon Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-02-02,MTEK,Maris-Tech Ltd.,4.2,operating,offer!=10+name_clean,ok,2022-02-02
+2022-02-01,ACAX,Alset Capital Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-01-31,BWAQ,Blue World Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-01-27,CRDO,Credo Technology Group Holding Ltd,10.0,uncertain,offer10_clean_name,ok,2022-01-27
+2022-01-27,KSCP,"Knightscope, Inc.",10.0,uncertain,offer10_clean_name,ok,2022-01-27
+2022-01-25,FGI,FGI Industries Ltd.,6.0,operating,offer!=10+name_clean,ok,2022-01-25
+2022-01-25,KYCH,Keyarch Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-01-25,LATG,LatAmGrowth SPAC,10.0,uncertain,offer10_clean_name,no_data,
+2022-01-21,HCMA,HCM Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-01-21,HMA,Heartland Media Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-01-21,KNSW,KnightSwan Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-01-20,BYN,Banyan Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-01-20,DUET,DUET Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-01-20,GAQ,Generation Asia I Acquisition Limited,10.0,spac,name_regex+offer10,,
+2022-01-19,AIBAF,AIB Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-01-18,TETE,Technology & Telecommunication Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-01-18,TKLF,"Tokyo Lifestyle Co., Ltd.",4.0,operating,offer!=10+name_clean,ok,2022-01-18
+2022-01-14,ACAB,Atlantic Coastal Acquisition Corp. II,10.0,spac,name_regex+offer10,,
+2022-01-14,PPYA,Papaya Growth Opportunity Corp. I,10.0,spac,name_regex+offer10,,
+2022-01-13,CSLM,"Consilium Acquisition Corp I, Ltd.",10.0,spac,name_regex+offer10,,
+2022-01-13,TPG,TPG Inc.,29.5,operating,offer!=10+name_clean,ok,2022-01-13
+2022-01-13,WNNR,Andretti Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-01-12,CNTN,"Canton Strategic Holdings, Inc.",,uncertain,missing_offer_price,ok,2022-01-12
+2022-01-12,GHIX,"Gores Holdings IX, Inc.",10.0,spac,name_regex+offer10,,
+2022-01-12,ITAQ,"Industrial Tech Acquisitions II, Inc.",10.0,spac,name_regex+offer10,,
+2022-01-12,VCXB,10x Capital Venture Acquisition Corp. III,10.0,spac,name_regex+offer10,,
+2022-01-12,WAVS,Western Acquisition Ventures Corp.,10.0,spac,name_regex+offer10,,
+2022-01-11,BRAC,Broad Capital Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-01-07,AMLX,"Amylyx Pharmaceuticals, Inc.",19.0,operating,offer!=10+name_clean,ok,2022-01-07
+2022-01-07,CINC,"CinCor Pharma, Inc.",16.0,operating,offer!=10+name_clean,no_data,
+2022-01-07,CXAC,C5 Acquisition Corporation,10.0,spac,name_regex+offer10,,
+2022-01-07,HOUR,"Hour Loop, Inc.",4.0,operating,offer!=10+name_clean,ok,2022-01-07
+2022-01-07,VBOC,Viscogliosi Brothers Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-01-07,VIGL,"Vigil Neuroscience, Inc.",14.0,operating,offer!=10+name_clean,no_data,
+2022-01-06,SCRM,Screaming Eagle Acquisition Corp.,10.0,spac,name_regex+offer10,,
+2022-01-05,CITE,Cartica Acquisition Corp,10.0,spac,name_regex+offer10,,
