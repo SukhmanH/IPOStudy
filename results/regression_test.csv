@@ -1,0 +1,25 @@
+cell,published,reproduced,pass
+large_cap median +180,-0.292,-0.292,True
+large_cap mean +180,-0.302,-0.302,True
+large_cap t,-6.51,-6.51,True
+large_cap n,63,63,True
+hot median +180,-0.242,-0.242,True
+hot mean +180,-0.271,-0.271,True
+hot t,-4.80,-4.80,True
+hot n,44,44,True
+large_hot median,-0.317,-0.317,True
+large_hot mean,-0.373,-0.373,True
+large_hot t,-4.71,-4.71,True
+large_hot n,19,19,True
+trimmed_top2 median,-0.331,-0.331,True
+trimmed_top2 mean,-0.430,-0.430,True
+highVIX mean,-0.348,-0.348,True
+highVIX t,-7.76,-7.76,True
+lowVIX mean,-0.165,-0.165,True
+lowVIX t,-3.67,-3.67,True
+winrate faded,50 of 63 (79%),50 of 63 (79%),True
+robustness peak=close,-0.252/-0.253/t-5.30,-0.252/-0.253/t-5.30,True
+robustness SPY,-0.301/-0.288/t-5.92,-0.301/-0.288/t-5.92,True
+robustness IWM,-0.247/-0.269/t-5.45,-0.247/-0.269/t-5.45,True
+robustness +120,-0.319/-0.234/t-4.30,-0.319/-0.234/t-4.30,True
+robustness +250,-0.421/-0.362/t-7.16 n62,-0.421/-0.362/t-7.16 n62,True
