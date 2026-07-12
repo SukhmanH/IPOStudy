@@ -66,6 +66,34 @@ bu.AUDIT_OUT = AUDIT_OUT
 
 TIER_EDGES = [(10.0, "T4"), (5.0, "T3"), (1.0, "T2"), (0.30, "T1")]
 
+# ---------------------------------------------------------------------------
+# SPAC exclusion (mandatory per spec). Ritter's file does NOT exclude SPAC
+# unit IPOs (discovered: hundreds of $10.00 XXXXU units in 2020-21 clear the
+# $300M floor; the legacy $5B build never saw them because SPAC trusts are too
+# small for its $2.5B pre-gate). Mechanical rules, word-boundary safe:
+#   (a) offer ~$10 (9.75-10.25) AND name matches the SPAC-name regex
+#   (b) unit ticker: >=5 chars ending 'U' AND offer ~$10 (protects 4-letter
+#       real tickers like VENU that merely end in U)
+# Ambiguous rows (offer exactly $10, 'Corp' in name, but neither rule fires)
+# are KEPT but tagged spac_review=True in the audit for manual adjudication.
+# ---------------------------------------------------------------------------
+import re  # noqa: E402
+
+SPAC_NAME_RE = re.compile(
+    r"(Acquisition|Blank.?Check|Merger Corp|Capital Corp|Holdings? [IVX]+\b|Corp\.? [IVX]+$)",
+    re.IGNORECASE)
+
+
+def spac_rule(name: str, ticker: str, offer) -> str:
+    """'' if not a SPAC hit; else the rule id."""
+    near10 = pd.notna(offer) and 9.75 <= float(offer) <= 10.25
+    if near10 and SPAC_NAME_RE.search(str(name)):
+        return "spac_name+offer10"
+    if len(str(ticker)) >= 5 and str(ticker).upper().endswith("U") and \
+            pd.notna(offer) and 9.5 <= float(offer) <= 10.5:
+        return "unit_ticker+offer10"
+    return ""
+
 
 def tier_of(mcap_b) -> str:
     if pd.isna(mcap_b):
@@ -137,6 +165,18 @@ def main():
     df = bu.assemble(matched)
     df["tier"] = df["mcap_listing_b"].map(tier_of)
 
+    # ---- mandatory SPAC exclusion (rules documented at top) ----
+    hits = df.apply(lambda r: spac_rule(r["name"], r["ticker"], r["offer_price"]), axis=1)
+    is_spac = (hits != "") & df["bucket"].isin(["headline", "considered"])
+    df.loc[is_spac, "reason"] = "SPAC/SPAC-unit (" + hits[is_spac] + ") - excluded by spec"
+    df.loc[is_spac, "bucket"] = "spac_excluded"
+    df["spac_review"] = (~is_spac
+                         & df["bucket"].isin(["headline", "considered"])
+                         & (pd.to_numeric(df["offer_price"], errors="coerce") == 10.0)
+                         & df["name"].str.contains("Corp", case=False, na=False))
+    print(f"[spac] excluded {is_spac.sum()} SPAC/unit rows; "
+          f"{df['spac_review'].sum()} ambiguous $10 'Corp' rows tagged spac_review")
+
     # ---- audit supplement: matched-but-never-candidate rows (pre-floor) ----
     m = matched.copy()
     m["free_pre_b"] = m["offer_price"] * m["post_issue_shares"] / 1e9
@@ -172,7 +212,8 @@ def main():
     audit_cols = ["ticker", "ritter_ticker", "name", "first_trade", "yf_first_trade",
                   "year", "offer_price", "adr", "ritter_shares", "edgar_shares",
                   "yf_shares", "est_edgar", "est_yf", "est_ritter", "mcap_listing_b",
-                  "mcap_src", "mcap_conf", "match_method", "bucket", "reason", "tier"]
+                  "mcap_src", "mcap_conf", "match_method", "bucket", "reason", "tier",
+                  "spac_review"]
     audit = pd.concat([df, supp], ignore_index=True)
     for c in audit_cols:
         if c not in audit.columns:

@@ -67,551 +67,129 @@ WHK,considered,T1,26.0,0.597911054,too recent: IPO 2026-06-09; +180 td outcome n
 YSWY,considered,T1,20.0,0.58171122,too recent: IPO 2026-04-22; +180 td outcome not yet observable,"Yesway, Inc.",2026-04-22,single:yf,low,YSWY,seed_calendar
 SGP,considered,T1,16.0,0.522701776,too recent: IPO 2026-02-06; +180 td outcome not yet observable,"SpyGlass Pharma, Inc.",2026-02-06,auto:edgar+yf,high,SGP,seed_calendar
 SUJA,considered,T1,21.0,0.4995627,too recent: IPO 2026-05-07; +180 td outcome not yet observable,"Suja Life, Inc.",2026-05-07,single:yf,low,SUJA,seed_calendar
-CCXIU,considered,T1,10.0,0.485,too recent: IPO 2025-12-17; +180 td outcome not yet observable,Churchill Capital Corp XI,2025-12-17,ritter-anchor,med,CCXIU,ticker+date
 MWC,considered,T1,8.0,0.471935312,too recent: IPO 2026-05-14; +180 td outcome not yet observable,"Micware Co., Ltd.",2026-05-14,single:yf,low,MWC,seed_calendar
 EROK,considered,T1,18.5,0.4617727465,too recent: IPO 2026-05-14; +180 td outcome not yet observable,"EagleRock Land, LLC",2026-05-14,single:yf,low,EROK,seed_calendar
-NWAXU,considered,T1,10.0,0.453,too recent: IPO 2025-12-04; +180 td outcome not yet observable,New America Acquisition I Corp,2025-12-04,ritter-anchor,med,NWAXU,ticker+date
 ELMT,considered,T1,14.0,0.41179258399999996,too recent: IPO 2026-04-23; +180 td outcome not yet observable,The Elmet Group Co.,2026-04-23,auto:edgar+yf,high,ELMT,seed_calendar
-CRANU,considered,T1,10.0,0.409,too recent: IPO 2025-12-16; +180 td outcome not yet observable,Crane Harbor Acquisition Corp.,2025-12-16,ritter-anchor,med,CRAN,name+date(0.75)
-APXTU,considered,T1,10.0,0.4,too recent: IPO 2025-10-28; +180 td outcome not yet observable,Apex Treasury Corp,2025-10-28,ritter-anchor,med,APXTU,ticker+date
-KBONU,considered,T1,10.0,0.383,too recent: IPO 2025-12-11; +180 td outcome not yet observable,Karbon Capital Partners Corp.,2025-12-11,ritter-anchor,med,KBONU,ticker+date
-MESHU,considered,T1,10.0,0.375,too recent: IPO 2025-12-10; +180 td outcome not yet observable,Meshflow Acquisition Corp,2025-12-10,ritter-anchor,med,MESHU,ticker+date
 REA,considered,T1,19.0,0.3733361395,too recent: IPO 2026-05-06; +180 td outcome not yet observable,"Rare Earths Americas, Inc.",2026-05-06,auto:edgar+yf,high,REA,seed_calendar
 SBMT,considered,T1,11.5,0.33952024999999997,too recent: IPO 2026-04-30; +180 td outcome not yet observable,Silver Bow Mining Corp.,2026-04-30,auto:edgar+yf,high,SBMT,seed_calendar
-ALUBU,considered,T1,10.0,0.3125,too recent: IPO 2025-11-13; +180 td outcome not yet observable,Alussa Energy Acquisition Corp,2025-11-13,ritter-anchor,med,ALUBU,ticker+date
-DSACU,considered,T1,10.0,0.30635,too recent: IPO 2025-12-09; +180 td outcome not yet observable,Daedalus Special Acquisition C,2025-12-09,ritter-anchor,med,DSACU,ticker+date
-SBXEU,considered,T1,10.0,0.30195,too recent: IPO 2025-12-03; +180 td outcome not yet observable,SilverBox Corp V,2025-12-03,ritter-anchor,med,SBXE.U,name+date(1.00)
-DMYDU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),dMY Technology Group II Inc,2020-08-14,ritter-anchor,med,DMYD,name+date(1.00)
-PDACU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Peridot Acquisition Corp,2020-09-24,ritter-anchor,med,PDAC,name+date(1.00)
-KAIRU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Kairos Acquisition Corp,2021-01-06,ritter-anchor,med,KAIRU,ticker+date
-IVANU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Ivanhoe Capital Acq Corp,2021-01-07,ritter-anchor,med,IVANU,ticker+date
-EPWRU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Empowerment & Inclusion,2021-01-08,ritter-anchor,med,EPWRU,ticker+date
-POWRU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Powered Brands,2021-01-08,ritter-anchor,med,POWRU,ticker+date
-TMKRU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Tastemaker Acquisition Corp,2021-01-08,ritter-anchor,med,TMKRU,ticker+date
-SWETU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Athlon Acquisition Corp,2021-01-12,ritter-anchor,med,SWETU,ticker+date
-ADERU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),26 Capital Acquisition Corp,2021-01-15,ritter-anchor,med,ADERU,ticker+date
-EACPU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Edify Acquisition Corp,2021-01-15,ritter-anchor,med,EACPU,ticker+date
-HCCCU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Healthcare Capital Corp,2021-01-15,ritter-anchor,med,HCCCU,ticker+date
-THMAU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Thimble Point Acquisition Corp,2021-02-02,ritter-anchor,med,THMAU,ticker+date
-CPTKU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Crown PropTech Acquisitions,2021-02-09,ritter-anchor,med,CPTK.,name+date(1.00)
-PICCU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Pivotal Investment Corp III,2021-02-09,ritter-anchor,med,PICC.,name+date(1.00)
-PMGMU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Priveterra Acquisition Corp,2021-02-09,ritter-anchor,med,PMGMU,ticker+date
-NVSAU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),New Vista Acq Corp,2021-02-17,ritter-anchor,med,NVSAU,ticker+date
-FTEVU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),FinTech Evolution Acq Group,2021-03-02,ritter-anchor,med,FTEV.,name+date(0.50)
-ATVCU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Tribe Capital Growth Corp I,2021-03-05,ritter-anchor,med,ATVCU,ticker+date
-GTPAU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Gores Tech Partners Inc,2021-03-12,ritter-anchor,med,GTPAU,ticker+date
-JUGGU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Jaws Juggernaut Acq Corp,2021-06-18,ritter-anchor,med,JUGGU,ticker+date
-PFTAU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Portage Fintech Acquisition Co,2021-07-21,ritter-anchor,med,PFTAU,ticker+date
-KCGIU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Kensington Capital Acquis V,2021-08-13,ritter-anchor,med,KCGI.,name+date(0.50)
-BMACU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Black Mountain Acquisition Cor,2021-10-14,ritter-anchor,med,BMAC.,name+date(0.75)
-ESACU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Esgen Acquisition Corp,2021-10-20,ritter-anchor,med,ESACU,ticker+date
-NETCU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Nabors Energy Transition Corp.,2021-11-17,ritter-anchor,med,NETC.,name+date(1.00)
-BLEUU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),bleuacacia ltd,2021-11-18,ritter-anchor,med,BLEUU,ticker+date
-NFNTU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Infinite Acquisition Corp.,2021-11-19,ritter-anchor,med,NFNT.,name+date(1.00)
-TACHU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Titan Acquisition Corp.,2025-04-09,ritter-anchor,med,TACHU,ticker+date
-BLZRU,considered,sub,10.0,0.3,~$0.3B at listing (<$0.3B),Trailblazer Acquisition Corp.,2025-09-10,ritter-anchor,med,BLZRU,ticker+date
 OCUL,considered,sub,13.0,0.299347685,~$0.3B at listing (<$0.3B),Ocular Therapeutix Inc,2014-07-24,auto:edgar+yf,high,OCUL,ticker+date
-FTCVU,considered,sub,10.0,0.2992,~$0.3B at listing (<$0.3B),Fintech Acq Corp V,2020-12-04,ritter-anchor,med,FTCVU,ticker+date
 NSA,considered,sub,13.0,0.2991105,~$0.3B at listing (<$0.3B),National Storage Affiliates Tr,2015-04-23,auto:edgar+yf,high,NSA,ticker+date
-IIIIU,considered,sub,10.0,0.29833333,~$0.3B at listing (<$0.3B),INSU Acquisition Corp III,2020-12-18,ritter-anchor,med,IIIIU,ticker+date
 MDWD,considered,sub,14.0,0.2981692,~$0.3B at listing (<$0.3B),MediWound Ltd,2014-03-20,single:yf,low,MDWD,ticker+date
-KCHVU,considered,sub,10.0,0.29812833,~$0.3B at listing (<$0.3B),Kochav Defense Acquisition Cor,2025-05-28,ritter-anchor,med,KCHVU,ticker+date
 KRNT,considered,sub,10.0,0.29767,~$0.3B at listing (<$0.3B),Kornit Digital Ltd,2015-04-02,single:yf,low,KRNT,ticker+date
-KINZU,considered,sub,10.0,0.2975,~$0.3B at listing (<$0.3B),Kins Technology Group Inc,2020-12-15,ritter-anchor,med,KINZU,ticker+date
 NAP,considered,sub,15.0,0.29748675,~$0.3B at listing (<$0.3B),Navios Maritime Midstream LP,2014-11-13,auto:ritter+yf,high,NAP,ticker+date
 CRU,considered,sub,19.0,0.296499997,~$0.3B at listing (<$0.3B),Crude Carriers Corp,2010-03-11,ritter-anchor,med,CRU,ticker+date
 XERS,considered,sub,15.0,0.2960355,~$0.3B at listing (<$0.3B),Xeris Pharmaceuticals Inc,2018-06-21,single:yf,low,XERS,ticker+date
-OYSEU,considered,sub,10.0,0.2952,~$0.3B at listing (<$0.3B),Oyster Enterprises II Acquis,2025-05-22,ritter-anchor,med,OYSEU,ticker+date
-ALDFU,considered,sub,10.0,0.29514463999999996,~$0.3B at listing (<$0.3B),Aldel Financial II Inc.,2024-10-22,auto:edgar+ritter,high,ALDFU,ticker+date
 GRTX,considered,sub,12.0,0.295019334,~$0.3B at listing (<$0.3B),Galera Therapeutics Inc,2019-11-07,auto:edgar+yf,high,GRTX,ticker+date
-GWIIU,considered,sub,10.0,0.294,~$0.3B at listing (<$0.3B),Good Works II Acquisition Corp,2021-07-12,ritter-anchor,med,GWIIU,ticker+date
 KRP,considered,sub,18.0,0.293994,~$0.3B at listing (<$0.3B),Kimbell Royalty Partners LP,2017-02-03,auto:edgar+ritter+yf,high,KRP,ticker+date
-HCMAU,considered,sub,10.0,0.29333333,~$0.3B at listing (<$0.3B),HCM III ACQUISITION CORP.,2025-08-01,ritter-anchor,med,HCMAU,ticker+date
 LXEO,considered,sub,11.0,0.29310070899999996,~$0.3B at listing (<$0.3B),"Lexeo Therapeutics, Inc.",2023-11-03,auto:edgar+yf,high,LXEO,ticker+date
-SBXCU,considered,sub,10.0,0.2925,~$0.3B at listing (<$0.3B),SilverBox Corp III,2023-02-28,ritter-anchor,med,SBXC,name+date(1.00)
 SYRS,considered,sub,12.5,0.29225625,~$0.3B at listing (<$0.3B),Syros Pharmaceuticals Inc,2016-06-30,single:yf,low,SYRS,ticker+date
 STIM,considered,sub,17.0,0.2916328495,~$0.3B at listing (<$0.3B),Neuronetics Inc,2018-06-28,auto:edgar+yf,high,STIM,ticker+date
 ARTV,considered,sub,12.0,0.291445728,~$0.3B at listing (<$0.3B),"Artiva Biotherapeutics, Inc.",2024-07-19,single:edgar,low,ARTV,ticker+date
-CLASU,considered,sub,10.0,0.2896875,~$0.3B at listing (<$0.3B),Class Acceleration Corp,2021-01-15,ritter-anchor,med,CLAS.,name+date(1.00)
-IPVFU,considered,sub,10.0,0.2895,~$0.3B at listing (<$0.3B),InterPrivate III Financial,2021-03-05,ritter-anchor,med,IPVF.,name+date(0.75)
-PUCKU,considered,sub,10.0,0.28875,~$0.3B at listing (<$0.3B),Goal Acquisitions Corp,2021-02-11,ritter-anchor,med,PUCKU,ticker+date
-NCACU,considered,sub,10.0,0.2885,~$0.3B at listing (<$0.3B),Newcourt Acquisition Corp,2021-10-20,ritter-anchor,med,NCACU,ticker+date
-THCPU,considered,sub,10.0,0.2875,~$0.3B at listing (<$0.3B),Thunder Bridge Capital IV Inc,2021-06-30,ritter-anchor,med,THCPU,ticker+date
-WRACU,considered,sub,10.0,0.2875,~$0.3B at listing (<$0.3B),Williams Rowland Acquisition,2021-07-27,ritter-anchor,med,WRAC.,name+date(1.00)
-ONYXU,considered,sub,10.0,0.2875,~$0.3B at listing (<$0.3B),Onyx Acquisition Co I,2021-11-03,ritter-anchor,med,ONYXU,ticker+date
-GRAFU,considered,sub,10.0,0.2875,~$0.3B at listing (<$0.3B),Graf Global Corp.,2024-06-26,ritter-anchor,med,GRAFU,ticker+date
-LPAAU,considered,sub,10.0,0.2875,~$0.3B at listing (<$0.3B),Launch One Acquisition Corp.,2024-07-12,ritter-anchor,med,LPAAU,ticker+date
-HONDU,considered,sub,10.0,0.2875,~$0.3B at listing (<$0.3B),HCM II Acquisition Corp.,2024-08-16,ritter-anchor,med,HONDU,ticker+date
-POLEU,considered,sub,10.0,0.2875,~$0.3B at listing (<$0.3B),Andretti Acquisition Corp. II,2024-09-06,ritter-anchor,med,POLEU,ticker+date
-LPBBU,considered,sub,10.0,0.2875,~$0.3B at listing (<$0.3B),Launch Two Acquisition Corp.,2024-10-08,ritter-anchor,med,LPBBU,ticker+date
-JACSU,considered,sub,10.0,0.2875,~$0.3B at listing (<$0.3B),Jackson Acquisition Co II,2024-12-10,ritter-anchor,med,JACSU,ticker+date
 NIU,considered,sub,9.0,0.2872737,~$0.3B at listing (<$0.3B),Niu Technologies,2018-10-19,single:yf,low,NIU,ticker+date
-SCACU,considered,sub,10.0,0.285,~$0.3B at listing (<$0.3B),Saban Capital Acquisition Corp,2016-09-16,ritter-anchor,med,SCACU,ticker+date
 TPGS,considered,sub,10.0,0.28478,~$0.3B at listing (<$0.3B),TPG Pace Solutions Corp,2021-04-09,ritter-anchor,med,TPGS,ticker+date
 NTST,considered,sub,18.0,0.2841858,~$0.3B at listing (<$0.3B),NetSTREIT Corp,2020-08-13,single:yf,low,NTST,ticker+date
 EOLS,considered,sub,12.0,0.28339973399999996,~$0.3B at listing (<$0.3B),Evolus Inc,2018-02-08,auto:edgar+yf,high,EOLS,ticker+date
 REGI,considered,sub,10.0,0.28308083,~$0.3B at listing (<$0.3B),Renewable Energy Group Inc,2012-01-18,ritter-anchor,med,REGI,ticker+date
-GFGDU,considered,sub,10.0,0.28234,~$0.3B at listing (<$0.3B),Growth for Good Acquisition Co,2021-12-10,ritter-anchor,med,GFGDU,ticker+date
 MBUU,considered,sub,14.0,0.2821777,~$0.3B at listing (<$0.3B),Malibu Boats,2014-01-31,auto:ritter+yf,high,MBUU,ticker+date
-IACC,considered,sub,10.0,0.2819,~$0.3B at listing (<$0.3B),ION Acquisition Corp 3 Ltd,2021-04-30,ritter-anchor,med,IACC,ticker+date
-FSRVU,considered,sub,10.0,0.28165,~$0.3B at listing (<$0.3B),Finserv Acq Corp,2019-11-01,ritter-anchor,med,FSRVU,ticker+date
 ANTX,considered,sub,15.0,0.28156843499999995,~$0.3B at listing (<$0.3B),AN2 Therapeutics Inc,2022-03-25,auto:edgar+yf,high,ANTX,ticker+date
-HCCOU,considered,sub,10.0,0.2814,~$0.3B at listing (<$0.3B),Healthcare Merger Corp,2019-12-13,ritter-anchor,med,HCCOU,ticker+date
 DNAA,considered,sub,10.0,0.2814,~$0.3B at listing (<$0.3B),Social Capital Suvretta I,2021-06-30,ritter-anchor,med,DNAA,ticker+date
 DNAB,considered,sub,10.0,0.2814,~$0.3B at listing (<$0.3B),Social Capital Suvretta II,2021-06-30,ritter-anchor,med,DNAB,ticker+date
 DNAC,considered,sub,10.0,0.2814,~$0.3B at listing (<$0.3B),Social Capital Suvretta III,2021-06-30,ritter-anchor,med,DNAC,ticker+date
 DNAD,considered,sub,10.0,0.2814,~$0.3B at listing (<$0.3B),Social Capital Suvretta IV,2021-06-30,ritter-anchor,med,DNAD,ticker+date
 REFI,considered,sub,16.0,0.281347224,~$0.3B at listing (<$0.3B),Chicago Atlantic Real Estate,2021-12-08,auto:edgar+yf,high,REFI,ticker+date
-TBRGU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),Thunder Bridge Acq Ltd,2018-06-19,ritter-anchor,med,TBRGU,ticker+date
-SMMCU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),South Mountain Merger Corp,2019-06-20,ritter-anchor,med,SMMCU,ticker+date
-CIICU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),CIIG Merger Corp,2019-12-13,ritter-anchor,med,CIICU,ticker+date
-IACAU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),ION Acquisition Corp 1 Ltd,2020-10-02,ritter-anchor,med,IACA.,name+date(1.00)
-SVOKU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),Seven Oaks Acquisition Corp.,2020-12-18,ritter-anchor,med,SVOKU,ticker+date
-CRU'U,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),Crucible Acquisition Corp,2021-01-05,ritter-anchor,med,CRU.U,name+date(1.00)
-GSAQU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),Global Synergy Acq Corp,2021-01-08,ritter-anchor,med,GSAQU,ticker+date
-HCIIU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),Hudson Exec Invest Corp II,2021-01-26,ritter-anchor,med,HCIIU,ticker+date
-FSSIU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),Fortistar Sustainable,2021-01-27,ritter-anchor,med,FSSIU,ticker+date
-VPCBU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),VPC Impact Acq Hldg II,2021-03-05,ritter-anchor,med,VPCBU,ticker+date
-NPABU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),New Providence Acquisition Cor,2021-11-05,ritter-anchor,med,NPABU,ticker+date
-SPCMU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),Sound Point Acquisition Corp I,2022-03-02,ritter-anchor,med,SPCMU,ticker+date
-IVCAU,considered,sub,10.0,0.28125,~$0.3B at listing (<$0.3B),Investcorp India Acquisition,2022-05-10,ritter-anchor,med,IVCAU,ticker+date
-BLUWU,considered,sub,10.0,0.2812,~$0.3B at listing (<$0.3B),Blue Water Acquisition Corp. I,2025-06-10,ritter-anchor,med,BLUWU,ticker+date
-NFINU,considered,sub,10.0,0.28115,~$0.3B at listing (<$0.3B),Netfin Acquisition Corp,2019-07-31,ritter-anchor,med,NFINU,ticker+date
-CORSU,considered,sub,10.0,0.2809,~$0.3B at listing (<$0.3B),Corsair Partnering Corp,2021-07-01,ritter-anchor,med,CORS.,name+date(1.00)
 TRUP,considered,sub,10.0,0.280333265,~$0.3B at listing (<$0.3B),Trupanion Inc,2014-07-18,auto:edgar+yf,high,TRUP,ticker+date
-ACAQU,considered,sub,10.0,0.28,~$0.3B at listing (<$0.3B),Athena Consumer Acquisition Co,2021-10-20,ritter-anchor,med,ACAQ.,name+date(1.00)
-IOACU,considered,sub,10.0,0.28,~$0.3B at listing (<$0.3B),Innovative International Acqui,2021-10-27,ritter-anchor,med,IOACU,ticker+date
-EVOXU,considered,sub,10.0,0.28,too recent: IPO 2025-11-11; +180 td outcome not yet observable,Evolution Global Acquisition,2025-11-11,ritter-anchor,med,EVOXU,ticker+date
 PYPD,considered,sub,16.0,0.279329912,~$0.3B at listing (<$0.3B),PolyPid Ltd,2020-06-26,auto:edgar+yf,high,PYPD,ticker+date
-PCAPU,considered,sub,10.0,0.2793,~$0.3B at listing (<$0.3B),ProCap Acquisition Corp,2025-05-21,ritter-anchor,med,PCAPU,ticker+date
-CCIRU,considered,sub,10.0,0.27905,~$0.3B at listing (<$0.3B),Cohen Circle Acquisition Corp.,2024-10-11,ritter-anchor,med,CCIRU,ticker+date
 MCB,considered,sub,35.0,0.27882277499999997,~$0.3B at listing (<$0.3B),Metropolitan Bank Holding Corp,2017-11-08,auto:edgar+yf,high,MCB,ticker+date
 CDNL,considered,sub,21.0,0.27759375,too recent: IPO 2025-12-10; +180 td outcome not yet observable,Cardinal Infrastructure Group,2025-12-10,ritter-anchor,med,CDNL,ticker+date
-TKKSU,considered,sub,10.0,0.277,~$0.3B at listing (<$0.3B),TKK Symphony Acquisition Corp,2018-08-16,ritter-anchor,med,TKKSU,ticker+date
-ATIIU,considered,sub,10.0,0.2767,~$0.3B at listing (<$0.3B),Archimedes Tech SPAC Partners,2025-02-11,auto:edgar+ritter,high,ATIIU,ticker+date
-SVIIU,considered,sub,10.0,0.27666667,~$0.3B at listing (<$0.3B),Spring Valley Acq Corp II,2022-10-13,ritter-anchor,med,SVIIU,ticker+date
-VCICU,considered,sub,10.0,0.27666667,~$0.3B at listing (<$0.3B),Vine Hill Capital Investment,2024-09-06,ritter-anchor,med,VCICU,ticker+date
-DRDBU,considered,sub,10.0,0.27666667,~$0.3B at listing (<$0.3B),Roman DBDR Acquisition Corp. I,2024-12-13,ritter-anchor,med,DRDBU,ticker+date
-SVACU,considered,sub,10.0,0.27666667,~$0.3B at listing (<$0.3B),Spring Valley Acquisition Corp,2025-09-04,ritter-anchor,med,SVACU,ticker+date
 PEPG,considered,sub,12.0,0.276149544,~$0.3B at listing (<$0.3B),PepGen Inc,2022-05-06,auto:edgar+yf,high,PEPG,ticker+date
 UCP,considered,sub,15.0,0.2751465,~$0.3B at listing (<$0.3B),UCP Inc,2013-07-17,ritter-anchor,med,UCP,ticker+date
-HPX'U,considered,sub,10.0,0.275,~$0.3B at listing (<$0.3B),HPX Corp,2020-07-16,ritter-anchor,med,HPX.U,name+date(1.00)
-DBDRU,considered,sub,10.0,0.275,~$0.3B at listing (<$0.3B),Roman DBDR Tech Acq Corp,2020-11-06,ritter-anchor,med,DBDRU,ticker+date
-RCLFU,considered,sub,10.0,0.275,~$0.3B at listing (<$0.3B),Rosecliff Acquisition Corp I,2021-02-12,ritter-anchor,med,RCLFU,ticker+date
-LOKMU,considered,sub,10.0,0.275,~$0.3B at listing (<$0.3B),Live Oak Mobility Acq Corp,2021-03-02,ritter-anchor,med,LOKM.,name+date(0.60)
-SBIIU,considered,sub,10.0,0.275,~$0.3B at listing (<$0.3B),Sandbridge X2 Corp,2021-03-10,ritter-anchor,med,SBII.,name+date(1.00)
-GGAAU,considered,sub,10.0,0.275,~$0.3B at listing (<$0.3B),Genesis Growth Tech Acquisitio,2021-12-09,ritter-anchor,med,GGAAU,ticker+date
-IPXXU,considered,sub,10.0,0.275,~$0.3B at listing (<$0.3B),Inflection Point Acquisit'n II,2023-05-25,ritter-anchor,med,IPXXU,ticker+date
-PACHU,considered,sub,10.0,0.275,~$0.3B at listing (<$0.3B),Pioneer Acquisition I Corp,2025-06-18,ritter-anchor,med,PACHU,ticker+date
-OBAWU,considered,sub,10.0,0.275,~$0.3B at listing (<$0.3B),Oxley Bridge Acquisition ltd,2025-06-25,ritter-anchor,med,OBAWU,ticker+date
 KZR,considered,sub,15.0,0.2748225,~$0.3B at listing (<$0.3B),Kezar Life Sciences Inc,2018-06-21,single:yf,low,KZR,ticker+date
-CLINU,considered,sub,10.0,0.27467,~$0.3B at listing (<$0.3B),Clean Earth Acquisitions Corp,2022-02-24,ritter-anchor,med,CLINU,ticker+date
-IRHOU,considered,sub,10.0,0.27444999999999997,too recent: IPO 2025-12-17; +180 td outcome not yet observable,Iron Horse Acquisition II Corp,2025-12-17,auto:edgar+ritter,high,IRHOU,ticker+date
-KOYNU,considered,sub,10.0,0.27441667,~$0.3B at listing (<$0.3B),CSLM Digital Asset Acquisition,2025-08-27,ritter-anchor,med,KOYNU,ticker+date
-INAQU,considered,sub,10.0,0.27387,~$0.3B at listing (<$0.3B),INSU Acquisition Corp II,2020-09-03,ritter-anchor,med,INAQU,ticker+date
-BIXIU,considered,sub,10.0,0.27366667,too recent: IPO 2025-12-02; +180 td outcome not yet observable,Bitcoin Infrastructure Acquis,2025-12-02,ritter-anchor,med,BIXIU,ticker+date
-VCXAU,considered,sub,10.0,0.27321667,~$0.3B at listing (<$0.3B),10X Capital Venture Acquisitio,2021-08-11,ritter-anchor,med,VCXAU,ticker+date
-SAC'U,considered,sub,10.0,0.27306667,too recent: IPO 2025-12-04; +180 td outcome not yet observable,Safeguard Acquisition Corp.,2025-12-04,ritter-anchor,med,SAC.U,name+date(1.00)
-SVAQU,considered,sub,10.0,0.27291,too recent: IPO 2025-12-23; +180 td outcome not yet observable,Silicon Valley Acq,2025-12-23,ritter-anchor,med,SVAQU,ticker+date
-SZZLU,considered,sub,10.0,0.27266667,~$0.3B at listing (<$0.3B),Sizzle Acquisition Corp. II,2025-04-02,ritter-anchor,med,SZZLU,ticker+date
-CHACU,considered,sub,10.0,0.27266667,~$0.3B at listing (<$0.3B),Crane Harbor Acquisition Corp.,2025-04-25,ritter-anchor,med,CHACU,ticker+date
-RNGTU,considered,sub,10.0,0.27266667,~$0.3B at listing (<$0.3B),Range Capital Acquisition Corp,2025-10-03,ritter-anchor,med,RNGTU,ticker+date
-VACIU,considered,sub,10.0,0.27266667,too recent: IPO 2025-10-31; +180 td outcome not yet observable,Viking Acquisition Corp I,2025-10-31,ritter-anchor,med,VACIU,ticker+date
-CRAQU,considered,sub,10.0,0.27266,~$0.3B at listing (<$0.3B),Cal Redwood Acquisition Corp.,2025-05-23,ritter-anchor,med,CRAQU,ticker+date
-AEAQU,considered,sub,10.0,0.27251667,too recent: IPO 2025-12-04; +180 td outcome not yet observable,Activate Energy Acquisition Co,2025-12-04,ritter-anchor,med,AEAQU,ticker+date
-MONCU,considered,sub,10.0,0.2725,~$0.3B at listing (<$0.3B),Monument Circle Acq Corp,2021-01-14,ritter-anchor,med,MONCU,ticker+date
-ADALU,considered,sub,10.0,0.271875,~$0.3B at listing (<$0.3B),Anthemis Digital Acquisitions,2021-10-28,ritter-anchor,med,ADALU,ticker+date
-IVCPU,considered,sub,10.0,0.271875,~$0.3B at listing (<$0.3B),Swiftmerge Acquisition Corp,2021-12-15,ritter-anchor,med,IVCPU,ticker+date
 CEPV,considered,sub,10.0,0.27165,too recent: IPO 2025-11-04; +180 td outcome not yet observable,"Cantor Equity Partners V, Inc.",2025-11-04,auto:ritter+yf,high,CEPV,ticker+date
 YDDL,considered,sub,5.0,0.27125,~$0.3B at listing (<$0.3B),One & one Green Technologies.,2025-10-09,auto:ritter+yf,high,YDDL,ticker+date
-RTACU,considered,sub,10.0,0.27096774,~$0.3B at listing (<$0.3B),Renatus Tactical Acquisition,2025-05-15,ritter-anchor,med,RTACU,ticker+date
 GAMB,considered,sub,8.0,0.270451288,~$0.3B at listing (<$0.3B),Gambling.com Group Ltd,2021-07-23,auto:edgar+yf,high,GAMB,ticker+date
-GAQ'U,considered,sub,10.0,0.27,~$0.3B at listing (<$0.3B),Generation Asia I Acquisition,2022-01-20,ritter-anchor,med,GAQ.U,name+date(1.00)
 MCFT,considered,sub,15.0,0.2699883075,~$0.3B at listing (<$0.3B),MCBC Holdings Inc,2015-07-17,auto:edgar+yf,high,MCFT,ticker+date
-ITHXU,considered,sub,10.0,0.26925,~$0.3B at listing (<$0.3B),Ithax Acquisition Corp,2021-01-28,ritter-anchor,med,ITHXU,ticker+date
 LEGH,considered,sub,12.0,0.268337616,~$0.3B at listing (<$0.3B),Legacy Housing Corp,2018-12-14,auto:edgar+yf,high,LEGH,ticker+date
-PMTRU,considered,sub,10.0,0.26825,~$0.3B at listing (<$0.3B),Perimeter Acquisition Corp.,2025-05-13,ritter-anchor,med,PMTRU,ticker+date
-IMAQU,considered,sub,10.0,0.2667195,~$0.3B at listing (<$0.3B),International Media Acquisitio,2021-07-29,auto:edgar+ritter,high,IMAQU,ticker+date
-HLAHU,considered,sub,10.0,0.26667,~$0.3B at listing (<$0.3B),Hamilton Lane Alliance Hldg I,2021-01-13,ritter-anchor,med,HLAHU,ticker+date
-FLYAU,considered,sub,10.0,0.26666667,~$0.3B at listing (<$0.3B),SOAR Technology Acquisition Co,2021-09-16,ritter-anchor,med,FLYA.,name+date(1.00)
-JGGCU,considered,sub,10.0,0.26666667,~$0.3B at listing (<$0.3B),Jaguar Global Growth Corp I,2022-02-11,ritter-anchor,med,JGGCU,ticker+date
-TVACU,considered,sub,10.0,0.26666667,~$0.3B at listing (<$0.3B),Texas Ventures Acquisition III,2025-04-23,ritter-anchor,med,TVACU,ticker+date
-ITHAU,considered,sub,10.0,0.26666667,too recent: IPO 2025-12-12; +180 td outcome not yet observable,ITHAX Acquisition Corp III,2025-12-12,ritter-anchor,med,ITHAU,ticker+date
-VHCPU,considered,sub,10.0,0.26666667,too recent: IPO 2025-12-18; +180 td outcome not yet observable,Vine Hill Capital Invest II,2025-12-18,ritter-anchor,med,VHCPU,ticker+date
 ESPR,considered,sub,14.0,0.265134891,~$0.3B at listing (<$0.3B),Esperion Therapeutics Inc,2013-06-25,auto:edgar+yf,high,ESPR,ticker+date
-LEGOU,considered,sub,10.0,0.26402,~$0.3B at listing (<$0.3B),Legato Merger Corp,2021-01-20,ritter-anchor,med,LEGOU,ticker+date
-GSRFU,considered,sub,10.0,0.263605,~$0.3B at listing (<$0.3B),GSR IV Acquisition Corp.,2025-09-04,ritter-anchor,med,GSRFU,ticker+date
-CMSSU,considered,sub,10.0,0.26323,~$0.3B at listing (<$0.3B),CM Seven Star Acquisition Corp,2017-10-26,ritter-anchor,med,CMSSU,ticker+date
 HMLP,considered,sub,20.0,0.26312,~$0.3B at listing (<$0.3B),Hoegh LNG Partners LP,2014-08-07,ritter-anchor,med,HMLP,ticker+date
 PI,considered,sub,14.0,0.26286130500000005,~$0.3B at listing (<$0.3B),Impinj Inc,2016-07-21,auto:edgar+yf,high,PI,ticker+date
-NESRU,considered,sub,10.0,0.2625,~$0.3B at listing (<$0.3B),Natl Energy Svcs Reunited Corp,2017-05-12,ritter-anchor,med,NESRU,ticker+date
-AEACU,considered,sub,10.0,0.2625,~$0.3B at listing (<$0.3B),Authentic Equity Acq Corp,2021-01-15,ritter-anchor,med,AEACU,ticker+date
-CLIMU,considered,sub,10.0,0.2625,~$0.3B at listing (<$0.3B),Climate Real Impact Solut II,2021-01-27,ritter-anchor,med,CLIM.,name+date(0.57)
-NRACU,considered,sub,10.0,0.2625,~$0.3B at listing (<$0.3B),Noble Rock Acquisition Corp,2021-02-02,ritter-anchor,med,NRACU,ticker+date
-DMYSU,considered,sub,10.0,0.2625,~$0.3B at listing (<$0.3B),dMY Technology Group Inc VI,2021-10-01,ritter-anchor,med,DMYS.,name+date(1.00)
-STETU,considered,sub,10.0,0.2625,~$0.3B at listing (<$0.3B),ST Energy Transition I Ltd,2021-12-03,ritter-anchor,med,STET.,name+date(1.00)
 TTOO,considered,sub,11.0,0.2622323,~$0.3B at listing (<$0.3B),T2 Biosystems Inc,2014-08-07,single:yf,low,TTOO,ticker+date
-LWACU,considered,sub,10.0,0.26175,~$0.3B at listing (<$0.3B),LightWave Acquisition Corp.,2025-06-25,ritter-anchor,med,LWACU,ticker+date
 CSTL,considered,sub,16.0,0.26019835199999997,~$0.3B at listing (<$0.3B),Castle Biosciences Inc,2019-07-25,auto:edgar+yf,high,CSTL,ticker+date
 WD,considered,sub,10.0,0.259870855,~$0.3B at listing (<$0.3B),Walker & Dunlop Inc,2010-12-14,auto:edgar+yf,high,WD,ticker+date
-MMDMU,considered,sub,10.0,0.25875,~$0.3B at listing (<$0.3B),Modern Media Acquisition Corp,2017-05-12,ritter-anchor,med,MMDMU,ticker+date
 CDLX,considered,sub,13.0,0.2585942255,~$0.3B at listing (<$0.3B),Cardlytics Inc,2018-02-09,auto:edgar+yf,high,CDLX,ticker+date
 CGTX,considered,sub,12.0,0.25793809199999995,~$0.3B at listing (<$0.3B),Cognition Therapeutics Inc,2021-10-08,auto:edgar+yf,high,CGTX,ticker+date
-CNGLU,considered,sub,10.0,0.257625,~$0.3B at listing (<$0.3B),Canna-Global Acquisition Corp,2021-11-30,ritter-anchor,med,CNGLU,ticker+date
-SMIHU,considered,sub,10.0,0.2575,~$0.3B at listing (<$0.3B),Summit Healthcare Acq Corp,2021-06-09,ritter-anchor,med,SMIHU,ticker+date
-SCUAU,considered,sub,10.0,0.2575,~$0.3B at listing (<$0.3B),Sculptor Acquisition Corp I,2021-12-09,ritter-anchor,med,SCUA.,name+date(1.00)
-RENEU,considered,sub,10.0,0.2575,~$0.3B at listing (<$0.3B),Cartesian Growth Corp II,2022-05-06,ritter-anchor,med,RENEU,ticker+date
-SBXDU,considered,sub,10.0,0.2575,~$0.3B at listing (<$0.3B),SilverBox Corp IV,2024-08-16,ritter-anchor,med,SBXDU,ticker+date
-GSRTU,considered,sub,10.0,0.2575,~$0.3B at listing (<$0.3B),GSR III Acquisition Corp.,2024-11-07,ritter-anchor,med,GSRTU,ticker+date
-AACBU,considered,sub,10.0,0.2575,~$0.3B at listing (<$0.3B),Artius II Acquisition. Inc.,2025-02-13,ritter-anchor,med,AACBU,ticker+date
-PSACU,considered,sub,10.0,0.25735,~$0.3B at listing (<$0.3B),Property Solutions Acq Corp,2020-07-22,ritter-anchor,med,PSACU,ticker+date
 SVFB,considered,sub,10.0,0.257,~$0.3B at listing (<$0.3B),SVF Invest Corp 2,2021-03-09,ritter-anchor,med,SVFB,ticker+date
-OTGAU,considered,sub,10.0,0.257,~$0.3B at listing (<$0.3B),OTG Acquisition Corp. I,2025-09-12,ritter-anchor,med,OTGAU,ticker+date
-FMCIU,considered,sub,10.0,0.25655,~$0.3B at listing (<$0.3B),Forum Merger II Corp,2018-08-03,ritter-anchor,med,FMCIU,ticker+date
-LCAPU,considered,sub,10.0,0.2565,~$0.3B at listing (<$0.3B),Lionheart Acquisition Corp II,2020-08-14,ritter-anchor,med,LCAPU,ticker+date
 DALS,considered,sub,10.0,0.2565,~$0.3B at listing (<$0.3B),DA32 Life Science Tech Acq,2021-07-28,ritter-anchor,med,DALS,ticker+date
-LHAA,considered,sub,10.0,0.2564,~$0.3B at listing (<$0.3B),Lerer Hippeau Acquisition Corp,2021-03-05,ritter-anchor,med,LHAA,ticker+date
 ENTA,considered,sub,14.0,0.256297272,~$0.3B at listing (<$0.3B),Enanta Pharmaceuticals Inc,2013-03-20,auto:edgar+yf,high,ENTA,ticker+date
 CABA,considered,sub,11.0,0.256228071,~$0.3B at listing (<$0.3B),Cabaletta Bio Inc,2019-10-25,auto:edgar+yf,high,CABA,ticker+date
-CTACU,considered,sub,10.0,0.256,~$0.3B at listing (<$0.3B),ChaSerg Technology Acquisition,2018-10-05,ritter-anchor,med,CTACU,ticker+date
-AKICU,considered,sub,10.0,0.256,~$0.3B at listing (<$0.3B),Sports Ventures Acq Corp,2021-01-06,ritter-anchor,med,AKICU,ticker+date
-FRONU,considered,sub,10.0,0.256,~$0.3B at listing (<$0.3B),Frontier Acq Corp,2021-03-11,ritter-anchor,med,FRONU,ticker+date
-HVMCU,considered,sub,10.0,0.256,~$0.3B at listing (<$0.3B),Highview Merger Corp.,2025-08-12,ritter-anchor,med,HVMC,name+date(1.00)
-GPACU,considered,sub,10.0,0.256,too recent: IPO 2025-12-03; +180 td outcome not yet observable,General Purpose Acquisition Co,2025-12-03,ritter-anchor,med,GPACU,ticker+date
-BIOSU,considered,sub,10.0,0.2556,~$0.3B at listing (<$0.3B),BioPlus Acquisition Corp,2021-12-03,ritter-anchor,med,BIOSU,ticker+date
-CFFEU,considered,sub,10.0,0.2554,~$0.3B at listing (<$0.3B),CF Acquisition Corp VIII,2021-03-12,ritter-anchor,med,CFFEU,ticker+date
-CFACU,considered,sub,10.0,0.255,~$0.3B at listing (<$0.3B),CF Finance Acq Corp III,2020-11-13,ritter-anchor,med,CFACU,ticker+date
-KAIIU,considered,sub,10.0,0.255,~$0.3B at listing (<$0.3B),Kismet Acquisition II  Corp,2021-02-18,ritter-anchor,med,KAIIU,ticker+date
-HCACU,considered,sub,10.0,0.25424639,too recent: IPO 2025-11-21; +180 td outcome not yet observable,Hall Chadwick Acquisition Corp,2025-11-21,ritter-anchor,med,HCACU,ticker+date
 VEL,considered,sub,13.0,0.254068711,~$0.3B at listing (<$0.3B),Velocity Financial LLC,2020-01-17,auto:edgar+yf,high,VEL,ticker+date
 ASPN,considered,sub,11.0,0.2535885,~$0.3B at listing (<$0.3B),Aspen Aerogels Inc,2014-06-13,auto:edgar+yf,high,ASPN,ticker+date
-ATAKU,considered,sub,10.0,0.253,~$0.3B at listing (<$0.3B),Aurora Technology Acquisition,2022-02-07,ritter-anchor,med,ATAKU,ticker+date
-BWMCU,considered,sub,10.0,0.2525,~$0.3B at listing (<$0.3B),Boxwood Merger Corp,2018-11-16,ritter-anchor,med,BWMCU,ticker+date
-JENAU,considered,sub,10.0,0.25225,~$0.3B at listing (<$0.3B),Jena Acquisition Corp II,2025-05-29,ritter-anchor,med,JENAU,ticker+date
 DKL,considered,sub,21.0,0.251979,~$0.3B at listing (<$0.3B),Delek Logistics Partners LP,2012-11-01,ritter-anchor,med,DKL,ticker+date
 PLOW,considered,sub,11.25,0.25186275,~$0.3B at listing (<$0.3B),Douglas Dynamics Inc,2010-05-05,single:yf,low,PLOW,ticker+date
-EACQU,considered,sub,10.0,0.25175,~$0.3B at listing (<$0.3B),Easterly Acquisition Corp,2015-07-29,ritter-anchor,med,EACQU,ticker+date
 BRDU,considered,sub,10.0,0.250025,~$0.3B at listing (<$0.3B),Beard Energy Transition Acquis,2021-11-24,ritter-anchor,med,BRD.U,name+date(0.60)
-ELECU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Electrum Special Acquisition C,2015-06-01,ritter-anchor,med,ELECU,ticker+date
-LACQU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Leisure Acquisition Corp,2017-12-01,ritter-anchor,med,LACQU,ticker+date
-NPAUU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),New Providence Acquisition,2019-09-11,ritter-anchor,med,NPAUU,ticker+date
-LATNU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Union Acq Corp II,2019-10-18,ritter-anchor,med,LATNU,ticker+date
-SCVXU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),SCVX Corp,2020-01-24,ritter-anchor,med,SCVX.,name+date(1.00)
-DFPHU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),DFP Healthcare Acqs Corp,2020-03-11,ritter-anchor,med,DFPHU,ticker+date
-ACEVU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),ACE Convergence Acq Corp,2020-07-28,ritter-anchor,med,ACEVU,ticker+date
-FST'U,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),FAST Acquisition Corp,2020-08-21,ritter-anchor,med,FST.U,name+date(1.00)
-VIHAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),VPC Impact Acq Hldg,2020-09-23,ritter-anchor,med,VIHAU,ticker+date
-DCRBU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Decarbonization Plus Acq Corp,2020-10-20,ritter-anchor,med,DCRBU,ticker+date
-LFTRU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Lefteris Acquisition Corp,2020-10-21,ritter-anchor,med,LFTRU,ticker+date
-ACACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Acies Acquisition Corp,2020-10-23,ritter-anchor,med,ACACU,ticker+date
-NOACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Natural Order Acquisition Corp,2020-11-11,ritter-anchor,med,NOACU,ticker+date
-PIPPU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Pine Island Acq Corp,2020-11-17,ritter-anchor,med,PIPP,name+date(0.50)
-ZNTEU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Zanite Acquisition Corp,2020-11-17,ritter-anchor,med,ZNTEU,ticker+date
-ARBGU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Aequi Acquisition Corp,2020-11-20,ritter-anchor,med,ARBGU,ticker+date
-CAS'U,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Cascade Acquisition Corp,2020-11-20,ritter-anchor,med,CASU,name+date(1.00)
-OCA'U,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Omnichannel Acquisition Corp,2020-11-20,ritter-anchor,med,OCA U,name+date(1.00)
-SVSVU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Spring Valley Acquisition Corp,2020-11-24,ritter-anchor,med,SVSVU,ticker+date
-RSVAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Rodgers Silicon Valley Acq,2020-12-02,ritter-anchor,med,RSVAU,ticker+date
-TACAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Trepont Acquisition Corp I,2020-12-02,ritter-anchor,med,TACA.,name+date(1.00)
-PTICU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),PropTech Invest Corp II,2020-12-04,ritter-anchor,med,PTICU,ticker+date
-FVT'U,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Fortress Value Acq Corp III,2021-01-05,ritter-anchor,med,FVT.U,name+date(0.60)
-BLTSU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Bright Lights Acq Corp,2021-01-07,ritter-anchor,med,BLTSU,ticker+date
-PAQCU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Provident Acquisition Corp,2021-01-08,ritter-anchor,med,PAQCU,ticker+date
-GNACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Group Nine Acquisition Corp,2021-01-15,ritter-anchor,med,GNACU,ticker+date
-OSTRU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Oyster Enterprises Acq Corp,2021-01-20,ritter-anchor,med,OSTRU,ticker+date
-SHACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),SCP & CO Healthcare Acq Co,2021-01-22,ritter-anchor,med,SHACU,ticker+date
-VOSOU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Virtuoso Acq Corp,2021-01-22,ritter-anchor,med,VOSOU,ticker+date
-BIOTU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Biotech Acq Co,2021-01-26,ritter-anchor,med,BIOTU,ticker+date
-ZWRKU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Z-Work Acquisition Corp,2021-01-29,ritter-anchor,med,ZWRKU,ticker+date
-TMACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Music Acquisition Corp,2021-02-03,ritter-anchor,med,TMAC.,name+date(1.00)
-ITQRU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Itiquira Acquisition Corp,2021-02-04,ritter-anchor,med,ITQRU,ticker+date
-VELOU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Velocity Acq Corp,2021-02-23,ritter-anchor,med,VELOU,ticker+date
-BOASU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),BOA Acquisition Corp,2021-02-24,ritter-anchor,med,BOAS.,name+date(1.00)
-KCACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Kensington Capital Acq Corp II,2021-02-26,ritter-anchor,med,KCAC.,name+date(0.60)
-TRCAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Twin Ridge Capital Acq Corp,2021-03-04,ritter-anchor,med,TRCA.,name+date(0.60)
-FRSGU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),First Reserve Sustainable,2021-03-05,ritter-anchor,med,FRSGU,ticker+date
-FRWAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),PWP Forward Acquisition Corp I,2021-03-10,ritter-anchor,med,FRWAU,ticker+date
-FZT'U,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),FAST Acquisition Corp II,2021-03-16,ritter-anchor,med,FZT.U,name+date(1.00)
-AFAQU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),AF Acq Corp,2021-03-19,ritter-anchor,med,AFAQU,ticker+date
-LDHAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),LDH Growth Corp I,2021-03-19,ritter-anchor,med,LDHAU,ticker+date
-GLHAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Glass Houses Acquisition Corp,2021-03-23,ritter-anchor,med,GLHAU,ticker+date
-OPA'U,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Magnum Opus Acq Ltd,2021-03-23,ritter-anchor,med,OPA.U,name+date(0.50)
-TBSAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),TB SA Acquisition Corp,2021-03-23,ritter-anchor,med,TBSAU,ticker+date
-CRZNU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Corazon Capital V838,2021-03-24,ritter-anchor,med,CRZNU,ticker+date
-VLATU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Valor Latitude Acq Corp,2021-05-04,ritter-anchor,med,VLATU,ticker+date
-ORIAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Orion Biotech Opportunities,2021-05-13,ritter-anchor,med,ORIAU,ticker+date
-SKYAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Skydeck Acquisition Corp,2021-05-19,ritter-anchor,med,SKYAU,ticker+date
-SHQAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Shelter Acquisition Corp I,2021-06-30,ritter-anchor,med,SHQAU,ticker+date
-SWAGU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Software Acquisition Group III,2021-07-29,ritter-anchor,med,SWAGU,ticker+date
-XPAXU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),XPAC Acquisition Corp,2021-07-30,ritter-anchor,med,XPAXU,ticker+date
-WQGAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),World Quantum Growth Acquisiti,2021-08-11,ritter-anchor,med,WQGA.,name+date(0.60)
-WAVCU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Waverley Capital Acquisition I,2021-08-20,ritter-anchor,med,WAVC.,name+date(1.00)
-DTRTU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),DTRT Health Acquisition Corp,2021-09-02,ritter-anchor,med,DTRTU,ticker+date
-FLAGU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),First Light Acquisition Group,2021-09-10,ritter-anchor,med,FLAGU,ticker+date
-FHLTU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Future Health ESG Corp,2021-09-10,ritter-anchor,med,FHLTU,ticker+date
-EDNCU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Endurance Acquisition Corp,2021-09-15,ritter-anchor,med,EDNCU,ticker+date
-LOCCU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Live Oak Crestview Climate Acq,2021-09-23,ritter-anchor,med,LOCC.,name+date(0.67)
-DSAQU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Direct Selling Acquisition,2021-09-24,ritter-anchor,med,DSAQ.,name+date(1.00)
-HPLTU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Home Plate Acquisition Corp,2021-09-30,ritter-anchor,med,HPLTU,ticker+date
-BHACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Crixus BH3 Acquisition Co,2021-10-05,ritter-anchor,med,BHACU,ticker+date
-IXAQU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),IX Acquisition Corp,2021-10-07,ritter-anchor,med,IXAQU,ticker+date
-HWKZU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Hawks Acquisition Corp,2021-10-08,ritter-anchor,med,HWKZ.,name+date(1.00)
-LCW'U,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Learn CW Investment Corp,2021-10-08,ritter-anchor,med,LCW.U,name+date(1.00)
-TRISU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Tristar Acquisition I Corp,2021-10-14,ritter-anchor,med,TRIS.,name+date(1.00)
-CDAQU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Compass Digital Acquisition Co,2021-10-15,ritter-anchor,med,CDAQU,ticker+date
-WWACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Worldwide Webb Acquisition Cor,2021-10-20,ritter-anchor,med,WWACU,ticker+date
-XFINU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),ExcelFin Acquisition Corp,2021-10-21,ritter-anchor,med,XFINU,ticker+date
-PGSSU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Pegasus Digital Mobility Acqui,2021-10-22,ritter-anchor,med,PGSS.,name+date(0.60)
-USCTU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),TKB Critical Technologies 1,2021-10-27,ritter-anchor,med,USCTU,ticker+date
-FIACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Focus Impact Acquisition Corp,2021-10-28,ritter-anchor,med,FIACU,ticker+date
-PCCTU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Perception Capital Corp II,2021-10-28,ritter-anchor,med,PCCTU,ticker+date
-AEAEU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),AltEnergy Acquisition Corp,2021-10-29,ritter-anchor,med,AEAEU,ticker+date
-MPRAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Mercato Partners Acquisition C,2021-11-04,ritter-anchor,med,MPRAU,ticker+date
-SHCAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Spindletop Health Acquisition,2021-11-04,ritter-anchor,med,SHCAU,ticker+date
-TOACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Talon 1 Acquisition Corp,2021-11-04,ritter-anchor,med,TOACU,ticker+date
-SVNAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),7 Acquisition Corp,2021-11-05,ritter-anchor,med,SVNAU,ticker+date
-MCAAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Mountain & Co. I Acquisition C,2021-11-05,ritter-anchor,med,MCAAU,ticker+date
-DPCSU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),DP Cap Acquisition Corp I,2021-11-09,ritter-anchor,med,DPCSU,ticker+date
-HTAQU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Hunt Companies Acquisition Cor,2021-11-09,ritter-anchor,med,HTAQ.,name+date(0.75)
-CBRGU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Chain Bridge I,2021-11-10,ritter-anchor,med,CBRGU,ticker+date
-VMGAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),VMG Consumer Acquisition Corp,2021-11-11,ritter-anchor,med,VMGAU,ticker+date
-IRRXU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Integrated Rail & Resources Ac,2021-11-12,ritter-anchor,med,IRRX.,name+date(0.60)
-CMCAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Capitalworks Emerging Markets,2021-12-01,ritter-anchor,med,CMCAU,ticker+date
-TLGYU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),TLGY Acquisition Corp,2021-12-01,ritter-anchor,med,TLGYU,ticker+date
-DAOOU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Crypto 1 Acquisition Corp,2021-12-07,ritter-anchor,med,DAOOU,ticker+date
-RJACU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Jackson Acquisition Co,2021-12-09,ritter-anchor,med,RJAC.,name+date(1.00)
-TGAAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Target Global Acquisition I Co,2021-12-09,ritter-anchor,med,TGAAU,ticker+date
-HAIAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Healthcare AI Acquisition Corp,2021-12-10,ritter-anchor,med,HAIAU,ticker+date
-CITEU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Cartica Acquisition Corp,2022-01-05,ritter-anchor,med,CITEU,ticker+date
-KNSWU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),KnightSwan Acquisition Corp,2022-01-21,ritter-anchor,med,KNSW.,name+date(1.00)
-TGR'U,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Kimbell Tiger Acquisition Corp,2022-02-04,ritter-anchor,med,TGR.U,name+date(1.00)
-VMCAU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Valuence Merger Corp I,2022-03-01,ritter-anchor,med,VMCAU,ticker+date
-PLAOU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Patria Latin American Opportun,2022-03-09,ritter-anchor,med,PLAOU,ticker+date
-SKGRU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),SK Growth Opportunities Corp,2022-06-24,ritter-anchor,med,SKGRU,ticker+date
-VNMEU,considered,sub,10.0,0.25,~$0.2B at listing (<$0.3B),Vendome Acquisition Corp I,2025-07-02,ritter-anchor,med,VNMEU,ticker+date
-ADACU,considered,sub,10.0,0.25,too recent: IPO 2025-12-18; +180 td outcome not yet observable,American Drive Acquisition Co,2025-12-18,ritter-anchor,med,ADACU,ticker+date
-LPCVU,considered,sub,10.0,0.25,too recent: IPO 2025-12-18; +180 td outcome not yet observable,Launchpad Cadenza Acquisition,2025-12-18,ritter-anchor,med,LPCVU,ticker+date
 RITR,considered,sub,4.0,0.2485,~$0.2B at listing (<$0.3B),Reitar Logtech Holdings Ltd,2024-08-23,auto:ritter+yf,high,RITR,ticker+date
 COLL,considered,sub,12.0,0.248126982,~$0.2B at listing (<$0.3B),Collegium Pharmaceutical Inc,2015-05-07,auto:edgar+yf,high,COLL,ticker+date
 ACRV,considered,sub,12.5,0.24809163750000002,~$0.2B at listing (<$0.3B),Acrivon Therapeutics Inc,2022-11-14,auto:edgar+yf,high,ACRV,ticker+date
 BCYC,considered,sub,14.0,0.2477496,~$0.2B at listing (<$0.3B),Bicycle Therapeutics Ltd,2019-05-23,single:yf,low,BCYC,ticker+date
 SPKE,considered,sub,18.0,0.2475,~$0.2B at listing (<$0.3B),Spark Energy Inc,2014-07-29,ritter-anchor,med,SPKE,ticker+date
-HVIIU,considered,sub,10.0,0.2475,~$0.2B at listing (<$0.3B),Hennessy Capital Investment Co,2025-01-17,ritter-anchor,med,HVIIU,ticker+date
 SXE,considered,sub,20.0,0.24428,~$0.2B at listing (<$0.3B),Southcross Energy Partners LP,2012-11-01,ritter-anchor,med,SXE,ticker+date
 SND,considered,sub,11.0,0.2438634,~$0.2B at listing (<$0.3B),Smart Sand,2016-11-04,single:yf,low,SND,ticker+date
-BACCU,considered,sub,10.0,0.243625,~$0.2B at listing (<$0.3B),Blue Acquisition Corp/Cayman,2025-06-13,ritter-anchor,med,BACCU,ticker+date
 GDOT,considered,sub,36.0,0.243612,~$0.2B at listing (<$0.3B),Green Dot Corp,2010-07-21,ritter-anchor,med,GDOT,ticker+date
-FACTU,considered,sub,10.0,0.24208333,~$0.2B at listing (<$0.3B),FACT II Acquisition Corp.,2024-11-26,ritter-anchor,med,FACTU,ticker+date
-EQHAU,considered,sub,10.0,0.23913,~$0.2B at listing (<$0.3B),EQ Health Acquisition Corp,2021-01-29,ritter-anchor,med,EQHA.,name+date(1.00)
-AXINU,considered,sub,10.0,0.23883333,~$0.2B at listing (<$0.3B),Axiom Intelligence Acquisition,2025-06-18,ritter-anchor,med,AXINU,ticker+date
 EQ,considered,sub,14.0,0.238510552,~$0.2B at listing (<$0.3B),Equillium,2018-10-12,auto:edgar+yf,high,EQ,ticker+date
 AFCG,considered,sub,19.0,0.2384668815,~$0.2B at listing (<$0.3B),AFC Gamma Inc,2021-03-19,auto:edgar+yf,high,AFCG,ticker+date
-PAIIU,considered,sub,10.0,0.23809524,~$0.2B at listing (<$0.3B),Pyrophyte Acquisition Corp. II,2025-07-17,ritter-anchor,med,PAII,name+date(1.00)
-TVAIU,considered,sub,10.0,0.23695833,~$0.2B at listing (<$0.3B),Thayer Ventures Acquisition,2025-05-15,ritter-anchor,med,TVAIU,ticker+date
-NGC'U,considered,sub,10.0,0.2365,~$0.2B at listing (<$0.3B),Northern Genesis Acq Corp III,2021-03-24,ritter-anchor,med,NGC.U,name+date(0.60)
 RETA,considered,sub,11.0,0.236479166,~$0.2B at listing (<$0.3B),Reata Pharmaceuticals Inc,2016-05-26,ritter-anchor,med,RETA,ticker+date
-FTIVU,considered,sub,10.0,0.2361,~$0.2B at listing (<$0.3B),Fintech Acquisition Corp IV,2020-09-25,ritter-anchor,med,FTIVU,ticker+date
 CLPR,considered,sub,13.5,0.23507249624999998,~$0.2B at listing (<$0.3B),Clipper Realty Inc,2017-02-10,auto:edgar+yf,high,CLPR,ticker+date
-NTWOU,considered,sub,10.0,0.23468,~$0.2B at listing (<$0.3B),Newbury Street II Acquisition,2024-11-01,ritter-anchor,med,NTWOU,ticker+date
-ASCBU,considered,sub,10.0,0.23403,~$0.2B at listing (<$0.3B),A SPAC II Acquisition Corp,2022-05-03,ritter-anchor,med,ASCBU,ticker+date
-ROCAU,considered,sub,10.0,0.23395,~$0.2B at listing (<$0.3B),ROC Energy Acquisition Corp,2021-12-02,ritter-anchor,med,ROCAU,ticker+date
 EGRX,considered,sub,15.0,0.23385,~$0.2B at listing (<$0.3B),Eagle Pharmaceuticals,2014-02-12,single:yf,low,EGRX,ticker+date
-CRECU,considered,sub,10.0,0.23333333,~$0.2B at listing (<$0.3B),Crescera Capital Acquisition C,2021-11-19,ritter-anchor,med,CRECU,ticker+date
-DNMXU,considered,sub,10.0,0.23333333,too recent: IPO 2025-10-30; +180 td outcome not yet observable,Dynamix Corp III,2025-10-30,ritter-anchor,med,DNMXU,ticker+date
-IQMDU,considered,sub,10.0,0.23175,~$0.2B at listing (<$0.3B),Intelligent Medicine Acquisiti,2021-11-05,ritter-anchor,med,IQMDU,ticker+date
 HCAQ,considered,sub,10.0,0.2306,~$0.2B at listing (<$0.3B),HealthCor Catalio Acq Corp,2021-01-27,ritter-anchor,med,HCAQ,ticker+date
-PLMKU,considered,sub,10.0,0.23,~$0.2B at listing (<$0.3B),"Plum Acquisition Corp, IV",2025-01-15,ritter-anchor,med,PLMKU,ticker+date
-BWCAU,considered,sub,10.0,0.22941,~$0.2B at listing (<$0.3B),Blue Whale Acquisition Corp I,2021-08-04,ritter-anchor,med,BWCAU,ticker+date
-ISLEU,considered,sub,10.0,0.22794,~$0.2B at listing (<$0.3B),Isleworth Healthcare Acq Corp,2021-02-25,ritter-anchor,med,ISLEU,ticker+date
 CEPO,considered,sub,10.0,0.22749999999999998,~$0.2B at listing (<$0.3B),"Cantor Equity Partners I, Inc",2025-01-07,auto:ritter+yf,high,CEPO,ticker+date
-SHAPU,considered,sub,10.0,0.22735,~$0.2B at listing (<$0.3B),Spree Acquisition Corp. 1 Ltd,2021-12-16,ritter-anchor,med,SHAP.,name+date(1.00)
-AVACU,considered,sub,10.0,0.22635,~$0.2B at listing (<$0.3B),Avalon Acquisition Inc.,2021-10-06,ritter-anchor,med,AVACU,ticker+date
-ENERU,considered,sub,10.0,0.2262,~$0.2B at listing (<$0.3B),Accretion Acquisition Corp,2021-10-21,ritter-anchor,med,ENERU,ticker+date
-GHACU,considered,sub,10.0,0.22603,~$0.2B at listing (<$0.3B),Gaming & Hospity Acq Corp,2021-02-03,ritter-anchor,med,GHACU,ticker+date
 AMRE,considered,sub,14.0,0.225782018,~$0.2B at listing (<$0.3B),AmREIT Inc,2012-07-26,ritter-anchor,med,AMRE,ticker+date
-OACCU,considered,sub,10.0,0.2253125,~$0.2B at listing (<$0.3B),Oaktree Acquisition Corp. III,2024-10-24,ritter-anchor,med,OACCU,ticker+date
 RNGR,considered,sub,14.5,0.225293257,~$0.2B at listing (<$0.3B),Ranger Energy Services,2017-08-11,auto:ritter+yf,high,RNGR,ticker+date
 VERA,considered,sub,11.0,0.225272355,~$0.2B at listing (<$0.3B),Vera Therapeutics Inc,2021-05-14,auto:ritter+yf,high,VERA,ticker+date
-DLCAU,considered,sub,10.0,0.225,~$0.2B at listing (<$0.3B),Deep Lake Capital Acq Corp,2021-01-13,ritter-anchor,med,DLCAU,ticker+date
-ENVIU,considered,sub,10.0,0.225,~$0.2B at listing (<$0.3B),Environmental Impact Acq Corp,2021-01-14,ritter-anchor,med,ENVIU,ticker+date
-LEGTU,considered,sub,10.0,0.22485313,~$0.2B at listing (<$0.3B),Legato Merger Corp. III,2024-02-06,ritter-anchor,med,LEGTU,ticker+date
-BITEU,considered,sub,10.0,0.22465,~$0.2B at listing (<$0.3B),Bite Acquisition Corp,2021-02-12,ritter-anchor,med,BITE.,name+date(1.00)
-IFINU,considered,sub,10.0,0.22463446,~$0.2B at listing (<$0.3B),InFinT Acquisition Corp,2021-11-19,ritter-anchor,med,IFINU,ticker+date
-FSII,considered,sub,10.0,0.22425,~$0.2B at listing (<$0.3B),FS Development Corp II,2021-02-17,ritter-anchor,med,FSII,ticker+date
 LGIH,considered,sub,11.0,0.2242484695,~$0.2B at listing (<$0.3B),LGI Homes,2013-11-07,auto:edgar+yf,high,LGIH,ticker+date
 AMRC,considered,sub,10.0,0.22403276,~$0.2B at listing (<$0.3B),Ameresco Inc,2010-07-21,ritter-anchor,med,AMRC,ticker+date
-MIIIU,considered,sub,10.0,0.22385,~$0.2B at listing (<$0.3B),M III Acquisition Corp,2016-07-07,ritter-anchor,med,MIIIU,ticker+date
-CFFSU,considered,sub,10.0,0.22325,~$0.2B at listing (<$0.3B),CF Acquisition Corp. VII,2021-12-16,ritter-anchor,med,CFFSU,ticker+date
-MNCLU,considered,sub,10.0,0.2228,~$0.2B at listing (<$0.3B),Monocle Acq Corp,2019-02-07,ritter-anchor,med,MNCLU,ticker+date
 ATRA,considered,sub,11.0,0.222341779,~$0.2B at listing (<$0.3B),Atara Biotherapeutics Inc,2014-10-16,single:edgar,low,ATRA,ticker+date
 CAMP,considered,sub,11.0,0.221771803,~$0.2B at listing (<$0.3B),Camp4 Therapeutics Corp,2024-10-11,single:edgar,low,CAMP,ticker+date
 ACRS,considered,sub,11.0,0.2217325165,~$0.2B at listing (<$0.3B),Aclaris Therapeutics Inc,2015-10-07,auto:edgar+yf,high,ACRS,ticker+date
-RNERU,considered,sub,10.0,0.22159,~$0.2B at listing (<$0.3B),Mount Rainier Acquisition Corp,2021-10-05,ritter-anchor,med,RNERU,ticker+date
-MACIU,considered,sub,10.0,0.22060811,~$0.2B at listing (<$0.3B),Melar Acquisition Corp. I/Caym,2024-06-18,ritter-anchor,med,MACIU,ticker+date
-GBBKU,considered,sub,10.0,0.22013,~$0.2B at listing (<$0.3B),Global Blockchain Acquisition,2022-05-10,ritter-anchor,med,GBBKU,ticker+date
-GNRSU,considered,sub,10.0,0.21893,~$0.2B at listing (<$0.3B),Greenrose Acq Corp,2020-02-11,ritter-anchor,med,GNRSU,ticker+date
-PMVCU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),PMV Consumer Acquisition Corp,2020-09-22,ritter-anchor,med,PMVC,name+date(1.00)
-SRSAU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Sarissa Capital Acq Corp,2020-10-21,ritter-anchor,med,SRSAU,ticker+date
-VCVCU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),10X Capital Venture Acq Corp,2020-11-24,ritter-anchor,med,VCVCU,ticker+date
-VHAQU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Viveon Health Acquisition Corp,2020-12-23,ritter-anchor,med,VHAQ.,name+date(1.00)
-QFTAU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Quantum FinTech Acquisition,2021-02-05,ritter-anchor,med,QFTA.,name+date(1.00)
-TCACU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Tuatara Capital Acquisition,2021-02-12,ritter-anchor,med,TCACU,ticker+date
-GAPAU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),G&P Acquisition Corp,2021-03-11,ritter-anchor,med,GAPA.,name+date(1.00)
-KSICU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Kadem Sustainable Impact Corp,2021-03-17,ritter-anchor,med,KSICU,ticker+date
-TRONU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Corner Growth Acq Corp 2,2021-06-17,ritter-anchor,med,TRONU,ticker+date
-MEACU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Mercury Ecommerce Acq Corp,2021-07-28,ritter-anchor,med,MEACU,ticker+date
-TPBAU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),TPB Acquisition Corp I,2021-08-11,ritter-anchor,med,TPBAU,ticker+date
-ARTEU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Artemis Strategic Investment C,2021-09-30,ritter-anchor,med,ARTEU,ticker+date
-GTACU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Global Technology Acquisition,2021-10-21,ritter-anchor,med,GTACU,ticker+date
-PHYTU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Pyrophyte Acquisition Corp,2021-10-27,ritter-anchor,med,PHYT.,name+date(1.00)
-SEDAU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),SDCL EDGE Acquisition Corp,2021-10-29,ritter-anchor,med,SEDA.,name+date(1.00)
-MLAIU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),McLaren Technology Acquisition,2021-11-03,ritter-anchor,med,MLAIU,ticker+date
-GEEXU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Games & Esports Experience Acq,2021-12-02,ritter-anchor,med,GEEXU,ticker+date
-PRLHU,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Pearl Holdings Acquisition Cor,2021-12-15,ritter-anchor,med,PRLHU,ticker+date
-HMA'U,considered,sub,10.0,0.21875,~$0.2B at listing (<$0.3B),Heartland Media Acquisition Co,2022-01-21,ritter-anchor,med,HMA.U,name+date(1.00)
 ICHR,considered,sub,9.0,0.21840407550000002,~$0.2B at listing (<$0.3B),Ichor Holdings Ltd,2016-12-09,auto:edgar+yf,high,ICHR,ticker+date
 OOMA,considered,sub,13.0,0.2182452415,~$0.2B at listing (<$0.3B),Ooma Inc,2015-07-17,auto:edgar+yf,high,OOMA,ticker+date
-GVCIU,considered,sub,10.0,0.2175,~$0.2B at listing (<$0.3B),Green Visor Financial Technolo,2021-11-09,ritter-anchor,med,GVCIU,ticker+date
-VHNAU,considered,sub,10.0,0.2175,~$0.2B at listing (<$0.3B),Vahanna Tech Edge Acq I,2021-11-23,ritter-anchor,med,VHNAU,ticker+date
-SCIIU,considered,sub,10.0,0.21683571,too recent: IPO 2025-11-26; +180 td outcome not yet observable,SC II Acquisition Corp.,2025-11-26,ritter-anchor,med,SCIIU,ticker+date
-GACQU,considered,sub,10.0,0.21682,~$0.2B at listing (<$0.3B),Global Consumer Acq Corp,2021-06-09,ritter-anchor,med,GACQU,ticker+date
 CELP,considered,sub,20.0,0.21652,~$0.2B at listing (<$0.3B),Cypress Energy Partners LP,2014-01-15,ritter-anchor,med,CELP,ticker+date
 HIT,considered,sub,4.0,0.216277516,~$0.2B at listing (<$0.3B),"Health in Tech, Inc",2024-12-23,auto:ritter+yf,high,HIT,ticker+date
 VERI,considered,sub,15.0,0.21602754,~$0.2B at listing (<$0.3B),Veritone Inc,2017-05-12,auto:edgar+yf,high,VERI,ticker+date
-GPIAU,considered,sub,10.0,0.21563,~$0.2B at listing (<$0.3B),GP Investments Acq Corp,2015-05-20,ritter-anchor,med,GPIAU,ticker+date
-CLAQU,considered,sub,10.0,0.21563,~$0.2B at listing (<$0.3B),CleanTech Acquisition Corp,2021-07-15,ritter-anchor,med,CLAQU,ticker+date
 YIBO,considered,sub,4.0,0.2155264,~$0.2B at listing (<$0.3B),Planet Image International Ltd,2024-01-25,ritter-anchor,med,YIBO,ticker+date
-GFORU,considered,sub,10.0,0.21452,~$0.2B at listing (<$0.3B),Graf Acquisition Corp IV,2021-05-21,ritter-anchor,med,GFORU,ticker+date
 CADL,considered,sub,8.0,0.213946168,~$0.2B at listing (<$0.3B),Candel Therapeutics Inc,2021-07-27,auto:edgar+yf,high,CADL,ticker+date
 UNCY,considered,sub,5.0,0.213413575,~$0.2B at listing (<$0.3B),Unicycive Therapeutics Inc,2021-07-13,ritter-anchor,med,UNCY,ticker+date
 BBRG,considered,sub,14.0,0.212898,~$0.2B at listing (<$0.3B),Bravo Brio Restaurant Grp Inc,2010-10-21,single:yf,low,BBRG,ticker+date
-MKLYU,considered,sub,10.0,0.21229655,~$0.2B at listing (<$0.3B),McKinley Acquisition Corp,2025-08-12,ritter-anchor,med,MKLYU,ticker+date
 SNDX,considered,sub,12.0,0.2108409,~$0.2B at listing (<$0.3B),Syndax Pharmaceuticals Inc,2016-03-03,auto:edgar+yf,high,SNDX,ticker+date
-SVCCU,considered,sub,10.0,0.21059925,~$0.2B at listing (<$0.3B),Stellar V Capital Corp.,2025-01-30,ritter-anchor,med,SVCCU,ticker+date
-NVACU,considered,sub,10.0,0.21038,~$0.2B at listing (<$0.3B),NorthView Acquisition Corp,2021-12-20,ritter-anchor,med,NVACU,ticker+date
-FNTEU,considered,sub,10.0,0.2096,~$0.2B at listing (<$0.3B),Fintech Acquisition Corp II,2017-01-20,ritter-anchor,med,FNTEU,ticker+date
-BYNOU,considered,sub,10.0,0.2085,~$0.2B at listing (<$0.3B),byNordic Acquisition Corp,2022-02-09,ritter-anchor,med,BYNOU,ticker+date
-IGACU,considered,sub,10.0,0.2078,too recent: IPO 2025-11-25; +180 td outcome not yet observable,Invest Green Acquisition Corp,2025-11-25,ritter-anchor,med,IGACU,ticker+date
-GLSPU,considered,sub,10.0,0.20775,~$0.2B at listing (<$0.3B),Global SPAC Partners Co,2021-04-09,ritter-anchor,med,GLSPU,ticker+date
-DYNXU,considered,sub,10.0,0.2075,~$0.2B at listing (<$0.3B),Dynamix Corp,2024-11-21,ritter-anchor,med,DYNXU,ticker+date
-MAQCU,considered,sub,10.0,0.20711,~$0.2B at listing (<$0.3B),Maquia Capital Acq Corp,2021-05-05,ritter-anchor,med,MAQCU,ticker+date
-GTERU,considered,sub,10.0,0.206836,~$0.2B at listing (<$0.3B),Globa Terra Acquisition Corp,2025-07-09,ritter-anchor,med,GTERU,ticker+date
 PRT,considered,sub,17.0,0.20681945000000002,~$0.2B at listing (<$0.3B),Permrock Royalty Trust,2018-05-02,auto:ritter+yf,high,PRT,ticker+date
 DYNS,considered,sub,10.0,0.206555,~$0.2B at listing (<$0.3B),Dynamics Special Purpose Corp,2021-05-26,ritter-anchor,med,DYNS,ticker+date
-COPLU,considered,sub,10.0,0.20649643,~$0.2B at listing (<$0.3B),Copley Acquisition Corp,2025-05-01,ritter-anchor,med,COPL.U,name+date(1.00)
-BOCNU,considered,sub,10.0,0.20625,~$0.2B at listing (<$0.3B),Blue Ocean Acquisition Corp,2021-12-03,ritter-anchor,med,BOCNU,ticker+date
-CSLMU,considered,sub,10.0,0.20625,~$0.2B at listing (<$0.3B),"Consilium Acquisition Corp I,",2022-01-13,ritter-anchor,med,CSLMU,ticker+date
-RAC'U,considered,sub,10.0,0.206,~$0.2B at listing (<$0.3B),Rithm Acquisition Corp.,2025-02-27,ritter-anchor,med,RAC,name+date(1.00)
-FERAU,considered,sub,10.0,0.206,~$0.2B at listing (<$0.3B),Fifth Era Acquisition Corp I,2025-02-28,ritter-anchor,med,FERAU,ticker+date
 SMFL,considered,sub,10.0,0.20568550000000002,~$0.2B at listing (<$0.3B),Smart for Life (PR exclud wts),2022-02-16,auto:ritter+yf,high,SMFL,ticker+date
 HTWO,considered,sub,10.0,0.2054,~$0.2B at listing (<$0.3B),HF2 Financial Management Inc,2013-03-21,ritter-anchor,med,HTWO,ticker+date
-YORKU,considered,sub,10.0,0.20525,~$0.2B at listing (<$0.3B),Yorkville Acquisition Corp.,2025-06-27,ritter-anchor,med,YORKU,ticker+date
 LOVE,considered,sub,16.0,0.205134752,~$0.2B at listing (<$0.3B),The Lovesac Co,2018-06-27,auto:edgar+yf,high,LOVE,ticker+date
-PANA,considered,sub,10.0,0.205,~$0.2B at listing (<$0.3B),Panacea Acquisition Corp II,2021-04-07,ritter-anchor,med,PANA,ticker+date
-EGHAU,considered,sub,10.0,0.205,~$0.2B at listing (<$0.3B),EGH Acquisition Corp.,2025-05-09,ritter-anchor,med,EGHAU,ticker+date
-TDWDU,considered,sub,10.0,0.205,too recent: IPO 2025-11-07; +180 td outcome not yet observable,Tailwind 2.0 Acquisition Corp.,2025-11-07,ritter-anchor,med,TDWDU,ticker+date
-HLXB,considered,sub,10.0,0.20485,~$0.2B at listing (<$0.3B),Helix Acquisition Corp. II,2024-02-09,ritter-anchor,med,HLXB,ticker+date
-SOCAU,considered,sub,10.0,0.2045,~$0.2B at listing (<$0.3B),Solarius Capital Acquisition,2025-07-16,ritter-anchor,med,SOCAU,ticker+date
-PBAXU,considered,sub,10.0,0.2043125,~$0.2B at listing (<$0.3B),Phoenix Biotech Acquisition Co,2021-10-06,ritter-anchor,med,PBAXU,ticker+date
 IPIC,considered,sub,18.5,0.204222573,~$0.2B at listing (<$0.3B),iPic Entertainment Inc,2018-02-01,ritter-anchor,med,IPIC,ticker+date
 GROY,considered,sub,5.0,0.204125,~$0.2B at listing (<$0.3B),Gold Royalty Corp,2021-03-09,auto:ritter+yf,high,GROY,ticker+date
-TWLVU,considered,sub,10.0,0.204,too recent: IPO 2025-12-12; +180 td outcome not yet observable,Twelve Seas Investment Co III,2025-12-12,ritter-anchor,med,TWLVU,ticker+date
 GNTA,considered,sub,11.5,0.20250005,~$0.2B at listing (<$0.3B),Genenta Science S.p.A.,2021-12-15,single:yf,low,GNTA,ticker+date
-CRACU,considered,sub,10.0,0.20165625,too recent: IPO 2025-11-07; +180 td outcome not yet observable,Crown Reserve Acquisition Corp,2025-11-07,ritter-anchor,med,CRACU,ticker+date
 SPSC,considered,sub,12.0,0.200688,~$0.2B at listing (<$0.3B),SPS Commerce Inc,2010-04-22,single:yf,low,SPSC,ticker+date
-RCHGU,considered,sub,10.0,0.2004,~$0.2B at listing (<$0.3B),Recharge Acquisition Corp,2020-10-01,ritter-anchor,med,RCHGU,ticker+date
-INDUU,considered,sub,10.0,0.2,~$0.2B at listing (<$0.3B),Industrea Acquisition Corp,2017-07-27,ritter-anchor,med,INDUU,ticker+date
-SCPEU,considered,sub,10.0,0.2,~$0.2B at listing (<$0.3B),SC Health Corp,2019-07-12,ritter-anchor,med,SCH.U,name+date(1.00)
-FICVU,considered,sub,10.0,0.2,~$0.2B at listing (<$0.3B),Frontier Investment Corp,2021-07-01,ritter-anchor,med,FICVU,ticker+date
-TWCBU,considered,sub,10.0,0.2,~$0.2B at listing (<$0.3B),Bilander Acquisition Corp,2021-07-16,ritter-anchor,med,TWCBU,ticker+date
-DAAQU,considered,sub,10.0,0.2,~$0.2B at listing (<$0.3B),Digital Asset Acquisition Corp,2025-04-29,ritter-anchor,med,DAAQU,ticker+date
-LATAU,considered,sub,10.0,0.2,~$0.2B at listing (<$0.3B),Galata Acquisition Corp. II,2025-09-19,ritter-anchor,med,LATAU,ticker+date
-DYORU,considered,sub,10.0,0.2,too recent: IPO 2025-10-29; +180 td outcome not yet observable,Insight Digital Partners II,2025-10-29,ritter-anchor,med,DYORU,ticker+date
-BLRKU,considered,sub,10.0,0.2,too recent: IPO 2025-12-11; +180 td outcome not yet observable,Bluerock Acquisition Corp.,2025-12-11,ritter-anchor,med,BLRKU,ticker+date
-BEBEU,considered,sub,10.0,0.2,too recent: IPO 2025-12-19; +180 td outcome not yet observable,TGE Value Creative Solutions C,2025-12-19,ritter-anchor,med,BEBEU,ticker+date
 PTGX,considered,sub,12.0,0.19905588600000002,~$0.2B at listing (<$0.3B),Protagonist Therapeutics Inc,2016-08-11,auto:edgar+yf,high,PTGX,ticker+date
-GSHRU,considered,sub,10.0,0.19888483,~$0.2B at listing (<$0.3B),Gesher Acquisition Corp. II,2025-03-21,ritter-anchor,med,GSHRU,ticker+date
 IDYA,considered,sub,10.0,0.19883583,~$0.2B at listing (<$0.3B),Ideaya Biosciences Inc,2019-05-23,auto:edgar+yf,high,IDYA,ticker+date
 ISAA,considered,sub,10.0,0.1984,~$0.2B at listing (<$0.3B),Iron Spark I Inc,2021-06-09,ritter-anchor,med,ISAA,ticker+date
-SWSSU,considered,sub,10.0,0.1977,~$0.2B at listing (<$0.3B),Springwater Special Situations,2021-08-26,ritter-anchor,med,SWSSU,ticker+date
-HAVAU,considered,sub,10.0,0.19673297,too recent: IPO 2025-10-23; +180 td outcome not yet observable,Harvard Ave Acquisition Corp,2025-10-23,ritter-anchor,med,HAVAU,ticker+date
-ALORU,considered,sub,10.0,0.19575,~$0.2B at listing (<$0.3B),ALSP Orchid Acquisition Corp I,2021-11-19,ritter-anchor,med,ALORU,ticker+date
-SANBU,considered,sub,10.0,0.195,~$0.2B at listing (<$0.3B),Sanaby Health Acquisition Corp,2021-10-15,ritter-anchor,med,SANBU,ticker+date
-BLNGU,considered,sub,10.0,0.194375,~$0.2B at listing (<$0.3B),Belong Acquisition Corp,2021-07-23,ritter-anchor,med,BLNGU,ticker+date
 SPRO,considered,sub,14.0,0.194368174,~$0.2B at listing (<$0.3B),Spero Therapeutics Inc,2017-11-02,auto:edgar+yf,high,SPRO,ticker+date
 BSVN,considered,sub,19.0,0.1935625,~$0.2B at listing (<$0.3B),Bank7 Corp,2018-09-20,auto:edgar+yf,high,BSVN,ticker+date
 TEU,considered,sub,12.0,0.193356,~$0.2B at listing (<$0.3B),Box Ships Inc,2011-04-14,ritter-anchor,med,TEU,ticker+date
-JAQCU,considered,sub,10.0,0.1933,~$0.2B at listing (<$0.3B),Jupiter Acquisition Corp,2021-08-13,ritter-anchor,med,JAQCU,ticker+date
-BSIIU,considered,sub,10.0,0.193125,~$0.2B at listing (<$0.3B),Black Spade Acquisition II Co,2024-08-28,ritter-anchor,med,BSIIU,ticker+date
-BRIVU,considered,sub,10.0,0.19305,~$0.2B at listing (<$0.3B),B Riley Principal 250 Merger,2021-05-07,ritter-anchor,med,BRIVU,ticker+date
-SRACU,considered,sub,10.0,0.1925,~$0.2B at listing (<$0.3B),Stable Road Acquisition Corp,2019-11-08,ritter-anchor,med,SRACU,ticker+date
-BRPMU,considered,sub,10.0,0.19225,~$0.2B at listing (<$0.3B),B Riley Principal 150 Merger,2021-02-19,ritter-anchor,med,BRPMU,ticker+date
-ALPAU,considered,sub,10.0,0.19205,~$0.2B at listing (<$0.3B),Alpha Healthcare Acquisition,2021-07-27,ritter-anchor,med,ALPAU,ticker+date
 GBS,considered,sub,17.0,0.19195601,~$0.2B at listing (<$0.3B),GBS Inc,2020-12-23,ritter-anchor,med,GBS,ticker+date
-ASAXU,considered,sub,10.0,0.1918,~$0.2B at listing (<$0.3B),Astrea Acquisition Corp,2021-02-04,ritter-anchor,med,ASAXU,ticker+date
-THCAU,considered,sub,10.0,0.19153,~$0.2B at listing (<$0.3B),Tuscan Holdings Corp II,2019-07-12,ritter-anchor,med,THCAU,ticker+date
 SITM,considered,sub,13.0,0.19084352300000001,~$0.2B at listing (<$0.3B),SiTime Corp,2019-11-21,auto:edgar+yf,high,SITM,ticker+date
-ALGRU,considered,sub,10.0,0.1906,~$0.2B at listing (<$0.3B),Allegro Merger Corp,2018-07-03,ritter-anchor,med,ALGRU,ticker+date
-AXACU,considered,sub,10.0,0.1906,~$0.2B at listing (<$0.3B),AXIOS Sustainable Growth Acqui,2022-02-16,ritter-anchor,med,AXAC.,name+date(0.60)
 RM,considered,sub,15.0,0.1905054525,~$0.2B at listing (<$0.3B),Regional Management Corp,2012-03-27,auto:edgar+yf,high,RM,ticker+date
-OXUSU,considered,sub,10.0,0.1905,~$0.2B at listing (<$0.3B),Oxus Acquisition Corp,2021-09-03,ritter-anchor,med,OXUSU,ticker+date
-TDACU,considered,sub,10.0,0.1905,~$0.2B at listing (<$0.3B),Translational Development Acq,2024-12-23,ritter-anchor,med,TDACU,ticker+date
-CGROU,considered,sub,10.0,0.190125,~$0.2B at listing (<$0.3B),Collective Growth Corp,2020-05-01,ritter-anchor,med,CGROU,ticker+date
 SNAL,considered,sub,5.0,0.19,~$0.2B at listing (<$0.3B),Snail Inc,2022-11-10,ritter-anchor,med,SNAL,ticker+date
-GWACU,considered,sub,10.0,0.18978,~$0.2B at listing (<$0.3B),Good Works Acquisition Corp,2020-10-20,ritter-anchor,med,GWACU,ticker+date
 EVAX,considered,sub,10.0,0.189487,~$0.2B at listing (<$0.3B),Evaxion Biotech AS,2021-02-05,single:yf,low,EVAX,ticker+date
-CENQU,considered,sub,10.0,0.18915,~$0.2B at listing (<$0.3B),CENAQ Energy Corp,2021-08-13,ritter-anchor,med,CENQU,ticker+date
 MDV,considered,sub,25.0,0.189030275,~$0.2B at listing (<$0.3B),MODIV INC.,2022-02-11,auto:edgar+ritter+yf,high,MDV,ticker+date
-PGRWU,considered,sub,10.0,0.189,~$0.2B at listing (<$0.3B),Progress Acquisition Corp,2021-02-09,ritter-anchor,med,PGRWU,ticker+date
-FNVTU,considered,sub,10.0,0.189,~$0.2B at listing (<$0.3B),Finnovate Acquisition Corp.,2021-11-04,ritter-anchor,med,FNVTU,ticker+date
 SOPA,considered,sub,9.0,0.1880253,~$0.2B at listing (<$0.3B),Society Pass Inc,2021-11-09,single:yf,low,SOPA,ticker+date
 INAB,considered,sub,10.0,0.18754576499999998,~$0.2B at listing (<$0.3B),IN8BIO Inc,2021-07-30,auto:edgar+yf,high,INAB,ticker+date
-LEVYU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Levy Acquisition,2013-11-13,ritter-anchor,med,LEVYU,ticker+date
-HUNTU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Hunter Maritime Acq Corp,2016-11-18,ritter-anchor,med,HUNTU,ticker+date
-TIBRU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Tiberius Acq Corp,2018-03-16,ritter-anchor,med,TIBRU,ticker+date
-MFACU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Megalith Financial Acquisition,2018-08-23,ritter-anchor,med,MFACU,ticker+date
-DFNSU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),LGL Systems Acquisition Corp,2019-11-06,ritter-anchor,med,DFNSU,ticker+date
-SAIIU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Software Acq Group Inc II,2020-09-14,ritter-anchor,med,SAIIU,ticker+date
-PHICU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Population Health Invest Co,2020-11-18,ritter-anchor,med,PHICU,ticker+date
-DUNEU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Dune Acquisition Corp,2020-12-18,ritter-anchor,med,DUNEU,ticker+date
-VTAQU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Ventoux CCM Acquisition Corp.,2020-12-24,ritter-anchor,med,VTAQU,ticker+date
-INKAU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),KludeIn I Acquisition Corp,2021-01-07,ritter-anchor,med,INKAU,ticker+date
-GCACU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Growth Capital Acq Corp,2021-01-29,ritter-anchor,med,GCACU,ticker+date
-SPTKU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),SportsTek Acquisition Corp,2021-02-17,ritter-anchor,med,SPTKU,ticker+date
-MITAU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Coliseum Acq Corp,2021-06-23,ritter-anchor,med,MITAU,ticker+date
-BSAQU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Black Spade Acquisition Co,2021-07-16,ritter-anchor,med,BSAQ.,name+date(1.00)
-AMCIU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),AMCI Acquisition Corp II,2021-08-04,ritter-anchor,med,AMCIU,ticker+date
-APMIU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),AxonPrime Infrastructure Acq,2021-08-13,ritter-anchor,med,APMIU,ticker+date
-CCAIU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Cascadia Acquisition Corp,2021-08-26,ritter-anchor,med,CCAIU,ticker+date
-BNNRU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Banner Acquisition Corp,2021-09-08,ritter-anchor,med,BNNRU,ticker+date
-SAMAU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Schultze Spec Purpose Acq II,2021-10-08,ritter-anchor,med,SAMAU,ticker+date
-PEPLU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),PepperLime Health Acquisition,2021-10-15,ritter-anchor,med,PEPLU,ticker+date
-THACU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Thrive Acquisition Corp,2021-10-21,ritter-anchor,med,THACU,ticker+date
-ARCKU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Arbor Rapha Capital Bioholding,2021-10-29,ritter-anchor,med,ARCKU,ticker+date
-APN'U,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Apeiron Capital Investment Cor,2021-11-09,ritter-anchor,med,APN.U,name+date(0.75)
-AFACU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Arena Fortify Acquisition Corp,2021-11-10,ritter-anchor,med,AFACU,ticker+date
-MNTNU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Everest Consolidator Acquisiti,2021-11-24,ritter-anchor,med,MNTN.,name+date(0.50)
-APXIU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),APx Acquisition Corp I,2021-12-07,ritter-anchor,med,APXIU,ticker+date
-ALSAU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Trajectory Alpha Acquisition C,2021-12-10,ritter-anchor,med,TCOA.,name+date(0.50)
-APCAU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),AP Acquisition Corp,2021-12-17,ritter-anchor,med,APCA.,name+date(1.00)
-RCACU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Revelstone Capital Acquisition,2021-12-17,ritter-anchor,med,RCACU,ticker+date
-ITAQU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),Industrial Tech Acquisitions I,2022-01-12,ritter-anchor,med,ITAQU,ticker+date
-CLBRU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),COLOMBIER ACQUISITION CORP. II,2023-11-21,ritter-anchor,med,CLBRU,ticker+date
-ONCHU,considered,sub,10.0,0.1875,~$0.2B at listing (<$0.3B),1RT Acquisition Corp.,2025-07-02,ritter-anchor,med,ONCHU,ticker+date
 HIIQ,considered,sub,14.0,0.186666676,~$0.2B at listing (<$0.3B),Health Ins Innovations Inc,2013-02-07,ritter-anchor,med,HIIQ,ticker+date
-CNACU,considered,sub,10.0,0.1853,~$0.2B at listing (<$0.3B),Constellation Alpha Capital,2017-06-19,ritter-anchor,med,CNACU,ticker+date
 LSF,considered,sub,22.0,0.18480946,~$0.2B at listing (<$0.3B),Laird Superfood Inc,2020-09-23,auto:edgar+yf,high,LSF,ticker+date
 TSQ,considered,sub,11.0,0.184679,~$0.2B at listing (<$0.3B),Townsquare Media LLC,2014-07-23,auto:edgar+ritter+yf,high,TSQ,ticker+date
 UPLD,considered,sub,12.0,0.184583172,~$0.2B at listing (<$0.3B),Upland Software Inc,2014-11-06,auto:edgar+yf,high,UPLD,ticker+date
-BIOAU,considered,sub,10.0,0.18413,~$0.2B at listing (<$0.3B),BioAmber Inc,2013-05-09,ritter-anchor,med,BIOA.,name+date(1.00)
 LAWR,considered,sub,4.0,0.18384,~$0.2B at listing (<$0.3B),"Robot Consulting Co., Ltd.",2025-07-17,single:yf,low,LAWR,ticker+date
 EARN,considered,sub,20.0,0.18268378000000002,~$0.2B at listing (<$0.3B),Ellington Residential,2013-05-01,auto:edgar+yf,high,EARN,ticker+date
-NHICU,considered,sub,10.0,0.182125,~$0.2B at listing (<$0.3B),NewHold Investment Corp. III,2025-02-28,ritter-anchor,med,NHICU,ticker+date
 GSJK,considered,sub,20.0,0.18194514,~$0.2B at listing (<$0.3B),Compressco Partners LP,2011-06-14,ritter-anchor,med,GSJK,ticker+date
-KVACU,considered,sub,10.0,0.18115637499999998,~$0.2B at listing (<$0.3B),Keen Vision Acquisition Corp.,2023-07-25,auto:edgar+ritter,high,KVACU,ticker+date
-RICOU,considered,sub,10.0,0.18113,~$0.2B at listing (<$0.3B),Agrico Acquisition Corp,2021-07-08,ritter-anchor,med,RICOU,ticker+date
 DAVA,considered,sub,20.0,0.1804006,~$0.2B at listing (<$0.3B),Endava Ltd,2018-07-27,single:yf,low,DAVA,ticker+date
-INSUU,considered,sub,10.0,0.18033333,~$0.2B at listing (<$0.3B),Insurance Acquisition Corp,2019-03-19,ritter-anchor,med,INSUU,ticker+date
 KNOP,considered,sub,21.0,0.179928,~$0.2B at listing (<$0.3B),KNOT Offshore Partners LP,2013-04-09,ritter-anchor,med,KNOP,ticker+date
 NGL,considered,sub,21.0,0.178798662,~$0.2B at listing (<$0.3B),NGL Energy Partners LP,2011-05-11,ritter-anchor,med,NGL,ticker+date
 USDP,considered,sub,17.0,0.178228,~$0.2B at listing (<$0.3B),USD Partners LP,2014-10-09,ritter-anchor,med,USDP,ticker+date
@@ -620,80 +198,32 @@ CORI,considered,sub,8.0,0.177288,~$0.2B at listing (<$0.3B),Corium International
 CNXR,considered,sub,8.0,0.175352,~$0.2B at listing (<$0.3B),Connecture Inc,2014-12-12,single:yf,low,CNXR,ticker+date
 FISH,considered,sub,20.0,0.1745,~$0.2B at listing (<$0.3B),Marlin Midstream Partners LP,2013-07-25,ritter-anchor,med,FISH,ticker+date
 AZYO,considered,sub,17.0,0.173840283,~$0.2B at listing (<$0.3B),Aziyo Biologics Inc,2020-10-08,ritter-anchor,med,AZYO,ticker+date
-LJAQU,considered,sub,10.0,0.1737,~$0.2B at listing (<$0.3B),Lightjump Acquisition Corp,2021-01-08,ritter-anchor,med,LJAQU,ticker+date
 AXSM,considered,sub,9.0,0.1725557265,~$0.2B at listing (<$0.3B),Axsome Therapeutics Inc,2015-11-19,auto:edgar+yf,high,AXSM,ticker+date
 XGN,considered,sub,14.0,0.17217053,~$0.2B at listing (<$0.3B),Exagen Inc,2019-09-19,auto:edgar+yf,high,XGN,ticker+date
-BRACU,considered,sub,10.0,0.172,~$0.2B at listing (<$0.3B),Black Ridge Acquisition Corp,2017-10-05,ritter-anchor,med,BRACU,ticker+date
-HKACU,considered,sub,10.0,0.17143,~$0.2B at listing (<$0.3B),Hicks Acquisition Co II Inc,2010-10-11,ritter-anchor,med,HKACU,ticker+date
-LFACU,considered,sub,10.0,0.17101667,too recent: IPO 2025-12-05; +180 td outcome not yet observable,Leapfrog Acquisition Corp,2025-12-05,ritter-anchor,med,LFAC,name+date(1.00)
 BTAI,considered,sub,11.0,0.16960099750000002,~$0.2B at listing (<$0.3B),Bioxcel Therapeutics Inc,2018-03-08,auto:edgar+yf,high,BTAI,ticker+date
-FIGXU,considered,sub,10.0,0.16929338,~$0.2B at listing (<$0.3B),FIGX Capital Acquisition Corp.,2025-06-27,ritter-anchor,med,FIGXU,ticker+date
 TPB,considered,sub,10.0,0.168954,~$0.2B at listing (<$0.3B),Turning Point Brands Inc,2016-05-11,single:yf,low,TPB,ticker+date
 CCB,considered,sub,14.5,0.16885832174999998,~$0.2B at listing (<$0.3B),Coastal Financial Corp,2018-07-18,auto:edgar+yf,high,CCB,ticker+date
-ATAQU,considered,sub,10.0,0.16875,~$0.2B at listing (<$0.3B),Altimar Acquisition Corp III,2021-03-04,ritter-anchor,med,ATAQ.,name+date(1.00)
-ROSEU,considered,sub,10.0,0.16875,~$0.2B at listing (<$0.3B),Rose Hill Acquisition Corp,2021-10-14,ritter-anchor,med,ROSEU,ticker+date
-ABGI,considered,sub,10.0,0.16837,~$0.2B at listing (<$0.3B),ABG Acquisition Corp I,2021-02-17,ritter-anchor,med,ABGI,ticker+date
-AIIAU,considered,sub,10.0,0.168,~$0.2B at listing (<$0.3B),AI Infrastructure Acquisition,2025-10-03,ritter-anchor,med,AIIA.U,name+date(1.00)
 FPI,considered,sub,14.0,0.167762,~$0.2B at listing (<$0.3B),Farmland Partners Inc,2014-04-11,single:yf,low,FPI,ticker+date
 TCMD,considered,sub,10.0,0.167728895,~$0.2B at listing (<$0.3B),Tactile  Systems Technology,2016-07-28,auto:edgar+yf,high,TCMD,ticker+date
-ARYBU,considered,sub,10.0,0.1671,~$0.2B at listing (<$0.3B),Arya Sciences Acquisition II,2020-06-05,ritter-anchor,med,ARYBU,ticker+date
-ARYA,considered,sub,10.0,0.1671,~$0.2B at listing (<$0.3B),ARYA Sciences Acquisition III,2020-08-07,ritter-anchor,med,ARYA,ticker+date
-ARYD,considered,sub,10.0,0.1671,~$0.2B at listing (<$0.3B),Arya Sciences Acq Corp IV,2021-02-26,ritter-anchor,med,ARYD,ticker+date
-RACB,considered,sub,10.0,0.1671,~$0.2B at listing (<$0.3B),Research Alliance Corp II,2021-03-18,ritter-anchor,med,RACB,ticker+date
-ARYE,considered,sub,10.0,0.1671,~$0.2B at listing (<$0.3B),Arya Sciences Acquisition Corp,2021-07-13,ritter-anchor,med,ARYE,ticker+date
 FIBK,considered,sub,14.5,0.16675,~$0.2B at listing (<$0.3B),First Interstate BancSystem In,2010-03-23,ritter-anchor,med,FIBK,ticker+date
-OLITU,considered,sub,10.0,0.16666667,~$0.2B at listing (<$0.3B),OmniLit Acquisition Corp.,2021-11-09,ritter-anchor,med,OLITU,ticker+date
 TRVI,considered,sub,10.0,0.16636485,~$0.2B at listing (<$0.3B),Trevi Therapeutics Inc,2019-05-07,auto:edgar+yf,high,TRVI,ticker+date
 ONEW,considered,sub,12.0,0.16629594,~$0.2B at listing (<$0.3B),OneWater Marine Inc,2020-02-07,auto:ritter+yf,high,ONEW,ticker+date
 KIDS,considered,sub,13.0,0.1658110415,~$0.2B at listing (<$0.3B),Orthopediatrics Corp,2017-10-12,auto:edgar+yf,high,KIDS,ticker+date
-ADRTU,considered,sub,10.0,0.1654,~$0.2B at listing (<$0.3B),Ault Disruptive Technologies C,2021-12-16,ritter-anchor,med,ADRT.,name+date(1.00)
-SPKLU,considered,sub,10.0,0.16422078,~$0.2B at listing (<$0.3B),Spark I Acquisition Corp,2023-10-06,ritter-anchor,med,SPKLU,ticker+date
-CLOEU,considered,sub,10.0,0.16379,~$0.2B at listing (<$0.3B),Clover Leaf Capital Corp,2021-07-20,ritter-anchor,med,CLOEU,ticker+date
-MCMJU,considered,sub,10.0,0.16372,~$0.2B at listing (<$0.3B),Merida Merger Corp I,2019-11-05,ritter-anchor,med,MCMJU,ticker+date
 SIBN,considered,sub,15.0,0.1636125,~$0.2B at listing (<$0.3B),SI-Bone Inc,2018-10-17,single:yf,low,SIBN,ticker+date
-SAQNU,considered,sub,10.0,0.1625,~$0.2B at listing (<$0.3B),Software Acq Grp Inc,2019-11-20,ritter-anchor,med,SAQNU,ticker+date
-OCAXU,considered,sub,10.0,0.1625,~$0.2B at listing (<$0.3B),OCA Acquisition Corp,2021-01-15,ritter-anchor,med,OCAXU,ticker+date
-SCMAU,considered,sub,10.0,0.1625,~$0.2B at listing (<$0.3B),Seaport Calibre Materials Acqu,2021-10-28,ritter-anchor,med,SCMAU,ticker+date
-LATGU,considered,sub,10.0,0.1625,~$0.2B at listing (<$0.3B),Latamgrowth Spac,2022-01-25,ritter-anchor,med,LATGU,ticker+date
-RACYU,considered,sub,10.0,0.162225,~$0.2B at listing (<$0.3B),Relativity Acquisition Corp,2022-02-11,ritter-anchor,med,RACYU,ticker+date
 SFWL,considered,sub,4.0,0.16208,~$0.2B at listing (<$0.3B),SHENGFENG DEVELOPMENT Ltd,2023-03-31,ritter-anchor,med,SFWL,ticker+date
 DDC,considered,sub,8.5,0.16190885,~$0.2B at listing (<$0.3B),DDC Enterprise Ltd,2023-11-17,single:yf,low,DDC,ticker+date
 FENX,considered,sub,8.0,0.161588,~$0.2B at listing (<$0.3B),Fenix Parts Inc,2015-05-14,single:yf,low,FENX,ticker+date
 TRKA,considered,sub,4.15,0.1611196,~$0.2B at listing (<$0.3B),"Troika Media Group, Inc.",2021-04-20,ritter-anchor,med,TRKA,ticker+date
-GGACU,considered,sub,10.0,0.16094,~$0.2B at listing (<$0.3B),Garnero Group Acquisition Co,2014-06-26,ritter-anchor,med,GGACU,ticker+date
-BLSA,considered,sub,10.0,0.16075,~$0.2B at listing (<$0.3B),BCLS Acquisition Corp,2020-10-22,ritter-anchor,med,BLSA,ticker+date
 IVTY,considered,sub,12.0,0.1596804,~$0.2B at listing (<$0.3B),Invuity Inc,2015-06-15,single:yf,low,IVTY,ticker+date
 EQBK,considered,sub,22.5,0.15912928124999998,~$0.2B at listing (<$0.3B),Equity Bancshares Inc,2015-11-11,auto:ritter+yf,high,EQBK,ticker+date
 FLGT,considered,sub,9.0,0.15908650200000002,~$0.2B at listing (<$0.3B),Fulgent Genetics Inc,2016-09-29,auto:edgar+yf,high,FLGT,ticker+date
-ACKIU,considered,sub,10.0,0.15865,~$0.2B at listing (<$0.3B),Ackrell SPAC Partners I,2020-12-21,ritter-anchor,med,ACKIU,ticker+date
 PINE,considered,sub,19.0,0.1583962835,~$0.2B at listing (<$0.3B),Alpine Income Property Trust,2019-11-22,auto:edgar+yf,high,PINE,ticker+date
-JWACU,considered,sub,10.0,0.15815,~$0.2B at listing (<$0.3B),Jupiter Wellness Acquisition C,2021-12-07,ritter-anchor,med,JWACU,ticker+date
-ATSPU,considered,sub,10.0,0.1581,~$0.2B at listing (<$0.3B),Archimedes Tech SPAC Partners,2021-03-11,ritter-anchor,med,ATSPU,ticker+date
 YYGH,considered,sub,4.0,0.1577,~$0.2B at listing (<$0.3B),YY Group Holding Ltd.,2024-04-22,ritter-anchor,med,YYGH,ticker+date
-TAVIU,considered,sub,10.0,0.15727083,~$0.2B at listing (<$0.3B),Tavia Acquisition Corp.,2024-12-04,auto:edgar+ritter,high,TAVIU,ticker+date
-EUSGU,considered,sub,10.0,0.15685,~$0.2B at listing (<$0.3B),European Sustainable Growth,2021-01-22,ritter-anchor,med,EUSGU,ticker+date
 ACTU,considered,sub,8.0,0.156253088,~$0.2B at listing (<$0.3B),"ACTUATE THERAPEUTICS, INC.",2024-08-13,single:edgar,low,ACTU,ticker+date
-RLJAU,considered,sub,10.0,0.15625,~$0.2B at listing (<$0.3B),RLJ Acquisition Inc,2011-02-15,ritter-anchor,med,RLJAU,ticker+date
-ROIQU,considered,sub,10.0,0.15625,~$0.2B at listing (<$0.3B),ROI Acquisition Corp II,2013-09-16,ritter-anchor,med,ROIQU,ticker+date
-GPAQU,considered,sub,10.0,0.15625,~$0.2B at listing (<$0.3B),Gordon Pointe Acq Corp.,2018-01-24,ritter-anchor,med,GPAQU,ticker+date
-ARYAU,considered,sub,10.0,0.15625,~$0.2B at listing (<$0.3B),Arya Sciences Acquisition Corp,2018-10-05,ritter-anchor,med,ARYA,name+date(1.00)
-DFHTU,considered,sub,10.0,0.15625,~$0.2B at listing (<$0.3B),Deerfield Healthcare Tech,2020-07-17,ritter-anchor,med,DFHTU,ticker+date
-YSACU,considered,sub,10.0,0.15625,~$0.2B at listing (<$0.3B),Yellowstone Acquisition Co,2020-10-22,ritter-anchor,med,YSACU,ticker+date
-SGAMU,considered,sub,10.0,0.15625,~$0.2B at listing (<$0.3B),Seaport Global Acquisition,2020-11-30,ritter-anchor,med,SGAMU,ticker+date
-RAMMU,considered,sub,10.0,0.15625,~$0.2B at listing (<$0.3B),Aries I Acq Corp,2021-05-19,ritter-anchor,med,RAMMU,ticker+date
-GSQBU,considered,sub,10.0,0.15625,~$0.2B at listing (<$0.3B),G Squared Ascend II Inc,2021-06-15,ritter-anchor,med,GSQB.,name+date(1.00)
-PRBMU,considered,sub,10.0,0.15625,~$0.2B at listing (<$0.3B),Parabellum Acquisition Corp,2021-09-28,ritter-anchor,med,PRBM.,name+date(1.00)
-NBSTU,considered,sub,10.0,0.1559,~$0.2B at listing (<$0.3B),Newbury St Acq Corp,2021-03-23,ritter-anchor,med,NBSTU,ticker+date
-FLACU,considered,sub,10.0,0.15465,~$0.2B at listing (<$0.3B),Frazier Lifesciences,2020-12-09,ritter-anchor,med,FLACU,ticker+date
 OMEG,considered,sub,10.0,0.15465,~$0.2B at listing (<$0.3B),Omega Alpha SPAC,2021-01-07,ritter-anchor,med,OMEG,ticker+date
-ESSCU,considered,sub,10.0,0.1544,~$0.2B at listing (<$0.3B),East Stone Acq Corp,2020-02-20,ritter-anchor,med,ESSCU,ticker+date
-EBACU,considered,sub,10.0,0.1544,~$0.2B at listing (<$0.3B),European Biotech Acq Corp,2021-03-16,ritter-anchor,med,EBACU,ticker+date
 FEMY,considered,sub,13.0,0.15314858,~$0.2B at listing (<$0.3B),Femasys Inc,2021-06-18,auto:edgar+yf,high,FEMY,ticker+date
-TXAC,considered,sub,10.0,0.15186,~$0.2B at listing (<$0.3B),Therapeutics Acquisition Corp,2020-07-08,ritter-anchor,med,TXAC,ticker+date
 YAAS,considered,sub,4.5,0.150975,~$0.2B at listing (<$0.3B),Youxin Technology Ltd,2024-12-20,auto:ritter+yf,high,YAAS,ticker+date
-MURFU,considered,sub,10.0,0.1506,~$0.2B at listing (<$0.3B),Murphy Canyon Acquisition Corp,2022-02-03,ritter-anchor,med,MURFU,ticker+date
 LGP,considered,sub,20.0,0.1505,~$0.2B at listing (<$0.3B),Lehigh Gas Partners LP,2012-10-24,ritter-anchor,med,LGP,ticker+date
-CHECU,considered,sub,10.0,0.15041667,~$0.2B at listing (<$0.3B),Chenghe Acquisition III Co.,2025-09-16,ritter-anchor,med,CHECU,ticker+date
 CHMI,considered,sub,20.0,0.15019,~$0.2B at listing (<$0.3B),Cherry Hill Mortgage Inv,2013-10-04,auto:edgar+yf,high,CHMI,ticker+date
 HMH,considered,sub,20.0,2e-05,too recent: IPO 2026-04-01; +180 td outcome not yet observable,HMH Holding Inc.,2026-04-01,single:edgar,low,HMH,seed_calendar
 AERO,considered,,19.0,,too recent: IPO 2025-11-06; +180 td outcome not yet observable,"Grupo Aeromexico, S.A.B. de C.",2025-11-06,unresolved,none,AERO,ticker+date
@@ -1091,7 +621,6 @@ ZS,headline,T2,16.0,1.895509776,,Zscaler Inc,2018-03-16,auto:edgar+yf,high,ZS,ti
 ERAS,headline,T2,16.0,1.88890292,,Erasca Inc,2021-07-16,auto:edgar+yf,high,ERAS,ticker+date
 SEMR,headline,T2,14.0,1.888629302,,SEMrush Holdings Inc,2021-03-25,ritter-anchor,med,SEMR,ticker+date
 BPMP,headline,T2,18.0,1.88551926,,BP Midstream Partners LP,2017-10-26,ritter-anchor,med,BPMP,ticker+date
-SRNGU,headline,T2,10.0,1.875,,Soaring Eagle Acquisition Corp,2021-02-24,ritter-anchor,med,SRNGU,ticker+date
 FOUR,headline,T2,23.0,1.849639392,,Shift4 Payments Inc,2020-06-05,auto:edgar+ritter+yf,high,FOUR,ticker+date
 RPAI,headline,T2,8.0,1.846401408,,Retail Ppty of Americas Inc,2012-04-05,ritter-anchor,med,RPAI,ticker+date
 NVCR,headline,T2,22.0,1.839611411,,Novocure Ltd,2015-10-02,auto:edgar+yf,high,NVCR,ticker+date
@@ -1115,7 +644,6 @@ AMC,headline,T2,18.0,1.7305938,,AMC Entertainment Holdings,2013-12-18,auto:ritte
 VOYG,headline,T2,31.0,1.725657377,,"Voyager Technologies, Inc./DE",2025-06-11,auto:ritter+yf,high,VOYG,ticker+date
 CNTA,headline,T2,20.0,1.718488,,Centessa Pharmaceuticals plc,2021-05-28,single:yf,low,CNTA,ticker+date
 RLAY,headline,T2,20.0,1.71550572,,Relay Therapeutics Inc,2020-07-16,auto:edgar+yf,high,RLAY,ticker+date
-ASZ'U,headline,T2,10.0,1.71429,,Austerlitz Acquisition Corp II,2021-02-26,ritter-anchor,med,ASZ.U,name+date(1.00)
 COTV,headline,T2,19.0,1.7132395,,Cotiviti Holdings Inc,2016-05-26,single:yf,low,COTV,ticker+date
 STEP,headline,T2,18.0,1.7066937150000001,,StepStone Group Inc,2020-09-16,auto:ritter+yf,high,STEP,ticker+date
 VNET,headline,T2,15.0,1.6995,,21Vianet Group Inc,2011-04-21,single:yf,low,VNET,ticker+date
@@ -1160,8 +688,6 @@ KIOR,headline,T2,15.0,1.51473,,KiOR Inc,2011-06-23,ritter-anchor,med,KIOR,ticker
 YETI,headline,T2,18.0,1.510591311,,Yeti Holdings Inc,2018-10-25,auto:edgar+yf,high,YETI,ticker+date
 HPP,headline,T2,17.0,1.5036211,,Hudson Pacific Properties Inc,2010-06-23,single:yf,low,HPP,ticker+date
 NYLD,headline,T2,22.0,1.5000975,,NRG Yield Inc,2013-07-16,ritter-anchor,med,NYLD,ticker+date
-CVIIU,headline,T2,10.0,1.5,,Churchill Capital Corp VII,2021-02-12,ritter-anchor,med,CVII.,name+date(1.00)
-KAHCU,headline,T2,10.0,1.5,,KKR Acquisition Holdings I,2021-03-17,ritter-anchor,med,KAHC.,name+date(1.00)
 UPST,headline,T2,20.0,1.49365074,,Upstart Holdings Inc,2020-12-16,auto:edgar+yf,high,UPST,ticker+date
 DOLE,headline,T2,16.0,1.492123216,,Dole Plc,2021-07-30,auto:edgar+yf,high,DOLE,ticker+date
 SONO,headline,T2,15.0,1.4908310999999999,,Sonos Inc,2018-08-02,auto:edgar+yf,high,SONO,ticker+date
@@ -1220,7 +746,6 @@ RENT,headline,T2,21.0,1.2683724165,,Rent The Runway Inc,2021-10-27,auto:ritter+y
 NRGM,headline,T2,17.0,1.263627,,Inergy Midstream LP,2011-12-15,ritter-anchor,med,NRGM,ticker+date
 GOLF,headline,T2,17.0,1.259591183,,Acushnet Holdings Corp,2016-10-28,auto:edgar+yf,high,GOLF,ticker+date
 BURL,headline,T2,17.0,1.2511382050000002,,Burlington Stores Inc,2013-10-02,auto:edgar+yf,high,BURL,ticker+date
-IPOFU,headline,T2,10.0,1.25,,Social Capital Hedosophia VI,2020-10-09,ritter-anchor,med,IPOF.,name+date(1.00)
 KLTR,headline,T2,10.0,1.24782736,,Kaltura Inc,2021-07-21,auto:edgar+yf,high,KLTR,ticker+date
 TWLO,headline,T2,15.0,1.2455916975,,Twilio Inc,2016-06-23,auto:ritter+yf,high,TWLO,ticker+date
 SDHC,headline,T2,21.0,1.238461539,,Smith Douglas Homes Corp.,2024-01-11,ritter-anchor,med,SDHC,ticker+date
@@ -1250,9 +775,6 @@ SOPH,headline,T2,18.0,1.1447613360000002,,Sophia Genetics SA,2021-07-23,auto:edg
 BRLT,headline,T2,12.0,1.135567404,,"Brilliant Earth Group, Inc.",2021-09-23,ritter-anchor,med,BRLT,ticker+date
 OM,headline,T2,27.0,1.1297638485000001,,Outset Medical Inc,2020-09-15,auto:edgar+yf,high,OM,ticker+date
 SCWX,headline,T2,14.0,1.129396086,,SecureWorks Corp,2016-04-22,ritter-anchor,med,SCWX,ticker+date
-SRAQU,headline,T2,10.0,1.125,,Silver Run Acquisition Corp,2016-02-24,ritter-anchor,med,SRAQU,ticker+date
-SRUNU,headline,T2,10.0,1.125,,Silver Run Acquisition II Corp,2017-03-24,ritter-anchor,med,SRUNU,ticker+date
-JWSMU,headline,T2,10.0,1.125,,Jaws Mustang Acquisition Corp,2021-02-02,ritter-anchor,med,JWSM.,name+date(1.00)
 PEGI,headline,T2,22.0,1.123832226,,Pattern Energy Group,2013-09-27,ritter-anchor,med,PEGI,ticker+date
 MAX,headline,T2,19.0,1.115398648,,MediaAlpha Inc,2020-10-28,auto:ritter+yf,high,MAX,ticker+date
 TNET,headline,T2,16.0,1.112545192,,TriNet Group,2014-03-27,auto:edgar+yf,high,TNET,ticker+date
@@ -1262,7 +784,6 @@ SALE,headline,T2,21.0,1.1007066,,RetailMeNot Inc,2013-07-18,single:yf,low,SALE,t
 IPSC,headline,T2,20.0,1.0922869099999999,,Century Therapeutics Inc,2021-06-18,auto:edgar+yf,high,IPSC,ticker+date
 IE,headline,T2,11.75,1.091434,,Ivanhoe Electric Inc.,2022-06-28,auto:edgar+ritter+yf,high,IE,ticker+date
 NMAX,headline,T2,10.0,1.0879442400000001,,Newsmax Inc.,2025-03-31,auto:ritter+yf,high,NMAX,ticker+date
-AAC'U,headline,T2,10.0,1.0875,,Ares Acquisition Corp,2021-02-02,ritter-anchor,med,AAC.U,name+date(1.00)
 GMED,headline,T2,12.0,1.08553242,,Globus Medical Inc,2012-08-02,auto:edgar+ritter+yf,high,GMED,ticker+date
 TRGP,headline,T2,22.0,1.083062673,,Targa Resources Corp,2010-12-06,auto:edgar+yf,high,TRGP,ticker+date
 AMV,headline,T2,27.5,1.0811366775,,Atlis Motor Vehicles,2022-09-27,ritter-anchor,med,AMV,ticker+date
@@ -1274,7 +795,6 @@ EVH,headline,T2,17.0,1.073137274,,Evolent Health Inc,2015-06-05,auto:ritter+yf,h
 SXC,headline,T2,16.0,1.071916,,Suncoke Energy Inc,2011-07-20,auto:edgar+yf,high,SXC,ticker+date
 CHGG,headline,T2,12.5,1.0684305125,,Chegg,2013-11-13,auto:edgar+yf,high,CHGG,ticker+date
 MN,headline,T2,12.0,1.066812,,Manning & Napier Inc,2011-11-17,ritter-anchor,med,MN,ticker+date
-RTPYU,headline,T2,10.0,1.0625,,Reinvent Technology Partners Y,2021-03-16,ritter-anchor,med,RTPYU,ticker+date
 TIGR,headline,T2,8.0,1.062296,,Up Fintech Holding Ltd,2019-03-20,single:yf,low,TIGR,ticker+date
 RMP,headline,T2,16.5,1.0595025045000002,,Rice Midstream Partners LP,2014-12-17,auto:ritter+yf,high,RMP,ticker+date
 IMCR,headline,T2,26.0,1.0592712,,Immunocore Hldg Ltd,2021-02-05,single:yf,low,IMCR,ticker+date
@@ -1286,7 +806,6 @@ SDGR,headline,T2,17.0,1.044602366,,Schrodinger Inc,2020-02-06,auto:edgar+ritter+
 SDR,headline,T2,21.0,1.044225,,SandRidge Mississippian,2012-04-17,ritter-anchor,med,SDR,ticker+date
 PACB,headline,T2,16.0,1.039170136,,Pacific Biosciences of CA Inc,2010-10-26,auto:edgar+yf,high,PACB,ticker+date
 QIWI,headline,T2,17.0,1.0271451,,QIWI PLC,2013-05-02,single:yf,low,QIWI,ticker+date
-HERAU,headline,T2,10.0,1.024,,FTAC Hera Acquisition Corp,2021-03-04,ritter-anchor,med,HERAU,ticker+date
 NBHC,headline,T2,19.25,1.01725575875,,National Bank Holdings Corp,2012-09-19,auto:edgar+ritter,high,NBHC,ticker+date
 HCC,headline,T2,19.0,1.0157422705,,Warrior Met Coal,2017-04-13,auto:edgar+yf,high,HCC,ticker+date
 GOSS,headline,T2,16.0,1.010361408,,Gossamer Bio Inc,2019-02-08,auto:edgar+yf,high,GOSS,ticker+date
@@ -1305,21 +824,15 @@ YEXT,headline,T1,11.0,0.9740824720000001,,Yext Inc,2017-04-13,auto:edgar+yf,high
 BRCB,headline,T1,20.0,0.96775118,,"Black Rock Coffee Bar, Inc.",2025-09-12,ritter-anchor,med,BRCB,ticker+date
 SUPV,headline,T1,11.0,0.9655602,,Grupo Supervielle SA,2016-05-19,single:yf,low,SUPV,ticker+date
 DAWN,headline,T1,16.0,0.9653984,,Day One Biopharmaceuticals Inc,2021-05-27,single:yf,low,DAWN,ticker+date
-FTOCU,headline,T1,10.0,0.96463,,FTAC Olympus Acquisition Corp,2020-08-27,ritter-anchor,med,FTOCU,ticker+date
 CUDA,headline,T1,18.0,0.9607806,,Barracuda Networks,2013-11-06,single:yf,low,CUDA,ticker+date
 PUBM,headline,T1,20.0,0.95653004,,PubMatic Inc,2020-12-09,auto:ritter+yf,high,PUBM,ticker+date
 RVMD,headline,T1,17.0,0.9512878699999999,,Revolution Medicines Inc,2020-02-13,auto:edgar+yf,high,RVMD,ticker+date
 SKYX,headline,T1,14.0,0.950892292,,SQL Technologies Corp,2022-02-10,auto:edgar+yf,high,SKYX,ticker+date
 KANG,headline,T1,14.0,0.9507456,,iKang Healthcare Group Inc,2014-04-09,single:yf,low,KANG,ticker+date
 GDS,headline,T1,10.0,0.95001104,,GDS Services Ltd,2016-11-02,single:yf,low,GDS,ticker+date
-PRPBU,headline,T1,10.0,0.95,,CC Neuberger Principal Hldg,2020-07-31,ritter-anchor,med,PRPB,name+date(0.60)
 DUO,headline,T1,13.0,0.9415926,,Fangdd Network Group Ltd,2019-11-01,single:yf,low,DUO,ticker+date
 RH,headline,T1,24.0,0.940886544,,Restoration Hardware Hldg Inc,2012-11-01,auto:edgar+yf,high,RH,ticker+date
 FBLG,headline,T1,30.0,0.93818025,,FibroBiologics Inc.,2024-01-31,ritter-anchor,med,FBLG,ticker+date
-CONXU,headline,T1,10.0,0.9376,,CONX Corp.,2020-10-30,ritter-anchor,med,CONXU,ticker+date
-CPUHU,headline,T1,10.0,0.9375,,Compute Health Acq Corp,2021-02-05,ritter-anchor,med,CPUH.,name+date(0.50)
-GGPIU,headline,T1,10.0,0.9375,,Gores Guggenheim Inc,2021-03-23,ritter-anchor,med,GGPIU,ticker+date
-SCRMU,headline,T1,10.0,0.9375,,Screaming Eagle Acquisition Co,2022-01-06,ritter-anchor,med,SCRMU,ticker+date
 OLLI,headline,T1,16.0,0.93584592,,Ollie's Bargain Outlet Hldg,2015-07-16,auto:edgar+yf,high,OLLI,ticker+date
 MTSI,headline,T1,19.0,0.9347931125,,M/A-COM Technology Hldg,2012-03-14,auto:edgar+yf,high,MTSI,ticker+date
 ATEN,headline,T1,15.0,0.9254271225,,A10 Networks Inc,2014-03-21,auto:edgar+yf,high,ATEN,ticker+date
@@ -1336,9 +849,7 @@ UPB,headline,T1,17.0,0.911142217,,"Upstream Bio, Inc.",2024-10-11,single:edgar,l
 RIGP,headline,T1,22.0,0.910338,,Transocean Partners LLC,2014-07-31,ritter-anchor,med,RIGP,ticker+date
 SDLP,headline,T1,22.0,0.90988425,,Seadrill Partners LLC,2012-10-18,ritter-anchor,med,SDLP,ticker+date
 ZVIA,headline,T1,14.0,0.903433132,,Zevia PBC,2021-07-22,ritter-anchor,med,ZVIA,ticker+date
-CAMBU,headline,T1,10.0,0.90125,,Cambridge Capital Acquisition,2013-12-18,ritter-anchor,med,CAMBU,ticker+date
 CMRE,headline,T1,12.0,0.9011904,,Costamare Inc,2010-11-03,single:yf,low,CMRE,ticker+date
-CRHCU,headline,T1,10.0,0.9,,Cohn Robbins Holdings Corp,2020-09-09,ritter-anchor,med,CRHC,name+date(1.00)
 GHLD,headline,T1,15.0,0.9,,Guild Holdings Co,2020-10-22,ritter-anchor,med,GHLD,ticker+date
 PEN,headline,T1,30.0,0.896699325,,Penumbra Inc,2015-09-18,auto:edgar+yf,high,PEN,ticker+date
 NTRA,headline,T1,18.0,0.890796861,,Natera Inc,2015-07-02,auto:edgar+yf,high,NTRA,ticker+date
@@ -1359,7 +870,6 @@ VTTI,headline,T1,21.0,0.862500009,,VTTI Energy Partners LP,2014-08-01,ritter-anc
 KYMR,headline,T1,20.0,0.86183041,,Kymera Therapeutics Inc,2020-08-21,auto:edgar+yf,high,KYMR,ticker+date
 BCC,headline,T1,21.0,0.861563976,,Boise Cascade Co,2013-02-05,auto:edgar+yf,high,BCC,ticker+date
 TRNO,headline,T1,20.0,0.858124,,Terreno Realty Corp,2010-02-09,single:yf,low,TRNO,ticker+date
-AUS'U,headline,T1,10.0,0.85714286,,Austerlitz Acquisition Corp I,2021-02-26,ritter-anchor,med,AUS.U,name+date(1.00)
 CGEM,headline,T1,21.0,0.8541469125000001,,Cullinan Management Inc,2021-01-08,auto:edgar+yf,high,CGEM,ticker+date
 TLIS,headline,T1,16.0,0.8534968,,Talis Biomedical Corp,2021-02-12,ritter-anchor,med,TLIS,ticker+date
 PCTY,headline,T1,17.0,0.853389256,,Paylocity Holding Corp,2014-03-19,auto:edgar+yf,high,PCTY,ticker+date
@@ -1375,10 +885,8 @@ GLUE,headline,T1,19.0,0.8447601305,,Monte Rosa Therapeutics Inc,2021-06-24,auto:
 GPMT,headline,T1,19.5,0.84306694875,,Granite Point Mtg Tr Inc,2017-06-23,auto:edgar+yf,high,GPMT,ticker+date
 MPLX,headline,T1,22.0,0.8414836649999999,,MPLX LP,2012-10-25,auto:edgar+ritter,high,MPLX,ticker+date
 HG,headline,T1,15.0,0.8405412525,,"Hamilton Insurance Group, Ltd.",2023-11-10,auto:edgar+yf,high,HG,ticker+date
-GSAHU,headline,T1,10.0,0.84,,GS Acquisition Holdings Corp,2018-06-08,ritter-anchor,med,GSAHU,ticker+date
 AVO,headline,T1,12.0,0.8394109080000001,,Mission Produce Inc,2020-10-01,auto:edgar+yf,high,AVO,ticker+date
 BRP,headline,T1,14.0,0.83423529,,BRP Group Inc,2019-10-24,ritter-anchor,med,BRP,ticker+date
-AJAXU,headline,T1,10.0,0.83333333,,Ajax I,2020-10-28,ritter-anchor,med,AJAX,name+date(1.00)
 COCO,headline,T1,15.0,0.8325815999999999,,"The Vita Coco Company, Inc.",2021-10-21,auto:edgar+yf,high,COCO,ticker+date
 MEP,headline,T1,18.0,0.830574,,Midcoast Energy Partners LP,2013-11-07,ritter-anchor,med,MEP,ticker+date
 FSAM,headline,T1,17.0,0.830569,,Fifth St Asset Mgmt Inc,2014-10-30,ritter-anchor,med,FSAM,ticker+date
@@ -1404,7 +912,6 @@ XNET,headline,T1,12.0,0.792534,,Xunlei Ltd,2014-06-24,single:yf,low,XNET,ticker+
 PMVP,headline,T1,18.0,0.789957432,,PMV Pharmaceuticals Inc,2020-09-25,auto:edgar+yf,high,PMVP,ticker+date
 RNG,headline,T1,13.0,0.789737,,RingCentral,2013-09-27,auto:edgar+ritter+yf,high,RNG,ticker+date
 AYX,headline,T1,14.0,0.788487616,,Alteryx Inc,2017-03-24,ritter-anchor,med,AYX,ticker+date
-AACQU,headline,T1,10.0,0.7875,,Artius Acq Inc,2020-07-14,ritter-anchor,med,AACQU,ticker+date
 HLNE,headline,T1,16.0,0.7865004879999999,,Hamilton Lane Inc,2017-03-01,auto:ritter+yf,high,HLNE,ticker+date
 HQY,headline,T1,14.0,0.78647478,,HealthEquity Inc,2014-07-31,auto:edgar+yf,high,HQY,ticker+date
 WLH,headline,T1,25.0,0.78595,,William Lyon Homes Inc,2013-05-15,ritter-anchor,med,WLH,ticker+date
@@ -1423,14 +930,6 @@ ANGI,headline,T1,13.0,0.7607171,,Angie's List Inc,2011-11-16,single:yf,low,ANGI,
 KARO,headline,T1,28.0,0.7529760839999999,,Karooooo Ltd,2021-04-01,auto:edgar+yf,high,KARO,ticker+date
 EFC,headline,T1,22.5,0.7518825,,Ellington Financial LLC,2010-10-07,single:yf,low,EFC,ticker+date
 SHAK,headline,T1,21.0,0.7518,,Shake Shack Inc,2015-01-30,auto:ritter+yf,high,SHAK,ticker+date
-CFCOU,headline,T1,10.0,0.75,,CF Corp,2016-05-20,ritter-anchor,med,CFCOU,ticker+date
-TPGEU,headline,T1,10.0,0.75,,TPG Pace Energy Holdings Corp,2017-05-04,ritter-anchor,med,TPGEU,ticker+date
-IPOAU,headline,T1,10.0,0.75,,Social Capital Hedosophia,2017-09-14,ritter-anchor,med,IPOAU,ticker+date
-CCC'U,headline,T1,10.0,0.75,,Churchill Capital Corp,2018-09-07,ritter-anchor,med,CCC.U,name+date(1.00)
-PNTMU,headline,T1,10.0,0.75,,Pontem Corp,2021-01-13,ritter-anchor,med,PNTM.,name+date(1.00)
-APGBU,headline,T1,10.0,0.75,,Apollo Strategic Growth II,2021-02-10,ritter-anchor,med,APGB.,name+date(0.80)
-FVIVU,headline,T1,10.0,0.75,,Fortress Value Acq Corp IV,2021-03-16,ritter-anchor,med,FVIV.,name+date(0.60)
-LGV'U,headline,T1,10.0,0.75,,Longview Acquisition Corp. II,2021-03-19,ritter-anchor,med,LGV.U,name+date(1.00)
 NUVL,headline,T1,17.0,0.7476401865,,Nuvalent Inc,2021-07-29,auto:ritter+yf,high,NUVL,ticker+date
 DIBS,headline,T1,20.0,0.7441242,,1stdibs.com Inc,2021-06-10,auto:edgar+yf,high,DIBS,ticker+date
 HDP,headline,T1,16.0,0.739672,,Hortonworks Inc,2014-12-12,single:yf,low,HDP,ticker+date
@@ -1444,7 +943,6 @@ PRI,headline,T1,15.0,0.725427,,Primerica Inc,2010-03-31,single:yf,low,PRI,ticker
 RARE,headline,T1,21.0,0.723144387,,Ultragenyx Pharmaceutical,2014-01-31,auto:edgar+yf,high,RARE,ticker+date
 TSHA,headline,T1,20.0,0.72282835,,Taysha Gene Therapies Inc,2020-09-24,auto:edgar+yf,high,TSHA,ticker+date
 NNNN,headline,T1,5.0,0.719456,,Anbio Biotechnology,2025-02-19,ritter-anchor,med,NNNN,ticker+date
-BOACU,headline,T1,10.0,0.71875,,Bluescape Opportunities Acq,2020-10-28,ritter-anchor,med,BOAC.,name+date(0.50)
 RPID,headline,T1,20.0,0.71757811,,Rapid Micro Biosystems Inc,2021-07-15,auto:ritter+yf,high,RPID,ticker+date
 GUTS,headline,T1,15.0,0.71628081,,"Fractyl Health, Inc.",2024-02-02,auto:edgar+yf,high,GUTS,ticker+date
 QRE,headline,T1,20.0,0.71387206,,QR Energy LP,2010-12-16,ritter-anchor,med,QRE,ticker+date
@@ -1455,11 +953,8 @@ SEDG,headline,T1,18.0,0.705977811,,SolarEdge Technologies Inc,2015-03-26,auto:ed
 APPN,headline,T1,12.0,0.704254656,,Appian Corp,2017-05-25,auto:ritter+yf,high,APPN,ticker+date
 WLKP,headline,T1,24.0,0.7034364,,Westlake Chemical Partners LP,2014-07-30,auto:ritter+yf,high,WLKP,ticker+date
 NRIX,headline,T1,19.0,0.7000876705,,Nurix Therapeutics Inc,2020-07-24,auto:edgar+yf,high,NRIX,ticker+date
-EAGLU,headline,T1,10.0,0.7,,Silver Eagle Acquisition Corp,2013-07-25,ritter-anchor,med,EAGLU,ticker+date
 APLS,headline,T1,14.0,0.6895966,,Apellis Pharmaceuticals Inc,2017-11-09,single:yf,low,APLS,ticker+date
 TTD,headline,T1,18.0,0.688120686,,Trade Desk Inc,2016-09-21,auto:ritter+yf,high,TTD,ticker+date
-FPACU,headline,T1,10.0,0.6875,,Far Point Acquisition Corp,2018-06-12,ritter-anchor,med,FPAC.,name+date(1.00)
-BTWNU,headline,T1,10.0,0.6875,,Bridgetown Holdings Ltd,2020-10-16,ritter-anchor,med,BTWNU,ticker+date
 VIRT,headline,T1,19.0,0.6854734499999999,,Virtu Financial Inc,2015-04-16,auto:ritter+yf,high,VIRT,ticker+date
 EBON,headline,T1,5.23,0.6853148125100001,,Ebang Intl Hldg Inc,2020-06-26,ritter-anchor,med,EBON,ticker+date
 BOJA,headline,T1,19.0,0.683069,,Bojangles' Inc,2015-05-08,single:yf,low,BOJA,ticker+date
@@ -1470,25 +965,17 @@ HESM,headline,T1,23.0,0.678431,,Hess Midstream Partners LP,2017-04-05,ritter-anc
 NOAH,headline,T1,12.0,0.6775524,,Noah Holdings Ltd,2010-11-09,single:yf,low,NOAH,ticker+date
 JANX,headline,T1,17.0,0.676710585,,Janux Therapeutics Inc,2021-06-11,auto:edgar+yf,high,JANX,ticker+date
 QNST,headline,T1,15.0,0.67524,,QuinStreet Inc,2010-02-10,single:yf,low,QNST,ticker+date
-ANSCU,headline,T1,10.0,0.675,,Agriculture & Natural Solution,2023-11-09,ritter-anchor,med,ANSCU,ticker+date
 SEND,headline,T1,16.0,0.6730656,,SendGrid Inc,2017-11-15,single:yf,low,SEND,ticker+date
 BDTX,headline,T1,19.0,0.6672182975000001,,Black Diamond Therapeutics Inc,2020-01-30,auto:edgar+yf,high,BDTX,ticker+date
-ETACU,headline,T1,10.0,0.6645,,E.Merge Tech Acq Corp,2020-07-31,ritter-anchor,med,ETACU,ticker+date
 DLNG,headline,T1,18.0,0.66366,,Dynagas LNG Partners LP,2013-11-13,auto:ritter+yf,high,DLNG,ticker+date
-EOCWU,headline,T1,10.0,0.6625,,Elliott Opportunity II Corp,2021-06-29,ritter-anchor,med,EOCW.,name+date(1.00)
 LUNG,headline,T1,19.0,0.6611463535,,Pulmonx Corp,2020-10-01,auto:edgar+yf,high,LUNG,ticker+date
 CALX,headline,T1,13.0,0.66053,,Calix Inc,2010-03-24,single:yf,low,CALX,ticker+date
 AUTL,headline,T1,17.0,0.6593654,,Autolus Therapeutics Ltd,2018-06-21,single:yf,low,AUTL,ticker+date
-TWCTU,headline,T1,10.0,0.65625,,TWC Tech Holdings II Corp,2020-09-11,ritter-anchor,med,TWCTU,ticker+date
-SVFAU,headline,T1,10.0,0.65625,,SVF Investment Corp,2021-01-08,ritter-anchor,med,SVFAU,ticker+date
-HIIIU,headline,T1,10.0,0.65625,,Hudson Executive Invest Corp,2021-02-24,ritter-anchor,med,HIIIU,ticker+date
-GHIXU,headline,T1,10.0,0.65625,,"Gores Holdings IX, Inc.",2022-01-12,ritter-anchor,med,GHIXU,ticker+date
 RCUS,headline,T1,15.0,0.6525358125,,Arcus Biosciences Inc,2018-03-15,auto:edgar+yf,high,RCUS,ticker+date
 PLAY,headline,T1,16.0,0.651849064,,Dave & Buster's Ent Inc,2014-10-10,auto:edgar+yf,high,PLAY,ticker+date
 FVRR,headline,T1,21.0,0.6508992,,Fiverr International Ltd,2019-06-13,single:yf,low,FVRR,ticker+date
 NTLA,headline,T1,18.0,0.647933085,,Intellia Therapeutics Inc,2016-05-06,auto:edgar+yf,high,NTLA,ticker+date
 RPD,headline,T1,16.0,0.647477112,,Rapid7 Inc,2015-07-17,auto:edgar+yf,high,RPD,ticker+date
-DMIIU,headline,T1,10.0,0.646375,,Drugs Made In America Acquisit,2025-09-25,auto:edgar+ritter,high,DMIIU,ticker+date
 VOR,headline,T1,18.0,0.645957297,,Vor Biopharma Inc,2021-02-05,auto:edgar+yf,high,VOR,ticker+date
 RMAX,headline,T1,22.0,0.645546,,RE/MAX Holdings,2013-10-02,ritter-anchor,med,RMAX,ticker+date
 BIOA,headline,T1,18.0,0.645277284,,"BioAge Labs, Inc.",2024-09-26,single:edgar,low,BIOA,ticker+date
@@ -1496,25 +983,9 @@ PHR,headline,T1,18.0,0.638521866,,Phreesia Inc,2019-07-18,auto:edgar+yf,high,PHR
 ALRM,headline,T1,14.0,0.637987861,,Alarm.com Holdings Inc,2015-06-26,auto:edgar+yf,high,ALRM,ticker+date
 NA,headline,T1,11.5,0.6370425,,Nano Labs Ltd,2022-07-12,single:yf,low,NAN,name+date(1.00)
 WIX,headline,T1,16.5,0.63679701525,,Wix.com Ltd,2013-11-06,auto:edgar+yf,high,WIX,ticker+date
-CFIIU,headline,T1,10.0,0.636,,CF Finance Acquisition Corp II,2020-08-27,ritter-anchor,med,CFIIU,ticker+date
-CCV'U,headline,T1,10.0,0.6325,,Churchill Capital Corp V,2020-12-16,ritter-anchor,med,CCV.U,name+date(1.00)
 ACIU,headline,T1,11.0,0.6309897,,AC Immune SA,2016-09-23,single:yf,low,ACIU,ticker+date
 VRA,headline,T1,16.0,0.62788776,,Vera Bradley Inc,2010-10-20,auto:edgar+yf,high,VRA,ticker+date
 IH,headline,T1,12.0,0.627294,,iHuman Inc.,2020-10-09,single:yf,low,IH,ticker+date
-WLRHU,headline,T1,10.0,0.62531,,WL Ross Holding Corp,2014-06-06,ritter-anchor,med,WLRHU,ticker+date
-GOACU,headline,T1,10.0,0.625,,GO Acquisition Corp,2020-08-06,ritter-anchor,med,GOAC,name+date(1.00)
-RBACU,headline,T1,10.0,0.625,,Redball Acquisition Corp,2020-08-13,ritter-anchor,med,RBAC,name+date(1.00)
-VYGGU,headline,T1,10.0,0.625,,Vy Global Growth,2020-10-02,ritter-anchor,med,VYGG,name+date(1.00)
-LCYAU,headline,T1,10.0,0.625,,Landcadia Holdings III Inc,2020-10-09,ritter-anchor,med,LCYAU,ticker+date
-HZONU,headline,T1,10.0,0.625,,Horizon Acquisition Corp II,2020-10-20,ritter-anchor,med,HZON.,name+date(1.00)
-ACICU,headline,T1,10.0,0.625,,Atlas Crest Investment Corp,2020-10-28,ritter-anchor,med,ACICU,ticker+date
-SCOAU,headline,T1,10.0,0.625,,ScION Tech Growth I,2020-12-17,ritter-anchor,med,SCOAU,ticker+date
-LMACU,headline,T1,10.0,0.625,,Liberty Media Acq Corp,2021-01-22,ritter-anchor,med,LMACU,ticker+date
-LGACU,headline,T1,10.0,0.625,,Lazard Growth Acq Corp I,2021-02-10,ritter-anchor,med,LGACU,ticker+date
-SLAMU,headline,T1,10.0,0.625,,Slam Corp,2021-02-23,ritter-anchor,med,SLAMU,ticker+date
-WPCAU,headline,T1,10.0,0.625,,Warburg Pincus Capital I-B,2021-03-05,ritter-anchor,med,WPCB.,name+date(1.00)
-LCAHU,headline,T1,10.0,0.625,,Landcadia Holdings IV Inc,2021-03-25,ritter-anchor,med,LCAHU,ticker+date
-MSDAU,headline,T1,10.0,0.625,,MSD Acquisition Corp,2021-03-25,ritter-anchor,med,MSDAU,ticker+date
 TYRA,headline,T1,16.0,0.624646848,,Tyra Biosciences Inc,2021-09-15,auto:edgar+yf,high,TYRA,ticker+date
 MLYS,headline,T1,16.0,0.6233068239999999,,Mineralys Therapeutics Inc,2023-02-10,auto:edgar+yf,high,MLYS,ticker+date
 ARQT,headline,T1,17.0,0.622361075,,Arcutis Biotherapeutics Inc,2020-01-31,auto:edgar+yf,high,ARQT,ticker+date
@@ -1534,18 +1005,12 @@ APTI,headline,T1,16.0,0.605361112,,Apptio Inc,2016-09-23,auto:ritter+yf,high,APT
 MTLS,headline,T1,12.0,0.6051396,,Materialise NV,2014-06-25,single:yf,low,MTLS,ticker+date
 ZNTL,headline,T1,18.0,0.602506062,,Zentalis Pharmaceuticals LLC,2020-04-03,auto:edgar+yf,high,ZNTL,ticker+date
 JRVR,headline,T1,21.0,0.601753425,,James River Group Holdings Ltd,2014-12-12,auto:edgar+yf,high,JRVR,ticker+date
-VEACU,headline,T1,10.0,0.6,,Vantage Energy Acq Corp,2017-04-10,ritter-anchor,med,VEACU,ticker+date
-SPAQU,headline,T1,10.0,0.6,,Spartan Energy Acquisition,2018-08-10,ritter-anchor,med,SPAQU,ticker+date
-CCVIU,headline,T1,10.0,0.6,,Churchill Capital Corp VI,2021-02-12,ritter-anchor,med,CCVI.,name+date(1.00)
-GSEVU,headline,T1,10.0,0.6,,Gores Holdings VII Inc,2021-02-23,ritter-anchor,med,GSEVU,ticker+date
-CMLTU,headline,T1,10.0,0.6,,CM Life Sciences III Inc,2021-04-07,ritter-anchor,med,CMLTU,ticker+date
 TXO,headline,T1,20.0,0.6,,TXO Energy Partners LP,2023-01-27,auto:edgar+ritter+yf,high,TXO,ticker+date
 VIOT,headline,T1,9.0,0.5980365,,Viomi Technology Co Ltd,2018-09-25,single:yf,low,VIOT,ticker+date
 YRD,headline,T1,10.0,0.597389,,Yirendai Ltd,2015-12-18,single:yf,low,YRD,ticker+date
 SXCP,headline,T1,19.0,0.596968486,,SunCoke Energy Partners LP,2013-01-17,ritter-anchor,med,SXCP,ticker+date
 ROAD,headline,T1,12.0,0.5963102220000001,,Construction Partners Inc,2018-05-04,auto:ritter+yf,high,ROAD,ticker+date
 TRDA,headline,T1,20.0,0.59525256,,Entrada Therapeutics Inc,2021-10-29,auto:edgar+yf,high,TRDA,ticker+date
-GRSVU,headline,T1,10.0,0.59375,,Gores Holdings V Inc,2020-08-06,ritter-anchor,med,GRSVU,ticker+date
 CMPS,headline,T1,17.0,0.5916901,,Compass Pathways Plc,2020-09-18,single:yf,low,CMPS,ticker+date
 SSTK,headline,T1,17.0,0.5915683885,,Shutterstock Inc,2012-10-10,auto:edgar+yf,high,SSTK,ticker+date
 ANNX,headline,T1,17.0,0.5899577149999999,,Annexon Inc,2020-07-24,auto:edgar+yf,high,ANNX,ticker+date
@@ -1561,9 +1026,7 @@ PAHC,headline,T1,15.0,0.5771757075,,Phibro Animal Health Corp,2014-04-11,auto:ri
 GKOS,headline,T1,18.0,0.5770587330000001,,Glaukos Corp,2015-06-25,auto:edgar+yf,high,GKOS,ticker+date
 AVBP,headline,T1,18.0,0.5765539500000001,,"ArriVent Biopharma, Inc.",2024-01-26,auto:edgar+yf,high,AVBP,ticker+date
 GRO,headline,T1,15.0,0.576056055,,Brazil Potash Corp.,2024-11-27,single:edgar,low,GRO,ticker+date
-ALCC,headline,T1,10.0,0.576,,AltC Acquisition Corp,2021-07-08,ritter-anchor,med,ALCC,ticker+date
 GPCR,headline,T1,15.0,0.573648,,Structure Therapeutics Inc,2023-02-03,single:yf,low,GPCR,ticker+date
-VAQC,headline,T1,10.0,0.5735,,Vector Acquisition Corp II,2021-03-10,ritter-anchor,med,VAQC,ticker+date
 FHTX,headline,T1,16.0,0.57206704,,Foghorn Therapeutics Inc,2020-10-23,auto:edgar+yf,high,FHTX,ticker+date
 JILL,headline,T1,13.0,0.568697636,,J.Jill Inc,2017-03-09,auto:edgar+yf,high,JILL,ticker+date
 MITT,headline,T1,20.0,0.56826,,AG Mortgage Investment Trust,2011-06-29,single:yf,low,MITT,ticker+date
@@ -1574,11 +1037,6 @@ AFYA,headline,T1,19.0,0.565308121,,Afya Ltd,2019-07-19,ritter-anchor,med,AFYA,ti
 SKWD,headline,T1,15.0,0.5644365825,,Skyward Specialty Ins Grp Inc,2023-01-12,auto:edgar+yf,high,SKWD,ticker+date
 LOCO,headline,T1,15.0,0.56410377,,El Pollo Loco Holdings Inc,2014-07-24,auto:edgar+yf,high,LOCO,ticker+date
 KVSC,headline,T1,10.0,0.563,,Khosla Ventures Acq Co III,2021-03-24,ritter-anchor,med,KVSC,ticker+date
-AGCUU,headline,T1,10.0,0.5625,,Altimeter Growth Corp,2020-10-01,ritter-anchor,med,AGCUU,ticker+date
-CFIVU,headline,T1,10.0,0.5625,,CF Acquisition Corp. IV,2020-12-23,ritter-anchor,med,CFIVU,ticker+date
-MIT'U,headline,T1,10.0,0.5625,,Mason Industrial Tech Inc,2021-01-29,ritter-anchor,med,MIT.U,name+date(0.67)
-TSPQU,headline,T1,10.0,0.5625,,TCW Special Purpose Acq Corp,2021-03-02,ritter-anchor,med,TSPQ.,name+date(0.60)
-AACTU,headline,T1,10.0,0.5625,,Ares Acquisition Corp II,2023-04-21,ritter-anchor,med,AACTU,ticker+date
 MGX,headline,T1,15.0,0.5624392575,,"Metagenomi, Inc.",2024-02-09,auto:edgar+yf,high,MGX,ticker+date
 WK,headline,T1,14.0,0.5621882,,Workiva LLC,2014-12-12,auto:ritter+yf,high,WK,ticker+date
 FOGO,headline,T1,20.0,0.56081,,Fogo De Chao Inc,2015-06-19,single:yf,low,FOGO,ticker+date
@@ -1592,13 +1050,9 @@ LXFT,headline,T1,17.0,0.554864955,,Luxoft Holding Inc,2013-06-25,ritter-anchor,m
 EPAM,headline,T1,12.0,0.55361415,,EPAM Systems Inc,2012-02-07,auto:edgar+yf,high,EPAM,ticker+date
 AVXS,headline,T1,20.0,0.553526,,AveXis Inc,2016-02-11,single:yf,low,AVXS,ticker+date
 VRNS,headline,T1,22.0,0.552338688,,Varonis Systems,2014-02-28,auto:edgar+yf,high,VRNS,ticker+date
-GTYHU,headline,T1,10.0,0.552,,GTY Technology Holdings Inc,2016-10-28,ritter-anchor,med,GTYHU,ticker+date
 GNBC,headline,T1,15.0,0.550932,,Green Bancorp Inc,2014-08-08,single:yf,low,GNBC,ticker+date
-REVHU,headline,T1,10.0,0.55,,Revolution Healthcare Acquisit,2021-03-18,ritter-anchor,med,REVHU,ticker+date
 FOXF,headline,T1,15.0,0.5496981525,,Fox Factory Holding Corp,2013-08-07,auto:edgar+yf,high,FOXF,ticker+date
 LASR,headline,T1,16.0,0.546291184,,nLIGHT Inc,2018-04-26,auto:edgar+yf,high,LASR,ticker+date
-FSNBU,headline,T1,10.0,0.54375,,Fusion Acquisition Corp II,2021-02-26,ritter-anchor,med,FSNB.,name+date(1.00)
-ACQRU,headline,T1,10.0,0.54375,,Independence Holdings Corp,2021-03-09,ritter-anchor,med,ACQRU,ticker+date
 WING,headline,T1,19.0,0.543554679,,Wingstop Inc,2015-06-12,auto:edgar+yf,high,WING,ticker+date
 TSRO,headline,T1,13.5,0.54121905,,Tesaro Inc,2012-06-27,single:yf,low,TSRO,ticker+date
 QTNA,headline,T1,16.0,0.539176,,Quantenna Communications Inc,2016-10-28,single:yf,low,QTNA,ticker+date
@@ -1608,7 +1062,6 @@ RRTS,headline,T1,14.0,0.5357226,,Roadrunner Transporttn Systems,2010-05-13,singl
 MASS,headline,T1,20.0,0.53500954,,908 Devices Inc.,2020-12-18,auto:edgar+yf,high,MASS,ticker+date
 MBX,headline,T1,16.0,0.534678688,,"MBX Biosciences, Inc.",2024-09-13,single:edgar,low,MBX,ticker+date
 USAC,headline,T1,18.0,0.534437928,,USA Compression Partners LP,2013-01-14,ritter-anchor,med,USAC,ticker+date
-EVACU,headline,T1,10.0,0.53435,,EQV Ventures Acquisition Corp.,2025-07-02,ritter-anchor,med,EVACU,ticker+date
 PLRX,headline,T1,16.0,0.5334962,,Pliant Therapeutics Inc,2020-06-03,auto:edgar+yf,high,PLRX,ticker+date
 SQBK,headline,T1,18.0,0.532837728,,Square 1 Financial,2014-03-27,ritter-anchor,med,SQBK,ticker+date
 SKYT,headline,T1,14.0,0.531408101,,Skywater Technology Inc,2021-04-21,auto:edgar+yf,high,SKYT,ticker+date
@@ -1618,10 +1071,6 @@ RANI,headline,T1,11.0,0.528090442,,Rani Therapeutics Holding Inc,2021-07-30,ritt
 MDLY,headline,T1,18.0,0.527999994,,Medley Management Inc,2014-09-24,ritter-anchor,med,MDLY,ticker+date
 ACRE,headline,T1,18.5,0.52755895,,Ares Commercial RE Corp,2012-04-25,single:yf,low,ACRE,ticker+date
 METC,headline,T1,13.5,0.5273449379999999,,Ramaco Resources Inc,2017-02-03,auto:edgar+yf,high,METC,ticker+date
-BOWXU,headline,T1,10.0,0.525,,BowX Acquisition Corp,2020-08-05,ritter-anchor,med,BOWXU,ticker+date
-HAACU,headline,T1,10.0,0.525,,Health Assurance Acquisition,2020-11-13,ritter-anchor,med,HAACU,ticker+date
-RMGCU,headline,T1,10.0,0.525,,RMG Acquisition Corp III,2021-02-05,ritter-anchor,med,RMGCU,ticker+date
-ANZUU,headline,T1,10.0,0.525,,Anzu Special Acq Corp I,2021-03-02,ritter-anchor,med,ANZUU,ticker+date
 DOMO,headline,T1,21.0,0.524029863,,Domo Inc,2018-06-29,auto:ritter+yf,high,DOMO,ticker+date
 CDXS,headline,T1,13.0,0.523991,,Codexis Inc,2010-04-22,single:yf,low,CDXS,ticker+date
 KPTI,headline,T1,16.0,0.523852744,,Karyopharm Therapeutics,2013-11-06,auto:edgar+yf,high,KPTI,ticker+date
@@ -1638,36 +1087,20 @@ ZENV,headline,T1,13.0,0.510804125,,Zenvia Inc,2021-07-22,ritter-anchor,med,ZENV,
 AGCB,headline,T1,10.0,0.51,,Altimeter Growth Corp 2,2021-01-07,ritter-anchor,med,AGCB,ticker+date
 EVLO,headline,T1,16.0,0.5099344,,Evelo Biosciences Inc,2018-05-09,single:yf,low,EVLO,ticker+date
 SOI,headline,T1,12.0,0.509589876,,Solaris Oilfield,2017-05-12,ritter-anchor,med,SOI,ticker+date
-LEAPU,headline,T1,10.0,0.509,,"Ribbit LEAP, Ltd",2020-09-11,ritter-anchor,med,LEAP,name+date(1.00)
 CEPF,headline,T1,10.0,0.509,,"Cantor Equity Partners IV, Inc",2025-08-21,auto:ritter+yf,high,CEPF,ticker+date
-BCSSU,headline,T1,10.0,0.509,,Bain Capital GSS Investment Co,2025-09-30,ritter-anchor,med,BCSS.U,name+date(1.00)
 PSNL,headline,T1,17.0,0.506813129,,Personalis Inc,2019-06-20,auto:edgar+yf,high,PSNL,ticker+date
-PACQU,headline,T1,10.0,0.504,,Pure Acquisition Corp,2018-04-13,ritter-anchor,med,PACQU,ticker+date
 ACLX,headline,T1,15.0,0.5031525,,Arcellx Inc,2022-02-04,single:yf,low,ACLX,ticker+date
 FRPT,headline,T1,15.0,0.50235357,,Freshpet Inc,2014-11-07,auto:edgar+yf,high,FRPT,ticker+date
 BZUN,headline,T1,10.0,0.501179,,Baozun Inc,2015-05-21,single:yf,low,BZUN,ticker+date
-PACEU,headline,T1,10.0,0.5,,Pace Holdings Corp,2015-09-10,ritter-anchor,med,PACEU,ticker+date
-GHIVU,headline,T1,10.0,0.5,,Gores Holdings IV Inc,2020-01-24,ritter-anchor,med,GHIVU,ticker+date
-IMPXU,headline,T1,10.0,0.5,,AEA-Bridges Impact Corp,2020-10-01,ritter-anchor,med,IMPX.,name+date(1.00)
-MAACU,headline,T1,10.0,0.5,,Montes Archimedes Acquisition,2020-10-07,ritter-anchor,med,MAACU,ticker+date
-GMIIU,headline,T1,10.0,0.5,,Gores Metropoulos II Inc,2021-01-20,ritter-anchor,med,GMIIU,ticker+date
-MBACU,headline,T1,10.0,0.5,,M3-Brigade Acquisition II Corp,2021-03-04,ritter-anchor,med,MBAC.,name+date(1.00)
-GTPBU,headline,T1,10.0,0.5,,Gores Technology Partners II,2021-03-12,ritter-anchor,med,GTPBU,ticker+date
-AAQCU,headline,T1,10.0,0.5,,Accelerate Acquisition Corp,2021-03-18,ritter-anchor,med,AAQCU,ticker+date
 DGNU,headline,T1,10.0,0.5,,Dragoneer Growth,2021-03-23,ritter-anchor,med,DGNU,ticker+date
 KREF,headline,T1,20.5,0.4952472,,KKR Real Estate Fin Trust,2017-05-05,single:yf,low,KREF,ticker+date
 CCS,headline,T1,23.0,0.492300096,,Century Communities Inc,2014-06-18,auto:edgar+yf,high,CCS,ticker+date
 VTVT,headline,T1,15.0,0.492195,,vTv Therapeutics Inc,2015-07-30,ritter-anchor,med,VTVT,ticker+date
 AOMR,headline,T1,19.0,0.4913029215,,Angel Oak Mortgage Inc,2021-06-17,auto:edgar+yf,high,AOMR,ticker+date
 GCT,headline,T1,12.25,0.48998190675,,GigaCloud Technology Inc,2022-08-17,auto:ritter+yf,high,GCT,ticker+date
-ZINGU,headline,T1,10.0,0.48933333,,FTAC Zeus Acquisition Corp.,2021-11-19,ritter-anchor,med,ZINGU,ticker+date
 SERA,headline,T1,16.0,0.4881424,,Sera Prognostics Inc,2021-07-15,auto:edgar+ritter+yf,high,SERA,ticker+date
-PRPCU,headline,T1,10.0,0.4875,,CC Neuberger Principal III,2021-02-03,ritter-anchor,med,PRPC.,name+date(1.00)
 CHRS,headline,T1,13.5,0.4870191015,,Coherus Biosciences Inc,2014-11-06,auto:edgar+yf,high,CHRS,ticker+date
-GSHTU,headline,T1,10.0,0.484375,,Gores Holdings II Inc,2017-01-12,auto:ritter+yf,high,GSHTU,ticker+date
 ARMO,headline,T1,17.0,0.483021,,Armo Biosciences Inc,2018-01-26,single:yf,low,ARMO,ticker+date
-CMLFU,headline,T1,10.0,0.48125,,CM Life Sciences Inc,2020-09-02,ritter-anchor,med,CMLFU,ticker+date
-TETCU,headline,T1,10.0,0.48125,,Tech & Energy Transition Corp,2021-03-17,ritter-anchor,med,TETCU,ticker+date
 BRBR,headline,T1,14.0,0.480004,,BellRing Brands Inc,2019-10-17,auto:edgar+ritter+yf,high,BRBR,ticker+date
 ICG,headline,T1,8.0,0.479788,,Intchains Group Ltd,2023-03-16,single:yf,low,ICG,ticker+date
 PHAT,headline,T1,19.0,0.4788953515,,Phathom Pharmaceuticals Inc,2019-10-25,auto:edgar+yf,high,PHAT,ticker+date
@@ -1679,18 +1112,12 @@ EVA,headline,T1,20.0,0.47620552,,Enviva Partners LP,2015-04-29,ritter-anchor,med
 MGNX,headline,T1,16.0,0.47465830400000003,,MacroGenics,2013-10-10,auto:edgar+yf,high,MGNX,ticker+date
 QTWO,headline,T1,13.0,0.4731564045,,Q2 Holdings Inc,2014-03-20,auto:edgar+yf,high,QTWO,ticker+date
 PV'U,headline,T1,10.0,0.47,,Primavera Capital Acq Corp,2021-01-22,ritter-anchor,med,PV.U,name+date(0.50)
-GRSHU,headline,T1,10.0,0.46875,,Gores Holdings III Inc,2018-09-07,ritter-anchor,med,GRSHU,ticker+date
-GMHIU,headline,T1,10.0,0.46875,,Gores Metropoulos Inc,2019-02-01,ritter-anchor,med,GMHIU,ticker+date
 BLZE,headline,T1,16.0,0.46837251199999996,,Backblaze Inc,2021-11-11,auto:ritter+yf,high,BLZE,ticker+date
 REPL,headline,T1,15.0,0.46794204,,Replimune Group Inc,2018-07-20,auto:edgar+yf,high,REPL,ticker+date
 OMP,headline,T1,17.0,0.4675,,Oasis Midstream Partners LP,2017-09-21,ritter-anchor,med,OMP,ticker+date
 EDG,headline,T1,11.0,0.464002,,Edgen Group Inc,2012-04-27,ritter-anchor,med,EDG,ticker+date
 HCLP,headline,T1,17.0,0.463777,,Hi-Crush Partners LP,2012-08-15,ritter-anchor,med,HCLP,ticker+date
-KVSB,headline,T1,10.0,0.461,,Khosla Ventures Acq Corp II,2021-03-24,ritter-anchor,med,KVSB,ticker+date
-FSACU,headline,T1,10.0,0.46,,Federal Street Acq Corp,2017-07-19,ritter-anchor,med,FSACU,ticker+date
-VSPRU,headline,T1,10.0,0.46,,Vesper Healthcare Acq Corp,2020-09-30,ritter-anchor,med,VSPRU,ticker+date
 ORIC,headline,T1,16.0,0.459563512,,Oric Pharmaceuticals Inc,2020-04-24,auto:edgar+yf,high,ORIC,ticker+date
-TBCPU,headline,T1,10.0,0.45895,,Thunder Bridge Capital III,2021-02-05,ritter-anchor,med,TBCPU,ticker+date
 APM,headline,T1,15.8,0.4558387374,,Aptorum Grp Ltd,2018-12-18,ritter-anchor,med,APM,ticker+date
 FBK,headline,T1,19.0,0.45552710900000004,,FB Financial Corp,2016-09-16,auto:edgar+yf,high,FBK,ticker+date
 BCEL,headline,T1,17.0,0.455335684,,Atreca Inc,2019-06-20,ritter-anchor,med,BCEL,ticker+date
@@ -1698,26 +1125,10 @@ HABT,headline,T1,18.0,0.454554,,The Habit Restaurants Inc,2014-11-20,ritter-anch
 RYTM,headline,T1,17.0,0.45354419,,Rhythm Pharmaceuticals Inc,2017-10-05,auto:edgar+yf,high,RYTM,ticker+date
 ASND,headline,T1,18.0,0.4534776,,Ascendis Pharma A/S,2015-01-28,single:yf,low,ASND,ticker+date
 INMD,headline,T1,14.0,0.453408774,,InMode Ltd,2019-08-08,auto:edgar+yf,high,INMD,ticker+date
-CCCXU,headline,T1,10.0,0.453,,Churchill Capital Corp X (CI),2025-05-14,ritter-anchor,med,CCCXU,ticker+date
-EQVU,headline,T1,10.0,0.452225,,EQV Ventures Acquisition Corp.,2024-08-07,ritter-anchor,med,EQVU,ticker+date
-QPACU,headline,T1,10.0,0.45063,,Quinpario Acquisition Corp 2,2015-01-16,ritter-anchor,med,QPACU,ticker+date
-HECCU,headline,T1,10.0,0.45,,Hudson Executive Invest Corp,2020-06-09,ritter-anchor,med,HECCU,ticker+date
-EQD'U,headline,T1,10.0,0.45,,Equity Distribution Acq Corp,2020-09-16,ritter-anchor,med,EQD U,name+date(0.50)
-SNRHU,headline,T1,10.0,0.45,,Senior Connect Acq Corp I,2020-12-11,ritter-anchor,med,SNRHU,ticker+date
-FINMU,headline,T1,10.0,0.45,,Marlin Technology Corp,2021-01-13,ritter-anchor,med,FINMU,ticker+date
-HHLAU,headline,T1,10.0,0.45,,HH&L Acquisition Co,2021-02-05,ritter-anchor,med,HHLA.,name+date(1.00)
-JOFFU,headline,T1,10.0,0.45,,JOFF Fintech Acquisition Corp,2021-02-05,ritter-anchor,med,JOFFU,ticker+date
-AGACU,headline,T1,10.0,0.45,,African Gold Acquisition Corp,2021-02-26,ritter-anchor,med,AGAC.,name+date(1.00)
-OHPAU,headline,T1,10.0,0.45,,Orion Acquisition Corp,2021-03-02,ritter-anchor,med,OHPAU,ticker+date
-PDOTU,headline,T1,10.0,0.45,,Peridot Acquisition Corp II,2021-03-09,ritter-anchor,med,PDOT.,name+date(1.00)
-TRAQU,headline,T1,10.0,0.45,,Trine II Acquisition Corp,2021-11-03,ritter-anchor,med,TRAQ.,name+date(1.00)
 SUSP,headline,T1,20.5,0.448516876,,Susser Petroleum Partners LP,2012-09-19,ritter-anchor,med,SUSP,ticker+date
-TCVA,headline,T1,10.0,0.4475,,TCV Acquisition Corp,2021-04-14,ritter-anchor,med,TCVA,ticker+date
 DVOX,headline,T1,15.0,0.447405,,DynaVox Inc,2010-04-22,ritter-anchor,med,DVOX,ticker+date
-CTAQU,headline,T1,10.0,0.4465,,Carney Tech Acq Corp II,2020-12-10,ritter-anchor,med,CTAQU,ticker+date
 EVER,headline,T1,18.0,0.446453712,,Everquote Inc,2018-06-28,auto:ritter+yf,high,EVER,ticker+date
 MBIN,headline,T1,16.0,0.445906936,,Merchants Bancorp,2017-10-27,auto:edgar+yf,high,MBIN,ticker+date
-EPHYU,headline,T1,10.0,0.4455,,Epiphany Tech Acq Corp,2021-01-08,ritter-anchor,med,EPHYU,ticker+date
 MC,headline,T1,25.0,0.44417874999999996,,Moelis & Co LLC,2014-04-16,auto:ritter+yf,high,MC,ticker+date
 BYSI,headline,T1,20.0,0.44415825,,Beyondspring Inc,2017-03-09,auto:edgar+yf,high,BYSI,ticker+date
 PTCT,headline,T1,15.0,0.443924745,,PTC Therapeutics Inc,2013-06-19,auto:edgar+yf,high,PTCT,ticker+date
@@ -1726,22 +1137,6 @@ AFIB,headline,T1,18.0,0.4434606,,Acutus Medical Inc,2020-08-06,single:yf,low,AFI
 MMI,headline,T1,12.0,0.442313382,,Marcus & Millichap,2013-10-31,auto:edgar+yf,high,MMI,ticker+date
 CDRE,headline,T1,13.0,0.439633675,,Cadre Holdings Inc,2021-11-04,auto:edgar+yf,high,CDRE,ticker+date
 KLDO,headline,T1,15.0,0.4395645,,Kaleido Biosciences Inc,2019-02-28,single:yf,low,KLDO,ticker+date
-BLVDU,headline,T1,10.0,0.4375,,Boulevard Acquisition Corp II,2015-09-22,ritter-anchor,med,BLVDU,ticker+date
-KAACU,headline,T1,10.0,0.4375,,Kayne Anderson Acq Corp,2017-03-29,ritter-anchor,med,KAACU,ticker+date
-DEACU,headline,T1,10.0,0.4375,,Diamond Eagle Acq Corp,2019-05-10,ritter-anchor,med,DEACU,ticker+date
-HYACU,headline,T1,10.0,0.4375,,Haymaker Acquisition Corp II,2019-06-07,ritter-anchor,med,HYACU,ticker+date
-NGACU,headline,T1,10.0,0.4375,,NextGen Acquisition Corp,2020-10-07,ritter-anchor,med,NGACU,ticker+date
-TPGYU,headline,T1,10.0,0.4375,,TPG Pace Beneficial Finance,2020-10-07,ritter-anchor,med,TPGY,name+date(1.00)
-COOLU,headline,T1,10.0,0.4375,,Corner Growth Acquisition Corp,2020-12-17,ritter-anchor,med,COOLU,ticker+date
-STPCU,headline,T1,10.0,0.4375,,Star Peak Corp II,2021-01-06,ritter-anchor,med,STPCU,ticker+date
-LHC'U,headline,T1,10.0,0.4375,,Leo Holdings Corp. II,2021-01-08,ritter-anchor,med,LHC.U,name+date(1.00)
-PACXU,headline,T1,10.0,0.4375,,Pioneer Merger Corp,2021-01-08,ritter-anchor,med,PACXU,ticker+date
-FCAXU,headline,T1,10.0,0.4375,,Fortress Capital Acq Corp,2021-01-13,ritter-anchor,med,FCAXU,ticker+date
-NSTCU,headline,T1,10.0,0.4375,,Northern Star Invest Corp III,2021-03-02,ritter-anchor,med,NSTC.,name+date(0.60)
-NSTDU,headline,T1,10.0,0.4375,,Northern Star Invest Corp IV,2021-03-02,ritter-anchor,med,NSTD.,name+date(0.60)
-NGCAU,headline,T1,10.0,0.4375,,NextGen Acquisition Corp II,2021-03-23,ritter-anchor,med,NGCAU,ticker+date
-DCRCU,headline,T1,10.0,0.4375,,Decarbonization Plus Acq III,2021-03-24,ritter-anchor,med,DCRCU,ticker+date
-CPAAU,headline,T1,10.0,0.4375,,Conyers Park III Acquisition C,2021-08-10,ritter-anchor,med,CPAAU,ticker+date
 TKNO,headline,T1,16.0,0.43299053600000004,,Alpha Teknova Inc,2021-06-25,auto:edgar+yf,high,TKNO,ticker+date
 AKBA,headline,T1,17.0,0.43260149049999996,,Akebia Therapeutics Inc,2014-03-20,auto:edgar+yf,high,AKBA,ticker+date
 CTMX,headline,T1,12.0,0.432291552,,CytomX Therapeutics Inc,2015-10-08,auto:edgar+yf,high,CTMX,ticker+date
@@ -1750,7 +1145,6 @@ HBT,headline,T1,16.0,0.43027844800000004,,Hbt Financial Inc,2019-10-11,auto:edga
 RXST,headline,T1,16.0,0.428864032,,RxSight Inc,2021-07-30,auto:edgar+yf,high,RXST,ticker+date
 AIP,headline,T1,14.0,0.428760465,,Arteris Inc,2021-10-27,auto:edgar+yf,high,AIP,ticker+date
 DM,headline,T1,21.0,0.428148,,Dominion Midstream Partners LP,2014-10-15,ritter-anchor,med,DM,ticker+date
-DCRNU,headline,T1,10.0,0.4275,,Decarbonization Plus,2021-02-04,ritter-anchor,med,DCRNU,ticker+date
 MXL,headline,T1,14.0,0.425755708,,MaxLinear Inc,2010-03-23,ritter-anchor,med,MXL,ticker+date
 LMNS,headline,T1,12.0,0.422832,,Lumenis Ltd,2014-02-27,ritter-anchor,med,LMNS,ticker+date
 GLOP,headline,T1,21.0,0.420966,,Gaslog Partners LP,2014-05-07,ritter-anchor,med,GLOP,ticker+date
@@ -1758,131 +1152,35 @@ SODA,headline,T1,20.0,0.420768,,SodaStream International Ltd,2010-11-02,single:y
 ENPCU,headline,T1,25.0,0.42015,,Executive Network Partnering,2020-09-16,ritter-anchor,med,ENPC,name+date(1.00)
 AZI,headline,T1,4.0,0.4199248,,Autozi Internet Technology,2024-08-28,ritter-anchor,med,AZI,ticker+date
 TWST,headline,T1,14.0,0.419543768,,Twist Bioscience Corp,2018-10-31,auto:edgar+yf,high,TWST,ticker+date
-LGSTU,headline,T1,10.0,0.41813333,,Semper Paratus Acquisition Cor,2021-11-04,ritter-anchor,med,LGSTU,ticker+date
 BOOT,headline,T1,16.0,0.416493304,,Boot Barn Holdings Inc,2014-10-30,auto:edgar+yf,high,BOOT,ticker+date
-OMADU,headline,T1,10.0,0.4125,,One Madison Corp,2018-01-17,ritter-anchor,med,OMADU,ticker+date
-QELLU,headline,T1,10.0,0.4125,,Qell Acquisition Corp,2020-09-30,ritter-anchor,med,QELLU,ticker+date
-NAACU,headline,T1,10.0,0.4125,,N Atlantic Acq Corp,2021-01-22,ritter-anchor,med,NAACU,ticker+date
-GATEU,headline,T1,10.0,0.41213333,,Marblegate Acquisition Corp,2021-10-01,ritter-anchor,med,GATEU,ticker+date
 ANRO,headline,T1,16.0,0.40887352,,"Alto Neuroscience, Inc.",2024-02-02,auto:edgar+yf,high,ANRO,ticker+date
 MGTX,headline,T1,15.0,0.40776174,,Meiragtx Holdings Plc,2018-06-08,auto:edgar+yf,high,MGTX,ticker+date
 NPCE,headline,T1,17.0,0.40718683899999997,,NeuroPace Inc,2021-04-22,auto:edgar+yf,high,NPCE,ticker+date
 NEP,headline,T1,25.0,0.40625,,NextEra Energy Partners LP,2014-06-27,ritter-anchor,med,NEP,ticker+date
-HIGAU,headline,T1,10.0,0.40625,,HIG Acquisition Corp,2020-10-21,ritter-anchor,med,HIGA.,name+date(0.50)
-MRACU,headline,T1,10.0,0.40625,,Marquee Raine Acquisition Corp,2020-12-15,ritter-anchor,med,MRACU,ticker+date
 EQM,headline,T1,21.0,0.403515,,EQT Midstream Partners LP,2012-06-26,ritter-anchor,med,EQM,ticker+date
 OPRT,headline,T1,15.0,0.4028328825,,Oportun Financial Corp,2019-09-26,auto:edgar+yf,high,OPRT,ticker+date
 AEXA,headline,T1,10.0,0.40264286,,American Exceptionalism Acquis,2025-09-26,auto:ritter+yf,high,AEXA,ticker+date
 CTNM,headline,T1,16.0,0.40209264,,Contineum Therapeutics Inc,2024-04-05,auto:edgar+ritter+yf,high,CTNM,ticker+date
 PRLB,headline,T1,16.0,0.40064246400000003,,Proto Labs Inc,2012-02-23,auto:edgar+yf,high,PRLB,ticker+date
-CLACU,headline,T1,10.0,0.40063,,Capitol Acquisition Corp III,2015-10-14,ritter-anchor,med,CLACU,ticker+date
 AURA,headline,T1,14.0,0.400541043,,Aura Biosciences Inc,2021-10-29,auto:edgar+yf,high,AURA,ticker+date
 IRT,headline,T1,8.5,0.4001035,,Independence Realty Trust,2013-08-13,single:yf,low,IRT,ticker+date
-KRSPU,headline,T1,10.0,0.400026,,Rice Acquisition Corp 3,2025-10-01,ritter-anchor,med,KRSP.U,name+date(1.00)
-HCVIU,headline,T1,10.0,0.4,,Hennessy Capital Investment VI,2021-09-29,ritter-anchor,med,HCVIU,ticker+date
 AOSL,headline,T1,18.0,0.3996018,,Alpha & Omega Semiconductor Lt,2010-04-29,single:yf,low,AOSL,ticker+date
 KEYW,headline,T1,10.0,0.399347,,The KEYW Holding Corp,2010-09-30,single:yf,low,KEYW,ticker+date
 SPWH,headline,T1,9.5,0.39815561625,,Sportsman's Warehouse Hldg Inc,2014-04-17,auto:edgar+yf,high,SPWH,ticker+date
 TNDM,headline,T1,15.0,0.39791838,,Tandem Diabetes Care,2013-11-14,auto:edgar+yf,high,TNDM,ticker+date
 YTPG,headline,T1,10.0,0.39789,,TPG Pace Beneficial II Corp,2021-04-14,ritter-anchor,med,YTPG,ticker+date
 QLYS,headline,T1,12.0,0.39362755800000004,,Qualys Inc,2012-09-27,auto:edgar+yf,high,QLYS,ticker+date
-GTENU,headline,T1,10.0,0.39225,,"Gores Holdings X, Inc. / CI",2025-05-02,ritter-anchor,med,GTENU,ticker+date
 CRNX,headline,T1,17.0,0.3912739635,,Crinetics Pharmaceuticals Inc,2018-07-18,auto:edgar+yf,high,CRNX,ticker+date
-ARTAU,headline,T1,10.0,0.39,,Artisan Acquisition Corp.,2021-05-14,ritter-anchor,med,ARTAU,ticker+date
-CPARU,headline,T1,10.0,0.39,,Catalyst Partners Acq Corp,2021-05-18,ritter-anchor,med,CPARU,ticker+date
 DAO,headline,T1,17.0,0.3885894,,Youdao Inc,2019-10-25,single:yf,low,DAO,ticker+date
 CSTE,headline,T1,11.0,0.3882428,,CaesarStone Sdot-Yam Ltd,2012-03-21,single:yf,low,CSTE,ticker+date
 MEMP,headline,T1,19.0,0.388021914,,Memorial Production Prtnrs LP,2011-12-08,ritter-anchor,med,MEMP,ticker+date
-FTACU,headline,T1,10.0,0.38663,,Fintech Acquisition Corp III,2018-11-16,ritter-anchor,med,FTACU,ticker+date
 TERN,headline,T1,17.0,0.3862689,,Terns Pharmaceuticals Inc,2021-02-05,single:yf,low,TERN,ticker+date
-AHPAU,headline,T1,10.0,0.38625,,Avista Healthcare Public Acq,2016-10-11,ritter-anchor,med,AHPAU,ticker+date
-STNLU,headline,T1,10.0,0.38625,,Sentinel Energy Svcs Inc,2017-11-03,ritter-anchor,med,STNLU,ticker+date
-GLBLU,headline,T1,10.0,0.38625,,Cartesian Growth Corp,2021-02-24,ritter-anchor,med,GLBLU,ticker+date
-AAM'U,headline,T1,10.0,0.38625,,AA Mission Acquisition Corp.,2024-08-01,ritter-anchor,med,AAM.U,name+date(1.00)
-PSAGU,headline,T1,10.0,0.38605,,Property Solutions Acq Corp II,2021-03-04,ritter-anchor,med,PSAGU,ticker+date
-BYTSU,headline,T1,10.0,0.3853,,BYTE Acquisition Corp,2021-03-19,ritter-anchor,med,BYTSU,ticker+date
-PSPCU,headline,T1,10.0,0.385,,Post Holdings Partnering Corp,2021-05-26,ritter-anchor,med,PSPC.,name+date(1.00)
-FWAA,headline,T1,10.0,0.384575,,Fifth Wall Acquisition Corp I,2021-02-05,ritter-anchor,med,FWAA,ticker+date
-BTAQU,headline,T1,10.0,0.3845,,Burgundy Tech Acq Corp,2020-08-27,ritter-anchor,med,BTAQU,ticker+date
-FMIVU,headline,T1,10.0,0.3843,,Forum Merger IV Corp,2021-03-18,ritter-anchor,med,FMIVU,ticker+date
-VTIQU,headline,T1,10.0,0.384,,Vectoiq Acq Corp Ii,2021-01-07,ritter-anchor,med,VTIQU,ticker+date
-NDACU,headline,T1,10.0,0.384,,Nightdragon Acquisition Corp,2021-03-02,ritter-anchor,med,NDACU,ticker+date
-KFIIU,headline,T1,10.0,0.38333333,,K&F Growth Acquisition Corp. I,2025-02-05,ritter-anchor,med,KFIIU,ticker+date
-FRXBU,headline,T1,10.0,0.38125,,Forest Road Acq Corp II,2021-03-10,ritter-anchor,med,FRXB.,name+date(0.60)
 GENK,headline,T1,12.0,0.380898792,,"GEN Restaurant Group, Inc.",2023-06-28,ritter-anchor,med,GENK,ticker+date
 OXF,headline,T1,18.5,0.3803785,,Oxford Resource Partners LP,2010-07-13,ritter-anchor,med,OXF,ticker+date
 VRCA,headline,T1,15.0,0.37982078249999995,,Verrica Pharmaceuticals Inc,2018-06-15,auto:edgar+yf,high,VRCA,ticker+date
 OCIR,headline,T1,19.0,0.379031,,OCI Resources LP,2013-09-13,ritter-anchor,med,OCIR,ticker+date
 PAL,headline,T1,15.0,0.3765212475,,"Proficient Auto Logistics, Inc",2024-05-09,auto:edgar+yf,high,PAL,ticker+date
 IRTC,headline,T1,17.0,0.3761588385,,iRhythm Technologies Inc,2016-10-20,auto:edgar+yf,high,IRTC,ticker+date
-RWGEU,headline,T1,10.0,0.375,,Regalwood Global Energy Ltd,2017-11-30,ritter-anchor,med,RWGE.,name+date(1.00)
-ACAMU,headline,T1,10.0,0.375,,Acamar Partners Acq Corp,2019-02-22,ritter-anchor,med,ACAMU,ticker+date
-THBRU,headline,T1,10.0,0.375,,Thunder Bridge Acq II Ltd,2019-08-09,ritter-anchor,med,THBRU,ticker+date
-JIH'U,headline,T1,10.0,0.375,,Juniper Industrial Hldg Inc,2019-11-08,ritter-anchor,med,JIH U,name+date(0.67)
-ERESU,headline,T1,10.0,0.375,,East Resources Acquisition Co,2020-07-23,ritter-anchor,med,ERESU,ticker+date
-YAC'U,headline,T1,10.0,0.375,,Yucaipa Acquisition Corp,2020-08-04,ritter-anchor,med,YAC.U,name+date(1.00)
-NGA'U,headline,T1,10.0,0.375,,Northern Genesis Acq Corp,2020-08-18,ritter-anchor,med,NGA U,name+date(0.50)
-PIAIU,headline,T1,10.0,0.375,,Prime Impact Acquisition I,2020-09-10,ritter-anchor,med,PIAI,name+date(1.00)
-BSN'U,headline,T1,10.0,0.375,,Broadstone Acquisition,2020-09-11,ritter-anchor,med,BSN.U,name+date(1.00)
-OACBU,headline,T1,10.0,0.375,,Tortoise Acquisition Corp II,2020-09-11,ritter-anchor,med,SNPR,name+date(0.50)
-FCACU,headline,T1,10.0,0.375,,Falcon Capital Acq Corp,2020-09-22,ritter-anchor,med,FCACU,ticker+date
-VACQU,headline,T1,10.0,0.375,,Vector Acquisition Corp,2020-09-25,ritter-anchor,med,VACQU,ticker+date
-XPOAU,headline,T1,10.0,0.375,,DPCM Capital Inc,2020-10-21,ritter-anchor,med,XPOA.,name+date(1.00)
-LUXAU,headline,T1,10.0,0.375,,Lux Health Tech Acq Corp,2020-10-27,ritter-anchor,med,LUXAU,ticker+date
-TSIAU,headline,T1,10.0,0.375,,TS Innovation Acqs Corp,2020-11-10,ritter-anchor,med,TSIAU,ticker+date
-RMGBU,headline,T1,10.0,0.375,,RMG Acquisition Corp II,2020-12-10,ritter-anchor,med,RMGBU,ticker+date
-GHVIU,headline,T1,10.0,0.375,,Gores Holdings VI Inc,2020-12-11,ritter-anchor,med,GHVIU,ticker+date
-GFX'U,headline,T1,10.0,0.375,,Golden Falcon Acquisition Corp,2020-12-18,ritter-anchor,med,GFX.U,name+date(1.00)
-PPGHU,headline,T1,10.0,0.375,,Poema Global Hldg Corp,2021-01-06,ritter-anchor,med,PPGHU,ticker+date
-PRSRU,headline,T1,10.0,0.375,,Prospector Capital Corp,2021-01-08,ritter-anchor,med,PRSRU,ticker+date
-SLCRU,headline,T1,10.0,0.375,,Silver Crest Acquisition,2021-01-14,ritter-anchor,med,SLCRU,ticker+date
-GMBTU,headline,T1,10.0,0.375,,Queens Gambit Growth Capital,2021-01-20,ritter-anchor,med,GMBTU,ticker+date
-JCICU,headline,T1,10.0,0.375,,Jack Creek Investment Corp,2021-01-22,ritter-anchor,med,JCICU,ticker+date
-OEPWU,headline,T1,10.0,0.375,,One Eq Partners Open Water I,2021-01-22,ritter-anchor,med,OEPWU,ticker+date
-DHHCU,headline,T1,10.0,0.375,,DiamondHead Holdings Corp,2021-01-26,ritter-anchor,med,DHHCU,ticker+date
-ACIIU,headline,T1,10.0,0.375,,Atlas Crest Investment Corp II,2021-02-04,ritter-anchor,med,ACII.,name+date(1.00)
-CENHU,headline,T1,10.0,0.375,,Centricus Acquisition Corp,2021-02-04,ritter-anchor,med,CENHU,ticker+date
-ATMRU,headline,T1,10.0,0.375,,Altimar Acquisition Corp II,2021-02-05,ritter-anchor,med,ATMRU,ticker+date
-ARKIU,headline,T1,10.0,0.375,,Ark Global Acquisition Corp,2021-02-05,ritter-anchor,med,ARKIU,ticker+date
-GSQDU,headline,T1,10.0,0.375,,G Squared Ascend I Inc,2021-02-05,ritter-anchor,med,GSQD.,name+date(1.00)
-ENNVU,headline,T1,10.0,0.375,,ECP Envi Growth Opportunities,2021-02-09,ritter-anchor,med,ENNVU,ticker+date
-XPDIU,headline,T1,10.0,0.375,,Power & Digital,2021-02-10,ritter-anchor,med,XPDIU,ticker+date
-SCOBU,headline,T1,10.0,0.375,,ScION Tech Growth II,2021-02-10,ritter-anchor,med,SCOBU,ticker+date
-SCLEU,headline,T1,10.0,0.375,,Broadscale Acquisition Corp,2021-02-12,ritter-anchor,med,SCLEU,ticker+date
-SLACU,headline,T1,10.0,0.375,,Social Leverage Acquisition,2021-02-12,ritter-anchor,med,SLAC.,name+date(1.00)
-TSIBU,headline,T1,10.0,0.375,,Tishman Speyer Innovation II,2021-02-12,ritter-anchor,med,TSIBU,ticker+date
-PFDRU,headline,T1,10.0,0.375,,Pathfinder Acquisition Corp,2021-02-17,ritter-anchor,med,PFDRU,ticker+date
-COLIU,headline,T1,10.0,0.375,,Colicity Inc,2021-02-24,ritter-anchor,med,COLIU,ticker+date
-GIIXU,headline,T1,10.0,0.375,,Gores Holdings VIII Inc,2021-02-25,ritter-anchor,med,GIIXU,ticker+date
-SBEAU,headline,T1,10.0,0.375,,Silverbox Engaged Merger Corp,2021-02-26,ritter-anchor,med,SBEAU,ticker+date
-DHCAU,headline,T1,10.0,0.375,,DHC Acquisition Corp,2021-03-02,ritter-anchor,med,DHCAU,ticker+date
-MACCU,headline,T1,10.0,0.375,,Mission Advancement Corp,2021-03-03,ritter-anchor,med,MACC.,name+date(1.00)
-ACAHU,headline,T1,10.0,0.375,,Atlantic Coastal Acq Corp,2021-03-04,ritter-anchor,med,ACAHU,ticker+date
-RXRAU,headline,T1,10.0,0.375,,RXR Acquisition Corp,2021-03-04,ritter-anchor,med,RXRAU,ticker+date
-AGGRU,headline,T1,10.0,0.375,,Agile Growth Corp,2021-03-10,ritter-anchor,med,AGGRU,ticker+date
-CLAAU,headline,T1,10.0,0.375,,Colonnade Acquisition Corp II,2021-03-10,ritter-anchor,med,CLAA.,name+date(1.00)
-DTOCU,headline,T1,10.0,0.375,,Digital Transformation,2021-03-10,ritter-anchor,med,DTOCU,ticker+date
-ESM'U,headline,T1,10.0,0.375,,ESM Acquisition Corp,2021-03-10,ritter-anchor,med,ESM.U,name+date(1.00)
-PTOCU,headline,T1,10.0,0.375,,Pine Tech Acq Corp,2021-03-11,ritter-anchor,med,PTOCU,ticker+date
-PLMIU,headline,T1,10.0,0.375,,Plum Acquisition Corp I,2021-03-16,ritter-anchor,med,PLMIU,ticker+date
-WALDU,headline,T1,10.0,0.375,,Waldencast Acquisition Corp,2021-03-16,ritter-anchor,med,WALDU,ticker+date
-GXIIU,headline,T1,10.0,0.375,,GX Acquisition Corp II,2021-03-18,ritter-anchor,med,GXIIU,ticker+date
-LEGAU,headline,T1,10.0,0.375,,Lead Edge Growth Opportunities,2021-03-23,ritter-anchor,med,LEGAU,ticker+date
-TIOAU,headline,T1,10.0,0.375,,Tio Tech A,2021-04-08,ritter-anchor,med,TIOAU,ticker+date
-BSKYU,headline,T1,10.0,0.375,,Big Sky Growth Partners Inc,2021-04-29,ritter-anchor,med,BSKYU,ticker+date
-LITTU,headline,T1,10.0,0.375,,Logistics Innovation Tech,2021-06-11,ritter-anchor,med,LITTU,ticker+date
-ZTAQU,headline,T1,10.0,0.375,,Zimmer Energy Transition Acq,2021-06-16,ritter-anchor,med,ZTAQU,ticker+date
-ACROU,headline,T1,10.0,0.375,,Acropolis Infrastructure Acqui,2021-07-09,ritter-anchor,med,ACRO.,name+date(0.50)
-TRTLU,headline,T1,10.0,0.375,,TortoiseEcofin Acquisition III,2021-07-20,ritter-anchor,med,TRTL.,name+date(1.00)
-SIERU,headline,T1,10.0,0.375,,Sierra Lake Acquisition Corp,2021-09-15,ritter-anchor,med,SIERU,ticker+date
-IPAXU,headline,T1,10.0,0.375,,Inflection Point Acquisition,2021-09-22,ritter-anchor,med,IPAXU,ticker+date
-NFYSU,headline,T1,10.0,0.375,,Enphys Acquisition Corp,2021-10-06,ritter-anchor,med,NFYS.,name+date(1.00)
-ICNCU,headline,T1,10.0,0.375,,Iconic Sports Acquisition Corp,2021-10-22,ritter-anchor,med,ICNC.,name+date(1.00)
-MTVCU,headline,T1,10.0,0.375,,Motive Capital Corp II,2021-12-07,ritter-anchor,med,MTVC.,name+date(1.00)
-BFACU,headline,T1,10.0,0.375,,Battery Future Acquisition Cor,2021-12-15,ritter-anchor,med,BFAC.,name+date(0.75)
-IVCBU,headline,T1,10.0,0.375,,Investcorp Europe Acquisition,2021-12-15,ritter-anchor,med,IVCBU,ticker+date
-NETDU,headline,T1,10.0,0.375,,Nabors Energy Transition II,2023-07-14,ritter-anchor,med,NETDU,ticker+date
-MBVIU,headline,T1,10.0,0.375,,M3-Brigade Acquisition VI Corp,2025-08-27,ritter-anchor,med,MBVIU,ticker+date
 VENU,headline,T1,10.0,0.37464173,,Venu Holding Corp,2024-11-27,auto:edgar+ritter+yf,high,VENU,ticker+date
 VYGR,headline,T1,14.0,0.37448908000000003,,Voyager Therapeutics Inc,2015-11-11,auto:edgar+yf,high,VYGR,ticker+date
 FULC,headline,T1,16.0,0.373443352,,Fulcrum Therapeutics Inc,2019-07-18,auto:edgar+yf,high,FULC,ticker+date
@@ -1891,9 +1189,7 @@ CCIH,headline,T1,13.9,0.37031963,,ChinaCache Intl Hldg Ltd,2010-09-30,single:yf,
 MEKA,headline,T1,10.0,0.37,,MELI Kaszek Pioneer Corp,2021-09-29,ritter-anchor,med,MEKA,ticker+date
 VSTM,headline,T1,10.0,0.369348,,Verastem Inc,2012-01-26,single:yf,low,VSTM,ticker+date
 OVID,headline,T1,15.0,0.36919077,,Ovid Therapeutics Inc,2017-05-05,auto:edgar+yf,high,OVID,ticker+date
-BCARU,headline,T1,10.0,0.36914286,,D. Boral ARC Acquisition I Cor,2025-07-31,ritter-anchor,med,BCARU,ticker+date
 WHZ,headline,T1,20.0,0.368,,Whiting USA Trust II,2012-03-22,ritter-anchor,med,WHZ,ticker+date
-CBAHU,headline,T1,10.0,0.3675,,CBRE Acquisition Holdings Inc,2020-12-11,ritter-anchor,med,CBAHU,ticker+date
 AQST,headline,T1,15.0,0.3670638825,,Aquestive Therapeutics Inc,2018-07-25,auto:edgar+yf,high,AQST,ticker+date
 KOD,headline,T1,10.0,0.366186785,,Kodiak Sciences Inc,2018-10-04,auto:edgar+yf,high,KOD,ticker+date
 IMRX,headline,T1,15.0,0.36584115,,Immuneering Corp,2021-07-30,auto:edgar+ritter+yf,high,IMRX,ticker+date
@@ -1904,213 +1200,79 @@ KALA,headline,T1,15.0,0.36340537500000003,,Kala Pharmaceuticals Inc,2017-07-20,a
 SRLP,headline,T1,18.0,0.362592,,Sprague Resources LP,2013-10-25,ritter-anchor,med,SRLP,ticker+date
 DEA,headline,T1,15.0,0.3625258425,,Easterly Government Properties,2015-02-05,auto:edgar+yf,high,DEA,ticker+date
 RBB,headline,T1,23.0,0.3619419265,,RBB Bancorp,2017-07-26,auto:edgar+yf,high,RBB,ticker+date
-BCSAU,headline,T1,10.0,0.36044,,Blockchain Coinvestors Acquisi,2021-11-10,ritter-anchor,med,BCSAU,ticker+date
 IOBT,headline,T1,14.0,0.3601808,,IO Biotech Inc,2021-11-05,single:yf,low,IOBT,ticker+date
-HCARU,headline,T1,10.0,0.36,,Healthcare Services,2020-12-22,ritter-anchor,med,HCARU,ticker+date
-AURCU,headline,T1,10.0,0.36,,Aurora Acquisition Corp,2021-03-04,ritter-anchor,med,AURCU,ticker+date
 SVFC,headline,T1,10.0,0.3596,,SVF Investment Corp 3,2021-03-09,ritter-anchor,med,SVFC,ticker+date
 FN,headline,T1,10.0,0.359396,,Fabrinet,2010-06-24,single:yf,low,FN,ticker+date
-ALFUU,headline,T1,10.0,0.359375,,Centurion Acquisition Corp.,2024-06-11,ritter-anchor,med,ALFUU,ticker+date
-MBAVU,headline,T1,10.0,0.359375,,M3-Brigade Acquisition V Corp.,2024-08-01,ritter-anchor,med,MBAVU,ticker+date
-LGTOU,headline,T1,10.0,0.35911,,Legato Merger Corp II,2021-11-22,ritter-anchor,med,LGTOU,ticker+date
-KVSA,headline,T1,10.0,0.359,,Khosla Ventures Acquisition Co,2021-03-04,ritter-anchor,med,KVSA,ticker+date
 APPF,headline,T1,12.0,0.35791799999999996,,AppFolio Inc,2015-06-26,auto:ritter+yf,high,APPF,ticker+date
 NBLX,headline,T1,22.5,0.3578175,,Noble Midstream Partners LP,2016-09-15,ritter-anchor,med,NBLX,ticker+date
-NFC'U,headline,T1,10.0,0.35775,,New Frontier Corp,2018-06-27,ritter-anchor,med,NFC.U,name+date(0.67)
 MIST,headline,T1,15.0,0.35728756500000003,,Milestone Pharmaceuticals Inc,2019-05-09,auto:edgar+yf,high,MIST,ticker+date
 VOC,headline,T1,21.0,0.357,,VOC Energy Tr,2011-05-05,auto:ritter+yf,high,VOC,ticker+date
-VCXBU,headline,T1,10.0,0.35683333,,10X Capital Venture Acquisitio,2022-01-12,ritter-anchor,med,VCXB.,name+date(0.50)
 BOLD,headline,T1,16.0,0.355950696,,Boundless Bio Inc,2024-03-28,auto:edgar+yf,high,BOLD,ticker+date
 QURE,headline,T1,17.0,0.35541815,,uniQure BV,2014-02-05,auto:ritter+yf,high,QURE,ticker+date
-THCBU,headline,T1,10.0,0.35487,,Tuscan Holdings Corp,2019-03-05,ritter-anchor,med,THCBU,ticker+date
 IFRX,headline,T1,15.0,0.35417325,,InflaRx NV (Fireman BV?),2017-11-08,auto:edgar+yf,high,IFRX,ticker+date
 CHEF,headline,T1,15.0,0.353444535,,The Chefs Warehouse Inc,2011-07-27,auto:edgar+yf,high,CHEF,ticker+date
 BWB,headline,T1,11.75,0.35319795,,Bridgewater Bancshares Inc,2018-03-14,single:yf,low,BWB,ticker+date
 TCRX,headline,T1,15.0,0.3528255,,TScan Therapeutics Inc,2021-07-16,single:yf,low,TCRX,ticker+date
 BAND,headline,T1,20.0,0.3524262,,Bandwidth Inc,2017-11-10,auto:ritter+yf,high,BAND,ticker+date
 ECT,headline,T1,20.0,0.3521,,ECA Marcellus Trust I,2010-07-01,ritter-anchor,med,ECT,ticker+date
-FOREU,headline,T1,10.0,0.35125,,Foresight Acquisition Corp,2021-02-10,ritter-anchor,med,FOREU,ticker+date
-TACOU,headline,T1,10.0,0.35071874999999997,,Berto Acquisition Corp.,2025-04-30,auto:edgar+ritter,high,TACOU,ticker+date
 ESTA,headline,T1,18.0,0.35062236,,Establishment Labs Hldg Inc.,2018-07-19,auto:edgar+yf,high,ESTA,ticker+date
 CVRX,headline,T1,18.0,0.35001743399999996,,CVRx Inc,2021-06-30,auto:edgar+yf,high,CVRX,ticker+date
 GSHD,headline,T1,10.0,0.35000417,,Goosehead Insurance Inc,2018-04-27,auto:ritter+yf,high,GSHD,ticker+date
 NEFF,headline,T1,15.0,0.349275,,Neff Corp,2014-11-21,ritter-anchor,med,NEFF,ticker+date
 SRRK,headline,T1,14.0,0.347789288,,Scholar Rock Holding Corp,2018-05-24,auto:edgar+yf,high,SRRK,ticker+date
 DLTH,headline,T1,12.0,0.34714086600000005,,Duluth Holdings Inc,2015-11-20,auto:ritter+yf,high,DLTH,ticker+date
-ATEKU,headline,T1,10.0,0.347,,Athena Technology Acquisition,2021-12-10,ritter-anchor,med,ATEK.,name+date(0.67)
 JKS,headline,T1,11.0,0.3464098,,JinkoSolar Holding Co Ltd,2010-05-13,single:yf,low,JKS,ticker+date
-BACQU,headline,T1,10.0,0.34583333,,Bleichroeder Acquisition Corp.,2024-11-01,ritter-anchor,med,BACQU,ticker+date
 PLMR,headline,T1,15.0,0.345703125,,Palomar Holdings Inc,2019-04-17,auto:edgar+yf,high,PLMR,ticker+date
 MIRM,headline,T1,15.0,0.3450434025,,Mirum Pharmaceuticals Inc,2019-07-18,auto:edgar+yf,high,MIRM,ticker+date
-TMCXU,headline,T1,10.0,0.345,,Trinity Merger Corp,2018-05-15,ritter-anchor,med,TMCXU,ticker+date
 WVE,headline,T1,16.0,0.344822584,,WaVe Life Sciences Ltd,2015-11-11,auto:edgar+yf,high,WVE,ticker+date
 SGMT,headline,T1,16.0,0.3447952,,Sagimet Biosciences Inc.,2023-07-14,auto:edgar+ritter+yf,high,SGMT,ticker+date
-CHPMU,headline,T1,10.0,0.34375,,CHP Merger Corp,2019-11-22,ritter-anchor,med,CHPMU,ticker+date
-HOLUU,headline,T1,10.0,0.34375,,Holicity Inc,2020-08-05,ritter-anchor,med,HOLUU,ticker+date
-HTPAU,headline,T1,10.0,0.34375,,Highland Transcend Partners I,2020-12-03,ritter-anchor,med,HTPA.,name+date(1.00)
-MUDSU,headline,T1,10.0,0.34375,,Mudrick Capital Acq Corp II,2020-12-08,ritter-anchor,med,MUDSU,ticker+date
-SWBKU,headline,T1,10.0,0.34375,,Switchback II Corp,2021-01-08,ritter-anchor,med,SWBKU,ticker+date
-SDACU,headline,T1,10.0,0.34375,,Sustainable Dvlp Acq I Corp,2021-02-05,ritter-anchor,med,SDACU,ticker+date
-MACQU,headline,T1,10.0,0.34375,,MCAP Acquisition Corp,2021-02-26,ritter-anchor,med,MACQU,ticker+date
-ACTDU,headline,T1,10.0,0.34375,,ArcLight Clean Transition II,2021-03-23,ritter-anchor,med,ACTDU,ticker+date
-HCNEU,headline,T1,10.0,0.34375,,Jaws Hurricane Acq Corp,2021-06-11,ritter-anchor,med,HCNEU,ticker+date
-DCRDU,headline,T1,10.0,0.34375,,Decarbonization Plus Acquisiti,2021-08-11,ritter-anchor,med,DCRDU,ticker+date
-FOUNU,headline,T1,10.0,0.34375,,Founder SPAC,2021-10-15,ritter-anchor,med,FOUNU,ticker+date
-RRACU,headline,T1,10.0,0.34375,,Rigel Resource Acquisition Cor,2021-11-05,ritter-anchor,med,RRAC.,name+date(0.75)
-AHRNU,headline,T1,10.0,0.34375,,Ahren Acquisition Corp.,2021-12-15,ritter-anchor,med,AHRNU,ticker+date
-GSRMU,headline,T1,10.0,0.34375,,GSR II Meteora Acquisition Cor,2022-02-25,ritter-anchor,med,GSRMU,ticker+date
-SOULU,headline,T1,10.0,0.34353333,,Soulpower Acquisition Corp.,2025-04-02,ritter-anchor,med,SOUL,name+date(1.00)
 STRO,headline,T1,15.0,0.34253838000000003,,Sutro Biopharma Inc,2018-09-26,auto:edgar+yf,high,STRO,ticker+date
-UTAAU,headline,T1,10.0,0.342,,UTA Acquisition Corp,2021-12-02,ritter-anchor,med,UTAAU,ticker+date
 IBP,headline,T1,11.0,0.34082235549999995,,Installed Building Products,2014-02-13,auto:edgar+yf,high,IBP,ticker+date
 GLOB,headline,T1,10.0,0.34007,,Globant SA,2014-07-18,single:yf,low,GLOB,ticker+date
 MSGM,headline,T1,20.0,0.34,,Motorsport Games,2021-01-13,ritter-anchor,med,MSGM,ticker+date
 MSBI,headline,T1,22.0,0.338756924,,Midland States Bancorp Inc,2016-05-24,auto:edgar+yf,high,MSBI,ticker+date
-FSRXU,headline,T1,10.0,0.33855,,FinServ Acquisition Corp II,2021-02-18,ritter-anchor,med,FSRXU,ticker+date
-HMCOU,headline,T1,10.0,0.3375,,HumanCo Acquisition Corp,2020-12-09,ritter-anchor,med,HMCOU,ticker+date
 KNSL,headline,T1,16.0,0.337198456,,Kinsale Capital Group Inc,2016-07-28,auto:edgar+yf,high,KNSL,ticker+date
 GEVO,headline,T1,15.0,0.3371710275,,Gevo Inc,2011-02-08,auto:edgar+yf,high,GEVO,ticker+date
 NGVC,headline,T1,15.0,0.33675168,,Natural Grocers by Vitamin Cot,2012-07-24,auto:edgar+yf,high,NGVC,ticker+date
 MEC,headline,T1,17.0,0.3360831405,,Mayville Engineering Co Inc,2019-05-09,auto:edgar+yf,high,MEC,ticker+date
-DMAAU,headline,T1,10.0,0.33517143,,Drugs Made In America Acq,2025-01-28,auto:edgar+ritter+yf,high,DMAAU,ticker+date
 FSBC,headline,T1,20.0,0.33490808,,Five Star Bancorp,2021-05-05,auto:edgar+yf,high,FSBC,ticker+date
-NPACU,headline,T1,10.0,0.334775,,New Providence Acquisition Co,2025-04-24,ritter-anchor,med,NPACU,ticker+date
-RAACU,headline,T1,10.0,0.33333333,,Revolution Acceleration Acq,2020-12-08,ritter-anchor,med,RAACU,ticker+date
-ENTFU,headline,T1,10.0,0.33325,,Enterprise 4.0 Technology Acqu,2021-10-19,ritter-anchor,med,ENTFU,ticker+date
 IBEX,headline,T1,19.0,0.3328952,,Ibex Ltd,2020-08-07,single:yf,low,IBEX,ticker+date
 INSP,headline,T1,16.0,0.332316072,,Inspire Medical Systems Inc,2018-05-03,auto:edgar+yf,high,INSP,ticker+date
-KRNLU,headline,T1,10.0,0.33125,,Kernel Grp Hldg Inc,2021-02-03,ritter-anchor,med,KRNLU,ticker+date
-ARGUU,headline,T1,10.0,0.33125,,Argus Capital Corp,2021-09-22,ritter-anchor,med,ARGUU,ticker+date
 PETQ,headline,T1,16.0,0.330985664,,PetIQ Inc,2017-07-21,ritter-anchor,med,PETQ,ticker+date
 TMDX,headline,T1,16.0,0.33063803199999997,,Transmedics Group Inc,2019-05-02,auto:edgar+yf,high,TMDX,ticker+date
 HRTG,headline,T1,11.0,0.33044198,,Heritage Insurance Hldg LLC,2014-05-23,auto:edgar+yf,high,HRTG,ticker+date
-RDAGU,headline,T1,10.0,0.33,,Republic Digital Acquisition,2025-05-01,ritter-anchor,med,RDAGU,ticker+date
 WPT,headline,T1,20.0,0.32972,,World Point Terminals LP,2013-08-08,ritter-anchor,med,WPT,ticker+date
 IIIV,headline,T1,13.0,0.329006652,,I3 Verticals,2018-06-21,auto:ritter+yf,high,IIIV,ticker+date
-PPYAU,headline,T1,10.0,0.32863125,,Papaya Growth Opportunity Corp,2022-01-14,ritter-anchor,med,PPYAU,ticker+date
 RRMS,headline,T1,20.0,0.32779418,,Rose Rock Midstream LP,2011-12-08,ritter-anchor,med,RRMS,ticker+date
 ORC,headline,T1,15.0,0.326523,,Orchid Island Capital,2013-02-14,single:yf,low,ORC,ticker+date
 RRBI,headline,T1,45.0,0.326485935,,Red River Bancshares Inc,2019-05-03,auto:edgar+yf,high,RRBI,ticker+date
-TRNEU,headline,T1,10.0,0.32625,,Trine Acquisition Corp,2019-03-15,ritter-anchor,med,TRNEU,ticker+date
-ACTTU,headline,T1,10.0,0.32625,,Act II Global Acquisition Corp,2019-04-26,ritter-anchor,med,ACTTU,ticker+date
-ALTUU,headline,T1,10.0,0.32625,,Altitude Acquisition Corp,2020-12-09,ritter-anchor,med,ALTUU,ticker+date
-COVAU,headline,T1,10.0,0.32625,,COVA Acquisition Corp,2021-02-05,ritter-anchor,med,COVAU,ticker+date
-MBSCU,headline,T1,10.0,0.32625,,M3-Brigade Acquisition III Cor,2021-10-22,ritter-anchor,med,MBSC.,name+date(0.80)
-ACDIU,headline,T1,10.0,0.32625,,Ascendant Digital Acquisition,2021-11-10,ritter-anchor,med,ACDI.,name+date(0.75)
-ACABU,headline,T1,10.0,0.32625,,Atlantic Coastal Acquisition C,2022-01-14,ritter-anchor,med,ACABU,ticker+date
-WENNU,headline,T1,10.0,0.32625,,WEN Acquisition Corp,2025-05-16,ritter-anchor,med,WENNU,ticker+date
-MPACU,headline,T1,10.0,0.325,,Matlin & Partners Acq Corp,2017-03-10,ritter-anchor,med,MPACU,ticker+date
 BTNB,headline,T1,10.0,0.325,,Bridgetown 2 Holdings Ltd,2021-01-26,ritter-anchor,med,BTNB,ticker+date
-JUN'U,headline,T1,10.0,0.325,,Juniper II Corp,2021-11-04,ritter-anchor,med,JUN.U,name+date(1.00)
 ZYME,headline,T1,13.0,0.324017993,,Zymeworks Inc,2017-04-28,ritter-anchor,med,ZYME,ticker+date
-DWACU,headline,T1,10.0,0.32386609,,Digital World Acquisition Corp,2021-09-03,ritter-anchor,med,DWACU,ticker+date
 PRSS,headline,T1,19.0,0.321974,,CafePress Inc,2012-03-28,single:yf,low,PRSS,ticker+date
-CRSAU,headline,T1,10.0,0.321875,,Crescent Acquisition Corp,2019-03-08,ritter-anchor,med,CRSAU,ticker+date
-CCIXU,headline,T1,10.0,0.321875,,Churchill Capital Corp IX,2024-05-02,ritter-anchor,med,CCIXU,ticker+date
-GPATU,headline,T1,10.0,0.321875,,GP-Act III Acquisition Corp.,2024-05-09,ritter-anchor,med,GPATU,ticker+date
-BEAGU,headline,T1,10.0,0.321875,,Bold Eagle Acquisition Corp.,2024-10-24,ritter-anchor,med,BEAGU,ticker+date
 RR,headline,T1,5.0,0.321084115,,Richtech Robotics INC.,2023-11-17,auto:ritter+yf,high,RR,ticker+date
-FWAC,headline,T1,10.0,0.32107,,Fifth Wall Acquisition Corp. I,2021-05-25,ritter-anchor,med,FWAC,ticker+date
 TCBX,headline,T1,25.0,0.320807275,,Third Coast Bancshares Inc,2021-11-09,auto:edgar+yf,high,TCBX,ticker+date
-GGMCU,headline,T1,10.0,0.3206,,Glenfarne Merger Corp,2021-03-19,ritter-anchor,med,GGMCU,ticker+date
-APTMU,headline,T1,10.0,0.3205,,Alpha Partners Technology Merg,2021-07-28,ritter-anchor,med,APTMU,ticker+date
 TLLP,headline,T1,21.0,0.320355,,Tesoro Logistics LP,2011-04-19,ritter-anchor,med,TLLP,ticker+date
-FIIIU,headline,T1,10.0,0.3199125,,Forum Merger III Corp,2020-08-19,ritter-anchor,med,FIIIU,ticker+date
-BLUAU,headline,T1,10.0,0.31975,,BlueRiver Acquisition Corp,2021-01-29,ritter-anchor,med,BLUA.,name+date(1.00)
-ENFAU,headline,T1,10.0,0.319525,,890 5th Avenue Partners Inc,2021-01-12,ritter-anchor,med,ENFAU,ticker+date
-GOBI,headline,T1,10.0,0.3195,,Gobi Acquisition Corp,2021-06-29,ritter-anchor,med,GOBI,ticker+date
 ENTL,headline,T1,17.0,0.319396,,Entellus Medical Inc,2015-01-29,single:yf,low,ENTL,ticker+date
-HUGSU,headline,T1,10.0,0.31935,,USHG Acquisition Corp,2021-02-25,ritter-anchor,med,HUGS.,name+date(1.00)
-CFFAU,headline,T1,10.0,0.3185,,CF Finance Acquisition Corp,2018-12-13,ritter-anchor,med,CFFAU,ticker+date
-CFFVU,headline,T1,10.0,0.3185,,CF Acquisition Corp V,2021-01-29,ritter-anchor,med,CFFVU,ticker+date
 MCEP,headline,T1,18.0,0.31752,,Mid-Con Energy Partners LP,2011-12-14,ritter-anchor,med,MCEP,ticker+date
-KSMTU,headline,T1,10.0,0.3175,,Kismet Acquisition One Corp,2020-08-06,ritter-anchor,med,KSMTU,ticker+date
-KIIIU,headline,T1,10.0,0.3175,,Kismet Acquisition Three Corp,2021-02-18,ritter-anchor,med,KIIIU,ticker+date
-GIWWU,headline,T1,10.0,0.31741483,,GigCapital8 Corp.,2025-10-06,ritter-anchor,med,GIWWU,ticker+date
 VCYT,headline,T1,13.0,0.316550299,,Veracyte,2013-10-30,auto:edgar+yf,high,VCYT,ticker+date
 CTT,headline,T1,13.5,0.316278,,CatchMark Timber Trust Inc,2013-12-12,ritter-anchor,med,CTT,ticker+date
 GAUZ,headline,T1,17.0,0.3161723495,,Gauzy Ltd.,2024-06-06,auto:edgar+yf,high,GAUZ,ticker+date
 CTW,headline,T1,5.0,0.3135,,CTW Cayman,2025-08-06,auto:ritter+yf,high,CTW,ticker+date
 TARS,headline,T1,16.0,0.312635408,,Tarsus Pharmaceuticals Inc,2020-10-16,auto:edgar+yf,high,TARS,ticker+date
-NEBUU,headline,T1,10.0,0.3125,,Nebula Acquisition Corp,2018-01-09,ritter-anchor,med,NEBU.,name+date(1.00)
-DFBHU,headline,T1,10.0,0.3125,,DFB Healthcare Acqs Corp,2018-02-16,ritter-anchor,med,DFBHU,ticker+date
-RPLAU,headline,T1,10.0,0.3125,,Replay Acquisition Corp,2019-04-04,ritter-anchor,med,RPLA.,name+date(1.00)
-GXGXU,headline,T1,10.0,0.3125,,GX Acq Corp,2019-05-21,ritter-anchor,med,GXGXU,ticker+date
-SSPKU,headline,T1,10.0,0.3125,,Silver Spike Acq Corp.,2019-08-08,ritter-anchor,med,SSPKU,ticker+date
-EXPCU,headline,T1,10.0,0.3125,,Experience Investment Corp,2019-09-13,ritter-anchor,med,EXPCU,ticker+date
-ALUSU,headline,T1,10.0,0.3125,,Alussa Energy Acq Corp,2019-11-26,ritter-anchor,med,ALUS.,name+date(0.50)
-STWOU,headline,T1,10.0,0.3125,,ACON S2 Acquisition Corp,2020-09-17,ritter-anchor,med,STWOU,ticker+date
-ACTCU,headline,T1,10.0,0.3125,,ArcLight Clean Transition Corp,2020-09-23,ritter-anchor,med,ACTCU,ticker+date
-ASAQU,headline,T1,10.0,0.3125,,Atlantic Avenue Acquisition,2020-10-02,ritter-anchor,med,ASAQ.,name+date(1.00)
-TEKKU,headline,T1,10.0,0.3125,,Tekkorp Digital Acquisition,2020-10-22,ritter-anchor,med,TEKKU,ticker+date
-NEBCU,headline,T1,10.0,0.3125,,Nebula Caravel Acq Corp,2020-12-09,ritter-anchor,med,NEBCU,ticker+date
-MTACU,headline,T1,10.0,0.3125,,MedTech Acquisition Corporatio,2020-12-18,ritter-anchor,med,MTACU,ticker+date
-KLAQU,headline,T1,10.0,0.3125,,KL Acquisition Corp,2021-01-08,ritter-anchor,med,KLAQU,ticker+date
-TZPSU,headline,T1,10.0,0.3125,,TZP Strategies Acq Corp,2021-01-20,ritter-anchor,med,TZPSU,ticker+date
-DNZ'U,headline,T1,10.0,0.3125,,D & Z Media Acquisition Corp,2021-01-26,ritter-anchor,med,DNZ.U,name+date(1.00)
-CLRMU,headline,T1,10.0,0.3125,,Clarim Acquisition Corp,2021-01-29,ritter-anchor,med,CLRMU,ticker+date
-EJFAU,headline,T1,10.0,0.3125,,EJF Acquisition Corp,2021-02-25,ritter-anchor,med,EJFAU,ticker+date
-AMPIU,headline,T1,10.0,0.3125,,Advanced Merger Partners Inc,2021-03-02,ritter-anchor,med,AMPI.,name+date(1.00)
-ARRWU,headline,T1,10.0,0.3125,,Arrowroot Acquisition Corp,2021-03-02,ritter-anchor,med,ARRWU,ticker+date
-DHBCU,headline,T1,10.0,0.3125,,DHB Capital Corp,2021-03-02,ritter-anchor,med,DHBCU,ticker+date
-IPVIU,headline,T1,10.0,0.3125,,InterPrivate IV InfraTech,2021-03-05,ritter-anchor,med,IPVIU,ticker+date
-LCAAU,headline,T1,10.0,0.3125,,L Catterton Asia Acquisition,2021-03-11,ritter-anchor,med,LCAAU,ticker+date
-SPKBU,headline,T1,10.0,0.3125,,Silver Spike Acq Corp II,2021-03-11,ritter-anchor,med,SPKBU,ticker+date
-SCAQU,headline,T1,10.0,0.3125,,Stratim Cloud Acquisition Corp,2021-03-12,ritter-anchor,med,SCAQU,ticker+date
-GAMCU,headline,T1,10.0,0.3125,,Golden Arrow Merger Corp,2021-03-17,ritter-anchor,med,GAMCU,ticker+date
-LVRAU,headline,T1,10.0,0.3125,,Levere Holdings Corp,2021-03-19,ritter-anchor,med,LVRAU,ticker+date
-RKTAU,headline,T1,10.0,0.3125,,Rocket Internet Growth,2021-03-23,ritter-anchor,med,RKTA.,name+date(0.75)
-STREU,headline,T1,10.0,0.3125,,Supernova Partners Acq Co III,2021-03-23,ritter-anchor,med,STRE.,name+date(0.60)
-DISAU,headline,T1,10.0,0.3125,,Disruptive Acquisition Corp I,2021-03-24,ritter-anchor,med,DISAU,ticker+date
-PONDU,headline,T1,10.0,0.3125,,Angel Pond Holdings Corp,2021-05-18,ritter-anchor,med,POND.,name+date(1.00)
-DRAYU,headline,T1,10.0,0.3125,,Macondray Capital Acquisition,2021-07-01,ritter-anchor,med,DRAYU,ticker+date
-MTALU,headline,T1,10.0,0.3125,,Metals Acquisition Corp,2021-07-29,ritter-anchor,med,MTAL.,name+date(1.00)
-HWELU,headline,T1,10.0,0.3125,,Healthwell Acquisition Corp I,2021-08-03,ritter-anchor,med,HWELU,ticker+date
-RVACU,headline,T1,10.0,0.3125,,Riverview Acquisition Corp,2021-08-06,ritter-anchor,med,RVACU,ticker+date
-AFTRU,headline,T1,10.0,0.3125,,AfterNext HealthTech Acquisiti,2021-08-12,ritter-anchor,med,AFTR.,name+date(0.50)
-CNDAU,headline,T1,10.0,0.3125,,Concord Acquisition Corp II,2021-09-01,ritter-anchor,med,CNDA.,name+date(1.00)
-SLVRU,headline,T1,10.0,0.3125,,SILVERspac Inc,2021-09-10,ritter-anchor,med,SLVRU,ticker+date
-CIIGU,headline,T1,10.0,0.3125,,CIIG Capital Partners II Inc,2021-09-15,ritter-anchor,med,CIIGU,ticker+date
-BACAU,headline,T1,10.0,0.3125,,Berenson Acquisition Corp I,2021-09-28,ritter-anchor,med,BACA.,name+date(1.00)
-PEGRU,headline,T1,10.0,0.3125,,Project Energy Reimagined Acqu,2021-10-29,ritter-anchor,med,PEGRU,ticker+date
-HORIU,headline,T1,10.0,0.3125,,Emerging Markets Horizon Corp,2021-12-09,ritter-anchor,med,HORIU,ticker+date
-XPDBU,headline,T1,10.0,0.3125,,Power & Digital Infrastructure,2021-12-10,ritter-anchor,med,XPDBU,ticker+date
-CXACU,headline,T1,10.0,0.3125,,C5 Acquisition Corp,2022-01-07,ritter-anchor,med,CXAC.,name+date(1.00)
-PWUPU,headline,T1,10.0,0.3125,,Powerup Acquisition Corp,2022-02-18,ritter-anchor,med,PWUPU,ticker+date
-FCRSU,headline,T1,10.0,0.3125,,FutureCrest Acquisition Corp.,2025-09-26,ritter-anchor,med,FCRS.U,name+date(1.00)
-GOGNU,headline,T1,10.0,0.31191,,GoGreen Investments Corp,2021-10-21,ritter-anchor,med,GOGN.,name+date(1.00)
 ARDX,headline,T1,14.0,0.31143353500000004,,Ardelyx Inc,2014-06-19,auto:edgar+yf,high,ARDX,ticker+date
 KRT,headline,T1,16.0,0.310612,,Karat Packaging Inc,2021-04-15,auto:edgar+yf,high,KRT,ticker+date
 SPFI,headline,T1,17.5,0.310187675,,South Plains Financial Inc,2019-05-09,auto:edgar+yf,high,SPFI,ticker+date
 ASC,headline,T1,14.0,0.3091151,,Ardmore Shipping Corp,2013-07-31,auto:edgar+yf,high,ASC,ticker+date
-AUMAU,headline,T1,10.0,0.309,,AR Capital Acquisition Corp,2014-10-01,ritter-anchor,med,AUMAU,ticker+date
-MDH'U,headline,T1,10.0,0.309,,MDH Acquisition Corp,2021-02-02,ritter-anchor,med,MDH.U,name+date(1.00)
 RGF,headline,T1,12.0,0.308970792,,Real Good Food Company Inc,2021-11-05,ritter-anchor,med,RGF,ticker+date
-TLNCU,headline,T1,10.0,0.30755,,Talon Capital Corp.,2025-09-09,ritter-anchor,med,TLNCU,ticker+date
 CMBM,headline,T1,12.0,0.3072672,,Cambium Networks Corp,2019-06-26,single:yf,low,CMBM,ticker+date
-CFVIU,headline,T1,10.0,0.307,,CF Acquisition Corp VI,2021-02-19,ritter-anchor,med,CFVIU,ticker+date
 DGNS,headline,T1,10.0,0.3068,,Dragoneer Growth II,2020-11-17,ritter-anchor,med,DGNS,ticker+date
-CND'U,headline,T1,10.0,0.3068,,Concord Acquisition Corp,2020-12-08,ritter-anchor,med,CND.U,name+date(1.00)
 KROS,headline,T1,16.0,0.30670450400000004,,Keros Therapeutics Inc,2020-04-08,auto:edgar+yf,high,KROS,ticker+date
-CUBWU,headline,T1,10.0,0.30666667,,Lionheart Holdings,2024-06-18,ritter-anchor,med,CUBWU,ticker+date
-SIMAU,headline,T1,10.0,0.30666667,,SIM Acquisition Corp. I,2024-07-10,ritter-anchor,med,SIMAU,ticker+date
 CRVS,headline,T1,15.0,0.30610317,,Corvus Pharmaceuticals Inc,2016-03-23,auto:edgar+yf,high,CRVS,ticker+date
 CAEP,headline,T1,10.0,0.3058,,"Cantor Equity Partners III, In",2025-06-26,ritter-anchor,med,CAEP,ticker+date
 FVR,headline,T1,19.0,0.305294964,,"FrontView REIT, Inc.",2024-10-02,single:edgar,low,FVR,ticker+date
-EMLDU,headline,T1,10.0,0.3052,,FTAC Emerald Acquisition Corp,2021-12-16,ritter-anchor,med,EMLDU,ticker+date
 JFIN,headline,T1,10.5,0.3045,,Jiayin Grp Inc,2019-05-10,single:yf,low,JFIN,ticker+date
-EVE'U,headline,T1,10.0,0.30413333,,EVe Mobility Acquisition Corp,2021-12-15,ritter-anchor,med,EVE.U,name+date(1.00)
-LGVCU,headline,T1,10.0,0.30373333,,LAMF Global Ventures Corp I,2021-11-11,ritter-anchor,med,LGVCU,ticker+date
-BDCIU,headline,T1,10.0,0.30346667,,BTC Development Corp.,2025-09-30,ritter-anchor,med,BDCIU,ticker+date
 PRQR,headline,T1,13.0,0.303394,,ProQR Therapeutics BV,2014-09-18,single:yf,low,PRQR,ticker+date
 ANAB,headline,T1,15.0,0.3033222975,,AnaptysBio Inc,2017-01-26,auto:edgar+yf,high,ANAB,ticker+date
 APRE,headline,T1,15.0,0.30328126499999997,,Aprea Therapeutics Inc,2019-10-03,auto:edgar+yf,high,APRE,ticker+date
-SDHIU,headline,T1,10.0,0.3032,,Siddhi Acquisition Corp,2025-04-01,ritter-anchor,med,SDHIU,ticker+date
-CCIIU,headline,T1,10.0,0.30293333,,Cohen Circle Acquisition Corp.,2025-07-01,ritter-anchor,med,CCIIU,ticker+date
 INGN,headline,T1,16.0,0.302756272,,Inogen,2014-02-14,auto:edgar+yf,high,INGN,ticker+date
-FTPAU,headline,T1,10.0,0.30253333,,FTAC Parnassus Acq Corp,2021-03-12,ritter-anchor,med,FTPAU,ticker+date
-FTVIU,headline,T1,10.0,0.30253333,,FinTech Acquisition Corp VI,2021-06-24,ritter-anchor,med,FTVIU,ticker+date
 HOOK,headline,T1,14.0,0.302242892,,Hookipa Pharma Inc,2019-04-18,auto:edgar+yf,high,HOOK,ticker+date
-FTAAU,headline,T1,10.0,0.30213333,,FTAC Athena Acquisition Corp,2021-02-23,ritter-anchor,med,FTAAU,ticker+date
-IPCXU,headline,T1,10.0,0.30073333,,Inflection Point Acquisition,2025-04-25,ritter-anchor,med,IPCXU,ticker+date
-CCCMU,headline,T1,10.0,0.30038333,,Columbus Circle Capital Corp.,2025-05-16,ritter-anchor,med,CCCMU,ticker+date
