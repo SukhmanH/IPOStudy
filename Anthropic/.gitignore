@@ -1,0 +1,3 @@
+# raw full-history Yahoo caches (rebuilt on demand by src/fetch_cohort.py);
+# the committed *.csv.gz window files are sufficient for offline reruns
+data/raw/

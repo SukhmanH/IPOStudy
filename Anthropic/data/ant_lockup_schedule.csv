@@ -1,0 +1,24 @@
+tranche,trigger,date_basis,date,date_is_assumed,max_shares_m,holder_group,source
+1,first trading day,fixed,2026-11-19,False,315,"non-founder directors, officers, certain employees/consultants: up to 10% of locked holdings",S-1/A No.3 via crowdfundedwealth.com (S-1/A No.2 via TECHi: 316M)
+2,27 days after prospectus,fixed,2026-12-15,False,303,other locked stockholders (step 1 of 4),S-1/A No.3 via crowdfundedwealth.com (No.2: 299M)
+3,48 days after prospectus,fixed,2027-01-05,False,303,other locked stockholders (step 2 of 4),S-1/A No.3 via crowdfundedwealth.com (No.2: 299M)
+4,62 days after prospectus,fixed,2027-01-19,False,353,other locked stockholders (step 3 of 4),S-1/A No.3 via crowdfundedwealth.com (No.2: 349M)
+5,76 days after prospectus,fixed,2027-02-02,False,353,other locked stockholders (step 4 of 4),S-1/A No.3 via crowdfundedwealth.com (No.2: 349M)
+6,2nd trading day after FY2026 results,earnings,2027-03-08,True,1700,"employees / non-founder insiders (further 35%) + others",S-1/A No.2 & No.3 summaries; results date NOT announced - assumed 2027-03-04
+7,13 days after FY2026 results,earnings,2027-03-17,True,474,larger stockholders (step),S-1/A No.2 via TECHi
+8,27 days after FY2026 results,earnings,2027-03-31,True,474,larger stockholders (step),S-1/A No.2 via TECHi
+9,41 days after FY2026 results,earnings,2027-04-14,True,474,larger stockholders (step),S-1/A No.2 via TECHi
+10,55 days after FY2026 results,earnings,2027-04-28,True,474,larger stockholders (step),S-1/A No.2 via TECHi
+11,69 days after FY2026 results,earnings,2027-05-12,True,474,larger stockholders (step),S-1/A No.2 via TECHi
+12,earlier of Q1-2027 results or 2027-05-17 (180 days),earnings_or_fixed,2027-05-17,True,3000,"remainder of 180-day group + co-founders up to 29%",S-1/A No.2 & No.3 summaries; shown at the no-later-than date
+13,34 days after Q1-2027 results,earnings,2027-06-21,True,449,larger stockholders (step),S-1/A No.2 via TECHi; Q1 results assumed 2027-05-17
+14,48 days after Q1-2027 results,earnings,2027-07-06,True,449,larger stockholders (step),S-1/A No.2 via TECHi
+15,62 days after Q1-2027 results,earnings,2027-07-19,True,449,larger stockholders (step),S-1/A No.2 via TECHi
+16,76 days after Q1-2027 results,earnings,2027-08-02,True,449,larger stockholders (step),S-1/A No.2 via TECHi
+17,2nd trading day after Q2-2027 results,earnings,2027-08-16,True,558,larger stockholders,S-1/A No.3 via crowdfundedwealth.com (No.2: 562M); Q2 results assumed 2027-08-12
+18,27 days after Q2-2027 results,earnings,2027-09-08,True,505,larger stockholders (step),S-1/A No.2 via TECHi
+19,41 days after Q2-2027 results,earnings,2027-09-22,True,505,larger stockholders (step),S-1/A No.2 via TECHi
+20,55 days after Q2-2027 results,earnings,2027-10-06,True,505,larger stockholders (step),S-1/A No.2 via TECHi
+21,69 days after Q2-2027 results,earnings,2027-10-20,True,505,larger stockholders (step),S-1/A No.2 via TECHi
+22,83 days after Q2-2027 results,earnings,2027-11-03,True,505,larger stockholders (step),S-1/A No.2 via TECHi
+23,earlier of Q3-2027 results or 2027-11-18 (365 days),earnings_or_fixed,2027-11-18,True,1900,"co-founders + holders >0.5% of fully diluted shares: remainder",S-1/A No.2 & No.3 summaries; shown at the no-later-than date

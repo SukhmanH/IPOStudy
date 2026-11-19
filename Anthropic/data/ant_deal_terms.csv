@@ -1,0 +1,33 @@
+field,value,unit,source,note
+company,"Anthropic, PBC",,SEC EDGAR submissions API (CIK 0002130357),Delaware public benefit corporation
+ticker,ANT,,Pricing FWP 2026-11-19 (EDGAR 0001628280-26-074937),Class A common stock; Nasdaq Global Select Market
+exchange,Nasdaq Global Select Market,,Pricing FWP,
+pricing_date,2026-11-18,,Pricing FWP,"prospectus date = pricing date; lockup day-counts run from this date"
+first_trade_date,2026-11-19,,Pricing FWP,"trade date; settlement 2026-11-20"
+offer_price,83.00,USD/share,Pricing FWP,"above the $70-$78 range in S-1/A No.3 (CNBC 2026-11-16)"
+price_range_low,70.00,USD/share,CNBC 2026-11-16 IPO guide,
+price_range_high,78.00,USD/share,CNBC 2026-11-16 IPO guide,
+base_shares_offered,980000000,shares,Pricing FWP,"upsized from 825,000,000; 956,351,354 primary + 23,648,646 secondary (co-founders)"
+primary_shares,956351354,shares,Pricing FWP,
+secondary_shares,23648646,shares,Pricing FWP,"7 co-founders x ~3.38M shares each (CNBC 2026-11-18)"
+greenshoe_shares,147000000,shares,Pricing FWP,"15% option; 100% primary"
+gross_proceeds_base,81340000000,USD,Pricing FWP,"980,000,000 x $83.00"
+underwriting_spread,0.68,percent,Pricing FWP,"price to underwriters $82.43878 vs $83.00"
+concurrent_private_placement,26000000000,USD,Pricing FWP,"313,253,007 Class N shares at the IPO price (CNBC: Google, Microsoft, Nvidia, AMD); not locked up per S-1/A reading"
+shares_outstanding_post_offering_s1a,13086672593,shares,crowdfundedwealth.com summary of S-1/A No.3; TECHi summary of S-1/A No.2,"Class A 7,427,991,791 + Class N 5,658,680,800 + Class F 1 + Class T 1; assumes 825M-share deal and no greenshoe"
+shares_outstanding_post_offering_est,13242000000,shares,derived,"S-1/A total + 155M upsized primary shares (assumes upsize was all primary as the FWP's 956.35M primary implies); excludes greenshoe; +-~40M uncertainty from private-placement share count at $83 vs midpoint"
+mcap_basic_at_offer_est,1099,USD bn,derived,"13.24B basic shares x $83; the tiering convention the parent study uses (offer x post-issue shares)"
+mcap_fully_diluted_at_offer,1500,USD bn,CNBC 2026-11-18,"'around $1.5 trillion' fully diluted"
+tier,T4,,derived,">$10B at listing under either share count"
+public_float_at_ipo_est,7.4,percent of basic shares,derived,"980M offered / 13.24B; ~9.8% if all 315M day-1 eligible insider shares are sold"
+retail_allocation_max,20,percent of offering,CNBC 2026-11-16,"up to 20%, US and other countries"
+lead_left_bookrunners,"Goldman Sachs & Co. LLC; Morgan Stanley & Co. LLC",,Pricing FWP,"plus 8 bookrunners and 12 co-managers"
+nasdaq100_fast_entry_expected_effective,2026-12-21,,"Bloomberg via stockanalysis.com; mlq.ai; FourWeekMBA","PROJECTED, not announced by Nasdaq: fast-entry rank evaluated at close of 7th trading day (2026-11-30); folded into the annual reconstitution; index funds trade at the 2026-12-18 close"
+nasdaq100_announcement_expected,2026-12-11,,stockanalysis.com,"after the close; projected"
+analyst_quiet_period_end_est,2026-12-14,,"convention: research 25 calendar days after the IPO","25 days after 2026-11-19 is Monday 2026-12-14 - first sell-side price targets typically appear here"
+revenue_9m_2026,33.24,USD bn,CNBC 2026-11-18,"nine months ended 2026-09-30; ~+1200% y/y"
+revenue_h1_2026,16.29,USD bn,CNBC S-1 live blog 2026-10-26,
+run_rate_revenue_oct_2026,81,USD bn,CNBC 2026-11-18,"end of October; +$10B m/m"
+net_loss_9m_2026,104,USD bn,CNBC 2026-11-18,"mostly fair-value changes on convertible notes / derivative liabilities"
+gross_margin_h1_2026,85,percent,CNBC S-1 live blog 2026-10-26,"implied"
+compute_commitments,417,USD bn,CNBC S-1 live blog 2026-10-26,"future obligations to compute providers"

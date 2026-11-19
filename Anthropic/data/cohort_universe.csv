@@ -1,0 +1,184 @@
+ticker,name,listing_expected,offer,tier,mcap_b,mcap_source,adr,role,reason
+SPCX,Space Exploration Technologies Corp.,2026-06-12,135.0,T4,1767.265285275,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+COIN,Coinbase Global Inc,2021-04-14,250.0,T4,46.496513875,parent:auto:ritter+yf/high,True,excluded,parent: direct listing (no underwriter/lockup) - excluded by spec
+CBRS,Cerebras Systems Inc.,2026-05-14,185.0,T4,39.795413825,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+MDLN,Medline Inc.,2025-12-17,29.0,T4,38.097799438,parent:ritter-anchor/med,True,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+SPOT,Spotify Technology S.A.,2018-04-03,165.9,T4,29.5489453728,parent:single:yf/low,True,excluded,parent: direct listing (no underwriter/lockup) - excluded by spec
+RBLX,Roblox,2021-03-10,45.0,T4,24.77028447,parent:auto:edgar+ritter+yf/high,True,excluded,parent: direct listing (no underwriter/lockup) - excluded by spec
+WORK,Slack,2019-06-20,38.5,T4,20.2254745,parent:ritter-anchor/med,True,excluded,parent: direct listing (no underwriter/lockup) - excluded by spec
+BSP,Bending Spoons S.p.A.,2026-07-01,29.0,T3,9.42,StockTitan 2026 IPO list,False,live,tier corrected: parent T4 $18.4B (low-conf yf shares) -> StockTitan $9.42B
+DSC,DSC Holdings Ltd.,2026-06-25,17.0,,,StockTitan 2026 IPO list,False,excluded,tier corrected: parent T4 $16.0B (low-conf yf shares) but absent from StockTitan's list of every 2026 IPO >= $1B -> size unverified; excluded from live T3/T4 check
+QNT,Quantinuum Inc.,2026-06-04,60.0,T4,15.55713426,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+MAIR,Madison Air Solutions Corporation,2026-04-16,27.0,T4,13.201010802,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+PLTR,Palantir Technologies,2020-09-30,7.25,T4,11.50952,parent:auto:edgar+ritter+yf/high,True,excluded,parent: direct listing (no underwriter/lockup) - excluded by spec
+ARXS,"Arxis, Inc.",2026-04-16,28.0,T4,11.243865248,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+PAYP,PayPay Corporation,2026-03-12,16.0,T4,10.764647912,parent:auto:edgar+yf/high,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+FRVO,Fervo Energy Company,2026-05-13,27.0,T3,7.656182991,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+BETA,"BETA Technologies, Inc.",2025-11-04,34.0,T3,7.609458502,parent:ritter-anchor/med,True,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+SQSP,"SquareSpace, Inc.",2021-05-19,50.0,T3,6.8038647,parent:ritter-anchor/med,True,excluded,parent: direct listing (no underwriter/lockup) - excluded by spec
+FPS,"Forgent Power Solutions, Inc.",2026-02-05,27.0,T3,6.232887387,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+NAVN,"Navan, Inc.",2025-10-30,25.0,T3,6.20553975,parent:ritter-anchor/med,True,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+EQPT,EquipmentShare.com Inc.,2026-01-23,24.5,T3,6.1564309275,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+XE,"X-Energy, Inc.",2026-04-24,23.0,T3,6.071354988,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+MMED,"MiniMed Group, Inc.",2026-03-06,20.0,T3,5.61639976,parent:auto:edgar+yf/high,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+JAN,"Janus Living, Inc.",2026-03-20,20.0,T3,5.26281552,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+MWH,"SOLV Energy, Inc.",2026-02-11,25.0,T3,5.062260925,parent:single:yf/low,False,live,parent 'too recent' T3/T4 (no +180 outcome at parent freeze)
+BABA,Alibaba Group Holding Ltd,2014-09-19,68.0,T4,170.0,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+META,Facebook Inc,2012-05-17,38.0,T4,92.043693271,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+UBER,Uber Technologies Inc,2019-05-10,45.0,T4,75.8815366275,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+ARM,ARM Holdings PLC,2023-09-14,51.0,T4,72.034443264,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+RIVN,Rivian Automotive Inc,2021-11-10,78.0,T4,68.315408538,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+CPNG,Coupang Inc,2021-03-11,35.0,T4,61.5149639475,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+VG,"Venture Global, Inc",2025-01-24,25.0,T4,60.4885463,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+GM,General Motors Co,2010-11-18,33.0,T4,50.406625467,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+KVUE,Kenvue Inc.,2023-05-04,22.0,T4,41.914888356,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+NU,Nu Holdings Ltd,2021-12-09,9.0,T4,41.4781397775,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+ABNB,Airbnb Inc,2020-12-10,68.0,T4,40.626472534,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+RKT,Rocket Companies Inc,2020-08-06,18.0,T4,35.705718864000005,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+DASH,DoorDash Inc,2020-12-09,102.0,T4,35.478482571,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+HOOD,Robinhood Markets Inc,2021-07-29,38.0,T4,34.049748608,parent:single:yf/low,True,historical,parent T3/T4 headline universe
+SNOW,Snowflake Inc,2020-09-16,120.0,T4,33.20340096,parent:auto:edgar+ritter+yf/high,True,historical,parent T3/T4 headline universe
+LU,Lufax Hldg Ltd,2020-10-30,13.5,T4,32.93136,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+PATH,UiPath Inc,2021-04-21,56.0,T4,29.07261602,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+APP,AppLovin Corp,2021-04-15,80.0,T4,28.63642472,parent:auto:edgar+ritter+yf/high,True,historical,parent T3/T4 headline universe
+JD,JD.com Inc,2014-05-22,19.0,T4,26.9895,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+GFS,GlobalFoundries Inc,2021-10-28,47.0,T4,25.063472296,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+BEKE,KE Holdings Inc,2020-08-13,20.0,T4,22.54960128,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+LYFT,Lyft Inc,2019-03-29,72.0,T4,22.4415828,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+ATUS,Altice USA Inc,2017-06-22,30.0,T4,22.11204198,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+KMI,Kinder Morgan Inc,2011-02-10,30.0,T4,21.21,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+PDD,Pinduoduo Inc,2018-07-26,19.0,T4,21.048009088,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+YMM,Full Truck Alliance Co Ltd,2021-06-22,19.0,T4,20.631149696,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+TME,Tencent Music Ent Grp,2018-12-12,13.0,T4,20.252700416,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+HLT,Hilton Worldwide Holdings Inc,2013-12-12,20.0,T4,20.0,parent:verified/verified,True,historical,parent T3/T4 headline universe
+TOST,Toast Inc,2021-09-22,40.0,T4,19.97331346,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+SNAP,Snap Inc,2017-03-02,17.0,T4,19.85653788,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+SYF,Synchrony Financial,2014-07-31,23.0,T4,19.1772917735,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+RLX,RLX Technology Inc,2021-01-22,12.0,T4,18.639839232,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+CRWV,"CoreWeave, Inc.",2025-03-28,40.0,T4,18.56397784,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+TWTR,Twitter,2013-11-07,26.0,T4,18.0,parent:verified/verified,True,historical,parent T3/T4 headline universe
+LINE,"Lineage, Inc.",2024-07-25,78.0,T4,17.75972211,parent:single:edgar/low,True,historical,parent T3/T4 headline universe
+MBLY,Mobileye Global Inc,2022-10-26,21.0,T4,16.7110008345,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+RPRX,Royalty Pharma Plc,2020-06-16,28.0,T4,16.670723328,parent:auto:edgar+ritter+yf/high,True,historical,parent T3/T4 headline universe
+FIG,"Figma, Inc.",2025-07-31,33.0,T4,16.086209799,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+XM,Qualtrics International Inc,2021-01-28,30.0,T4,15.10153986,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+XP,XP Inc,2019-12-11,27.0,T4,14.898604401,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+LOGC,Contextlogic Inc,2020-12-16,24.0,T4,14.327568264,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+MQ,Marqeta Inc,2021-06-09,27.0,T4,14.3166408795,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+HCP,HashiCorp Inc,2021-12-09,80.0,T4,14.3110136,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+ZTO,ZTO Express (Cayman) Inc,2016-10-27,19.5,T4,14.262417,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+FDC,First Data Corp,2015-10-15,16.0,T4,14.064481072,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+U,Unity Software Inc,2020-09-18,52.0,T4,13.887744546,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+HCA,HCA Holdings Inc,2011-03-09,30.0,T4,13.849716,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+OLPX,"Olaplex Holdings, Inc",2021-09-30,21.0,T4,13.610621157,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+CRBG,Corebridge Financial Inc,2022-09-15,21.0,T4,13.566997248,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+PAGP,Plains GP Holdings,2013-10-16,22.0,T4,13.429061074,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+ZTS,Zoetis Inc,2013-01-31,26.0,T4,13.0,parent:auto:edgar+ritter+yf/high,True,historical,parent T3/T4 headline universe
+GRPN,Groupon Inc,2011-11-03,20.0,T4,12.75606656,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+WMG,Warner Music Group Corp,2020-06-03,25.0,T4,12.75,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+GDRX,GoodRx Holdings Inc,2020-09-23,33.0,T4,12.659799174,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+ALLY,Ally Financial Inc,2014-04-10,25.0,T4,12.01899425,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+TUYA,Tuya Inc,2021-03-18,21.0,T4,11.923568832,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+AFRM,Affirm Holdings Inc,2021-01-13,49.0,T4,11.894591779,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+AR,Antero Resources,2013-10-10,44.0,T4,11.860170498,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+CFG,Citizens Financial Group Inc,2014-09-24,21.5,T4,11.53837880225,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+IOT,Samsara Inc,2021-12-15,23.0,T4,11.508536082,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+XPEV,XPeng Inc,2020-08-27,15.0,T4,11.35756512,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+EQH,Axa Equitable Holdings Inc,2018-05-10,20.0,T4,11.22,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+PLTK,Playtika Holding Corp,2021-01-15,27.0,T4,11.059067727,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+GTLB,GitLab Inc,2021-10-14,77.0,T4,11.0121484165,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+ADT,ADT Inc,2018-01-19,14.0,T4,10.495801687,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+VIK,Viking Holdings Ltd,2024-05-01,24.0,T4,10.354920192,parent:single:yf/low,True,historical,parent T3/T4 headline universe
+FRSH,Freshworks Inc,2021-09-22,36.0,T4,10.131591456,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+PINS,Pinterest Inc,2019-04-18,19.0,T4,10.058082706,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+CHYM,"Chime Financial, Inc.",2025-06-12,27.0,T3,9.839381526,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+RACE,Ferrari NV,2015-10-21,52.0,T3,9.824048,parent:single:yf/low,True,historical,parent T3/T4 headline universe
+LI,Li Auto Inc,2020-07-30,11.5,T3,9.617956,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+ZM,Zoom Video Communications Inc,2019-04-18,36.0,T3,9.230190678,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+CFLT,Confluent Inc,2021-06-24,36.0,T3,9.08514684,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+TPG,TPG Inc.,2022-01-13,29.5,T3,9.054959982,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+S,SentinelOne Inc,2021-06-30,35.0,T3,8.923272382499999,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+SDC,SmileDirectClub Inc,2019-09-12,23.0,T3,8.851847873,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+CHWY,Chewy Inc,2019-06-14,22.0,T3,8.7692,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+PCOR,Procore Technologies Inc,2021-05-20,67.0,T3,8.685223902499999,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+ELAN,Elanco Animal Health Inc,2018-09-20,24.0,T3,8.661780192,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+STUB,"StubHub Holdings, Inc.",2025-09-17,23.5,T3,8.6436121505,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+BIRK,Birkenstock Holding plc,2023-10-11,46.0,T3,8.639996,parent:single:yf/low,True,historical,parent T3/T4 headline universe
+MCFE,McAfee Corp,2020-10-22,20.0,T3,8.63703586,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+TSP,TuSimple Holdings Inc,2021-04-15,40.0,T3,8.48769528,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+CART,"Maplebear, Inc. (Instacart)",2023-09-19,30.0,T3,8.35012437,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+ENBL,Enable Midstream Partners LP,2014-04-11,20.0,T3,8.31422,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+DBX,Dropbox Inc,2018-03-23,21.0,T3,8.2417336155,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+PTON,Peloton Interactive Inc,2019-09-26,29.0,T3,8.078682365999999,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+ZI,ZoomInfo Technologies Inc,2020-06-04,21.0,T3,8.035638786,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+YNDX,Yandex NV,2011-05-24,25.0,T3,8.03118645,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+ATH,Athene Holding Ltd,2016-12-09,40.0,T3,8.02763,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+SARO,"StandardAero, Inc.",2024-10-02,24.0,T3,8.02707912,parent:single:edgar/low,True,historical,parent T3/T4 headline universe
+SRAD,Sportradar Group AG,2021-09-14,27.0,T3,7.98714,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+INFA,Informatica Inc,2021-10-27,29.0,T3,7.937259603,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+OSCR,Oscar Health Inc,2021-03-03,39.0,T3,7.922113602,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+PECO,"Phillips Edison & Company, Inc",2021-07-15,28.0,T3,7.8624,parent:single:yf/low,True,historical,parent T3/T4 headline universe
+DDOG,Datadog Inc,2019-09-19,27.0,T3,7.825535955,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+EQGP,EQT GP Holdings LP,2015-05-12,27.0,T3,7.676424107999999,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+ACI,Albertsons Cos Inc,2020-06-26,16.0,T3,7.664432,parent:auto:edgar+ritter+yf/high,True,historical,parent T3/T4 headline universe
+BZ,Kanzhun Ltd,2021-06-11,19.0,T3,7.599050304,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+KVYO,"Klaviyo, Inc.",2023-09-20,30.0,T3,7.555677494999999,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+MRNA,Moderna Inc,2018-12-07,23.0,T3,7.5142319855,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+MNDY,monday.com Ltd,2021-06-10,155.0,T3,7.3993745,parent:single:yf/low,True,historical,parent T3/T4 headline universe
+WEBR,Weber Inc,2021-08-05,14.0,T3,7.33842396,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+NTSK,Netskope Inc,2025-09-18,19.0,T3,7.259390743,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+RELY,Remitly Global Inc,2021-09-23,43.0,T3,6.998840648,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+ZNGA,Zynga Inc,2011-12-15,10.0,T3,6.99343351,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+AVTR,Avantor Inc,2019-05-17,14.0,T3,6.967768353,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+COMP,Compass Inc,2021-04-01,18.0,T3,6.9646671,parent:auto:edgar+ritter+yf/high,True,historical,parent T3/T4 headline universe
+KOS,Kosmos Energy Ltd,2011-05-10,18.0,T3,6.961239558,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+MRVI,Maravai Lifesciences Hldg Inc,2020-11-20,27.0,T3,6.955757415,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+CRCL,"Circle Internet Group, Inc.",2025-06-05,31.0,T3,6.898743565,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+IHS,IHS Holding Ltd,2021-10-14,21.0,T3,6.886681556999999,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+CRWD,Crowdstrike Holdings Inc,2019-06-12,34.0,T3,6.733325370999999,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+ROOT,Root Inc,2020-10-28,27.0,T3,6.732464985,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+LFST,LifeStance Health Group Inc,2021-06-10,18.0,T3,6.730178759999999,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+VICI,VICI Properties Inc,2018-02-01,20.0,T3,6.7040784,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+CG,The Carlyle Group LP,2012-05-02,22.0,T3,6.699,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+PAGS,Pagseguro Digital Ltd.,2018-01-24,21.5,T3,6.6931010805,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+GOCO,GoHealth Inc,2020-07-15,21.0,T3,6.585227943,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+ONON,On Holding AG,2021-09-15,24.0,T3,6.576552120000001,parent:auto:edgar+ritter/high,True,historical,parent T3/T4 headline universe
+BMBL,Bumble Inc,2021-02-11,43.0,T3,6.5448688145,parent:auto:edgar+ritter/high,True,historical,parent T3/T4 headline universe
+STNE,StoneCo Ltd,2018-10-25,24.0,T3,6.541621548,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+SHC,Sotera Health Co,2020-11-20,23.0,T3,6.442311097499999,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+NIO,Nio Inc,2018-09-12,6.26,T3,6.4165,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+COTY,Coty Inc,2013-06-12,17.5,T3,6.3865725,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+LEVI,Levi Strauss & Co,2019-03-21,17.0,T3,6.3366563895,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+BLCO,Bausch + Lomb Corporation,2022-05-06,18.0,T3,6.332868,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+AS,"Amer Sports, Inc.",2024-02-01,13.0,T3,6.2985,parent:single:yf/low,True,historical,parent T3/T4 headline universe
+INVH,Invitation Homes Inc,2017-02-01,20.0,T3,6.20753626,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+STVN,Stevanato Group SpA,2021-07-16,21.0,T3,6.206340756,parent:auto:edgar+ritter+yf/high,True,historical,parent T3/T4 headline universe
+DLO,dLocal Ltd,2021-06-03,21.0,T3,6.1512335325,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+GFL,GFL Environmental Inc,2020-03-03,19.0,T3,6.1486163245,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+EDR,Endeavor Group Holdings Inc,2021-04-29,24.0,T3,6.090006504,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+MNSO,MINISO Group Holding Ltd,2020-10-15,20.0,T3,6.07950016,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+TW,Tradeweb Markets Inc,2019-04-04,27.0,T3,6.0506220105,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+RYAN,"Ryan Specialty Group Holdings,",2021-07-22,23.5,T3,6.00779714875,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+BRZE,"Braze, Inc.",2021-11-17,65.0,T3,5.8666290475,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+FTCH,Farfetch Ltd,2018-09-21,20.0,T3,5.8571819,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+GTES,Gates Industrial Corp Plc,2018-01-25,19.0,T3,5.8093296005,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+RBRK,"Rubrik, Inc.",2024-04-25,32.0,T3,5.621859392,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+BSY,Bentley Systems Inc,2020-09-23,22.0,T3,5.619544909,parent:auto:ritter+yf/high,True,historical,parent T3/T4 headline universe
+ULS,UL Solutions Inc.,2024-04-12,28.0,T3,5.6,parent:auto:edgar+ritter+yf/high,True,historical,parent T3/T4 headline universe
+ALAB,Astera Labs Inc,2024-03-20,36.0,T3,5.547551417999999,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+DDL,Dingdong (Cayman) Ltd,2021-06-29,23.5,T3,5.538503312,parent:single:yf/low,False,historical,parent T3/T4 headline universe
+TIXT,TELUS International (Cda) Inc,2021-02-03,25.0,T3,5.4782469,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+LZ,Legalzoom.Com Inc,2021-06-30,28.0,T3,5.474235536,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+TTAN,ServiceTitan Inc.,2024-12-12,71.0,T3,5.446592399,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+ABCL,AbCellera Biologics Inc,2020-12-11,20.0,T3,5.368778880000001,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+REYN,Reynolds Consumer Products Inc,2020-01-31,26.0,T3,5.360231396,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+SGFY,Signify Health Inc,2021-02-11,24.0,T3,5.319044712,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+BRX,Brixmor Property Group,2013-10-30,20.0,T3,5.2817896,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+FIGR,"Figure Technology Solutions, I",2025-09-11,25.0,T3,5.2129122,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+INGM,Ingram Micro Holding Corp,2024-10-24,22.0,T3,5.166162782,parent:single:edgar/low,True,historical,parent T3/T4 headline universe
+USFD,US Foods Holding Corp,2016-05-26,23.0,T3,5.0740039295,parent:auto:edgar+yf/high,True,historical,parent T3/T4 headline universe
+OS,"OneStream, Inc.",2024-07-24,20.0,T3,5.04891842,parent:ritter-anchor/med,True,historical,parent T3/T4 headline universe
+INIO,Innio N.V.,2026-06-04,27.0,T4,20.25,StockTitan 2026 IPO list,False,live,added: in parent seed but mcap unresolved; StockTitan $20.25B -> T4
+JMKE,Jersey Mike's Subs,2026-07-30,23.0,T3,7.31,StockTitan 2026 IPO list,False,live,"added: priced 2026-07-29, after the parent seed calendar ended; StockTitan $7.31B -> T3"
+SKHY,SK hynix Inc. (ADS),2026-07-10,149.0,,,,True,excluded,"cross-listing of an already-public company (KRX:000660): no IPO price discovery, treated like the spec's uplisting exclusion"
+ANT,"Anthropic, PBC",2026-11-19,83.0,T4,1099.0,derived: 13.24B basic shares x $83 (FD ~$1.5T),False,subject,study subject

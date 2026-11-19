@@ -1,0 +1,33 @@
+trading_day,date,event,date_assumed,cum_unlockable_shares_m,cum_unlock_x_ipo_shares,T4_median_rel_level
+0,2026-11-19,Listing day (day 0); up to 315M insider shares sellable,False,315,0.32142857142857145,1.0
+6,2026-11-30,7th trading day: Nasdaq-100 fast-entry rank date (projected),False,315,0.32142857142857145,0.998308
+15,2026-12-11,Nasdaq-100 inclusion announcement after the close (projected),False,315,0.32142857142857145,0.993245
+16,2026-12-14,Quiet period ends (~25 calendar days): first sell-side price targets,False,315,0.32142857142857145,0.992317
+17,2026-12-15,Lockup tranche 2: up to 303M shares (27 days after prospectus),False,618,0.6306122448979592,0.988069
+20,2026-12-18,Nasdaq-100 index buying at this close (projected) | quad witching | parent primary-spec ENTRY (+20 close),False,618,0.6306122448979592,0.99474
+21,2026-12-21,Nasdaq-100 inclusion effective at the open (projected),False,618,0.6306122448979592,0.993977
+30,2027-01-05,Lockup tranche 3: up to 303M shares (48 days after prospectus),False,921,0.939795918367347,0.971544
+39,2027-01-19,Lockup tranche 4: up to 353M shares (62 days after prospectus),False,1274,1.3,0.963937
+49,2027-02-02,Lockup tranche 5: up to 353M shares (76 days after prospectus),False,1627,1.660204081632653,0.953015
+60,2027-02-18,Study horizon +60,False,1627,1.660204081632653,0.89236
+72,2027-03-08,"Lockup tranche 6: up to 1,700M shares (2nd trading day after FY2026 results) [date ASSUMED - results date not announced]",True,3327,3.3948979591836737,0.858572
+79,2027-03-17,Lockup tranche 7: up to 474M shares (13 days after FY2026 results) [date ASSUMED - results date not announced],True,3801,3.8785714285714286,0.833951
+88,2027-03-31,Lockup tranche 8: up to 474M shares (27 days after FY2026 results) [date ASSUMED - results date not announced],True,4275,4.362244897959184,0.834035
+98,2027-04-14,Lockup tranche 9: up to 474M shares (41 days after FY2026 results) [date ASSUMED - results date not announced],True,4749,4.845918367346939,0.829475
+108,2027-04-28,Lockup tranche 10: up to 474M shares (55 days after FY2026 results) [date ASSUMED - results date not announced],True,5223,5.329591836734694,0.756831
+118,2027-05-12,Lockup tranche 11: up to 474M shares (69 days after FY2026 results) [date ASSUMED - results date not announced],True,5697,5.813265306122449,0.770149
+120,2027-05-14,Study horizon +120,False,5697,5.813265306122449,0.788605
+121,2027-05-17,"Lockup tranche 12: up to 3,000M shares (earlier of Q1-2027 results or 2027-05-17 (180 days)) [date ASSUMED - results date not announced]",True,8697,8.874489795918368,0.763771
+144,2027-06-21,Lockup tranche 13: up to 449M shares (34 days after Q1-2027 results) [date ASSUMED - results date not announced],True,9146,9.33265306122449,0.771248
+154,2027-07-06,Lockup tranche 14: up to 449M shares (48 days after Q1-2027 results) [date ASSUMED - results date not announced],True,9595,9.790816326530612,0.752895
+163,2027-07-19,Lockup tranche 15: up to 449M shares (62 days after Q1-2027 results) [date ASSUMED - results date not announced],True,10044,10.248979591836735,0.76872
+173,2027-08-02,Lockup tranche 16: up to 449M shares (76 days after Q1-2027 results) [date ASSUMED - results date not announced],True,10493,10.707142857142857,0.764235
+180,2027-08-11,Study horizon +180 (parent primary-spec EXIT),False,10493,10.707142857142857,0.765646
+183,2027-08-16,Lockup tranche 17: up to 558M shares (2nd trading day after Q2-2027 results) [date ASSUMED - results date not announced],True,11051,11.276530612244898,0.790603
+199,2027-09-08,Lockup tranche 18: up to 505M shares (27 days after Q2-2027 results) [date ASSUMED - results date not announced],True,11556,11.791836734693877,0.735102
+209,2027-09-22,Lockup tranche 19: up to 505M shares (41 days after Q2-2027 results) [date ASSUMED - results date not announced],True,12061,12.307142857142857,0.737789
+219,2027-10-06,Lockup tranche 20: up to 505M shares (55 days after Q2-2027 results) [date ASSUMED - results date not announced],True,12566,12.822448979591837,0.724243
+229,2027-10-20,Lockup tranche 21: up to 505M shares (69 days after Q2-2027 results) [date ASSUMED - results date not announced],True,13071,13.337755102040816,0.696582
+239,2027-11-03,Lockup tranche 22: up to 505M shares (83 days after Q2-2027 results) [date ASSUMED - results date not announced],True,13576,13.853061224489796,0.677521
+250,2027-11-18,"Lockup tranche 23: up to 1,900M shares (earlier of Q3-2027 results or 2027-11-18 (365 days)) [date ASSUMED - results date not announced]",True,15476,15.791836734693877,0.658781
+250,2027-11-18,Study horizon +250,False,15476,15.791836734693877,0.658781

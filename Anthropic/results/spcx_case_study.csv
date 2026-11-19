@@ -1,0 +1,14 @@
+item,value,date_or_note
+offer,135.0,
+day0 open / high / close,150.00 / 176.52 / 160.95,2026-06-12
+peak close (days 0-20),211.39,2026-06-16 (day 2)
+trough close after peak,108.27,2026-08-05 (day 36)
+peak-to-trough,-48.8%,
+latest close,143.5,2026-11-18 (day 110)
+"day0 close -> latest, stock",-10.8%,
+"day0 close -> latest, QQQ-neutral rel",-2.7%,
+min QQQ-neutral rel level,-32.4%,2026-08-05
+N100 announcement -> effective (close to close),+4.7% (QQQ +2.3%),2026-06-26 -> 2026-07-06 close
+N100 effective -> +20 sessions after,-28.6%,
+parent primary spec so far: short day-20 close -> latest (hedged vs QQQ),"-13.7% (stock +5.5%, QQQ -8.3%)",entry 2026-07-14 at 136.08; day 110 of 180
+x_20 / x_60 / x_90 (hedged from day0 close),+0.153 / +0.077 / +0.018,
