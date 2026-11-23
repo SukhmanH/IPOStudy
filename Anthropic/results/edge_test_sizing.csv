@@ -1,0 +1,10 @@
+rule,f
+f_K plug-in Kelly,0.2900
+f_K / 4 (quarter-Kelly),0.0725
+f_LCB (Kelly at one-sided 90% LCB of mean R = -0.014),0.0000
+"f_B Bayesian Kelly, prior tau = 5% (posterior mean +0.027, sd 0.047, P(edge>0) 0.72)",0.0450
+"f_B Bayesian Kelly, prior tau = 10% (posterior mean +0.082, sd 0.082, P(edge>0) 0.84)",0.1225
+"f_B Bayesian Kelly, prior tau = 20% (posterior mean +0.164, sd 0.115, P(edge>0) 0.92)",0.2125
+"f_B Bayesian Kelly, prior tau = flat (posterior mean +0.246, sd 0.141, P(edge>0) 0.96)",0.2800
+f_DD: largest f with P(max drawdown > 25%) <= 5% (calendar-time block bootstrap),0.0200
+"RECOMMENDED = min(f_B(10%), 1%)  [edge NOT established -> discretionary]",0.0100

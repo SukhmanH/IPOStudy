@@ -5,7 +5,7 @@ This folder applies this repo's IPO-fade study to **Anthropic's IPO**. ANT price
 1. **Does the post-IPO fade apply to Anthropic?**
 2. **What price targets does the study imply?**
 
-**Full write-up: [REPORT.md](REPORT.md).** The options follow-up, which prices the Jul-2027 puts against the study and sets risk levels, is in **[OPTIONS_QUANT.md](OPTIONS_QUANT.md)**; run it with `python Anthropic/src/options_quant.py`.
+**Full write-up: [REPORT.md](REPORT.md).** The options follow-up, which prices the Jul-2027 puts against the study and sets risk levels, is in **[OPTIONS_QUANT.md](OPTIONS_QUANT.md)**; run it with `python Anthropic/src/options_quant.py`. The pre-registered statistical test of that edge and the confidence-based sizing are in **[EDGE_TEST.md](EDGE_TEST.md)**. Its verdict: the edge is not established, so risk at most 1% of capital. Run it with `python Anthropic/src/edge_test.py`.
 
 ## Answers
 
@@ -60,6 +60,7 @@ Anthropic/
     price_targets.py            ANT status, event calendar, targets, scenario grid, trade view
     make_figs.py                figs/*.png
     options_quant.py            ANT Jul-2027 puts vs the study: IV smile, P vs Q, EV, Kelly, stress, risk levels
+    edge_test.py                pre-registered edge test (bootstrap, cluster t, SPA, DSR) + Kelly/Bayes/drawdown sizing
   data/
     ant_deal_terms.csv          every deal fact with its source (EDGAR FWP, CNBC, S-1/A readings)
     ant_lockup_schedule.csv     23 release tranches (dates, max shares, assumed-date flags)

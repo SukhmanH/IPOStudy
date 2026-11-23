@@ -216,6 +216,47 @@ def fig4() -> None:
     plt.close(fig)
 
 
+def fig5() -> None:
+    """Sub-period consistency of the put-spread edge (exploratory battery)."""
+    f = c.RESULTS / "edge_exploratory_near_money.csv"
+    if not f.exists():
+        return
+    d = pd.read_csv(f).iloc[::-1].reset_index(drop=True)
+    AQUA = "#1baf7a"
+    fig, ax = plt.subplots(figsize=(10, 5.6), dpi=200)
+    y = np.arange(len(d))
+    ax.axvline(0, color=AXIS, lw=0.9)
+    for i, r in d.iterrows():
+        vals = [r.disc_mean, r.val_mean, r.oos_mean]
+        ax.plot([min(vals), max(vals)], [i, i], color=GRID, lw=2, zorder=1)
+    ax.scatter(d.disc_mean, y + 0.18, s=64, color=BLUE, edgecolor=SURFACE, linewidth=2, zorder=3,
+               label="2010-2018 (discovery)")
+    ax.scatter(d.val_mean, y, s=64, color=ORANGE, edgecolor=SURFACE, linewidth=2, zorder=3,
+               label="2019-2025 (validation)")
+    ax.scatter(d.oos_mean, y - 0.18, s=64, color=AQUA, edgecolor=SURFACE, linewidth=2, zorder=3,
+               label="2025-26 listings (out-of-sample, n = 9)")
+    ax.scatter(d.unhedged_mean, y, s=56, marker="D", facecolor="none", edgecolor=INK2, linewidth=1.4, zorder=4,
+               label="Unhedged, full sample (actual 2010-25 market)")
+    labels = [f"{r.structure.replace(' spread', '')}   (adj. p = {r.p_maxt_adj:.3f})" for r in d.itertuples()]
+    ax.set_yticks(y)
+    ax.set_yticklabels(labels, fontsize=9, color=INK2)
+    ax.grid(axis="y", visible=False)
+    k = int(np.where(d.structure == "90/60 spread")[0][0])
+    ax.annotate("pre-registered 90/60: negative in 2010-18", (d.disc_mean[k], k + 0.18), xytext=(9, 7),
+                textcoords="offset points", ha="left", fontsize=8.5, color=INK)
+    ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0))
+    ax.set_xlabel("Mean return on premium, market-neutral (buy at ask, sell at bid; ANT's quotes)")
+    ax.set_title("Near-the-money spreads hold up in every period; the wide 90/60 does not")
+    ax.set_ylim(-0.6, len(d) - 0.4)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.45, -0.13), ncol=2, fontsize=8.5)
+    fig.text(0.01, 0.005, "Historical T4 IPOs entered at trading day 2, held to day 162. adj. p = single-step max-t p-value across "
+             "all 91 structures (quarter-block bootstrap).\nExploratory: these spreads were examined after the pre-registered "
+             "90/60 test failed; the pre-registered verdict is unchanged.", fontsize=7.5, color=MUTED)
+    fig.tight_layout(rect=(0, 0.04, 1, 1))
+    fig.savefig(c.FIGS / "fig5_edge_by_period.png")
+    plt.close(fig)
+
+
 def main():
     ev = load_events()
     P = _paths()
@@ -223,6 +264,7 @@ def main():
     fig2(ev, P)
     fig3(ev, P)
     fig4()
+    fig5()
     print("figures written to", c.FIGS)
 
 
