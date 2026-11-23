@@ -5,6 +5,9 @@
 **Deal terms:** Anthropic's pricing FWP and filing list on EDGAR (CIK 0002130357), plus press readings of the S-1/A. Every field is cited in [`data/ant_deal_terms.csv`](data/ant_deal_terms.csv).
 **Parent study:** this repo's IPO-fade generalization. Brief: `../ipo_fade_generalization_brief.md`. Results: `../results/`.
 
+> **Update, 2026-11-23.** ANT's day-1 prints are in: open $111.50, high $115.10, close **$97.17** (+17%). Day 2 traded at ≈ $87.5.
+> `results/` and the figures have been re-run, anchored on these prints. The T4 median for +180 is now $74.40 from the close, or $81.70 from the high. The pre-open tables below are kept as the original record. The options follow-up is in [OPTIONS_QUANT.md](OPTIONS_QUANT.md).
+
 > These are **base-rate** price targets: the empirical spread of what comparable IPOs did, mapped onto ANT's price and trading calendar. They are not a fundamental valuation, a forecast of the market, or investment advice.
 
 ---

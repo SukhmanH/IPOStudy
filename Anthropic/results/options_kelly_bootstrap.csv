@@ -1,0 +1,5 @@
+structure,cost,kelly_full,kelly_boot_p10,kelly_boot_p25,kelly_boot_median,share_boot_kelly_zero,quarter_kelly
+Long 90 put,19.6000,0.1950,0.0000,0.0187,0.1650,0.2200,0.0488
+90/60 put spread,13.6000,0.2600,0.0000,0.0938,0.2200,0.1400,0.0650
+90/70 put spread,10.1000,0.2800,0.0045,0.1288,0.2600,0.1000,0.0700
+85/60 put spread,10.7000,0.2250,0.0000,0.0737,0.1950,0.1500,0.0563

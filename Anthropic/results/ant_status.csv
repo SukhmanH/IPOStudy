@@ -1,2 +1,2 @@
-state,open0,high0,low0,close0,volume0,as_of_et,note
-not_yet_trading,,,,,,2026-11-19 11:21,"Yahoo shows only a placeholder bar (O=0, H=L=C=$83, V=0)"
+state,open0,high0,low0,close0,volume0,as_of_et,note,latest_close,latest_day
+day0_final,111.5,115.0999984741211,92.72000122070312,97.16999816894533,857312300.0,2026-11-23 12:19 ET,day-0 bar final,87.61000061035156,2

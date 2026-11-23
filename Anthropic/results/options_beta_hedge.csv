@@ -1,0 +1,5 @@
+structure,net_delta,dollar_delta,qqq_shares_per_contract
+Long 90 put,-0.3926,-3434.3773,5.5251
+90/60 put spread,-0.2288,-2001.3674,3.2197
+90/70 put spread,-0.1574,-1376.7602,2.2149
+85/60 put spread,-0.1894,-1656.5213,2.6649

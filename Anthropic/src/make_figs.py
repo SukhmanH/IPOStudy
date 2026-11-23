@@ -180,12 +180,49 @@ def fig3(ev: pd.DataFrame, P: pd.DataFrame) -> None:
     plt.close(fig)
 
 
+def fig4() -> None:
+    """Market risk-neutral CDF (from the put smile) vs the study's physical CDF."""
+    f = c.RESULTS / "options_cdf_P_vs_Q.csv"
+    if not f.exists():
+        return
+    d = pd.read_csv(f)
+    d = d[(d["price"] >= 20) & (d["price"] <= 160)]
+    fig, ax = plt.subplots(figsize=(10, 5.6), dpi=200)
+    ax.axvspan(60, 90, color=MUTED, alpha=0.08, lw=0)
+    ax.text(75, 0.03, "90/60 put spread\npays in this band", ha="center", va="bottom", fontsize=8.5, color=INK2)
+    ax.plot(d["price"], d["cdf_market_Q"], color=ORANGE, lw=2, label="Market (risk-neutral, from the put smile)")
+    ax.plot(d["price"], d["cdf_study_P"], color=BLUE, lw=2, label="IPO-fade study (61 T4 comparables, day 2 to 162)")
+    ax.axvline(87.48, color=INK2, lw=0.8)
+    ax.text(88.5, 0.97, "spot $87.48", fontsize=8.5, color=INK2, va="top")
+    for x in (60, 70, 80, 90):
+        pm = float(np.interp(x, d["price"], d["cdf_market_Q"]))
+        ps = float(np.interp(x, d["price"], d["cdf_study_P"]))
+        ax.plot([x, x], [pm, ps], color=INK2, lw=0.8)
+        ax.plot([x], [ps], marker="o", ms=6, color=BLUE, mec=SURFACE, mew=2, zorder=5)
+        ax.plot([x], [pm], marker="o", ms=6, color=ORANGE, mec=SURFACE, mew=2, zorder=5)
+        ax.annotate(f"${x}: {ps:.0%} vs {pm:.0%}", (x, ps), xytext=(-6, 8), textcoords="offset points",
+                    ha="right", fontsize=8, color=INK)
+    ax.set_xlim(20, 160)
+    ax.set_ylim(0, 1.0)
+    ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0))
+    ax.set_xlabel("ANT price at the Jul 16, 2027 expiry (USD)")
+    ax.set_ylabel("Probability ANT finishes below this price")
+    ax.set_title("The study puts more weight below the strikes than the option market does")
+    ax.legend(loc="lower right")
+    fig.text(0.01, 0.005, "Market curve: Breeden-Litzenberger on a fitted IV smile (puts only, mid prices, r = 4.1%, no borrow fee). "
+             "Study curve: QQQ-neutral fades x a re-centred QQQ factor (8%/yr drift).", fontsize=7.5, color=MUTED)
+    fig.tight_layout(rect=(0, 0.02, 1, 1))
+    fig.savefig(c.FIGS / "fig4_ant_options_P_vs_Q.png")
+    plt.close(fig)
+
+
 def main():
     ev = load_events()
     P = _paths()
     fig1(ev, P)
     fig2(ev, P)
     fig3(ev, P)
+    fig4()
     print("figures written to", c.FIGS)
 
 

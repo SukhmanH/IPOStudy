@@ -5,7 +5,7 @@ This folder applies this repo's IPO-fade study to **Anthropic's IPO**. ANT price
 1. **Does the post-IPO fade apply to Anthropic?**
 2. **What price targets does the study imply?**
 
-**Full write-up: [REPORT.md](REPORT.md).**
+**Full write-up: [REPORT.md](REPORT.md).** The options follow-up, which prices the Jul-2027 puts against the study and sets risk levels, is in **[OPTIONS_QUANT.md](OPTIONS_QUANT.md)**; run it with `python Anthropic/src/options_quant.py`.
 
 ## Answers
 
@@ -34,6 +34,12 @@ This folder applies this repo's IPO-fade study to **Anthropic's IPO**. ANT price
 | +180 | Aug 11, 2027 | $50 | **$73** | $100 | 59% |
 | +250 | Nov 18, 2027 | $47 | **$65** | $87 | 66% |
 
+**Update, 2026-11-23 (after ANT traded).**
+- Day 1 opened at $111.50, hit $115.10 and closed at **$97.17**. By day 2 ANT was ≈ $87.5.
+- Re-anchored on that close (T4 medians, QQQ flat), the base cases are: Dec 18 (+20) **$97**, +60 **$87**, +120 **$77**, +180 **$74**, +250 **$64**.
+- Two trading days in, ANT already sits where the median comparable was on day 60.
+- In the cohort, early faders kept fading. The options follow-up is in [OPTIONS_QUANT.md](OPTIONS_QUANT.md).
+
 Once ANT has a day-1 close **C** and intraday high **H**, the median base cases are:
 - **+180 ≈ 0.77 × C ≈ 0.71 × H**
 - **+250 ≈ 0.66 × C ≈ 0.63 × H**
@@ -53,6 +59,7 @@ Anthropic/
     applicability.py            parent-verdict replay, base rates, size test, conditioning, live check, SPCX
     price_targets.py            ANT status, event calendar, targets, scenario grid, trade view
     make_figs.py                figs/*.png
+    options_quant.py            ANT Jul-2027 puts vs the study: IV smile, P vs Q, EV, Kelly, stress, risk levels
   data/
     ant_deal_terms.csv          every deal fact with its source (EDGAR FWP, CNBC, S-1/A readings)
     ant_lockup_schedule.csv     23 release tranches (dates, max shares, assumed-date flags)
