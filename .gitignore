@@ -9,3 +9,7 @@ __pycache__/
 Thumbs.db
 .vscode/
 .idea/
+
+# short_gainers: raw download caches (multi-GB, reproducible from src/)
+short_gainers/data/raw/
+short_gainers/data/raw_yahoo/
