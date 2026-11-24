@@ -1,0 +1,56 @@
+H1 verdict: FAIL {'validation_mean_daily_at_0.50%': np.float32(-0.00061940524), 'ci': [np.float64(-0.002250779285813931), np.float64(0.0010944680969512978)], 'sharpe': np.float64(-0.25284), 'verdict': 'FAIL'}
+H2 rule: F15_earnings=no | verdict: FAIL
+{
+  "n_events_top10": 23537,
+  "n_tradeable": 23498,
+  "n_untradeable_t1": 39,
+  "H1": {
+    "validation_mean_daily_at_0.50%": -0.0006194052402861416,
+    "ci": [
+      -0.002250779285813931,
+      0.0010944680969512978
+    ],
+    "sharpe": -0.2528402645156061,
+    "verdict": "FAIL"
+  },
+  "H2": {
+    "rule": "F15_earnings=no",
+    "step1_best": "F15_earnings=no",
+    "step1_sharpe_disc": 1.3319597525912212,
+    "unconditional_sharpe_disc_base": 0.5695583496831481,
+    "step2_best": "F10_dollar_vol in [3e+07,inf)",
+    "step2_sharpe_disc": 1.5293047987825759,
+    "validation_mean_daily_at_0.50%": 0.0009193520527333021,
+    "ci": [
+      -0.0005639958096446387,
+      0.0024810225186635373
+    ],
+    "validation_sharpe_at_0.50%": 0.39467950683283287,
+    "verdict": "FAIL"
+  },
+  "H2_diagnostic": {
+    "step2_spearman_sharpe_disc_vs_val": 0.6336978392091681,
+    "step1_rule_val_sharpe_base": 1.0469242477723328,
+    "filters": 73,
+    "spearman_sharpe_disc_vs_val": 0.7251018141429101,
+    "spearman_mean_disc_vs_val": 0.7263359249660621,
+    "top5_by_disc_sharpe_median_val_sharpe": 0.9468060579041494,
+    "all_filters_median_val_sharpe": 0.31236816338271667
+  },
+  "B2_feature_replication": {
+    "buckets": 44,
+    "pearson": 0.9115946637503931,
+    "spearman": 0.7923890063424947,
+    "sign_agreement": 0.8636363636363636
+  },
+  "validation_cost_where_ci_still_clears_zero": {
+    "H1 primary": 0.002,
+    "H2 rule": 0.004
+  },
+  "validation_gross_break_even": {
+    "H1 primary": 0.004234043415635824,
+    "H2 rule": 0.0065118055790662766
+  },
+  "cells_examined_total": 597,
+  "rule_events_validation": 12065
+}

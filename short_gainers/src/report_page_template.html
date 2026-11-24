@@ -1,0 +1,574 @@
+<title>Shorting Yesterday's Top Gainers</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+/* Layout: one reading column — the verdict first, then the evidence, the traps, and what to do next.
+   Data colors are the validated reference slots: blue = discovery / gross, orange = validation / net 0.25%,
+   aqua = net 0.50%; red marks losses. Status colors appear only with an icon and a label. */
+:root {
+  --bg: #f7f7f5;
+  --surface: #fcfcfb;
+  --fg: #0b0b0b;
+  --fg2: #52514e;
+  --muted: #898781;
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+  --ring: rgba(11, 11, 11, 0.10);
+  --s1: #2a78d6;
+  --s2: #eb6834;
+  --s3: #1baf7a;
+  --neg: #e34948;
+  --band: rgba(42, 120, 214, 0.07);
+  --fail: #d03b3b;
+  --fail-wash: rgba(208, 59, 59, 0.08);
+  --warn: #b77700;
+  --warn-wash: rgba(250, 178, 25, 0.12);
+  --code: #f0efec;
+  --font-head: "Space Grotesk", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d0d0d; --surface: #1a1a19; --fg: #f0efec; --fg2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --ring: rgba(255, 255, 255, 0.10);
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --neg: #e66767; --band: rgba(57, 135, 229, 0.10);
+    --fail: #e66767; --fail-wash: rgba(230, 103, 103, 0.12); --warn: #fab219; --warn-wash: rgba(250, 178, 25, 0.10);
+    --code: #222220; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d0d0d; --surface: #1a1a19; --fg: #f0efec; --fg2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --ring: rgba(255, 255, 255, 0.10);
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --neg: #e66767; --band: rgba(57, 135, 229, 0.10);
+  --fail: #e66767; --fail-wash: rgba(230, 103, 103, 0.12); --warn: #fab219; --warn-wash: rgba(250, 178, 25, 0.10);
+  --code: #222220; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.6; }
+.page {
+  max-width: 58rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 2.5rem 4rem;
+  display: grid; gap: 3rem;
+}
+section { display: grid; gap: 1rem; min-width: 0; }
+h1, h2, h3 { font-family: var(--font-head); text-wrap: balance; margin: 0; line-height: 1.15; }
+h1 { font-size: clamp(1.9rem, 4.5vw, 2.7rem); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 1.45rem; font-weight: 600; }
+h3 { font-size: 1.02rem; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font: 500 0.78rem/1.4 var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg2); }
+.lede { font-size: 1.12rem; color: var(--fg); max-width: 64ch; }
+.muted { color: var(--fg2); }
+.small { font-size: 0.86rem; }
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+header.hero { display: grid; gap: 1rem; }
+.verdicts { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0.75rem; }
+.verdict { background: var(--surface); border: 1px solid var(--ring); border-radius: 10px; padding: 1rem 1.1rem; display: grid; gap: 0.45rem; min-width: 0; }
+.chip { display: inline-flex; align-items: center; gap: 0.35rem; font: 600 0.78rem/1 var(--font-body); padding: 0.32rem 0.55rem; border-radius: 999px; width: fit-content; }
+.chip.fail { color: var(--fail); background: var(--fail-wash); }
+.chip.warn { color: var(--warn); background: var(--warn-wash); }
+.chip svg { width: 0.9rem; height: 0.9rem; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 0.75rem; }
+.tile { display: grid; gap: 0.2rem; padding: 0.2rem 0 0.2rem 0.9rem; border-left: 2px solid var(--grid); min-width: 0; }
+.tile .label { font-size: 0.82rem; color: var(--fg2); }
+.tile .value { font: 600 1.6rem/1.15 var(--font-head); }
+.tile .sub { font-size: 0.8rem; color: var(--muted); }
+.ticket { background: var(--code); border-radius: 8px; padding: 1rem 1.1rem; font: 0.86rem/1.7 var(--font-mono); overflow-x: auto; }
+.ticket dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.1rem 1.1rem; margin: 0; }
+.ticket dt { color: var(--fg2); }
+.ticket dd { margin: 0; }
+.chart { background: var(--surface); border: 1px solid var(--ring); border-radius: 10px; padding: 1rem 1rem 0.6rem; display: grid; gap: 0.6rem; min-width: 0; }
+.chart-head { display: grid; gap: 0.2rem; }
+.legend { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; font-size: 0.82rem; color: var(--fg2); }
+.legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+.legend i.sq { width: 10px; height: 10px; border-radius: 2px; }
+.plot { position: relative; width: 100%; min-width: 0; }
+.plot svg { display: block; width: 100%; height: auto; overflow: visible; }
+.plot svg text { font-family: var(--font-body); font-size: 11px; fill: var(--muted); }
+.plot svg text.lab { fill: var(--fg2); }
+.tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--fg); border: 1px solid var(--ring); border-radius: 8px; padding: 0.45rem 0.6rem; font-size: 0.8rem; line-height: 1.45; box-shadow: 0 6px 18px rgba(0,0,0,0.12); white-space: nowrap; z-index: 5; }
+.tip b { font-weight: 600; }
+.tip .k { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; vertical-align: 0; }
+.multiples { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 0.75rem; }
+.multiples .chart { padding: 0.85rem 0.85rem 0.4rem; }
+.multiples.cum2 { grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
+details { font-size: 0.84rem; color: var(--fg2); }
+details summary { cursor: pointer; width: fit-content; padding: 0.2rem 0; }
+details summary:focus-visible, a:focus-visible { outline: 2px solid var(--s1); outline-offset: 2px; border-radius: 3px; }
+.tablewrap { overflow-x: auto; min-width: 0; }
+table { border-collapse: collapse; font-size: 0.84rem; width: 100%; }
+th, td { padding: 0.42rem 0.6rem; text-align: right; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+th { font-weight: 600; color: var(--fg2); font-size: 0.78rem; }
+th:first-child, td:first-child { text-align: left; }
+td { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+td.txt { font-family: var(--font-body); }
+tr.hl td { background: var(--band); }
+td.neg { color: var(--neg); }
+.callout { border-left: 3px solid var(--warn); background: var(--warn-wash); padding: 0.8rem 1rem; border-radius: 0 8px 8px 0; display: grid; gap: 0.4rem; }
+.callout.fail { border-color: var(--fail); background: var(--fail-wash); }
+ul, ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; max-width: 68ch; }
+code { font-family: var(--font-mono); font-size: 0.85em; background: var(--code); padding: 0.05rem 0.3rem; border-radius: 4px; }
+footer { font-size: 0.82rem; color: var(--fg2); border-top: 1px solid var(--grid); padding-top: 1rem; display: grid; gap: 0.4rem; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="page">
+  <header class="hero" id="top">
+    <div class="eyebrow">Backtest study · US stocks · 2010–2026 · <span id="n-trades"></span> trades</div>
+    <h1>Shorting yesterday's top gainers</h1>
+    <p class="lede" id="lede"></p>
+    <div class="verdicts">
+      <div class="verdict" id="v-h1">
+        <span class="chip fail"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 5.5l5 5M10.5 5.5l-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Fails the pre-registered test</span>
+        <h3>Short all top-10 gainers next day</h3>
+        <p class="small muted" id="v-h1-text"></p>
+      </div>
+      <div class="verdict" id="v-h2">
+        <span class="chip warn"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.8l6.6 12.2H1.4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6.3v3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8" cy="11.9" r="0.9" fill="currentColor"/></svg>Holds at 0.25% cost, misses the 0.50% bar</span>
+        <h3>Rule found on 2010–2018 data: skip earnings-day gainers</h3>
+        <p class="small muted" id="v-h2-text"></p>
+      </div>
+    </div>
+    <div class="tiles" id="tiles"></div>
+  </header>
+
+  <section id="trade">
+    <h2>The trade that was tested</h2>
+    <p>The rules were written down and committed to git before any result was computed. That includes the cost levels, the 2010–2018 / 2019–2026 split and the pass/fail rule. Nothing was tuned afterwards.</p>
+    <div class="ticket" aria-label="Trade rules">
+      <dl>
+        <dt>Signal</dt><dd>At the 4:00pm close, the 10 biggest % gainers that rose ≥ 10%</dd>
+        <dt>Filters</dt><dd>Actual traded price ≥ $5 · ≥ $10M traded that day · ≥ 60 days listed</dd>
+        <dt>Entry</dt><dd>Sell short at the 9:30am open the next day</dd>
+        <dt>Exit</dt><dd>Buy to cover at the 4:00pm close the same day (no overnight borrow)</dd>
+        <dt>Hedge</dt><dd>Buy the same dollar amount of SPY for the same hours</dd>
+        <dt>Size</dt><dd>10% of capital per name, so at most 100% short on any day</dd>
+        <dt>Costs</dt><dd>0.25% per round trip (base), stressed at 0.50%; verdict at 0.50%</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="equity">
+    <h2>A real fade, and one filter that matters</h2>
+    <p>Before costs, shorting all top-10 gainers at the next open earns about <span class="num" id="t-gross"></span> per trade in both halves of the sample. That is statistically solid, but a round-trip cost of about <span class="num" id="t-be"></span> wipes it out. Gainers with an earnings report the same day or the day before make up <span class="num" id="t-earn-share"></span> of trades, and they don't fade at all. Leave them out and the edge rises to <span class="num" id="t-rule-gross"></span> per trade. That version stays statistically positive on 2019–2026 data for all-in costs up to <span class="num" id="t-rule-be"></span> per trade.</p>
+    <div class="legend" id="lg-cum"></div>
+    <div class="multiples cum2">
+      <div class="chart" id="c-cum-a">
+        <div class="chart-head"><h3>All top-10 gainers</h3><p class="small muted">Pre-registered strategy</p></div>
+        <div class="plot" id="p-cum-a"></div>
+      </div>
+      <div class="chart" id="c-cum-b">
+        <div class="chart-head"><h3>Skip gainers with an earnings report</h3><p class="small muted">Rule chosen on 2010–2018 data only</p></div>
+        <div class="plot" id="p-cum-b"></div>
+      </div>
+    </div>
+    <details><summary>Show data table</summary><div class="tablewrap" id="tv-cum"></div></details>
+    <div class="tablewrap" id="tbl-h1"></div>
+    <p class="small muted">Daily P&amp;L is the sum over that day's trades at 10% of capital each, hedged with SPY. The confidence interval is a 95% block bootstrap of the mean daily return (21-day blocks, 10,000 draws). Validation (shaded) is the out-of-sample period.</p>
+  </section>
+
+  <section id="features">
+    <h2>Which gainers fade hardest</h2>
+    <p>Some gainers fade far more than others, and the pattern repeats out of sample. Across <span class="num" id="t-b2n"></span> feature buckets, the 2010–2018 effect predicts the 2019–2026 effect with a correlation of <span class="num" id="t-b2r"></span>. Earnings-day gainers keep drifting up, which matches the well-known post-earnings drift. The strongest fades come from the biggest gainers, stocks that gap up again on day 2, RSI above 85, and weak closes. The fade mostly disappears when the S&amp;P 500 is below its 200-day average.</p>
+    <div class="legend"><span><i class="sq" style="background:var(--s1)"></i>Discovery 2010–2018</span><span><i class="sq" style="background:var(--s2)"></i>Validation 2019–2026</span><span><i style="background:var(--muted);height:1px"></i>0.50% round-trip cost</span></div>
+    <div class="multiples" id="mult"></div>
+    <p class="small muted">Bars show the mean hedged return per short trade before costs. Hover a bar for the trade count and hit rate.</p>
+  </section>
+
+  <section id="rules">
+    <h2>The rule search</h2>
+    <p id="h2-text"></p>
+    <div class="tablewrap" id="tbl-h2"></div>
+    <p class="small muted" id="h2-note"></p>
+    <div class="callout">
+      <h3>Narrower setups worth paper-trading (found after seeing 2019–2026 data)</h3>
+      <p class="small">All rows below are earnings-free gainers that already traded above $5 the day before, which are the names you can usually borrow. The two narrow setups earn 2–2.5% per trade in both periods and stay positive at the 0.50% stress cost. They were picked after the out-of-sample results were visible, so treat them as leads to paper-trade from here on, not a proven edge.</p>
+    </div>
+    <div class="tablewrap" id="tbl-post"></div>
+  </section>
+
+  <section id="traps">
+    <h2>Traps that make this trade look better than it is</h2>
+    <h3>1. Screening on split-adjusted prices doubles the "edge"</h3>
+    <p>Price databases store prices adjusted for later splits. A penny stock that later did a 1-for-50 reverse split shows up in its old history as a "$25 stock". Screening for $5+ on those prices lets in sub-$1 pump-and-dumps you could never borrow. That roughly doubles the backtested profit. This study rebuilt the price that actually traded each day from the split history.</p>
+    <div class="chart" id="c-screen">
+      <div class="chart-head"><h3>Mean gross return per trade, by how the $5 floor is applied</h3>
+        <div class="legend"><span><i class="sq" style="background:var(--s1)"></i>Discovery 2010–2018</span><span><i class="sq" style="background:var(--s2)"></i>Validation 2019–2026</span><span><i style="background:var(--muted);height:1px"></i>0.25% and 0.50% costs</span></div></div>
+      <div class="plot" id="p-screen"></div>
+      <details><summary>Show data table</summary><div class="tablewrap" id="tv-screen"></div></details>
+    </div>
+    <h3>2. A few squeezes do most of the damage</h3>
+    <p><span class="num" id="t-pos"></span> of trades make money, but the losers include stocks that tripled intraday on day 2 (Urban One in June 2020, Koss during the GameStop week). The worst single trade lost <span class="num" id="t-worst"></span> of the amount shorted.</p>
+    <div class="chart" id="c-hist">
+      <div class="chart-head"><h3>Hedged return per short trade, all trades 2010–2026</h3><p class="small muted">Count of trades on a log scale; returns clipped at −100% and +60%.</p></div>
+      <div class="plot" id="p-hist"></div>
+      <details><summary>Show data table</summary><div class="tablewrap" id="tv-hist"></div></details>
+    </div>
+    <h3>3. Stop-losses cap the damage but cost more than they save</h3>
+    <div class="tablewrap" id="tbl-stops"></div>
+    <p class="small muted">A buy-stop above the entry, filled at the stop level plus 1% slippage. Trading halts can fill much worse, so these numbers flatter the stops.</p>
+    <h3>4. Results swing hard from year to year</h3>
+    <p>Skipping earnings-day gainers made money in <span class="num" id="t-rule-years"></span> years at 0.25% cost, against <span class="num" id="t-all-years"></span> for all gainers. 2022 still hurt both.</p>
+    <div class="chart" id="c-year">
+      <div class="chart-head"><h3>P&amp;L by year, net of 0.25% per trade</h3><div class="legend"><span><i class="sq" style="background:var(--s1)"></i>All top-10 gainers</span><span><i class="sq" style="background:var(--s2)"></i>Skip earnings-day gainers</span></div></div>
+      <div class="plot" id="p-year"></div>
+      <details><summary>Show data table</summary><div class="tablewrap" id="tv-year"></div></details>
+    </div>
+  </section>
+
+  <section id="horizon">
+    <h2>Holding longer: the fade keeps going, but so does the borrow bill</h2>
+    <p>Covering days later instead of at the same day's close captures much more of the decline. It also means paying to borrow a stock that just spiked, and those borrow fees are often 30% to 100%+ a year. No borrow-fee history was available, so this result can't be confirmed as tradeable.</p>
+    <div class="chart" id="c-hz">
+      <div class="chart-head"><h3>Mean hedged return per trade by exit day (entry at the next-day open)</h3>
+        <div class="legend"><span><i style="background:var(--s1)"></i>Discovery 2010–2018</span><span><i style="background:var(--s2)"></i>Validation 2019–2026</span><span><i style="background:var(--muted);height:1px"></i>Break-even with borrow at 30% or 100% a year</span></div></div>
+      <div class="plot" id="p-hz"></div>
+      <details><summary>Show data table</summary><div class="tablewrap" id="tv-hz"></div></details>
+    </div>
+  </section>
+
+  <section id="checks">
+    <h2>Cross-checked on a second database</h2>
+    <p>The same strategy was recomputed in SQL on a separate stock database. That database only has split-adjusted prices, so the check uses the naive $5 screen on both sides. The two pipelines agree closely, month by month.</p>
+    <div class="tablewrap" id="tbl-repl"></div>
+  </section>
+
+  <section id="limits">
+    <h2>What this study can't see</h2>
+    <ul>
+      <li><b>Delisted stocks are missing.</b> Both databases cover only companies listed today. Only <span class="num" id="t-cov10"></span> of today's <span class="num" id="t-cov26"></span> names have 2010 data. Spiked-then-collapsed stocks that later delisted would most likely have helped the short side, so the bias probably works against the strategy, especially for multi-day holds.</li>
+      <li><b>No borrow data.</b> Locate availability and borrow fees for hot small caps are the real constraint, and they aren't in any free dataset. Sub-$5 results are shown only as a warning.</li>
+      <li><b>The opening print.</b> Entry is at the official daily open. Shorting into a gap-up a few minutes later can be materially worse.</li>
+      <li><b>Many cells were examined.</b> <span class="num" id="t-ledger"></span> result cells in total, all reported. The two verdicts each rest on one pre-set cell.</li>
+      <li><b>Short-sale rules.</b> Halts and the short-sale restriction (after a 10% drop) are not modeled.</li>
+    </ul>
+  </section>
+
+  <section id="next">
+    <h2>If you want to trade it anyway</h2>
+    <ol>
+      <li><b>Freeze the rules before you start.</b> Core rule: the 10 biggest gainers of at least 10%, no earnings report that day or the day before, and an actual price of at least $5 both that day and the day before. Short at the next open, cover at that day's close. Track the two narrow setups (day-2 gap-up of 5% or more, RSI(14) of 85 or more) on the side. Paper-trade for at least 3–6 months. That is the only clean out-of-sample test left.</li>
+      <li><b>Measure your real costs.</b> Log the fill against the official open, plus locate fees and borrow availability, on every trade. The core rule only works if all-in cost stays under about 0.4% per round trip. The narrow setups have more room, about 2%.</li>
+      <li><b>Size for the squeeze.</b> The worst trade lost about 3× the position. At 1–2% of capital per name, a repeat costs 3–6% of the account rather than 30%.</li>
+      <li><b>Set a kill rule in advance.</b> For example, stop if the first 200 paper trades of the core rule average below +0.3% per trade after real costs.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <div>Everything is reproducible from the repo branch <code>claude/short-high-gain-stocks-edge-h99453</code>, folder <code>short_gainers/</code>: <code>PREREGISTRATION.md</code>, <code>REPORT.md</code>, scripts in <code>src/</code>, every table in <code>results/</code>.</div>
+    <div>Prices: Yahoo daily OHLCV with split history (5,538 tickers). Earnings dates: Nasdaq calendar. Cross-check: shibui database. Pull date 2026-11-24.</div>
+  </footer>
+</div>
+
+<script>
+const D = /*__DATA__*/null;
+const SVGNS = "http://www.w3.org/2000/svg";
+const tok = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const pct = (v, d = 2, sign = true) => v == null || isNaN(v) ? "—" : (sign && v > 0 ? "+" : "") + (v * 100).toFixed(d) + "%";
+const num = (v, d = 2) => v == null || isNaN(v) ? "—" : (+v).toFixed(d);
+const int = v => v == null || isNaN(v) ? "—" : Math.round(v).toLocaleString("en-US");
+const kfmt = v => v == null || isNaN(v) ? "—" : v >= 1000 ? (v / 1000).toFixed(1) + "k" : String(Math.round(v));
+function el(tag, attrs = {}, parent) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (parent) parent.appendChild(e);
+  return e;
+}
+function txt(parent, x, y, s, attrs = {}) { const t = el("text", { x, y, ...attrs }, parent); t.textContent = s; return t; }
+function niceTicks(lo, hi, n = 5) {
+  const span = hi - lo || 1, step0 = span / n, mag = Math.pow(10, Math.floor(Math.log10(step0)));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => span / s <= n) || 10 * mag;
+  const out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-12; v += step) out.push(+v.toFixed(12));
+  return out;
+}
+function tipFor(plot) {
+  let t = plot.querySelector(".tip");
+  if (!t) { t = document.createElement("div"); t.className = "tip"; t.hidden = true; plot.appendChild(t); }
+  return t;
+}
+function placeTip(plot, tip, x, y) {
+  const w = plot.clientWidth; tip.hidden = false;
+  const tw = tip.offsetWidth, th = tip.offsetHeight;
+  let left = x + 14; if (left + tw > w) left = Math.max(0, x - tw - 14);
+  let top = y - th - 10; if (top < 0) top = y + 14;
+  tip.style.left = left + "px"; tip.style.top = top + "px";
+}
+function tableHTML(cols, rows) {
+  const th = cols.map(c => `<th>${c[0]}</th>`).join("");
+  const tr = rows.map(r => `<tr${r.__hl ? ' class="hl"' : ""}>` + cols.map((c, i) => {
+    const v = c[1](r); const cls = (i === 0 || c[2] === "txt") ? ' class="txt"' : (typeof v === "string" && v.startsWith("-") && c[2] === "signed" ? ' class="neg"' : "");
+    return `<td${cls}>${v}</td>`;
+  }).join("") + "</tr>").join("");
+  return `<table><thead><tr>${th}</tr></thead><tbody>${tr}</tbody></table>`;
+}
+function setText(id, s) { const e = document.getElementById(id); if (e) e.textContent = s; }
+
+// ------------------------------------------------------------------ static text and tables
+const S = D.summary;
+const h1v = D.h1.filter(r => r.split === "validation"), h1d = D.h1.filter(r => r.split === "discovery");
+const at = (rows, c) => rows.find(r => Math.abs(r.cost - c) < 1e-9);
+const gV = at(h1v, 0).gross_mean_event, gD = at(h1d, 0).gross_mean_event;
+setText("n-trades", int(D.hist.n));
+setText("t-gross", `${pct(gD)} to ${pct(gV)}`);
+setText("t-be", pct((gV + gD) / 2, 1, false));
+const BE = S.validation_cost_where_ci_still_clears_zero, GB = S.validation_gross_break_even;
+setText("lede", `The day's biggest gainers do tend to give some back the next day, but shorting all of them at the next open doesn't beat realistic trading costs. One filter, chosen from 2010–2018 data before looking at later years, held up on 2019–2026: skip gainers that just reported earnings. That version earns about ${pct(GB["H2 rule"])} per trade before costs. It is a real but thin edge. It only pays if all-in costs stay under about ${pct(BE["H2 rule"], 1, false)} per trade, and a handful of squeezes cause most of the damage.`);
+const v50 = at(h1v, 0.005);
+setText("v-h1-text", `2019–2026 at 0.50% cost: ${pct(v50.mean_daily, 3)} per day, 95% CI ${pct(v50.ci_lo, 3)} to ${pct(v50.ci_hi, 3)}. Needed: entire interval above zero.`);
+const h2v = D.h2.filter(r => r.split === "validation"), h2d = D.h2.filter(r => r.split === "discovery");
+const r50 = at(h2v, 0.005), r25d = at(h2d, 0.0025);
+const r25v = at(h2v, 0.0025);
+setText("v-h2-text", `2019–2026 at 0.25% cost: ${pct(r25v.mean_daily, 3)} per day, CI ${pct(r25v.ci_lo, 3)} to ${pct(r25v.ci_hi, 3)}, Sharpe ${num(r25v.sharpe)} (it was ${num(r25d.sharpe)} on 2010–2018). At the 0.50% bar the pre-registered verdict requires, the CI is ${pct(r50.ci_lo, 3)} to ${pct(r50.ci_hi, 3)}, so it officially fails.`);
+const ruleV = at(h2v, 0), ruleD = at(h2d, 0);
+const earnRows = D.features[0].rows, earnYes = earnRows.find(r => r.label === "yes");
+document.getElementById("tiles").innerHTML = [
+  ["Edge per trade, skipping earnings gainers", pct(ruleV.gross_mean_event), `2019–26 before costs (2010–18: ${pct(ruleD.gross_mean_event)})`],
+  ["Earnings-day gainers", pct(earnYes.v), "per trade 2019–26: they don't fade"],
+  ["Holds up while costs stay under", pct(BE["H2 rule"], 1, false), "per round trip, 2019–26 (95% CI)"],
+  ["Worst single trade", pct(D.hist.worst, 0), "the stock tripled intraday"],
+].map(([l, v, s]) => `<div class="tile"><span class="label">${l}</span><span class="value num">${v}</span><span class="sub">${s}</span></div>`).join("");
+setText("t-b2n", S.B2_feature_replication.buckets);
+const nE = earnRows.reduce((a, r) => a + r.nd + r.nv, 0), nEy = earnYes.nd + earnYes.nv;
+setText("t-earn-share", pct(nEy / nE, 0, false));
+setText("t-rule-gross", pct(GB["H2 rule"]));
+setText("t-rule-be", pct(BE["H2 rule"], 1, false));
+setText("t-rule-years", `${D.years.filter(y => y.rule_year_return_base > 0).length} of ${D.years.length}`);
+setText("t-all-years", `${D.years.filter(y => y.year_return_base > 0).length} of ${D.years.length}`);
+setText("t-b2r", num(S.B2_feature_replication.pearson));
+setText("t-pos", pct(D.hist.share_pos, 0, false));
+setText("t-worst", pct(-D.hist.worst, 0, false));
+setText("t-ledger", int(D.ledger_total));
+setText("t-cov10", int(D.coverage.y2010)); setText("t-cov26", int(D.coverage.y2026));
+
+const costLab = c => c === 0 ? "none" : pct(c, 2, false);
+document.getElementById("tbl-h1").innerHTML = tableHTML([
+  ["Period", r => r.split === "discovery" ? "2010–18" : "2019–26 (out of sample)"],
+  ["Cost / trade", r => costLab(r.cost)], ["Trades", r => int(r.n_events)],
+  ["Mean / day", r => pct(r.mean_daily, 3), "signed"], ["95% CI", r => `${pct(r.ci_lo, 3)} to ${pct(r.ci_hi, 3)}`],
+  ["Sharpe", r => num(r.sharpe), "signed"], ["Max drawdown", r => pct(r.max_dd, 0), "signed"],
+], D.h1.filter(r => [0, 0.0025, 0.005].some(c => Math.abs(r.cost - c) < 1e-9)).map(r => ({ ...r, __hl: r.split === "validation" && Math.abs(r.cost - 0.005) < 1e-9 })));
+
+const disc = S.H2, dg = S.H2_diagnostic;
+setText("h2-text", `Using only 2010–2018 data, a fixed procedure scored ${dg.filters} single-condition filters by risk-adjusted return, then tried adding a second condition. The winner was “no earnings report on the gain day or the day before” (Sharpe ${num(disc.step1_sharpe_disc)} vs ${num(disc.unconditional_sharpe_disc_base)} for all gainers, at 0.25% cost). The best second condition, at least $30M traded that day, fell just short of the required +0.20 Sharpe improvement, so the rule stayed at one condition. On 2019–2026 the edge per trade dipped only slightly, and the result is clearly positive at 0.25% cost. It misses the stricter 0.50% bar.`);
+setText("h2-note", `Process note: a preliminary run made before the earnings calendar finished downloading picked a different rule, “gain of 25% or more” plus a gap condition. That rule failed on 2019–2026. The final run uses all 17 pre-registered features. Across every filter, the 2010–2018 ranking predicted 2019–2026 results reasonably well (rank correlation ${num(dg.spearman_sharpe_disc_vs_val)}).`);
+document.getElementById("tbl-h2").innerHTML = tableHTML([
+  ["Period", r => r.split === "discovery" ? "2010–18 (chosen here)" : "2019–26 (test)"], ["Cost", r => costLab(r.cost)],
+  ["Trades", r => int(r.n_events)], ["Gross / trade", r => pct(r.gross_mean_event), "signed"], ["Hit rate", r => pct(r.hit, 0, false)],
+  ["Mean / day", r => pct(r.mean_daily, 3), "signed"], ["95% CI", r => `${pct(r.ci_lo, 3)} to ${pct(r.ci_hi, 3)}`], ["Sharpe", r => num(r.sharpe), "signed"],
+], D.h2.filter(r => [0.0025, 0.005].some(c => Math.abs(r.cost - c) < 1e-9)).map(r => ({ ...r, __hl: r.split === "validation" && Math.abs(r.cost - 0.005) < 1e-9 })));
+
+const nice = s => s.replace("no earnings & prior close>=$5 (H2 rule, established names)", "Core rule (no earnings), $5+ names")
+  .replace("no earnings & entry gap>=+5% & prior close>=$5", "…and day-2 open gaps up ≥ 5%").replace("no earnings & RSI14>=85 & prior close>=$5", "…and RSI(14) ≥ 85")
+  .replace("gain>=25%", "Gain ≥ 25%")
+  .replace("RSI14>=85", "RSI(14) ≥ 85").replace("entry gap>=+5%", "Day-2 open gaps up ≥ 5%").replace("prior close>=$5", "prior close ≥ $5")
+  .replace("SPY>200d", "S&P above 200-day").replace(/&/g, "and");
+document.getElementById("tbl-post").innerHTML = tableHTML([
+  ["Setup", r => nice(r.candidate), "txt"], ["Period", r => r.split === "discovery" ? "2010–18" : "2019–26"], ["Trades", r => int(r.n)],
+  ["Gross / trade", r => pct(r.gross_mean_event), "signed"], ["Median", r => pct(r.median_event), "signed"], ["Hit rate", r => pct(r.hit, 0, false)],
+  ["Sharpe @0.50%", r => num(r["sharpe_0.50"]), "signed"], ["Daily CI @0.50%", r => `${pct(r["ci_lo_0.50"], 2)} / ${pct(r["ci_hi_0.50"], 2)}`],
+  ["Worst trade", r => pct(r.worst_event, 0), "signed"],
+], D.posthoc.filter(r => r.candidate.startsWith("no earnings")).map(r => ({ ...r, __hl: r.split === "validation" })));
+
+document.getElementById("tbl-stops").innerHTML = tableHTML([
+  ["Stop", r => r.stop === "none" ? "No stop" : `+${Math.round(+r.stop * 100)}% above entry`], ["Period", r => r.split === "discovery" ? "2010–18" : "2019–26"],
+  ["Stopped out", r => pct(r.stopped_frac, 1, false)], ["Gross / trade", r => pct(r.gross_mean_event), "signed"], ["Sharpe @0.25%", r => num(r.sharpe_base), "signed"],
+  ["Worst trade", r => pct(r.worst_event, 0), "signed"], ["Worst day", r => pct(r.worst_day, 1), "signed"],
+], D.stops);
+document.getElementById("tbl-repl").innerHTML = tableHTML([
+  ["Period", r => r.split === "discovery" ? "2010–18" : "2019–26"], ["Months", r => int(r.months)],
+  ["Trades (shibui / Yahoo)", r => `${int(r.events_shibui)} / ${int(r.events_yahoo)}`],
+  ["Gross / trade (shibui)", r => pct(r.mean_event_gross_shibui)], ["Gross / trade (Yahoo)", r => pct(r.mean_event_gross_yahoo)],
+  ["Monthly P&L correlation", r => num(r.corr_month_pnl)],
+], D.repl);
+
+// ------------------------------------------------------------------ charts
+function lineChart(plot, rows, series, opts) {
+  plot.querySelectorAll("svg").forEach(s => s.remove());
+  const W = Math.max(280, plot.clientWidth), narrow = W < 560 && !opts.compact;
+  const H = Math.round(Math.min(360, Math.max(240, W * (opts.compact ? 0.72 : 0.48))));
+  const m = { l: 50, r: opts.compact ? 46 : (narrow ? 12 : 150), t: 14, b: 28 };
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": opts.aria });
+  plot.prepend(svg);
+  const xs = rows.map(r => +new Date(r[0])), x0 = xs[0], x1 = xs[xs.length - 1];
+  let lo = opts.lo ?? Infinity, hi = opts.hi ?? -Infinity;
+  if (opts.lo == null) rows.forEach(r => series.forEach(s => { lo = Math.min(lo, r[s.i]); hi = Math.max(hi, r[s.i]); }));
+  const ticks = niceTicks(Math.min(lo, 0), hi, 6); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
+  const X = v => m.l + (v - x0) / (x1 - x0) * (W - m.l - m.r), Y = v => m.t + (hi - v) / (hi - lo) * (H - m.t - m.b);
+  const vs = +new Date(opts.splitDate);
+  el("rect", { x: X(vs), y: m.t, width: X(x1) - X(vs), height: H - m.t - m.b, fill: tok("--band") }, svg);
+  txt(svg, X(vs) + 6, m.t + 12, opts.compact ? "2019+ →" : "Out of sample →", { class: "lab" });
+  ticks.forEach(t => { el("line", { x1: m.l, x2: W - m.r, y1: Y(t), y2: Y(t), stroke: t === 0 ? tok("--axis") : tok("--grid"), "stroke-width": 1 }, svg); txt(svg, m.l - 8, Y(t) + 4, opts.yfmt(t), { "text-anchor": "end" }); });
+  for (let y = 2010; y <= 2026; y += (opts.compact ? 4 : 2)) { const xv = X(+new Date(`${y}-01-01`)); if (xv >= m.l && xv <= W - m.r) txt(svg, xv, H - 8, String(y), { "text-anchor": "middle" }); }
+  series.forEach(s => {
+    const d = rows.map((r, k) => `${k ? "L" : "M"}${X(xs[k]).toFixed(1)},${Y(r[s.i]).toFixed(1)}`).join("");
+    el("path", { d, fill: "none", stroke: tok(s.color), "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, svg);
+    const last = rows[rows.length - 1][s.i];
+    el("circle", { cx: X(x1), cy: Y(last), r: 4, fill: tok(s.color), stroke: tok("--surface"), "stroke-width": 2 }, svg);
+    if (!narrow) txt(svg, X(x1) + 8, Y(last) + 4, `${s.short ? s.short + " " : ""}${opts.yfmt(last, true)}`, { class: "lab" });
+  });
+  const cross = el("line", { y1: m.t, y2: H - m.b, stroke: tok("--axis"), "stroke-width": 1, visibility: "hidden" }, svg);
+  const dots = series.map(s => el("circle", { r: 4, fill: tok(s.color), stroke: tok("--surface"), "stroke-width": 2, visibility: "hidden" }, svg));
+  const hit = el("rect", { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: "transparent" }, svg);
+  const tip = tipFor(plot);
+  const move = ev => {
+    const b = svg.getBoundingClientRect(), sx = (ev.clientX - b.left) * W / b.width;
+    const xv = x0 + (sx - m.l) / (W - m.l - m.r) * (x1 - x0);
+    let k = xs.findIndex(v => v >= xv); if (k < 0) k = xs.length - 1;
+    const px = X(xs[k]);
+    cross.setAttribute("x1", px); cross.setAttribute("x2", px); cross.setAttribute("visibility", "visible");
+    dots.forEach((d, j) => { d.setAttribute("cx", px); d.setAttribute("cy", Y(rows[k][series[j].i])); d.setAttribute("visibility", "visible"); });
+    tip.innerHTML = `<b>Week of ${rows[k][0]}</b><br>` + series.map(s => `<span class="k" style="background:${tok(s.color)}"></span>${s.label}: <b>${opts.yfmt(rows[k][s.i], true)}</b>`).join("<br>");
+    placeTip(plot, tip, px * b.width / W, Y(rows[k][series[0].i]) * b.height / H);
+  };
+  hit.addEventListener("pointermove", move); hit.addEventListener("pointerdown", move);
+  hit.addEventListener("pointerleave", () => { tip.hidden = true; cross.setAttribute("visibility", "hidden"); dots.forEach(d => d.setAttribute("visibility", "hidden")); });
+}
+
+function roundedBar(svg, x, y0, y1, w, fill) {
+  const top = Math.min(y0, y1), h = Math.abs(y1 - y0), r = Math.min(4, h, w / 2), up = y1 < y0;
+  if (h < 0.5) return el("rect", { x, y: top, width: w, height: Math.max(h, 0.5), fill }, svg);
+  const d = up
+    ? `M${x},${y0}V${y1 + r}Q${x},${y1} ${x + r},${y1}H${x + w - r}Q${x + w},${y1} ${x + w},${y1 + r}V${y0}Z`
+    : `M${x},${y0}V${y1 - r}Q${x},${y1} ${x + r},${y1}H${x + w - r}Q${x + w},${y1} ${x + w},${y1 - r}V${y0}Z`;
+  return el("path", { d, fill }, svg);
+}
+
+function groupedBars(plot, groups, opts) {
+  plot.querySelectorAll("svg").forEach(s => s.remove());
+  const W = Math.max(260, plot.clientWidth), H = opts.height || 230;
+  const m = { l: 46, r: opts.refLabels ? 92 : 8, t: 12, b: opts.twoLineX ? 42 : 30 };
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": opts.aria });
+  plot.prepend(svg);
+  const keys = opts.keys;
+  let lo = 0, hi = Math.max(...(opts.refs || []).map(r => r.y), 0);
+  groups.forEach(g => keys.forEach(k => { if (g[k.f] != null) { lo = Math.min(lo, g[k.f]); hi = Math.max(hi, g[k.f]); } }));
+  const ticks = niceTicks(lo, hi * 1.08, 4); lo = Math.min(lo, ticks[0]); hi = Math.max(hi * 1.08, ticks[ticks.length - 1]);
+  const Y = v => m.t + (hi - v) / (hi - lo) * (H - m.t - m.b);
+  ticks.forEach(t => { el("line", { x1: m.l, x2: W - m.r, y1: Y(t), y2: Y(t), stroke: t === 0 ? tok("--axis") : tok("--grid"), "stroke-width": 1 }, svg); txt(svg, m.l - 6, Y(t) + 4, pct(t, Math.abs(hi - lo) < 0.03 ? 1 : 0, false).replace("-0%", "0%"), { "text-anchor": "end" }); });
+  (opts.refs || []).forEach(r => { el("line", { x1: m.l, x2: W - m.r, y1: Y(r.y), y2: Y(r.y), stroke: tok("--muted"), "stroke-width": 1 }, svg); if (opts.refLabels) txt(svg, W - m.r + 6, Y(r.y) + 4, r.label); });
+  const band = (W - m.l - m.r) / groups.length, bw = Math.min(24, (band - 10) / keys.length - 2);
+  const tip = tipFor(plot);
+  groups.forEach((g, i) => {
+    const cx = m.l + band * (i + 0.5), x0 = cx - (keys.length * bw + (keys.length - 1) * 2) / 2;
+    keys.forEach((k, j) => {
+      if (g[k.f] == null) return;
+      const color = typeof k.color === "function" ? k.color(g[k.f]) : tok(k.color);
+      const b = roundedBar(svg, x0 + j * (bw + 2), Y(0), Y(g[k.f]), bw, color);
+      const hitr = el("rect", { x: x0 + j * (bw + 2) - 2, y: m.t, width: bw + 4, height: H - m.t - m.b, fill: "transparent" }, svg);
+      const show = ev => { const bb = svg.getBoundingClientRect(); b.setAttribute("opacity", 0.8); tip.innerHTML = opts.tip(g, k); placeTip(plot, tip, (x0 + j * (bw + 2) + bw / 2) * bb.width / W, Y(g[k.f]) * bb.height / H); };
+      hitr.addEventListener("pointermove", show); hitr.addEventListener("pointerdown", show);
+      hitr.addEventListener("pointerleave", () => { tip.hidden = true; b.setAttribute("opacity", 1); });
+    });
+    const lines = opts.xlab(g);
+    lines.forEach((s, li) => txt(svg, cx, H - m.b + 15 + li * 13, s, { "text-anchor": "middle", class: li === 0 ? "lab" : "", "font-size": groups.length > 4 ? 10 : 11 }));
+  });
+  if (opts.labelExtremes) {
+    const f = keys[0].f, vals = groups.map(g => g[f]);
+    [vals.indexOf(Math.max(...vals)), vals.indexOf(Math.min(...vals))].forEach(i => {
+      const cx = m.l + band * (i + 0.5), v = vals[i];
+      txt(svg, cx, v >= 0 ? Y(v) - 6 : Y(v) + 14, pct(v, 0), { "text-anchor": "middle", class: "lab" });
+    });
+  }
+}
+
+function histogram(plot, h) {
+  plot.querySelectorAll("svg").forEach(s => s.remove());
+  const W = Math.max(300, plot.clientWidth), H = 250, m = { l: 46, r: 12, t: 18, b: 30 };
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Histogram of hedged returns per trade" });
+  plot.prepend(svg);
+  const e = h.edges, x0 = e[0], x1 = e[e.length - 1], maxc = Math.max(...h.counts);
+  const X = v => m.l + (v - x0) / (x1 - x0) * (W - m.l - m.r);
+  const ly = c => c <= 0 ? 0 : Math.log10(c + 1), top = Math.ceil(ly(maxc));
+  const Y = c => m.t + (1 - ly(c) / top) * (H - m.t - m.b);
+  for (let p = 0; p <= top; p++) { const y = m.t + (1 - p / top) * (H - m.t - m.b); el("line", { x1: m.l, x2: W - m.r, y1: y, y2: y, stroke: p === 0 ? tok("--axis") : tok("--grid") }, svg); txt(svg, m.l - 6, y + 4, p === 0 ? "0" : (10 ** p).toLocaleString("en-US"), { "text-anchor": "end" }); }
+  [-1, -0.8, -0.6, -0.4, -0.2, 0, 0.2, 0.4, 0.6].forEach(v => txt(svg, X(v), H - 10, pct(v, 0), { "text-anchor": "middle" }));
+  const tip = tipFor(plot);
+  h.counts.forEach((c, i) => {
+    const xa = X(e[i]) + 1, w = Math.max(1, X(e[i + 1]) - X(e[i]) - 2), color = e[i] < 0 ? tok("--neg") : tok("--s1");
+    if (c > 0) roundedBar(svg, xa, Y(0), Y(c), w, color);
+    const hr = el("rect", { x: X(e[i]), y: m.t, width: X(e[i + 1]) - X(e[i]), height: H - m.t - m.b, fill: "transparent" }, svg);
+    const show = () => { const bb = svg.getBoundingClientRect(); tip.innerHTML = `<b>${pct(e[i], 1)} to ${pct(e[i + 1], 1)}</b><br>${int(c)} trades`; placeTip(plot, tip, (xa + w / 2) * bb.width / W, Y(c) * bb.height / H); };
+    hr.addEventListener("pointermove", show); hr.addEventListener("pointerdown", show); hr.addEventListener("pointerleave", () => tip.hidden = true);
+  });
+  [["1st pct", h.q01], ["median", h.q50], ["99th pct", h.q99]].forEach(([l, v]) => {
+    el("line", { x1: X(v), x2: X(v), y1: m.t, y2: H - m.b, stroke: tok("--fg2"), "stroke-width": 1 }, svg);
+    txt(svg, X(v) + 4, m.t + 2, `${l} ${pct(v, 1)}`, { class: "lab" });
+  });
+}
+
+function horizonChart(plot, rows) {
+  plot.querySelectorAll("svg").forEach(s => s.remove());
+  const W = Math.max(300, plot.clientWidth), narrow = W < 560, H = 260, m = { l: 46, r: narrow ? 14 : 150, t: 14, b: 30 };
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Mean return per trade by exit day" });
+  plot.prepend(svg);
+  const ks = rows.map(r => r.k), X = k => m.l + (k - 1) / 19 * (W - m.l - m.r);
+  const costs = [[0.30, "30%/yr borrow"], [1.00, "100%/yr borrow"]].map(([b, l]) => ({ l, v: ks.map(k => 0.0025 + (k - 1) * b / 252) }));
+  const hi = Math.max(...rows.map(r => Math.max(r.d, r.v)), ...costs.flatMap(c => c.v)) * 1.05;
+  const ticks = niceTicks(0, hi, 5), top = Math.max(hi, ticks[ticks.length - 1]), Y = v => m.t + (top - v) / top * (H - m.t - m.b);
+  ticks.forEach(t => { el("line", { x1: m.l, x2: W - m.r, y1: Y(t), y2: Y(t), stroke: t === 0 ? tok("--axis") : tok("--grid") }, svg); txt(svg, m.l - 6, Y(t) + 4, pct(t, 0, false), { "text-anchor": "end" }); });
+  ks.forEach(k => txt(svg, X(k), H - 10, `t+${k}`, { "text-anchor": "middle" }));
+  costs.forEach(c => { el("path", { d: c.v.map((v, i) => `${i ? "L" : "M"}${X(ks[i])},${Y(v)}`).join(""), fill: "none", stroke: tok("--muted"), "stroke-width": 1 }, svg); if (!narrow) txt(svg, X(20) + 8, Y(c.v[c.v.length - 1]) + 4, c.l); });
+  const tip = tipFor(plot);
+  [["d", "--s1", "2010–18"], ["v", "--s2", "2019–26"]].forEach(([f, col, lab]) => {
+    el("path", { d: rows.map((r, i) => `${i ? "L" : "M"}${X(r.k)},${Y(r[f])}`).join(""), fill: "none", stroke: tok(col), "stroke-width": 2, "stroke-linejoin": "round" }, svg);
+    rows.forEach(r => {
+      const c = el("circle", { cx: X(r.k), cy: Y(r[f]), r: 4.5, fill: tok(col), stroke: tok("--surface"), "stroke-width": 2 }, svg);
+      const hc = el("circle", { cx: X(r.k), cy: Y(r[f]), r: 12, fill: "transparent" }, svg);
+      const show = () => { const bb = svg.getBoundingClientRect(); tip.innerHTML = `<b>Exit at close of t+${r.k}</b><br><span class="k" style="background:${tok(col)}"></span>${lab}: <b>${pct(r[f])}</b> per trade (n=${int(f === "d" ? r.nd : r.nv)})`; placeTip(plot, tip, X(r.k) * bb.width / W, Y(r[f]) * bb.height / H); };
+      hc.addEventListener("pointermove", show); hc.addEventListener("pointerdown", show); hc.addEventListener("pointerleave", () => tip.hidden = true);
+    });
+    if (!narrow) { const last = rows[rows.length - 1]; txt(svg, X(20) + 8, Y(last[f]) + 4, `${lab} ${pct(last[f], 1)}`, { class: "lab" }); }
+  });
+}
+
+// ------------------------------------------------------------------ mount + table views
+const cumA = [{ i: 1, color: "--s1", label: "Before costs", short: "" }, { i: 2, color: "--s2", label: "After 0.25% per trade", short: "" }, { i: 3, color: "--s3", label: "After 0.50% per trade", short: "" }];
+const cumB = cumA.map(s => ({ ...s, i: s.i + 3 }));
+let cLo = Infinity, cHi = -Infinity; D.cum.forEach(r => r.slice(1).forEach(v => { cLo = Math.min(cLo, v); cHi = Math.max(cHi, v); }));
+document.getElementById("lg-cum").innerHTML = cumA.map(s => `<span><i style="background:var(${s.color})"></i>${s.label}</span>`).join("");
+document.getElementById("tv-cum").innerHTML = tableHTML([["Year end", r => r[0]], ["All: no costs", r => pct(r[1], 0)], ["All: 0.25%", r => pct(r[2], 0)], ["All: 0.50%", r => pct(r[3], 0)], ["Skip earnings: no costs", r => pct(r[4], 0)], ["Skip earnings: 0.25%", r => pct(r[5], 0)], ["Skip earnings: 0.50%", r => pct(r[6], 0)]],
+  D.cum.filter((r, k, a) => k === a.length - 1 || r[0].slice(0, 4) !== a[k + 1][0].slice(0, 4)));
+const mult = document.getElementById("mult");
+mult.innerHTML = D.features.map((f, i) => `<div class="chart"><h3>${f.title}</h3><div class="plot" id="pf${i}"></div><details><summary>Show data table</summary><div class="tablewrap" id="tf${i}"></div></details></div>`).join("");
+D.features.forEach((f, i) => document.getElementById("tf" + i).innerHTML = tableHTML([["Bucket", r => r.label], ["2010–18", r => pct(r.d)], ["n", r => int(r.nd)], ["2019–26", r => pct(r.v)], ["n", r => int(r.nv)]], f.rows));
+document.getElementById("tv-screen").innerHTML = tableHTML([["Screen", r => r.label, "txt"], ["2010–18 / trade", r => pct(r.d)], ["2019–26 / trade", r => pct(r.v)], ["Trades", r => `${int(r.nd)} / ${int(r.nv)}`], ["Sharpe @0.25%", r => `${num(r.sd)} / ${num(r.sv)}`], ["Worst day 2019–26", r => pct(r.wd, 0)]], D.screens);
+document.getElementById("tv-hist").innerHTML = tableHTML([["Bin", r => r.b], ["Trades", r => int(r.c)]], D.hist.counts.map((c, i) => ({ b: `${pct(D.hist.edges[i], 1)} to ${pct(D.hist.edges[i + 1], 1)}`, c })));
+document.getElementById("tv-year").innerHTML = tableHTML([["Year", r => String(r.year)], ["All: trades", r => int(r.n)], ["All: P&L @0.25%", r => pct(r.year_return_base, 0), "signed"], ["All: Sharpe", r => num(r.sharpe_base), "signed"], ["Skip earnings: trades", r => int(r.rule_n)], ["Skip earnings: P&L @0.25%", r => pct(r.rule_year_return_base, 0), "signed"], ["Skip earnings: Sharpe", r => num(r.rule_sharpe_base), "signed"]], D.years);
+document.getElementById("tv-hz").innerHTML = tableHTML([["Exit", r => `close of t+${r.k}`], ["2010–18", r => pct(r.d)], ["2019–26", r => pct(r.v)], ["Trades", r => `${int(r.nd)} / ${int(r.nv)}`]], D.horizon);
+
+function renderAll() {
+  lineChart(document.getElementById("p-cum-a"), D.cum, cumA, { aria: "Cumulative P&L, all top-10 gainers, 2010 to 2026", splitDate: "2019-01-01", yfmt: (v, s) => pct(v, 0, !!s), lo: cLo, hi: cHi, compact: true });
+  lineChart(document.getElementById("p-cum-b"), D.cum, cumB, { aria: "Cumulative P&L, skipping earnings-day gainers, 2010 to 2026", splitDate: "2019-01-01", yfmt: (v, s) => pct(v, 0, !!s), lo: cLo, hi: cHi, compact: true });
+  D.features.forEach((f, i) => groupedBars(document.getElementById("pf" + i), f.rows, {
+    aria: f.title, height: 210, twoLineX: true, keys: [{ f: "d", color: "--s1", lab: "2010–18", n: "nd", h: "hd" }, { f: "v", color: "--s2", lab: "2019–26", n: "nv", h: "hv" }],
+    refs: [{ y: 0.005, label: "0.50%" }], xlab: g => [g.label, `${kfmt(g.nd)}/${kfmt(g.nv)}`],
+    tip: (g, k) => `<b>${f.title}: ${g.label}</b><br><span class="k" style="background:${tok(k.color)}"></span>${k.lab}: <b>${pct(g[k.f])}</b> per trade<br>${int(g[k.n])} trades · ${pct(g[k.h], 0, false)} winners`,
+  }));
+  groupedBars(document.getElementById("p-screen"), D.screens, {
+    aria: "Gross return per trade by screen", height: 260, twoLineX: false, refLabels: true,
+    keys: [{ f: "d", color: "--s1", lab: "2010–18", n: "nd" }, { f: "v", color: "--s2", lab: "2019–26", n: "nv" }],
+    refs: [{ y: 0.0025, label: "0.25% cost" }, { y: 0.005, label: "0.50% cost" }],
+    xlab: g => [g.label.split(":")[0]],
+    tip: (g, k) => `<b>${g.label}</b><br><span class="k" style="background:${tok(k.color)}"></span>${k.lab}: <b>${pct(g[k.f])}</b> per trade (${int(g[k.n])} trades)`,
+  });
+  histogram(document.getElementById("p-hist"), D.hist);
+  groupedBars(document.getElementById("p-year"), D.years, {
+    aria: "Annual P&L, all gainers vs skipping earnings-day gainers", height: 250,
+    keys: [{ f: "year_return_base", color: "--s1", lab: "All top-10 gainers", n: "n", g: "gross_mean_event" },
+           { f: "rule_year_return_base", color: "--s2", lab: "Skip earnings-day gainers", n: "rule_n", g: "rule_gross_mean_event" }],
+    xlab: g => [g.year % 2 === 0 ? `'${String(g.year).slice(-2)}` : ""],
+    tip: (g, k) => `<b>${g.year}</b><br><span class="k" style="background:${tok(k.color)}"></span>${k.lab}: <b>${pct(g[k.f], 0)}</b> at 0.25% cost<br>${int(g[k.n])} trades · ${pct(g[k.g])} gross per trade`,
+  });
+  horizonChart(document.getElementById("p-hz"), D.horizon);
+}
+renderAll();
+let rt; const rerender = () => { clearTimeout(rt); rt = setTimeout(renderAll, 120); };
+new ResizeObserver(rerender).observe(document.querySelector(".page"));
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", rerender);
+new MutationObserver(rerender).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+</script>

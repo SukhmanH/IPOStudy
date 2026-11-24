@@ -1,0 +1,15 @@
+section,what,cells
+H1,primary spec: 2 splits x 5 costs (verdict uses 1 cell),10
+H2,step-1 single filters evaluated on discovery,80
+H2,step-2 added filters evaluated on discovery,78
+H2,selected rule validated once (verdict cell),1
+H2-diag,all eligible step-1 filters re-scored on validation (exploratory),73
+H2-diag,eligible step-2 combinations re-scored on validation (exploratory),70
+A,entry x exit x split cells,22
+B,feature bucket x split cells,91
+C,top-N x gain-floor x split cells,24
+D,universe variant x split x cost cells,44
+E,stop level x split cells,8
+F,"years x (primary, H2 rule)",34
+BE,validation cost grid (descriptive; verdicts unchanged),42
+P,post-hoc candidate x split cells (seen after validation),20
