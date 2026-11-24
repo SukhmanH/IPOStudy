@@ -163,6 +163,40 @@ This gives an implied borrow of **≈ 0.3%/yr** (range −0.1% to 1.0%). ANT put
 - The 90/60 take-profit is a spread value of $22.50; it is worth $15.25 now (51% of its $30 max).
 - The thesis stops sit at the P75 path levels (≈ $105 on Dec 18).
 
+## 8. Entering on day 3 instead (2026-11-24, ANT $79.33)
+
+Code: `src/entry_today.py`. Results: `results/entry_today_*.csv`. Quotes are the 2026-11-24 broker snapshot.
+
+**Does the early drop use up the fade? No.**
+- ANT's −17% vs QQQ by day 3 is the 7th percentile of T4 comparables.
+- The forward fade (day 3 → 162) does not depend on it: slope +0.015, t = 0.05.
+- The 13 comparables already ≥10% below QQQ by day 3 went on to fade a median −38% more. That cut is exploratory.
+
+**Distributions for ANT at expiry, by view:**
+
+| View | Median ANT at expiry | P(below $79.33) |
+|---|---|---|
+| Base (forward; the view the data supports) | **$63** | 72% |
+| Catch-up (ANT converges to the typical path; not supported) | $76 | 54% |
+| Early faders (exploratory, n = 22) | $49 | n/a |
+
+**Liquid candidates** (buy at ask, sell at bid):
+
+| Spread | Debit (mid) | Max gain | Breakeven | EV, base | EV, catch-up | P(win), base | −50% stop: ANT above (Dec 18 / Mar 8 / May 17) | Take profit: ANT below |
+|---|---|---|---|---|---|---|---|---|
+| **80/60** | $9.50 ($9.15) | $10.50 | $70.50 | **+20.7%** [−8%, +41%] | −12.9% | 59% | $110 / $99 / $88 | $50 / $54 / $58 |
+| 85/60 | $12.50 ($12.15) | $12.50 | $72.50 | +21.3% [−4%, +39%] | −11.3% | 62% | $111 / $101 / $90 | $52 / $55 / $60 |
+| 85/75 | $6.00 ($5.60) | $4.00 | $79.00 | +17.6% [+1%, +29%] | −11.3% | 71% | $113 / $104 / $95 | $58 / $62 / $67 |
+
+The take-profit level is a spread value of 75% of max. QQQ hedge sizes: about 2.2 shares per 80/60, 2.8 per 85/60, 1.1 per 85/75. Unhedged replay of 2010–25: +5% to +8%.
+
+**Read.**
+- The base-case edge is unchanged from day 2, at about +20% on premium. Implied vol is still about 69%.
+- The conservative catch-up case is now negative (it was about 0 to +3% for day-2 spreads).
+- The pre-registered verdict (not established) and the **≤ 1% of capital** cap still apply.
+- Catalysts before Dec 18 could bounce the stock: analyst initiations around Dec 14, then index buying at the Dec 18 close. SPCX rose +4.7% into its inclusion.
+- Staging the entry (half now, half at or after Dec 18) costs about 2% of debit in time decay.
+
 ## 6. Limitations
 
 - **The edge is unproven.** Every 90% CI includes zero, and the parent's pre-registered test fails. The SPCX analog went against the +20 entry (−13.7% so far).
