@@ -128,6 +128,41 @@ That is ≈ **3.2 QQQ shares per 90/60 spread** (β = 1.05). Re-hedge as Δ move
 - **Don't use the Dec-2026 or Jan-2027 expiries.** The fade is back-loaded, around days 50–120.
 - **Avoid the Apr-2027 expiry.** It ends before the 3.0B-share unlock.
 
+## 7. Day-3 mark (2026-11-24): the trades, one day later
+
+ANT went from $87.48 to **$79.33** (−9.3%) while QQQ fell 2.4%.
+- Each trade is priced as bought at the 2026-11-23 natural price, using the broker's own quotes on both days.
+- Snapshots: `data/ant_put_chain_2027-07-16_snapshot_2026-11-24.csv` and `data/ant_call_chain_…_2026-11-24.csv`.
+- Code: `src/mark_to_market.py`. Results: `results/options_mtm_2026-11-24.csv`.
+
+| Structure | Paid | Worth now (mid) | Sell now (long at bid, short at ask) | P&L per contract, mid / sell now | Market move only (mid → mid) |
+|---|---|---|---|---|---|
+| Long 90 put | $19.60 | $22.90 | $22.60 | **+$330 / +$300** (+17% / +15%) | +$350 |
+| **90/60 spread** | $13.60 | $15.25 | $14.80 | **+$165 / +$120** (+12% / +9%) | +$195 |
+| 85/60 spread | $10.70 | $12.15 | $11.80 | +$145 / +$110 | +$170 |
+| 90/70 spread | $10.10 | $11.10 | $10.60 | +$100 / +$50 | +$125 |
+| 90/80 spread | $5.70 | $6.10 | $5.60 | +$40 / −$10 | +$80 |
+| 95/85 spread | $6.60 | $6.40 | $5.90 | −$20 / −$70 | +$35 |
+| 105/85 spread | $13.70 | $13.55 | $12.90 | −$15 / −$80 | +$95 |
+
+**What drove the P&L.**
+- Almost all of it came from delta. The 90/60 gained ≈ +$186 from delta, +$11 from gamma, −$6 from IV and −$1 from theta.
+- Implied vol barely moved: 68.8% → 68.8% at the money.
+- Narrow spreads have little delta, so they pay mostly at expiry. Their entry bid/ask cost ($55–$110 per contract) exceeded the one-day move.
+- Work orders at the mid.
+
+**Borrow check.** Calls and puts were captured two minutes apart, so put–call parity can be applied:
+
+$$q = r - \frac{\ln(F/S)}{T},\qquad F = K + e^{rT}(C - P)$$
+
+This gives an implied borrow of **≈ 0.3%/yr** (range −0.1% to 1.0%). ANT puts are *not* inflated by a hard-to-borrow fee, so the q = 0 assumption used throughout holds.
+
+**Hedged version.** The 3.22 QQQ shares per 90/60 spread lost ≈ $50. That leaves ≈ +$115 at mid, reflecting ANT's −7% move *relative* to QQQ.
+
+**Where the thesis stands.** ANT is now −17% vs QQQ since its day-0 close. The median comparable took about 120 trading days to fall that far. No pre-set exit has triggered:
+- The 90/60 take-profit is a spread value of $22.50; it is worth $15.25 now (51% of its $30 max).
+- The thesis stops sit at the P75 path levels (≈ $105 on Dec 18).
+
 ## 6. Limitations
 
 - **The edge is unproven.** Every 90% CI includes zero, and the parent's pre-registered test fails. The SPCX analog went against the +20 entry (−13.7% so far).
