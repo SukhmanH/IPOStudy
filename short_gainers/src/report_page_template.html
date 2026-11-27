@@ -232,6 +232,35 @@ footer { font-size: 0.82rem; color: var(--fg2); border-top: 1px solid var(--grid
     </div>
   </section>
 
+  <section id="intraday" hidden>
+    <h2>Doing it inside one day</h2>
+    <p id="id-lede"></p>
+    <div class="callout">
+      <h3>What actually costs money on Wealthsimple</h3>
+      <ul class="small">
+        <li><b>Currency conversion: 1.5% per filled order</b> when you trade US stocks from a CAD account. A short and its cover are two orders, so that is about 3% per round trip, several times the whole edge. Trading inside one day doesn't avoid it. A USD account does: $10 a month, or free on Premium and Generation.</li>
+        <li><b>Borrow fees</b> build up on short positions held overnight. A short opened and covered the same day normally pays none. Wealthsimple's fee schedule lists no borrow fee and doesn't say how same-day shorts are treated, so confirm with them.</li>
+        <li><b>Being able to short the stock at all.</b> Hot small caps are often impossible to borrow, and Wealthsimple publishes no list of shortable stocks.</li>
+      </ul>
+    </div>
+    <div class="legend"><span><i style="background:var(--s1)"></i>All top-10 gainers</span><span><i style="background:var(--s2)"></i>Skip earnings-day gainers</span><span><i style="background:var(--muted);height:1px"></i>0.25% round-trip cost</span></div>
+    <div class="multiples cum2">
+      <div class="chart" id="c-idI">
+        <div class="chart-head"><h3>Short it while it's running, cover at that day's close</h3><p class="small muted">Mean hedged return per trade, by entry time on the gain day</p></div>
+        <div class="plot" id="p-idI"></div>
+      </div>
+      <div class="chart" id="c-idII">
+        <div class="chart-head"><h3>Short it the next day, cover at that day's close</h3><p class="small muted">Mean hedged return per trade, by entry time on day 2</p></div>
+        <div class="plot" id="p-idII"></div>
+      </div>
+    </div>
+    <details><summary>Show data table</summary><div class="tablewrap" id="tv-id"></div></details>
+    <p id="id-mid"></p>
+    <h3>Pre-registered verdicts (fixed before any intraday result was computed)</h3>
+    <div class="tablewrap" id="tbl-idv"></div>
+    <p class="small muted" id="id-note"></p>
+  </section>
+
   <section id="checks">
     <h2>Cross-checked on a second database</h2>
     <p>The same strategy was recomputed in SQL on a separate stock database. That database only has split-adjusted prices, so the check uses the naive $5 screen on both sides. The two pipelines agree closely, month by month.</p>
@@ -526,6 +555,32 @@ function horizonChart(plot, rows) {
   });
 }
 
+function profileChart(plot, rows, opts) {
+  plot.querySelectorAll("svg").forEach(s => s.remove());
+  const W = Math.max(280, plot.clientWidth), H = 250, m = { l: 48, r: 14, t: 14, b: 30 };
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": opts.aria });
+  plot.prepend(svg);
+  const labels = opts.labels, n = labels.length, X = i => m.l + (i + 0.5) / n * (W - m.l - m.r);
+  const vals = rows.map(r => r.gross_mean).concat([0, 0.0025]);
+  let lo = Math.min(...vals), hi = Math.max(...vals); const pad = (hi - lo) * 0.12; lo -= pad; hi += pad;
+  const ticks = niceTicks(lo, hi, 5); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
+  const Y = v => m.t + (hi - v) / (hi - lo) * (H - m.t - m.b);
+  ticks.forEach(t => { el("line", { x1: m.l, x2: W - m.r, y1: Y(t), y2: Y(t), stroke: Math.abs(t) < 1e-12 ? tok("--axis") : tok("--grid") }, svg); txt(svg, m.l - 6, Y(t) + 4, pct(t, 1, false), { "text-anchor": "end" }); });
+  el("line", { x1: m.l, x2: W - m.r, y1: Y(0.0025), y2: Y(0.0025), stroke: tok("--muted"), "stroke-width": 1 }, svg);
+  labels.forEach((l, i) => txt(svg, X(i), H - 10, l, { "text-anchor": "middle" }));
+  const tip = tipFor(plot);
+  [["all", "--s1", "All top-10 gainers"], ["NE", "--s2", "Skip earnings-day gainers"]].forEach(([v, col, lab]) => {
+    const s = opts.entries.map(e => rows.find(r => r.variant === v && r.entry === e));
+    el("path", { d: s.map((r, i) => `${i ? "L" : "M"}${X(i)},${Y(r.gross_mean)}`).join(""), fill: "none", stroke: tok(col), "stroke-width": 2, "stroke-linejoin": "round" }, svg);
+    s.forEach((r, i) => {
+      el("circle", { cx: X(i), cy: Y(r.gross_mean), r: 4.5, fill: tok(col), stroke: tok("--surface"), "stroke-width": 2 }, svg);
+      const hc = el("circle", { cx: X(i), cy: Y(r.gross_mean), r: 12, fill: "transparent" }, svg);
+      const show = () => { const bb = svg.getBoundingClientRect(); tip.innerHTML = `<b>${opts.what(labels[i])}</b><br><span class="k" style="background:${tok(col)}"></span>${lab}<br>Mean <b>${pct(r.gross_mean)}</b> · median ${pct(r.median)} per trade<br>${pct(r.hit, 0, false)} winners · ${int(r.n)} trades<br>Rose 10%+ more after entry: ${pct(r.pushed_up_10pct, 0, false)}<br>Sharpe at 0.25% cost: ${num(r["sharpe_0.25"])}`; placeTip(plot, tip, X(i) * bb.width / W, Y(r.gross_mean) * bb.height / H); };
+      hc.addEventListener("pointermove", show); hc.addEventListener("pointerdown", show); hc.addEventListener("pointerleave", () => tip.hidden = true);
+    });
+  });
+}
+
 // ------------------------------------------------------------------ mount + table views
 const cumA = [{ i: 1, color: "--s1", label: "Before costs", short: "" }, { i: 2, color: "--s2", label: "After 0.25% per trade", short: "" }, { i: 3, color: "--s3", label: "After 0.50% per trade", short: "" }];
 const cumB = cumA.map(s => ({ ...s, i: s.i + 3 }));
@@ -540,6 +595,26 @@ document.getElementById("tv-screen").innerHTML = tableHTML([["Screen", r => r.la
 document.getElementById("tv-hist").innerHTML = tableHTML([["Bin", r => r.b], ["Trades", r => int(r.c)]], D.hist.counts.map((c, i) => ({ b: `${pct(D.hist.edges[i], 1)} to ${pct(D.hist.edges[i + 1], 1)}`, c })));
 document.getElementById("tv-year").innerHTML = tableHTML([["Year", r => String(r.year)], ["All: trades", r => int(r.n)], ["All: P&L @0.25%", r => pct(r.year_return_base, 0), "signed"], ["All: Sharpe", r => num(r.sharpe_base), "signed"], ["Skip earnings: trades", r => int(r.rule_n)], ["Skip earnings: P&L @0.25%", r => pct(r.rule_year_return_base, 0), "signed"], ["Skip earnings: Sharpe", r => num(r.rule_sharpe_base), "signed"]], D.years);
 document.getElementById("tv-hz").innerHTML = tableHTML([["Exit", r => `close of t+${r.k}`], ["2010–18", r => pct(r.d)], ["2019–26", r => pct(r.v)], ["Trades", r => `${int(r.nd)} / ${int(r.nv)}`]], D.horizon);
+
+if (D.intraday) {
+  document.getElementById("intraday").hidden = false;
+  const X = D.intraday;
+  const lab = r => (r.entry === "open" ? "9:30 open" : r.entry);
+  document.getElementById("tv-id").innerHTML = tableHTML([
+    ["Trade", r => r.__t, "txt"], ["Entry", r => lab(r)], ["Gainers", r => r.variant === "NE" ? "skip earnings" : "all", "txt"],
+    ["Trades", r => int(r.n)], ["Mean", r => pct(r.gross_mean), "signed"], ["Median", r => pct(r.median), "signed"],
+    ["Winners", r => pct(r.hit, 0, false)], ["Rose 10%+ after entry", r => pct(r.pushed_up_10pct, 0, false)],
+    ["Sharpe @0.25%", r => num(r["sharpe_0.25"]), "signed"], ["Worst trade", r => pct(r.worst, 0), "signed"],
+  ], X.I.map(r => ({ ...r, __t: "Gain day" })).concat(X.II.map(r => ({ ...r, __t: "Day 2" }))));
+  const cellName = c => c.replace("I-NE-", "Gain day, skip earnings, ").replace("II-NE-", "Day 2, skip earnings, ")
+    .replace(/^I-/, "Gain day, all, ").replace(/^II-/, "Day 2, all, ").replace(/(\d\d)(\d\d)$/, "$1:$2");
+  document.getElementById("tbl-idv").innerHTML = tableHTML([
+    ["Cell", r => cellName(r.cell), "txt"], ["Trades", r => int(r.n)], ["Mean / trade", r => pct(r.gross_mean), "signed"],
+    ["Mean / day @0.25%", r => pct(r["mean_daily_0.25"], 3), "signed"], ["99.2% CI", r => `${pct(r.ci_lo_bonf, 3)} / ${pct(r.ci_hi_bonf, 3)}`],
+    ["1st half", r => pct(r.half1, 3), "signed"], ["2nd half", r => pct(r.half2, 3), "signed"],
+    ["With 3% FX fee", r => pct(r.mean_daily_3_fx, 2), "signed"], ["Verdict", r => r.verdict === "WORKS" ? "Works" : "Doesn't work", "txt"],
+  ], X.verdicts.map(r => ({ ...r, __hl: r.verdict === "WORKS" })));
+}
 
 function renderAll() {
   lineChart(document.getElementById("p-cum-a"), D.cum, cumA, { aria: "Cumulative P&L, all top-10 gainers, 2010 to 2026", splitDate: "2019-01-01", yfmt: (v, s) => pct(v, 0, !!s), lo: cLo, hi: cHi, compact: true });
@@ -565,6 +640,11 @@ function renderAll() {
     tip: (g, k) => `<b>${g.year}</b><br><span class="k" style="background:${tok(k.color)}"></span>${k.lab}: <b>${pct(g[k.f], 0)}</b> at 0.25% cost<br>${int(g[k.n])} trades · ${pct(g[k.g])} gross per trade`,
   });
   horizonChart(document.getElementById("p-hz"), D.horizon);
+  if (D.intraday) {
+    const chk = ["10:30", "11:30", "12:30", "13:30", "14:30", "15:30"];
+    profileChart(document.getElementById("p-idI"), D.intraday.I, { aria: "Gain-day short by entry time", entries: chk, labels: chk, what: l => `Short at ${l} on the gain day, cover at the close` });
+    profileChart(document.getElementById("p-idII"), D.intraday.II, { aria: "Day-two short by entry time", entries: ["open"].concat(chk), labels: ["9:30"].concat(chk), what: l => `Short at ${l} on day 2, cover at the close` });
+  }
 }
 renderAll();
 let rt; const rerender = () => { clearTimeout(rt); rt = setTimeout(renderAll, 120); };

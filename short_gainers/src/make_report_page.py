@@ -100,7 +100,23 @@ def payload() -> dict:
                  for c, v in zip(cols, rec)} for rec in df[cols].itertuples(index=False)]
 
     cov = pd.read_csv(DATA / "coverage_by_year.csv")
+    intraday = None
+    if (RES / "intraday_primary_verdicts.csv").exists():
+        cols = ["variant", "entry", "n", "gross_mean", "median", "hit", "sharpe_0.25", "mean_daily_0.25",
+                "pushed_up_10pct", "worst"]
+        Ii = pd.read_csv(RES / "intraday_I_gain_day.csv")
+        IIi = pd.read_csv(RES / "intraday_II_day_two.csv")
+        IIIi = pd.read_csv(RES / "intraday_III_overnight.csv")
+        Vi = pd.read_csv(RES / "intraday_primary_verdicts.csv")
+        intraday = {
+            "I": rows_of(Ii, cols + ["median_gain_at_entry"]), "II": rows_of(IIi, cols),
+            "III": rows_of(IIIi, ["variant", "exit", "n", "gross_mean", "median", "hit", "net_borrow10", "net_borrow30", "net_borrow100"]),
+            "verdicts": rows_of(Vi, ["cell", "n", "gross_mean", "hit", "mean_daily_0.25", "ci_lo_bonf", "ci_hi_bonf",
+                                     "half1", "half2", "sharpe_0.25", "mean_daily_3_fx", "verdict"]),
+            "audit": json.loads((RES / "intraday_summary.json").read_text())["audit"],
+        }
     return {
+        "intraday": intraday,
         "summary": S,
         "h1": rows_of(h1, ["split", "cost", "n_events", "gross_mean_event", "median_event", "hit", "mean_daily",
                            "ci_lo", "ci_hi", "sharpe", "max_dd", "worst_day", "worst_event"]),

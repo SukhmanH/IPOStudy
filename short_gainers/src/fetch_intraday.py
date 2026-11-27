@@ -55,6 +55,32 @@ def long_frame(df: pd.DataFrame, tickers: list[str], intraday: bool) -> tuple[pd
     return (pd.concat(out, ignore_index=True) if out else pd.DataFrame()), st
 
 
+def retry() -> None:
+    """Second pass for tickers listed after 2023-12-29: yfinance turns period='730d' into a start
+    before Yahoo's calendar-day limit, so ask for an explicit start inside it (2024-11-28)."""
+    done = set()
+    for f in CACHE.glob("h_*.parquet"):
+        done |= set(pd.read_parquet(f, columns=["ticker"])["ticker"].unique())
+    tick = [t for t in pd.read_csv(DATA / "intraday_tickers.csv")["ticker"] if t not in done]
+    print(f"retrying {len(tick)} tickers with start=2024-11-28", flush=True)
+    for bi in range(0, len(tick), BATCH):
+        b = tick[bi:bi + BATCH]
+        h = yf.download(b, start="2024-11-28", end="2026-11-27", interval="1h", auto_adjust=False,
+                        prepost=False, group_by="ticker", threads=True, progress=False)
+        hl, hs = long_frame(h, b, True)
+        if len(hl):
+            hl.to_parquet(CACHE / f"r_{bi // BATCH:03d}.parquet", index=False)
+        print(f"retry batch {bi // BATCH + 1}: ok {sum(v == 'ok' for v in hs.values())}/{len(b)}", flush=True)
+        time.sleep(1.0)
+    log = pd.read_csv(DATA / "intraday_fetch_log.csv").set_index("ticker")["status"]
+    got = set()
+    for f in CACHE.glob("r_*.parquet"):
+        got |= set(pd.read_parquet(f, columns=["ticker"])["ticker"].unique())
+    for t in tick:
+        log[t] = log.get(t, "") + (" | retry_from_2024-11-28:ok" if t in got else " | retry:empty")
+    log.rename_axis("ticker").reset_index().to_csv(DATA / "intraday_fetch_log.csv", index=False)
+
+
 def main() -> None:
     tick = ["SPY"] + [t for t in pd.read_csv(DATA / "intraday_tickers.csv")["ticker"] if t != "SPY"]
     batches = [tick[i:i + BATCH] for i in range(0, len(tick), BATCH)]
@@ -89,4 +115,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    retry() if "--retry" in sys.argv else main()
