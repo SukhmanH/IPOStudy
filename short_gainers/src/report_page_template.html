@@ -256,6 +256,10 @@ footer { font-size: 0.82rem; color: var(--fg2); border-top: 1px solid var(--grid
     </div>
     <details><summary>Show data table</summary><div class="tablewrap" id="tv-id"></div></details>
     <p id="id-mid"></p>
+    <div class="chart" id="c-idFP">
+      <div class="chart-head"><h3>Day 2: short at the open, cover at …</h3><p class="small muted">Mean hedged return per trade by cover time. Spotted after the pre-registered tests, so it is a lead to paper-trade, not a verdict.</p></div>
+      <div class="plot" id="p-idFP"></div>
+    </div>
     <h3>Pre-registered verdicts (fixed before any intraday result was computed)</h3>
     <div class="tablewrap" id="tbl-idv"></div>
     <p class="small muted" id="id-note"></p>
@@ -282,7 +286,8 @@ footer { font-size: 0.82rem; color: var(--fg2); border-top: 1px solid var(--grid
     <h2>If you want to trade it anyway</h2>
     <ol>
       <li><b>Freeze the rules before you start.</b> Core rule: the 10 biggest gainers of at least 10%, no earnings report that day or the day before, and an actual price of at least $5 both that day and the day before. Short at the next open, cover at that day's close. Track the two narrow setups (day-2 gap-up of 5% or more, RSI(14) of 85 or more) on the side. Paper-trade for at least 3–6 months. That is the only clean out-of-sample test left.</li>
-      <li><b>Measure your real costs.</b> Log the fill against the official open, plus locate fees and borrow availability, on every trade. The core rule only works if all-in cost stays under about 0.4% per round trip. The narrow setups have more room, about 2%.</li>
+      <li><b>Short at the open and be flat the same day.</b> On day 2 the fade is basically done by 10:30, so track a 10:30 cover alongside the close. Covering the same day means no overnight borrow fee. Don't short mid-day on the gain day itself: that tested as a coin flip.</li>
+      <li><b>Measure your real costs.</b> Log the fill against the official open, plus locate fees and borrow availability, on every trade. The core rule only works if all-in cost stays under about 0.4% per round trip; the narrow setups have more room, about 2%. On Wealthsimple, trade from a USD account. The 1.5% conversion fee on each order from a CAD account (about 3% per round trip) erases every version of this trade.</li>
       <li><b>Size for the squeeze.</b> The worst trade lost about 3× the position. At 1–2% of capital per name, a repeat costs 3–6% of the account rather than 30%.</li>
       <li><b>Set a kill rule in advance.</b> For example, stop if the first 200 paper trades of the core rule average below +0.3% per trade after real costs.</li>
     </ol>
@@ -565,7 +570,7 @@ function profileChart(plot, rows, opts) {
   let lo = Math.min(...vals), hi = Math.max(...vals); const pad = (hi - lo) * 0.12; lo -= pad; hi += pad;
   const ticks = niceTicks(lo, hi, 5); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
   const Y = v => m.t + (hi - v) / (hi - lo) * (H - m.t - m.b);
-  ticks.forEach(t => { el("line", { x1: m.l, x2: W - m.r, y1: Y(t), y2: Y(t), stroke: Math.abs(t) < 1e-12 ? tok("--axis") : tok("--grid") }, svg); txt(svg, m.l - 6, Y(t) + 4, pct(t, 1, false), { "text-anchor": "end" }); });
+  ticks.forEach(t => { el("line", { x1: m.l, x2: W - m.r, y1: Y(t), y2: Y(t), stroke: Math.abs(t) < 1e-12 ? tok("--axis") : tok("--grid") }, svg); txt(svg, m.l - 6, Y(t) + 4, pct(t, 2, false), { "text-anchor": "end" }); });
   el("line", { x1: m.l, x2: W - m.r, y1: Y(0.0025), y2: Y(0.0025), stroke: tok("--muted"), "stroke-width": 1 }, svg);
   labels.forEach((l, i) => txt(svg, X(i), H - 10, l, { "text-anchor": "middle" }));
   const tip = tipFor(plot);
@@ -575,7 +580,7 @@ function profileChart(plot, rows, opts) {
     s.forEach((r, i) => {
       el("circle", { cx: X(i), cy: Y(r.gross_mean), r: 4.5, fill: tok(col), stroke: tok("--surface"), "stroke-width": 2 }, svg);
       const hc = el("circle", { cx: X(i), cy: Y(r.gross_mean), r: 12, fill: "transparent" }, svg);
-      const show = () => { const bb = svg.getBoundingClientRect(); tip.innerHTML = `<b>${opts.what(labels[i])}</b><br><span class="k" style="background:${tok(col)}"></span>${lab}<br>Mean <b>${pct(r.gross_mean)}</b> · median ${pct(r.median)} per trade<br>${pct(r.hit, 0, false)} winners · ${int(r.n)} trades<br>Rose 10%+ more after entry: ${pct(r.pushed_up_10pct, 0, false)}<br>Sharpe at 0.25% cost: ${num(r["sharpe_0.25"])}`; placeTip(plot, tip, X(i) * bb.width / W, Y(r.gross_mean) * bb.height / H); };
+      const show = () => { const bb = svg.getBoundingClientRect(); tip.innerHTML = `<b>${opts.what(labels[i])}</b><br><span class="k" style="background:${tok(col)}"></span>${lab}<br>Mean <b>${pct(r.gross_mean)}</b> · median ${pct(r.median)} per trade<br>${pct(r.hit, 0, false)} winners · ${int(r.n)} trades` + (r.pushed_up_10pct != null ? `<br>Rose 10%+ more after entry: ${pct(r.pushed_up_10pct, 0, false)}` : "") + `<br>Sharpe at 0.25% cost: ${num(r["sharpe_0.25"])}`; placeTip(plot, tip, X(i) * bb.width / W, Y(r.gross_mean) * bb.height / H); };
       hc.addEventListener("pointermove", show); hc.addEventListener("pointerdown", show); hc.addEventListener("pointerleave", () => tip.hidden = true);
     });
   });
@@ -599,6 +604,13 @@ document.getElementById("tv-hz").innerHTML = tableHTML([["Exit", r => `close of 
 if (D.intraday) {
   document.getElementById("intraday").hidden = false;
   const X = D.intraday;
+  const g = (arr, v, e) => arr.find(r => r.variant === v && r.entry === e) || {};
+  const i12 = g(X.I, "all", "12:30"), i15 = g(X.I, "all", "15:30"), iN12 = g(X.I, "NE", "12:30"), i10 = g(X.I, "all", "10:30");
+  const iiO = g(X.II, "all", "open"), iiON = g(X.II, "NE", "open"), ii12 = g(X.II, "all", "12:30");
+  const fp10 = g(X.FP, "all", "10:30"), fp10N = g(X.FP, "NE", "10:30"), fpC = g(X.FP, "all", "close"), fpCN = g(X.FP, "NE", "close");
+  setText("id-lede", `Shorting a gainer while it's still running, or right before the close, doesn't make money. From 12:30 to the close it earned ${pct(i12.gross_mean)} per trade before costs (${pct(iN12.gross_mean)} skipping earnings gainers), with ${pct(i12.hit, 0, false)} winners: a coin flip. On the next day the whole fade happens at the open. Short at 9:30 and the trade earned ${pct(iiO.gross_mean)} (${pct(iiON.gross_mean)} skipping earnings gainers). Wait until 12:30 and it lost ${pct(-ii12.gross_mean, 2, false)}.`);
+  setText("id-mid", `Your worry about it pushing higher is right. ${pct(i10.pushed_up_10pct, 0, false)} of 10:30 shorts and ${pct(i12.pushed_up_10pct, 0, false)} of 12:30 shorts saw the stock climb another 10% or more that same afternoon, and the worst 12:30 short lost ${pct(-i12.worst, 0, false)}. On day 2 the fade is basically done by 10:30. Shorting at the open and covering at 10:30 earned ${pct(fp10.gross_mean)} per trade (${pct(fp10N.gross_mean)} skipping earnings gainers), about the same as holding to the close (${pct(fpC.gross_mean)} / ${pct(fpCN.gross_mean)}), with a smaller worst case: the 1st-percentile trade was ${pct(fp10.p01, 0)} against ${pct(fpC.p01, 0)}.`);
+  setText("id-note", `Window ${X.audit.window[0]} to ${X.audit.window[1]} (${int(X.audit.days)} trading days), Yahoo hourly bars. Two deviations from the plan are disclosed in INTRADAY.md. First, ${int(X.audit.testI_candidate_days_hourly_inconsistent_excluded)} stock-days were dropped because Yahoo's hourly prices sat on a different split basis than its daily prices. Second, exits use the last hourly trade rather than the official close. The 3% FX column shows a Wealthsimple CAD account: every version loses money.`);
   const lab = r => (r.entry === "open" ? "9:30 open" : r.entry);
   document.getElementById("tv-id").innerHTML = tableHTML([
     ["Trade", r => r.__t, "txt"], ["Entry", r => lab(r)], ["Gainers", r => r.variant === "NE" ? "skip earnings" : "all", "txt"],
@@ -606,8 +618,8 @@ if (D.intraday) {
     ["Winners", r => pct(r.hit, 0, false)], ["Rose 10%+ after entry", r => pct(r.pushed_up_10pct, 0, false)],
     ["Sharpe @0.25%", r => num(r["sharpe_0.25"]), "signed"], ["Worst trade", r => pct(r.worst, 0), "signed"],
   ], X.I.map(r => ({ ...r, __t: "Gain day" })).concat(X.II.map(r => ({ ...r, __t: "Day 2" }))));
-  const cellName = c => c.replace("I-NE-", "Gain day, skip earnings, ").replace("II-NE-", "Day 2, skip earnings, ")
-    .replace(/^I-/, "Gain day, all, ").replace(/^II-/, "Day 2, all, ").replace(/(\d\d)(\d\d)$/, "$1:$2");
+  const cellName = c => c.replace(/^II-NE-/, "Day 2, skip earnings, ").replace(/^II-/, "Day 2, all, ")
+    .replace(/^I-NE-/, "Gain day, skip earnings, ").replace(/^I-/, "Gain day, all, ").replace(/(\d\d)(\d\d)$/, "$1:$2");
   document.getElementById("tbl-idv").innerHTML = tableHTML([
     ["Cell", r => cellName(r.cell), "txt"], ["Trades", r => int(r.n)], ["Mean / trade", r => pct(r.gross_mean), "signed"],
     ["Mean / day @0.25%", r => pct(r["mean_daily_0.25"], 3), "signed"], ["99.2% CI", r => `${pct(r.ci_lo_bonf, 3)} / ${pct(r.ci_hi_bonf, 3)}`],
@@ -644,6 +656,7 @@ function renderAll() {
     const chk = ["10:30", "11:30", "12:30", "13:30", "14:30", "15:30"];
     profileChart(document.getElementById("p-idI"), D.intraday.I, { aria: "Gain-day short by entry time", entries: chk, labels: chk, what: l => `Short at ${l} on the gain day, cover at the close` });
     profileChart(document.getElementById("p-idII"), D.intraday.II, { aria: "Day-two short by entry time", entries: ["open"].concat(chk), labels: ["9:30"].concat(chk), what: l => `Short at ${l} on day 2, cover at the close` });
+    profileChart(document.getElementById("p-idFP"), D.intraday.FP, { aria: "Day-two short from the open by cover time", entries: chk.concat(["close"]), labels: chk.concat(["16:00"]), what: l => `Short at the day-2 open, cover at ${l}` });
   }
 }
 renderAll();

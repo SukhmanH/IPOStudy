@@ -108,8 +108,10 @@ def payload() -> dict:
         IIi = pd.read_csv(RES / "intraday_II_day_two.csv")
         IIIi = pd.read_csv(RES / "intraday_III_overnight.csv")
         Vi = pd.read_csv(RES / "intraday_primary_verdicts.csv")
+        FPi = pd.read_csv(RES / "intraday_posthoc_day2_fade_path.csv").rename(columns={"cover_at": "entry"})
         intraday = {
             "I": rows_of(Ii, cols + ["median_gain_at_entry"]), "II": rows_of(IIi, cols),
+            "FP": rows_of(FPi, ["variant", "entry", "n", "gross_mean", "median", "hit", "sharpe_0.25", "mean_daily_0.25", "worst", "p01"]),
             "III": rows_of(IIIi, ["variant", "exit", "n", "gross_mean", "median", "hit", "net_borrow10", "net_borrow30", "net_borrow100"]),
             "verdicts": rows_of(Vi, ["cell", "n", "gross_mean", "hit", "mean_daily_0.25", "ci_lo_bonf", "ci_hi_bonf",
                                      "half1", "half2", "sharpe_0.25", "mean_daily_3_fx", "verdict"]),

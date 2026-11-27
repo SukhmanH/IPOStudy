@@ -117,7 +117,7 @@ def hourly_for(pairs: set[tuple[str, pd.Timestamp]], tickers: set[str]) -> pd.Da
     h = pd.concat(out, ignore_index=True).drop_duplicates(["ticker", "date", "bar"], keep="last")
     h = h[h["bar"].isin(BARS)]
     h["dvol"] = h["close"] * h["volume"]
-    w = h.pivot_table(index=["ticker", "date"], columns="bar", values=["close", "high", "dvol"], aggfunc="last")
+    w = h.pivot_table(index=["ticker", "date"], columns="bar", values=["open", "close", "high", "low", "dvol"], aggfunc="last")
     return w
 
 
@@ -159,7 +159,8 @@ def main() -> None:
     e2 = ev[(ev["excl_reason"] == "eligible") & (ev["universe"] == "U5") & (ev["rank"] <= 10) &
             (ev["date"] >= WIN_START) & (ev["date"] < WIN_END)][["ticker", "date", "earnings"]].copy()
     e2 = e2.merge(d[["ticker", "date", "next_date", "next_ok"]], on=["ticker", "date"], how="left")
-    pairs = set(zip(cand["ticker"], cand["date"])) | set(zip(e2["ticker"], e2["next_date"])) | \
+    pairs = set(zip(cand["ticker"], cand["date"])) | set(zip(cand["ticker"], cand["next_date"].dropna())) | \
+        set(zip(e2["ticker"], e2["next_date"])) | \
         {("SPY", x) for x in days} | {("SPY", x) for x in e2["next_date"].dropna()}
     tick = set(cand["ticker"]) | set(e2["ticker"]) | {"SPY"}
     W = hourly_for(pairs, tick)
@@ -172,7 +173,19 @@ def main() -> None:
     sf_at = d.set_index(["ticker", "date"])["sf"].reindex(W.index).values
     dvW = W["dvol"].reindex(columns=BARS).fillna(0).cumsum(axis=1).mul(sf_at, axis=0)
     spyW = closeW.xs("SPY", level="ticker")
-    last_bar_ok = (closeW["15:30"] / d.set_index(["ticker", "date"])["close"].reindex(W.index) - 1).abs() <= 0.10
+    dd = d.set_index(["ticker", "date"])
+    # DEVIATION (disclosed in INTRADAY.md): for 0.58% of ticker-days (556 tickers, e.g. KALA x30,
+    # TGL x24) Yahoo's hourly prices sit on a different split basis than its daily prices.  A
+    # ticker-day is used only if every hourly bar lies inside the official daily range (+-2%);
+    # an hourly bar cannot legitimately trade outside it, so this cannot select on outcomes.
+    hh = W["high"].max(axis=1)
+    hl = W["low"].min(axis=1)
+    cons = (hh <= dd["high"].reindex(W.index) * 1.02) & (hl >= dd["low"].reindex(W.index) * 0.98)
+    # Exit inside the same series as the entry: last hourly print (15:30-16:00 bar); the official
+    # close only when that bar is missing on a consistent day.
+    exitH = closeW["15:30"].where(closeW["15:30"].notna(), dd["close"].reindex(W.index))
+    openH = W["open"].reindex(columns=BARS)["09:30"]
+    last_bar_ok = closeW["15:30"].notna()
     # Coverage audit: daily-data proxies for "could have qualified at some checkpoint"
     # (high >= +10%, traded close >= $5, daily $ volume >= $5M) that have no hourly bars that day.
     has_h = pd.MultiIndex.from_frame(cand[["ticker", "date"]]).isin(closeW.index)
@@ -204,21 +217,24 @@ def main() -> None:
         c["dv_T"] = at(keys, b, dvW)
         c["gain_T"] = c["P"] / c["prev_close"] - 1
         c["raw_P"] = c["P"] * c["sf"]
+        c["cons"] = cons.reindex(pd.MultiIndex.from_frame(keys)).fillna(False).astype(bool).values
+        c["X"] = exitH.reindex(pd.MultiIndex.from_frame(keys)).values
         ok = ((c["gain_T"] >= 0.10) & (c["raw_P"] >= 5) & (c["dv_T"] >= 5e6) & (c["age"] >= 60) &
-              c["prev_ok"] & ~c["split_near"] & c["P"].notna())
+              c["prev_ok"] & ~c["split_near"] & c["P"].notna() & c["cons"] & c["X"].notna())
         c = c[ok].sort_values(["date", "gain_T", "dv_T"], ascending=[True, False, False])
         c = c[c.groupby("date").cumcount() < 10].copy()
         c["max_up"] = max_after(c[["ticker", "date"]], BARS[BARS.index(b) + 1]) / c["P"] - 1  # high after entry
         spy_P = spyW[b].reindex(c["date"]).values
-        c["s_h"] = (1 - c["close"] / c["P"]) + (spy_close.reindex(c["date"]).values / spy_P - 1)
+        spy_X = spyW["15:30"].reindex(c["date"]).values
+        c["s_h"] = (1 - c["X"] / c["P"]) + (spy_X / spy_P - 1)
         selI[T] = c
         for var, sub in [("all", c), ("NE", c[~c["earnings"]])]:
             st = cell_stats(sub, "s_h", days, "date")
-            lb = last_bar_ok.reindex(pd.MultiIndex.from_frame(sub[["ticker", "date"]])).fillna(False).values
+            lb = last_bar_ok.reindex(pd.MultiIndex.from_frame(sub[["ticker", "date"]])).fillna(False).astype(bool).values
             rowsI.append({"test": "I", "variant": var, "entry": T, **st,
                           "pushed_up_5pct": (sub["max_up"] >= 0.05).mean(), "pushed_up_10pct": (sub["max_up"] >= 0.10).mean(),
                           "median_gain_at_entry": sub["gain_T"].median(),
-                          "share_hourly_close_mismatch": 1 - lb.mean() if len(lb) else np.nan})
+                          "share_exit_from_official_close": 1 - lb.mean() if len(lb) else np.nan})
     I = pd.DataFrame(rowsI)
     I.to_csv(RES / "intraday_I_gain_day.csv", index=False)
 
@@ -244,7 +260,11 @@ def main() -> None:
             x["P"] = at(k2, b, closeW)
             spy_P = spyW[b].reindex(x["next_date"]).values
             x["max_up"] = max_after(k2, BARS[BARS.index(b) + 1]) / x["P"] - 1
-        x["s_h"] = (1 - x["C2"] / x["P"]) + (spy_c2 / spy_P - 1)
+            i2 = pd.MultiIndex.from_frame(k2)
+            x["C2"] = exitH.reindex(i2).values
+            x.loc[~cons.reindex(i2).fillna(False).astype(bool).values, "P"] = np.nan
+            spy_c2_h = spyW["15:30"].reindex(x["next_date"]).values
+        x["s_h"] = (1 - x["C2"] / x["P"]) + ((spy_c2 if T == "open" else spy_c2_h) / spy_P - 1)
         x = x[x["P"].notna() & x["C2"].notna()]
         for var, sub in [("all", x), ("NE", x[x["earnings"] != 1.0])]:
             st = cell_stats(sub, "s_h", days, "date")
@@ -256,11 +276,16 @@ def main() -> None:
     # ------------------------------------------------------------------ Test III (overnight, descriptive)
     c = selI["15:30"].copy()
     c = c[c["next_ok"]]
-    so = spy_d["open"].reindex(c["next_date"]).values
-    sc = spy_close.reindex(c["next_date"]).values
+    inext = pd.MultiIndex.from_frame(c[["ticker", "next_date"]].rename(columns={"next_date": "date"}))
+    ok3 = cons.reindex(inext).fillna(False).astype(bool).values
+    c["O1"] = openH.reindex(inext).values
+    c["C1"] = exitH.reindex(inext).values
+    c = c[ok3 & c["O1"].notna() & c["C1"].notna()]
+    so = W["open"]["09:30"].xs("SPY", level="ticker").reindex(c["next_date"]).values
+    sc = spyW["15:30"].reindex(c["next_date"]).values
     sp = spyW["14:30"].reindex(c["date"]).values
-    c["s_open"] = (1 - c["next_open"] / c["P"]) + (so / sp - 1)
-    c["s_close"] = (1 - c["next_close"] / c["P"]) + (sc / sp - 1)
+    c["s_open"] = (1 - c["O1"] / c["P"]) + (so / sp - 1)
+    c["s_close"] = (1 - c["C1"] / c["P"]) + (sc / sp - 1)
     rowsIII = []
     for var, sub in [("all", c), ("NE", c[~c["earnings"]])]:
         for col, lab in [("s_open", "cover next open"), ("s_close", "cover next close")]:
@@ -269,6 +294,32 @@ def main() -> None:
                             **{f"net_borrow{int(b * 100)}": st["gross_mean"] - BASE - b / 252 for b in [0.10, 0.30, 1.00]}})
     III = pd.DataFrame(rowsIII)
     III.to_csv(RES / "intraday_III_overnight.csv", index=False)
+
+    # ------------------------------------------------------------------ POST-HOC (suggested by Test II):
+    # the day-2 fade path. Short at the first print of day 2 (open of the 09:30 bar, same hourly
+    # series as the exits), cover at each checkpoint or at the last print. Descriptive only.
+    f = e2.copy()
+    fi = pd.MultiIndex.from_frame(f[["ticker", "next_date"]].rename(columns={"next_date": "date"}))
+    f["O"] = openH.reindex(fi).values
+    f = f[cons.reindex(fi).fillna(False).astype(bool).values & f["O"].notna()]
+    fi = pd.MultiIndex.from_frame(f[["ticker", "next_date"]].rename(columns={"next_date": "date"}))
+    spy_o = W["open"]["09:30"].xs("SPY", level="ticker").reindex(f["next_date"]).values
+    rowsF = []
+    for T in CHECKS + ["close"]:
+        x = f.copy()
+        if T == "close":
+            x["X"] = exitH.reindex(fi).values
+            spy_x = spyW["15:30"].reindex(x["next_date"]).values
+        else:
+            x["X"] = closeW[BAR_ENDING[T]].reindex(fi).values
+            spy_x = spyW[BAR_ENDING[T]].reindex(x["next_date"]).values
+        x["s_h"] = (1 - x["X"] / x["O"]) + (spy_x / spy_o - 1)
+        x = x[x["X"].notna()]
+        for var, sub in [("all", x), ("NE", x[x["earnings"] != 1.0])]:
+            st = cell_stats(sub, "s_h", days, "date", ci=(T in ("10:30", "close")))
+            rowsF.append({"test": "POSTHOC-fade-path", "variant": var, "cover_at": T, **st})
+    FP = pd.DataFrame(rowsF)
+    FP.to_csv(RES / "intraday_posthoc_day2_fade_path.csv", index=False)
 
     # ------------------------------------------------------------------ verdicts on the six primary cells
     allc = pd.concat([I, II])
@@ -285,6 +336,8 @@ def main() -> None:
                      "verdict": "WORKS" if works else "DOES NOT WORK"})
     V = pd.DataFrame(rows)
     V.to_csv(RES / "intraday_primary_verdicts.csv", index=False)
+    ic = pd.MultiIndex.from_frame(cand[["ticker", "date"]])
+    audit["testI_candidate_days_hourly_inconsistent_excluded"] = int((~cons.reindex(ic).fillna(True).astype(bool)).sum())
     audit.update({"days": int(len(days)), "window": [str(days[0].date()), str(days[-1].date())],
                   "testII_events": int(len(e2))})
     (RES / "intraday_summary.json").write_text(json.dumps({"audit": audit, "verdicts": rows}, indent=2, default=float))
@@ -311,22 +364,24 @@ def make_fig() -> None:
                          "axes.titlelocation": "left", "axes.titlesize": 10.5, "font.size": 9.5})
     I = pd.read_csv(RES / "intraday_I_gain_day.csv")
     II = pd.read_csv(RES / "intraday_II_day_two.csv")
-    fmt = matplotlib.ticker.FuncFormatter(lambda v, _: f"{v * 100:.1f}%")
+    FP = pd.read_csv(RES / "intraday_posthoc_day2_fade_path.csv").rename(columns={"cover_at": "entry"})
+    fmt = matplotlib.ticker.FuncFormatter(lambda v, _: f"{v * 100:.2f}%")
     fmt0 = matplotlib.ticker.FuncFormatter(lambda v, _: f"{v * 100:.0f}%")
-    fig, axes = plt.subplots(1, 3, figsize=(14, 4.4))
-    panels = [(axes[0], I, "gross_mean", "Gain day: short while it runs, cover at the close", fmt),
-              (axes[1], II, "gross_mean", "Day 2: short at …, cover at the close", fmt),
-              (axes[2], I, "pushed_up_10pct", "Gain day: stock rose 10%+ more after you shorted", fmt0)]
+    fig, axes = plt.subplots(2, 2, figsize=(13, 8.2))
+    panels = [(axes[0, 0], I, "gross_mean", "A. Gain day: short while it runs (entry time), cover at the close", fmt),
+              (axes[0, 1], II, "gross_mean", "B. Day 2: short at (entry time), cover at the close", fmt),
+              (axes[1, 0], FP, "gross_mean", "C. Day 2: short at the open, cover at (time)  [post-hoc]", fmt),
+              (axes[1, 1], I, "pushed_up_10pct", "D. Gain day: stock rose 10%+ more after you shorted", fmt0)]
     for ax, df, col, title, f in panels:
         for var, color, lab in [("all", C1, "All top-10 gainers"), ("NE", C2, "Skip earnings-day gainers")]:
-            s = df[df["variant"] == var]
-            ax.plot(range(len(s)), s[col].values, color=color, lw=2, marker="o", ms=5, mec=SURF, mew=1.5, label=lab)
-        ax.set_xticks(range(len(s)))
-        ax.set_xticklabels([e if e != "open" else "9:30 open" for e in s["entry"]], fontsize=8.5)
+            sub = df[df["variant"] == var]
+            ax.plot(range(len(sub)), sub[col].values, color=color, lw=2, marker="o", ms=5, mec=SURF, mew=1.5, label=lab)
+        ax.set_xticks(range(len(sub)))
+        ax.set_xticklabels([{"open": "9:30 open", "close": "16:00 close"}.get(e, e) for e in sub["entry"]], fontsize=8.5)
         if col == "gross_mean":
             ax.axhline(0, color=BASE_, lw=1)
             ax.axhline(0.0025, color=MUTED, lw=1)
-            ax.text(len(s) - 1, 0.0025, "0.25% cost", color=MUTED, fontsize=8, va="bottom", ha="right")
+            ax.text(len(sub) - 1, 0.0025, "0.25% cost", color=MUTED, fontsize=8, va="bottom", ha="right")
             ax.set_ylabel("Mean hedged return per short trade")
         else:
             ax.set_ylim(0, None)
@@ -334,7 +389,7 @@ def make_fig() -> None:
         ax.yaxis.set_major_formatter(f)
         ax.set_title(title, color=INK)
         ax.grid(axis="x", visible=False)
-    axes[0].legend(loc="best", fontsize=8.5)
+    axes[0, 0].legend(loc="upper left", fontsize=8.5)
     fig.tight_layout()
     fig.savefig(FIGS / "fig7_intraday_timing.png", dpi=160)
     plt.close(fig)
